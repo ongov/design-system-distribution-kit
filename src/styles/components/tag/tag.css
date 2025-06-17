@@ -1,10 +1,10 @@
-[class^=ontario-tag] {
+.ontario-tag {
   border: none;
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 0.625rem;
   font-weight: 500;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -13,6 +13,11 @@
   text-decoration: none;
   background: #cccccc;
   color: #1a1a1a;
+}
+@media screen and (min-width: 40em) {
+  .ontario-tag {
+    font-size: 0.875rem;
+  }
 }
 
 .ontario-tag--lime {
