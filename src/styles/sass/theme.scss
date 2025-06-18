@@ -1,7 +1,5 @@
-@import "./variables-import";
+@import "./_variables-import.scss";
 
-@import "./tools/focus.placeholder";
+@import "./tools/focus.placeholder.scss";
 
-@import "./global/elements.global";
-
-@import "./platform-specific-import";
+@import "./global/elements.global.scss";

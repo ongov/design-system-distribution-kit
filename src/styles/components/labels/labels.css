@@ -8,7 +8,9 @@
   line-height: 1.5;
   margin: 0 0 1rem 0;
   max-width: 38.75em;
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 @media screen and (max-width: 40em) {
   .ontario-label {
@@ -23,16 +25,16 @@
   line-height: 1.2;
   max-width: 26.25em;
 }
-.ontario-label--large h1 {
-  display: inline-block;
-  font-size: inherit;
-  margin: 0;
-}
 @media screen and (max-width: 40em) {
   .ontario-label--large {
     font-size: 1.4375rem;
     line-height: 1.39;
   }
+}
+
+.ontario-label--heading h1 {
+  display: inline-block;
+  margin: 0;
 }
 
 .ontario-label__flag {

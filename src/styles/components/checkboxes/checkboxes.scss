@@ -1,4 +1,4 @@
-@import "../../sass/variables-import";
+@import "../../../sass/variables-import";
 
 $ontario-touch-target-size: 36px;
 $ontario-touch-target-size-mobile: 40px;
@@ -16,11 +16,10 @@ $ontario-checkbox-border-size: 2px;
     margin: 0 0 $spacing-4;
     padding: 0 $spacing-6 0;
     min-height: $ontario-checkboxes-size;
-
+    box-sizing: content-box;
     &:last-of-type {
         margin: 0;
     }
-
     @media screen and (max-width: $small-breakpoint) {
         padding: 0 $spacing-7 0;
         min-height: $ontario-checkboxes-size-mobile;
@@ -55,7 +54,7 @@ $ontario-checkbox-border-size: 2px;
     padding: 0 $spacing-4;
 
     @media screen and (max-width: $small-breakpoint) {
-        margin: .33rem 0;
+        margin: 0.33rem 0;
     }
 
     // [ ] Check box styles
@@ -66,20 +65,21 @@ $ontario-checkbox-border-size: 2px;
         position: absolute;
         top: 0;
         left: 0;
-        width: $ontario-checkboxes-size;
-        height: $ontario-checkboxes-size;
+        width: $ontario-checkboxes-size-mobile;
+        height: $ontario-checkboxes-size-mobile;
         transition: border 0.1s ease-in-out;
+        display: block;
 
-        @media screen and (max-width: $small-breakpoint) {
-            width: $ontario-checkboxes-size-mobile;
-            height: $ontario-checkboxes-size-mobile;
+        @media screen and (min-width: $small-breakpoint) {
+            width: $ontario-checkboxes-size;
+            height: $ontario-checkboxes-size;
         }
     }
 
     // ✔✔✔ Check mark styles ✔✔✔
     &:after {
         content: "";
-        background-image: url('#{$icon-dir}/ontario-checkbox-background-no-width.svg');
+        background-image: url("#{$icon-dir}/ontario-checkbox-background-no-width.svg");
         background-repeat: no-repeat;
         height: $ontario-checkboxes-size + $ontario-checkbox-border-size;
         width: $ontario-checkboxes-size + $ontario-checkbox-border-size;
@@ -89,33 +89,17 @@ $ontario-checkbox-border-size: 2px;
         right: 0;
         bottom: 0;
         opacity: 0;
-
-
+        display: block;
         @media screen and (max-width: $small-breakpoint) {
-            height: $ontario-checkboxes-size-mobile + $ontario-checkbox-border-size;
-            width: $ontario-checkboxes-size-mobile + $ontario-checkbox-border-size;
-        }
-    }
-
-
-    /*
-        These styles specifically target IE11. There is a difference in the way the checkbox
-        size is rendering, and this targets it to be the correct size
-    */
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-        &:before {
-            height: $ontario-checkboxes-size + ($ontario-checkbox-border-size * 2);
-            width: $ontario-checkboxes-size + ($ontario-checkbox-border-size * 2);
-
-            @media screen and (max-width: $small-breakpoint) {
-                height: $ontario-checkboxes-size-mobile + ($ontario-checkbox-border-size * 2);
-                width: $ontario-checkboxes-size-mobile + ($ontario-checkbox-border-size * 2);
-            }
+            height: $ontario-checkboxes-size-mobile +
+                $ontario-checkbox-border-size;
+            width: $ontario-checkboxes-size-mobile +
+                $ontario-checkbox-border-size;
         }
     }
 }
 
-.ontario-checkboxes__input:focus+.ontario-checkboxes__label:before {
+.ontario-checkboxes__input:focus + .ontario-checkboxes__label:before {
     -moz-box-shadow: 0 0 0 4px $ontario-colour-focus;
     -webkit-box-shadow: 0 0 0 4px $ontario-colour-focus;
     box-shadow: 0 0 0 4px $ontario-colour-focus;

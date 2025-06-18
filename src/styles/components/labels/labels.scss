@@ -1,4 +1,4 @@
-@import "../../sass/variables-import";
+@import "../../../sass/variables-import";
 
 .ontario-label {
     cursor: pointer;
@@ -9,7 +9,7 @@
     line-height: 1.5;
     margin: 0 0 $spacing-4 0;
     max-width: 38.75em;
-    width: 100%;
+    width: max-content;
 
     @media screen and (max-width: $small-breakpoint) {
         font-size: 1.125rem;
@@ -23,15 +23,16 @@
     line-height: 1.2;
     max-width: 26.25em;
 
-    h1 {
-        display: inline-block;
-        font-size: inherit;
-        margin: 0;
-    }
-
     @media screen and (max-width: $small-breakpoint) {
         font-size: 1.4375rem;
         line-height: 1.39;
+    }
+}
+
+.ontario-label--heading {
+    h1 {
+        display: inline-block;
+        margin: $spacing-0;
     }
 }
 
@@ -41,6 +42,6 @@
     font-weight: 400;
 
     &:before {
-        content: '\a0';
+        content: "\a0";
     }
 }

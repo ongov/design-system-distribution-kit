@@ -1,10 +1,15 @@
-@import "../../sass/variables-import";
+@import "../../../sass/variables-import";
 
 $ontario-touch-target-size: 36px;
 $ontario-touch-target-size-mobile: 40px;
 $ontario-radios-size: 32px;
 $ontario-radios-size-mobile: 36px;
 $ontario-input-offset: ($ontario-touch-target-size - $ontario-radios-size) / 2;
+
+* .ontario-radios {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 .ontario-radios {
     padding: 0 0 0 ($spacing-1/2);
@@ -32,8 +37,8 @@ $ontario-input-offset: ($ontario-touch-target-size - $ontario-radios-size) / 2;
     @media screen and (max-width: $small-breakpoint) {
         width: $ontario-touch-target-size-mobile;
         height: $ontario-touch-target-size-mobile;
-        top: $ontario-input-offset * -.75;
-        left: $ontario-input-offset * -.75;
+        top: $ontario-input-offset * -0.75;
+        left: $ontario-input-offset * -0.75;
     }
 }
 
@@ -75,7 +80,10 @@ $ontario-input-offset: ($ontario-touch-target-size - $ontario-radios-size) / 2;
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate($ontario-input-offset * 3, $ontario-input-offset * 3);
+        transform: translate(
+            $ontario-input-offset * 3,
+            $ontario-input-offset * 3
+        );
         opacity: 0;
 
         @media screen and (max-width: $small-breakpoint) {
@@ -84,7 +92,7 @@ $ontario-input-offset: ($ontario-touch-target-size - $ontario-radios-size) / 2;
     }
 }
 
-.ontario-radios__input:focus+.ontario-radios__label:before {
+.ontario-radios__input:focus + .ontario-radios__label:before {
     -moz-box-shadow: 0 0 0 4px $ontario-colour-focus;
     -webkit-box-shadow: $ontario-colour-focus;
     box-shadow: 0 0 0 4px $ontario-colour-focus;
@@ -92,6 +100,6 @@ $ontario-input-offset: ($ontario-touch-target-size - $ontario-radios-size) / 2;
     transition: box-shadow 0.1s ease-in-out;
 }
 
-.ontario-radios__input:checked+.ontario-radios__label:after {
+.ontario-radios__input:checked + .ontario-radios__label:after {
     opacity: 1;
 }

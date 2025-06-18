@@ -1,3 +1,8 @@
+* .ontario-radios {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .ontario-radios {
   padding: 0 0 0 0.125rem;
   margin-bottom: 2.5rem;
