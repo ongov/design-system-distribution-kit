@@ -1,6 +1,8 @@
 @import "../../../sass/variables-import";
+@import "../../../sass/tools/common.mixins.scss";
 
 .ontario-label {
+    @include ontario-word-wrap;
     cursor: pointer;
     color: $ontario-colour-black;
     font-family: $ontario-font-raleway-modified;
