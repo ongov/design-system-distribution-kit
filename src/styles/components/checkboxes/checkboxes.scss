@@ -1,4 +1,5 @@
 @import "../../../sass/variables-import";
+@import "../../../sass/tools/common.mixins.scss";
 
 $ontario-touch-target-size: 36px;
 $ontario-touch-target-size-mobile: 40px;
@@ -47,11 +48,13 @@ $ontario-checkbox-border-size: 2px;
 }
 
 .ontario-checkboxes__label {
+    @include ontario-word-wrap;
     display: inline-block;
     cursor: pointer;
     line-height: 1.5;
     margin: $spacing-1 0;
     padding: 0 $spacing-4;
+    width: 100%;
 
     @media screen and (max-width: $small-breakpoint) {
         margin: 0.33rem 0;

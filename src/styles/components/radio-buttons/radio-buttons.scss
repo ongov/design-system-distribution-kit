@@ -1,4 +1,5 @@
 @import "../../../sass/variables-import";
+@import "../../../sass/tools/common.mixins.scss";
 
 $ontario-touch-target-size: 36px;
 $ontario-touch-target-size-mobile: 40px;
@@ -43,6 +44,7 @@ $ontario-input-offset: ($ontario-touch-target-size - $ontario-radios-size) / 2;
 }
 
 .ontario-radios__label {
+    @include ontario-word-wrap;
     display: inline-block;
     font-size: 1rem;
     margin: 0.2rem 0;

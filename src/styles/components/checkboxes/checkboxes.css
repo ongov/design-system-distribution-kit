@@ -40,11 +40,20 @@
 }
 
 .ontario-checkboxes__label {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   display: inline-block;
   cursor: pointer;
   line-height: 1.5;
   margin: 0.25rem 0;
   padding: 0 1rem;
+  width: 100%;
 }
 @media screen and (max-width: 40em) {
   .ontario-checkboxes__label {

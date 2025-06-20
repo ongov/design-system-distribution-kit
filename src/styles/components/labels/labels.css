@@ -8,9 +8,7 @@
   line-height: 1.5;
   margin: 0 0 1rem 0;
   max-width: 38.75em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
 }
 @media screen and (max-width: 40em) {
   .ontario-label {

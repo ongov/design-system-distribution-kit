@@ -17,8 +17,11 @@ body {
     margin: 0;
 }
 
-main {
-    max-width: 50rem;
+main p,
+main p:not(.ontario-lead-statement),
+main dd,
+main li {
+    max-width: 48rem;
 }
 
 hr {
