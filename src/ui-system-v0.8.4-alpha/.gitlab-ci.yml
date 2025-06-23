@@ -1,0 +1,269 @@
+image: 608395931184.dkr.ecr.us-east-1.amazonaws.com/ci/centos/nodejs-8-centos7:latest
+
+stages:
+    - build:en
+    - deploy:en
+    - build:fr
+    - deploy:fr
+
+.app_build_template: &app_job_definition
+    tags:
+        - design
+    variables:
+        GA_STAGE: "${GA_STAGE}"
+        GA_PROD: "${GA_PROD}"
+    before_script:
+        - echo GA_STAGE=\"$GA_STAGE\" > .env
+        - echo GA_PROD=\"$GA_PROD\" >> .env
+        - rm -rf ./fractal/build
+        - npm ci && npm cache verify
+    artifacts:
+        paths:
+        - fractal
+
+.app_deploy_template: &app_deploy_definition
+    image: 608395931184.dkr.ecr.us-east-1.amazonaws.com/ci/python-aws-cli:latest
+    tags:
+        - design
+
+build:en:dev:
+    <<: *app_job_definition
+    stage: build:en
+    only:
+        - develop
+    environment:
+        name: Development
+    script:
+        - NODE_ENV=development npm run build-ci-dev-en
+
+build:fr:dev:
+    <<: *app_job_definition
+    stage: build:fr
+    only:
+        - develop
+    environment:
+        name: Development
+    script:
+        - NODE_ENV=development npm run build-ci-dev-fr
+
+build:en:stage:
+    <<: *app_job_definition
+    stage: build:en
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    variables:
+        NODE_ENV: development
+    script:
+        - NODE_ENV=development npm run build-ci-en
+    environment:
+        name: Stage
+
+build:fr:stage:
+    <<: *app_job_definition
+    stage: build:fr
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    variables:
+        NODE_ENV: development
+    script:
+        - NODE_ENV=development npm run build-ci-fr
+    environment:
+        name: Stage
+
+build:en:prod:
+    <<: *app_job_definition
+    stage: build:en
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    variables:
+        NODE_ENV: production        
+    script:
+        - npm install gulp
+        - NODE_ENV=production npm run build-ci-en
+    environment:
+        name: prod
+
+build:fr:prod:
+    <<: *app_job_definition
+    stage: build:fr
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    variables:
+        NODE_ENV: production
+    script:
+        - npm install gulp
+        - NODE_ENV=production npm run build-ci-fr
+    environment:
+        name: prod
+
+deploy:en:dev:
+    <<: *app_deploy_definition
+    stage: deploy:en
+    only:
+        - develop
+    ##when: manual
+    environment:
+        name: Development
+    variables:
+        S3_DEPLOY_BUCKET: "${DEV_S3_DEPLOY_BUCKET}"
+        AWS_ACCESS_KEY_ID: "${DEV_ACCESS_KEY}"
+        AWS_SECRET_ACCESS_KEY: "${DEV_ACCESS_SECRET}"
+    dependencies:
+        - build:en:dev
+    script:
+        ## Sync only the static build folder to the S3 bucket
+        - aws s3 sync ./fractal/build s3://${S3_DEPLOY_BUCKET}/${CI_PROJECT_NAME}/ --exclude "*fr/*" --delete 
+
+deploy:fr:dev:
+    <<: *app_deploy_definition
+    stage: deploy:fr
+    only:
+        - develop
+    ##when: manual
+    environment:
+        name: Development
+    variables:
+        S3_DEPLOY_BUCKET: "${DEV_S3_DEPLOY_BUCKET}"
+        AWS_ACCESS_KEY_ID: "${DEV_ACCESS_KEY}"
+        AWS_SECRET_ACCESS_KEY: "${DEV_ACCESS_SECRET}"
+    dependencies:
+        - build:fr:dev
+    script:
+        ## Sync only the static build folder to the S3 bucket
+        - aws s3 sync ./fractal/build s3://${S3_DEPLOY_BUCKET}/${CI_PROJECT_NAME}/fr/  --delete 
+
+deploy:en:stage:
+    <<: *app_deploy_definition
+    stage: deploy:en
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    ##when: manual
+    environment:
+        name: Stage
+    variables:
+        S3_DEPLOY_BUCKET: "${STAGE_S3_DEPLOY_BUCKET}"
+        AWS_ACCESS_KEY_ID: "${STAGE_ACCESS_KEY}"
+        AWS_SECRET_ACCESS_KEY: "${STAGE_ACCESS_SECRET}"
+    dependencies:
+        - build:en:stage
+    script:
+    ## Sync only the static build folder to the S3 bucket
+    - aws s3 sync ./fractal/build s3://${S3_DEPLOY_BUCKET}/${CI_PROJECT_NAME}/ --exclude "*fr/*" --delete
+
+deploy:fr:stage:
+    <<: *app_deploy_definition
+    stage: deploy:fr
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    ##when: manual
+    environment:
+        name: Stage
+    variables:
+        S3_DEPLOY_BUCKET: "${STAGE_S3_DEPLOY_BUCKET}"
+        AWS_ACCESS_KEY_ID: "${STAGE_ACCESS_KEY}"
+        AWS_SECRET_ACCESS_KEY: "${STAGE_ACCESS_SECRET}"
+    dependencies:
+        - build:fr:stage
+    script:
+    ## Sync only the static build folder to the S3 bucket
+    - aws s3 sync ./fractal/build s3://${S3_DEPLOY_BUCKET}/${CI_PROJECT_NAME}/fr/ --delete
+
+deploy:en:prod:
+    <<: *app_deploy_definition
+    stage: deploy:en
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    when: manual
+    environment:
+        name: prod
+    variables:
+        S3_DEPLOY_BUCKET: "${PROD_S3_DEPLOY_BUCKET}"
+        AWS_ACCESS_KEY_ID: "${PROD_ACCESS_KEY}"
+        AWS_SECRET_ACCESS_KEY: "${PROD_ACCESS_SECRET}"
+    dependencies:
+        - build:en:prod
+    script:
+        ## Sync only the static build folder to the S3 bucket
+        - aws s3 sync ./fractal/build s3://${S3_DEPLOY_BUCKET}/${CI_PROJECT_NAME}/ --exclude "*fr/*" --delete
+
+deploy:fr:prod:
+    <<: *app_deploy_definition
+    stage: deploy:fr
+    only:
+        refs:
+        - tags
+        - master
+        variables:
+        - $CI_COMMIT_TAG =~ /^v?\d+\.\d+\.\d+(?:-(?:alpha|beta))?$/
+    except:
+        refs:
+        - branches
+        - develop
+    when: manual
+    environment:
+        name: prod
+    variables:
+        S3_DEPLOY_BUCKET: "${PROD_S3_DEPLOY_BUCKET}"
+        AWS_ACCESS_KEY_ID: "${PROD_ACCESS_KEY}"
+        AWS_SECRET_ACCESS_KEY: "${PROD_ACCESS_SECRET}"
+    dependencies:
+        - build:fr:prod
+    script:
+        ## Sync only the static build folder to the S3 bucket
+        - aws s3 sync ./fractal/build s3://${S3_DEPLOY_BUCKET}/${CI_PROJECT_NAME}/fr/ --delete

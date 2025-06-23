@@ -1,0 +1,21 @@
+{{#if aside}}<aside class="ontario-{{ type }}"> {{/if}}
+{{#if callout}}<div class="ontario-{{ type }}"> {{/if}}
+    <h2 class="ontario-{{ type }}__title ontario-h5">{{ title }}</h2>
+    {{#if callout}}
+        {{#if en}}
+            <p><a href="#">Sign up for email reminders</a> and we’ll notify you 60 and 30 days before your licence expires.</p>
+        {{/if}}
+        {{#if fr}}
+            <p><a href="#">Inscrivez-vous aux rappels par courriel</a> et nous vous enverrons un avis de renouvellement 60 jours et 30 jours avant l’expiration de votre permis.</p>
+        {{/if}}
+    {{/if}}
+    {{#if aside}}
+        {{#if en}}
+            <p>As of 2013, Canada is responsible for 1.6% of global emissions, with Ontario responsible for less than 0.4% of global emissions.</p>
+        {{/if}}
+        {{#if fr}}
+            <p>En 2013, le Canada sera responsable de 1,6 % des émissions mondiales, l'Ontario étant responsable de moins de 0,4 % des émissions mondiales.</p>
+        {{/if}}
+    {{/if}}
+{{#if aside}}</aside>{{/if}}
+{{#if callout}}</div>{{/if}}

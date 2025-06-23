@@ -1,0 +1,71 @@
+#root {
+    margin: 0 15px 15px 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.fractal-icons-preview-catitems .fractal-icons-preview-catitem{
+    display: flex;
+    align-items: center;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 40em) {
+
+    .fractal-icons-preview-catitems .fractal-icons-preview-catitem{
+        display: inline-flex;
+    }
+
+    .fractal-icons-preview-catitems {
+        -moz-column-count: 3;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 20px;
+        column-count: 3;
+        column-gap: 20px;
+        margin: 0 0 1.5rem 1.5rem !important;
+    }
+}
+
+.fractal-icons-preview-label {
+    margin: 0 0 0 10px;
+    color: #1a1a1a !important;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.fractal-icons-preview-catlabel:hover
+{
+    cursor: default;
+}
+
+.fractal-icons-preview-cat{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#fractal-icons-preview .fractal-iframe-code-section{
+    display: none;
+}
+
+#fractal-icons-preview .ontario-row{
+    margin: 0;
+}
+
+#fractal-icons-preview .ontario-column{
+    position: initial;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#fractal-icons-preview .ontario-icon{
+    width: 32px;
+    height: 32px;
+}

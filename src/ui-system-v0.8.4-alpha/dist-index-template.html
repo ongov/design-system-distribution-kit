@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/ds-theme.css">
+	<script defer="" src="/scripts/svgxuse.js"></script>
+	<title>Ontario Design System Examples</title>
+	<!-- inject:head:html -->
+	<!-- endinject -->
+	<style>
+		body {
+			background: #CCCCCC;
+		}
+
+		.ontario-column {
+			margin-bottom: 30px;
+			background: white;
+		}
+
+		#main-header ul{
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3; /*3 in those rules is just placeholder -- can be anything*/
+		}
+
+		#main-header li {
+			list-style: none;
+		}
+
+		.icons-list {
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3; /*3 in those rules is just placeholder -- can be anything*/
+		}
+
+		.icons-list li {
+			list-style: none;
+		}
+	</style>
+</head>
+
+<body>
+<main>
+	<div class="ontario-row">
+		<div class="ontario-column ontario-small-12">
+		<!-- inject:menu:html -->
+		<!-- endinject -->
+		<!-- inject:body:html -->
+		<!-- endinject -->
+		</div>
+	</div>
+</main>
+</body>
+
+</html>

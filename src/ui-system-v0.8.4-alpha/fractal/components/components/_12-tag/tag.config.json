@@ -1,0 +1,39 @@
+{
+    "title": "Tag",
+    "label": "Tag",
+    "collated": true,
+    "context": {
+        "desc": "Default",
+        "class": "primary"
+    },
+    "variants": [
+        {
+            "name": "lime",
+            "context": {
+                "desc": "lime",
+                "class": "lime"
+            }
+        },
+        {
+            "name": "gold",
+            "context": {
+                "desc": "gold",
+                "class": "gold"
+            }
+        },
+        {
+            "name": "yellow",
+            "context": {
+                "desc": "yellow",
+                "class": "yellow"
+            }
+        },
+        {
+            "name": "taupe",
+            "context": {
+                "desc": "taupe",
+                "class": "taupe"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+<fieldset class="ontario-fieldset" {{#if hint}}aria-describedby="{{id}}-hint"{{/if}}>
+    <legend class="ontario-fieldset__legend{{#if legendSize}} ontario-fieldset__legend--{{legendSize}}{{/if}}">
+    {{#if heading}}
+        <h1>
+            {{legend~}}
+            {{~#if flag~}}
+            <span class="ontario-label__flag">({{flag.text}})</span>
+            {{/if}}
+        </h1>
+    </legend>
+    {{else}}
+    {{legend~}}
+    {{~#if flag~}}
+        <span class="ontario-label__flag">({{flag.text}})</span>
+        {{/if}}
+    </legend>
+    {{/if}}
+    {{#if hint}}
+    <p id="{{id}}-hint" class="ontario-hint">{{hint}}</p>
+    {{/if}}
+</fieldset>

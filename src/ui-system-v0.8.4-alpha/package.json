@@ -1,0 +1,87 @@
+{
+    "private": true,
+    "name": "ontario-design-system",
+    "version": "0.8.4",
+    "description": "A repository of ODS front-end and UI code, including a pattern library, templates, and misc components, fonts for designers",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "test-build": "serve fractal/build",
+        "dev": "gulp --lang=en",
+        "dev:fr": "gulp --lang=fr",
+        "build-react": "cd reactjs && npm run build && cd ..",
+        "build-react-ci": "cd reactjs && npm ci && npm run build && cd ..",
+        "build:en": "gulp build --lang=en",
+        "build:fr": "gulp build --lang=fr",
+        "build-ci-dev-en": "gulp -v && npm run build-react-ci && gulp build --lang=en --sandbox=ui-system",
+        "build-ci-dev-fr": "gulp -v && npm run build-react-ci && gulp build --lang=fr --sandbox=ui-system",
+        "build-ci-en": "gulp -v && npm run build-react-ci && gulp build --lang=en",
+        "build-ci-fr": "gulp -v && npm run build-react-ci && gulp build --lang=fr",
+        "serve": "serve fractal/build",
+        "serve-dist": "serve dist",
+        "deploy-dani": "aws s3 sync fractal/build s3://sb-designsystem.s3.vpc.ont/dani"
+    },
+    "repository": {
+        "type": "git",
+        "url": "[git@git.ssh.ontariogovernment.ca:8080]:frontend/ui-system.git"
+    },
+    "authors": [
+        {
+            "name": "Meaghan Carrieres",
+            "email": "Meaghan.Carrieres@ontario.ca"
+        },
+        {
+            "name": "Ian Ferguson",
+            "email": "Ian.Ferguson@ontario.ca"
+        },
+        {
+            "name": "Dani Shulman",
+            "email": "Dani.Shulman@ontario.ca"
+        },
+        {
+            "name": "Jenny Zhang"
+        }
+    ],
+    "license": "ISC",
+    "dependencies": {
+        "@frctl/fractal": "^1.1.7",
+        "@frctl/mandelbrot": "^1.2.0",
+        "cheerio": "^1.0.0-rc.3",
+        "child_process": "^1.0.2",
+        "del": "^5.1.0",
+        "dotenv": "^8.2.0",
+        "fs": "0.0.1-security",
+        "glob": "^7.1.6",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-cheerio": "^1.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cli": "^2.0.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-env": "^0.4.0",
+        "gulp-exec": "^4.0.0",
+        "gulp-hub": "^4.2.0",
+        "gulp-if": "^3.0.0",
+        "gulp-inject": "^5.0.5",
+        "gulp-inject-string": "^1.1.2",
+        "gulp-json-editor": "^2.5.4",
+        "gulp-rename": "^2.0.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-svgmin": "^2.2.0",
+        "gulp-svgstore": "^7.0.1",
+        "gulp-zip": "^5.0.1",
+        "moment": "^2.27.0",
+        "path": "^0.12.7",
+        "sass": "^1.25.0",
+        "svgxuse": "^1.2.6",
+        "through2": "^3.0.1",
+        "vinyl": "^2.2.0",
+        "yargs": "^15.1.0"
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": "^8"
+    }
+}

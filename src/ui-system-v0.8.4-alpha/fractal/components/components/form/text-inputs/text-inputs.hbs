@@ -1,0 +1,22 @@
+<div class="ontario-form-group">
+    <label class="ontario-label{{#if labelSize}}ontario-label--{{labelSize}}{{/if}}" for="{{id}}">
+    {{#if heading}}
+        <h1>
+            {{label~}}
+            {{~#if flag~}}
+            <span class="ontario-label__flag">({{flag.text}})</span>
+            {{/if}}
+        </h1>
+    </label>
+    {{else}}
+        {{label~}}
+        {{~#if flag~}}
+        <span class="ontario-label__flag">({{flag.text}})</span>
+        {{/if}}
+    </label>
+    {{/if}}
+    {{#if hint}}
+    <p id="{{id}}-hint" class="ontario-hint">{{hint}}</p>
+    {{/if}}
+    <input {{#if required}}required{{/if}} {{#if hint}}aria-describedby="{{id}}-hint"{{/if}} class="ontario-input{{#if width}} ontario-input--{{width}}-char-width{{/if}}" type="text" id="{{id}}">
+</div>

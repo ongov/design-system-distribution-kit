@@ -1,0 +1,39 @@
+{% import "macros/status.nunj" as status %}
+
+{% macro tree(root, current, request) %}
+    {{ leaves(root.filter('isHidden', false).items(), root, current, 2, request) }}
+{% endmacro %}
+
+{% macro leaves(items, root, current, depth, request) %}
+    {% for item in items %}
+        {% if item.isCollection or (item.isComponent and not item.isCollated and item.variants().filter('isHidden', false).size > 1) %}
+        <li class="Tree-item Tree-collection Tree-depth-{{ depth }}" data-behaviour="collection" id="tree-{{ root.name }}-collection-{{ item.handle }}" role="menuitem">
+            <a href="#" id="{{item.title}}-menu-item" class="Tree-collectionLabel" role="button" aria-controls="{{item.title}}-menu-list" data-role="toggle" aria-expanded="true">
+                <span>{{ item.label }}</span>
+            </a>
+
+            <ul id="{{item.title}}-menu-list" aria-labelledby="{{item.title}}-menu-item" class="Tree-collectionItems" data-role="items" role="region" aria-expanded="true" aria-hidden="false">
+                {% if item.isComponent and not item.isCollated %}
+                {% set items = item.variants().filter('isHidden', false).items() %}
+                {% else %}
+                {% set items = item.filter('isHidden', false).items() %}
+                {% endif %}
+                {{ leaves(items, root, current, (depth + 1), request) }}
+            </ul>
+
+        </li>
+        {% else %}
+        {% set isCurrent = true if (current and (current.id == item.id)) else false %}
+        <li class="Tree-item Tree-entity{% if isCurrent %} is-current{% endif %}"{% if isCurrent %} data-state="current"{% endif %} data-role="item">
+            <a class="Tree-entityLink" href="{{ path( (item | url), request) }}" data-pjax>
+                <span>
+                    {{ item.label }}
+                    {% if item.status %}
+                        {{ status.unlabelled(item.status) }}
+                    {% endif %}
+                </span>
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}

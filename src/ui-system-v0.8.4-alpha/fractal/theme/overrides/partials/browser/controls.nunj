@@ -1,0 +1,178 @@
+{% import "macros/image.nunj" as img %}
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs" role="tablist">
+        {% for panel in frctl.theme.get('panels') %}
+        {% if panel == 'resources' %}
+        {% for collection in entity.resources().items() %}
+        {% if collection.size %}
+        <li class="Browser-tab Browser-tab--resources{% if not collection.size %} is-disabled{% endif %}"
+            data-role="tabs" role="presentation">
+            <button data-href="#browser-{{ entity.id }}-panel-{{ collection.name }}" role="tab" id="tab-{{collection.name}}" aria-controls="browser-{{ entity.id }}-panel-{{ collection.name }}" aria-expanded="false">{{ collection.label }}</button>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endif  %}
+
+        {% if panel == 'html' %}
+        <li class="Browser-tab Browser-tab--{{ panel }}" data-role="tabs" role="presentation">
+            <button data-href="#browser-{{ entity.id }}-panel-{{ panel }}" role="tab" id="tab-{{panel}}" aria-controls="browser-{{ entity.id }}-panel-html" aria-expanded="false">HTML</button>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    // Array.from polyfill for IE
+    // Production steps of ECMA-262, Edition 6, 22.1.2.1
+    if (!Array.from) {
+        Array.from = (function () {
+            var toStr = Object.prototype.toString;
+            var isCallable = function (fn) {
+                return typeof fn === 'function' || toStr.call(fn) === '[object Function]';
+            };
+            var toInteger = function (value) {
+            var number = Number(value);
+            if (isNaN(number)) { return 0; }
+                if (number === 0 || !isFinite(number)) { return number; }
+                return (number > 0 ? 1 : -1) * Math.floor(Math.abs(number));
+            };
+            var maxSafeInteger = Math.pow(2, 53) - 1;
+            var toLength = function (value) {
+                var len = toInteger(value);
+                return Math.min(Math.max(len, 0), maxSafeInteger);
+            };
+
+            // The length property of the from method is 1.
+            return function from(arrayLike/*, mapFn, thisArg */) {
+                // 1. Let C be the this value.
+                var C = this;
+
+                // 2. Let items be ToObject(arrayLike).
+                var items = Object(arrayLike);
+
+                // 3. ReturnIfAbrupt(items).
+                if (arrayLike == null) {
+                    throw new TypeError('Array.from requires an array-like object - not null or undefined');
+                }
+
+                // 4. If mapfn is undefined, then let mapping be false.
+                var mapFn = arguments.length > 1 ? arguments[1] : void undefined;
+                var T;
+                if (typeof mapFn !== 'undefined') {
+                    // 5. else
+                    // 5. a If IsCallable(mapfn) is false, throw a TypeError exception.
+                    if (!isCallable(mapFn)) {
+                        throw new TypeError('Array.from: when provided, the second argument must be a function');
+                    }
+
+                    // 5. b. If thisArg was supplied, let T be thisArg; else let T be undefined.
+                    if (arguments.length > 2) {
+                        T = arguments[2];
+                    }
+                }
+
+                // 10. Let lenValue be Get(items, "length").
+                // 11. Let len be ToLength(lenValue).
+                var len = toLength(items.length);
+
+                // 13. If IsConstructor(C) is true, then
+                // 13. a. Let A be the result of calling the [[Construct]] internal method
+                // of C with an argument list containing the single item len.
+                // 14. a. Else, Let A be ArrayCreate(len).
+                var A = isCallable(C) ? Object(new C(len)) : new Array(len);
+
+                // 16. Let k be 0.
+                var k = 0;
+                // 17. Repeat, while k < len… (also steps a - h)
+                var kValue;
+                while (k < len) {
+                    kValue = items[k];
+                    if (mapFn) {
+                        A[k] = typeof T === 'undefined' ? mapFn(kValue, k) : mapFn.call(T, kValue, k);
+                    } else {
+                        A[k] = kValue;
+                    }
+                    k += 1;
+                }
+                // 18. Let putStatus be Put(A, "length", len, true).
+                A.length = len;
+                // 20. Return A.
+                return A;
+            };
+        }());
+    }
+
+
+    var tabs = document.querySelectorAll('[data-role="tabs"]');
+    var tabPanels = document.querySelectorAll('[data-role="tab-panel"]')
+    var activeClass = 'is-active';
+
+    var getSiblings = function (elem) {
+        // Setup siblings array and get the first sibling
+        var siblings = [];
+        var sibling = elem.parentNode.firstChild;
+
+        // Loop through each sibling and push to the array
+        while (sibling) {
+            if (sibling.nodeType === 1 && sibling !== elem) {
+                siblings.push(sibling);
+            }
+            sibling = sibling.nextSibling
+        }
+
+        return siblings;
+    };
+
+
+    function initializeTabs() {
+        Array.from(tabs).forEach(function(element) {
+            element.addEventListener('click', function() {
+                let tab = element;
+                let link = element.childNodes[1];
+                let linkHref = link.getAttribute('data-href');
+
+                // get clicked tabs siblings
+                let linkSiblings = getSiblings(tab);
+                // remove active class from each of the link siblings
+                linkSiblings.forEach(function(link) {
+                    link.classList.remove(activeClass);
+                    // set aria-expanded="false" to all sibling tabs when current one is clicked
+                    link.childNodes[1].setAttribute('aria-expanded', 'false');
+                });
+                // toggle active class for clicked tab
+                tab.classList.toggle(activeClass);
+
+                // aria labels for tab-controls
+                var ariaExpanded = link.getAttribute('aria-expanded');
+
+                ariaExpanded == 'false' ? link.setAttribute('aria-expanded', 'true') : link.setAttribute('aria-expanded', 'false');
+
+                // find tab panel with matching id to href
+                let clickedTabPanel = document.querySelectorAll(linkHref)[0];
+
+                // aria labels for tab-panels
+                var ariaHidden = clickedTabPanel.getAttribute('aria-hidden');
+
+                ariaHidden == 'true' ? clickedTabPanel.setAttribute('aria-hidden', 'false') : clickedTabPanel.setAttribute('aria-hidden', 'true');
+
+                // get matching panels siblings
+                let panelSiblings = getSiblings(clickedTabPanel);
+                // remove active class from each of the panel siblings
+                panelSiblings.forEach(function(panel) {
+                    panel.classList.remove(activeClass);
+                    // set aria-hidden="true" to all sibling tabs when current one is clicked
+                    panel.setAttribute('aria-hidden', 'true');
+
+                })
+                //toggle active class for linked panel
+                clickedTabPanel.classList.toggle(activeClass);
+            });
+
+        });
+
+    }
+
+    initializeTabs();
+</script>

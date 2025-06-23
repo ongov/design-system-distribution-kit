@@ -1,0 +1,34 @@
+<div class="ontario-form-group">
+    <fieldset class="ontario-fieldset" {{#if hint}}aria-describedby="{{id}}-hint"{{/if}}>
+        <legend class="ontario-fieldset__legend{{#if labelSize}}--{{labelSize}}{{/if}}">
+        {{#if heading}}
+            <h1>
+                {{legend~}}
+                {{~#if flag~}}
+                <span class="ontario-label__flag">({{flag.text}})</span>
+                {{/if}}
+            </h1>
+        </legend>
+        {{else}}
+            {{legend~}}
+            {{~#if flag~}}
+                <span class="ontario-label__flag">({{flag.text}})</span>
+            </legend>
+            {{/if}}
+        {{/if}}
+        {{#if hint}}
+        <p class="ontario-hint" id="{{id}}-hint">{{hint}}</p>
+        {{/if}}
+        <div class="ontario-checkboxes">
+            {{#each checkboxes}}
+            <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="{{this.id}}" name="{{this.name}}"
+                    type="checkbox" value="{{this.value}}">
+                <label class="ontario-checkboxes__label" for="{{this.id}}">
+                    {{this.label}}
+                </label>
+            </div>
+            {{/each}}
+        </div>
+    </fieldset>
+</div>

@@ -1,0 +1,68 @@
+{
+  "title": "Form",
+  "label": "Form",
+  "collated": true,
+  "status": "wip",
+  "context": {
+    "input": {
+      "id": "address",
+      "label": "Address",
+      "width": "",
+      "labelSize": "",
+      "optional": false,
+      "required": true
+    },
+    "postal": {
+      "id": "postal",
+      "label": "Postal",
+      "optional": false,
+      "required": true
+    },
+    "radio": {
+      "id": "input-radio",
+      "label": "Select your mega plan",
+      "required": true,
+      "options": [
+        {
+          "label": "Option 1 is good",
+          "name": "licence-renewal",
+          "id": "1-year-renewal",
+          "value": "1-year"
+        },
+        {
+          "label": "Option 2 is the best",
+          "name": "licence-renewal",
+          "id": "2-year-renewal",
+          "value": "2-years"
+        }
+      ]
+    },
+    "dropdown": {
+      "label": "Age",
+      "id": "your-age",
+      "required": true,
+      "options": [
+        {
+          "value": "",
+          "label": "Select"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ]
+    }
+  }
+}
