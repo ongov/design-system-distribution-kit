@@ -1,4 +1,5 @@
 @import "../../sass/variables/colours.variables";
+@import "../../components/tables/tables.scss";
 
 /*Greyscale background colours*/
 .ontario-bg-white { background-color: $ontario-colour-white; }
@@ -50,3 +51,10 @@
 .ontario-bg-dark-orange { background-color: $ontario-colour-dark-orange; }
 .ontario-bg-dark-red { background-color: $ontario-colour-dark-red; }
 .ontario-bg-dark-magenta { background-color: $ontario-colour-dark-magenta; }
+
+/*Table component colours*/
+.ontario-bg-ontario-table-row-divider { background-color: $ontario-table-row-divider };
+.ontario-bg-ontario-table-caption-backgrund { background-color: $ontario-table-caption-background};
+.ontario-bg-ontario-table-highlight { background-color: $ontario-table-highlight };
+.ontario-bg-ontario-table-subtotal { background-color: $ontario-table-subtotal };
+.ontario-bg-ontario-table-total { background-color: $ontario-table-total };

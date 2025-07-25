@@ -214,7 +214,7 @@
 
     &:before {
         background-size: 112.5rem;
-        background-position: calc(50vw - 73.5rem) - 64rem;
+        background-position: calc(50vw - 73.5rem) -64rem;
 
         @media screen and (min-width: $small-breakpoint) {
             background-size: 180rem;
@@ -265,7 +265,7 @@
 
     &:before {
         background-size: 165rem;
-        background-position: calc(50vw - 125rem) - 64rem;
+        background-position: calc(50vw - 125rem) -64rem;
 
         @media screen and (min-width: $small-breakpoint) {
             background-size: 250rem;

@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.6](#a0.12.6)
 -   [Release 0.12.5](#a0.12.5)
 -   [Release 0.12.4](#a0.12.4)
 -   [Release 0.12.3](#a0.12.3)
@@ -38,12 +39,34 @@ label: Release notes
 
 Added in this release:
 
--   Application header (code)
--   Back to top
+-   Tables
+
+Updated:
+
+-   Ontario.ca header menu behaviour
 
 ### Distribution package
 
 -   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.6"></a> 0.12.6 Release - February 25, 2022
+
+### Platform
+
+Added in this release:
+
+-   Application header (code)
+-   Back to top
+
+### Known bugs and issues
+
+-   Replaced deprecated use of `/` as a division in SASS
+
+### Distribution package
+
+-   Download: [Design System 0.12.6]({{path '../../dist/ontario-design-system-dist-0.12.6.zip'}})
 
 <hr>
 

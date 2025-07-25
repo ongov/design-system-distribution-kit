@@ -1,126 +1,139 @@
 @import "../../sass/variables-import";
+@import "../../sass/tools/focus.placeholder";
 
-.ontario-header-navigation {
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    width: 20rem;
-    height: 100vh;
-    max-height: 100%;
-    background-color: $ontario-colour-white;
-    border-left: 1px solid $ontario-greyscale-20;
-    overflow-y: auto;
-    z-index: 3;
-    transition: all 500ms ease 0s;
+$header-close-button--top-value: -4.35rem;
+
+.ontario-navigation {
+    position: absolute;
+    width: 100%;
+
+    @media screen and (min-width: $medium-breakpoint) {
+        position: relative;
+        max-width: 72rem;
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+.ontario-navigation .ontario-header-button {
     visibility: hidden;
+    position: absolute;
+    right: $spacing-4;
+    z-index: 6;
+}
 
-    @media screen and (max-width: $xsmall-breakpoint) {
-        width: 15rem;
-        right: -15rem;
-    }
-
-    @media screen and (min-width: $small-breakpoint) {
-        width: 22.5rem;
-        right: -22.5rem;
-    }
+.ontario-navigation__container {
+    background: white;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out, visibility 0.1s ease;
+    width: 100%;
+    visibility: hidden;
+    z-index: 4;
 
     @media screen and (min-width: $medium-breakpoint) {
-        width: 25rem;
-        right: -25rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        display: none;
+        position: absolute;
+        right: $spacing-4;
+        top: calc(100% - #{$spacing-2});
+        transition: none;
+        min-width: 290px;
+        max-width: 30%;
+        z-index: 5;
     }
 }
 
-.ontario-header-navigation--is-ready[aria-hidden="false"] {
-    box-shadow: -8px 0px 24px 0px rgba(0, 0, 0, 0.4);
-    right: 0;
-    overflow: hidden;
+.ontario-header + .ontario-navigation .ontario-header-button {
+    top: $header-close-button--top-value;
 }
 
-.ontario-header-navigation__banner {
-    background-color: $ontario-colour-black;
-    color: $ontario-colour-white;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    font-size: 2rem;
-    padding: $spacing-4;
+.ontario-application-header
+    + .ontario-application-subheader-menu__container
+    .ontario-header-button {
+    top: calc(-#{$spacing-9} + -#{$spacing-1});
 }
 
-.ontario-header-navigation__close-menu-button {
-    border-radius: 4px;
-
-    min-width: $spacing-7;
-    margin: $spacing-0;
-    padding-left: $spacing-1;
-    padding-right: $spacing-1;
-
-    svg {
-        font-size: 2rem;
-        width: $spacing-7;
-        height: $spacing-7;
-        margin: $spacing-0;
-    }
-
-    &:focus {
-        outline: none;
-        box-shadow: 0 0 0 4px #009adb;
-        background-color: $ontario-colour-black;
-    }
-}
-
-.ontario-header-navigation__menu-list {
-    margin: $spacing-0;
-    padding: $spacing-2 0;
-    width: 20rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: calc(100vh - 80px);
-
-    @media screen and (max-width: $xsmall-breakpoint) {
-        width: 15rem;
-    }
-
-    @media screen and (min-width: $small-breakpoint) {
-        width: 22.5rem;
-    }
+.ontario-navigation.ontario-navigation--open .ontario-navigation__container {
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
 
     @media screen and (min-width: $medium-breakpoint) {
-        width: 25rem;
+        transition: none;
+        display: block;
     }
 }
 
-.ontario-header-navigation__menu-item {
-    font-size: 1.125rem;
-    list-style-type: none;
-    padding: $spacing-1;
+.ontario-navigation ul {
+    list-style: none;
+    padding: $spacing-2 $spacing-0;
+    margin: $spacing-0;
+    border-bottom: 1px solid $ontario-greyscale-20;
+
+    @media screen and (min-width: $medium-breakpoint) {
+        border-bottom: none;
+    }
 }
 
-.ontario-header-navigation__menu-item a {
-    display: block;
-    padding: $spacing-2 $spacing-6 $spacing-2;
+.ontario-navigation li {
+    border-top: 1px solid $ontario-greyscale-20;
+    padding: $spacing-0;
+
+    &:last-of-type {
+        border-bottom: 1px solid $ontario-greyscale-20;
+    }
+}
+
+.ontario-navigation a {
     color: $ontario-colour-black;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
     text-decoration: none;
+    padding: calc(#{$spacing-3} - (#{$spacing-1} / 3.25)) $spacing-5;
 
     &:hover {
         text-decoration: underline;
-        background-color: $ontario-greyscale-5;
+        background-color: darken($ontario-greyscale-5, 5);
+    }
+
+    &:active {
+        text-decoration: underline;
+        background-color: $ontario-greyscale-20;
     }
 
     &:focus,
     &:active {
+        @extend %ontario-focus;
+        box-shadow: 0 0 0 4px $ontario-colour-focus inset;
+    }
+
+    &.ontario-link--active {
+        border-left: 6px solid $ontario-colour-black;
         background-color: $ontario-greyscale-5;
+    }
+
+    @media screen and (max-width: $medium-breakpoint) {
+        padding: calc(#{$spacing-3} - (#{$spacing-1} / 3.25)) $spacing-6;
     }
 }
 
-.ontario-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    width: $full-width;
-    height: 100%;
-    z-index: 2;
+.ontario-navigation .ontario-header-button {
+    background-color: $ontario-greyscale-70;
+
+    .ontario-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: $spacing-0;
+    }
+
+    &:hover {
+        background-color: $ontario-greyscale-60;
+    }
+
+    &:active {
+        background-color: $ontario-colour-black;
+    }
 }

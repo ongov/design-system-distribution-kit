@@ -15,14 +15,12 @@ function removeA11y(element) {
     element.removeAttribute("aria-hidden");
 }
 
-function addA11yVisiblity(element, type) {
-    if (type === "ontario-header") element.style.visibility = "visible";
+function addA11yVisibility(element) {
     element.setAttribute("aria-hidden", false);
     element.setAttribute("tabindex", -1);
 }
 
-function removeA11yVisiblity(element, type) {
-    if (type === "ontario-header") element.style.visibility = "hidden";
+function removeA11yVisibility(element) {
     element.setAttribute("aria-hidden", true);
     element.removeAttribute("tabindex");
 }

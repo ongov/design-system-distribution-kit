@@ -1,7 +1,4 @@
 @import "../../../sass/variables-import";
-@import "../../../sass/tools/focus.placeholder";
-
-$application-header-nav-link--hover: #e5e5e5;
 
 .ontario-header.ontario-application-header {
     height: 3.125rem;
@@ -53,8 +50,7 @@ $application-header-nav-link--hover: #e5e5e5;
     visibility: visible;
 }
 
-.ontario-application-subheader .ontario-header-button,
-.ontario-application-navigation .ontario-header-button {
+.ontario-application-subheader .ontario-header-button {
     background-color: $ontario-greyscale-70;
 
     .ontario-icon {
@@ -135,115 +131,7 @@ $application-header-nav-link--hover: #e5e5e5;
     }
 }
 
-.ontario-application-navigation {
-    position: absolute;
-    width: 100%;
-
-    @media screen and (min-width: $medium-breakpoint) {
-        position: relative;
-        max-width: 72rem;
-        width: auto;
-        margin: 0 auto;
-    }
-}
-
-.ontario-application-navigation .ontario-header-button {
-    visibility: hidden;
-    position: absolute;
-    top: calc(-#{$spacing-9} + -#{$spacing-1});
-    right: $spacing-4;
-    z-index: 6;
-}
-
-.ontario-application-navigation__container {
-    background: white;
-    position: absolute;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out, visibility 0.1s ease;
-    width: 100%;
-    visibility: hidden;
-    z-index: 4;
-
-    @media screen and (min-width: $medium-breakpoint) {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        border-radius: 4px;
-        display: none;
-        position: absolute;
-        right: $spacing-4;
-        top: calc(100% - #{$spacing-2});
-        transition: none;
-        min-width: 290px;
-        max-width: 30%;
-        z-index: 3;
-    }
-}
-
-.ontario-application-navigation.ontario-navigation--open
-    .ontario-application-navigation__container {
-    visibility: visible;
-    transform: translateY(0);
-    transition: transform 0.4s ease-in-out;
-
-    @media screen and (min-width: $medium-breakpoint) {
-        transition: none;
-        display: block;
-    }
-}
-
-.ontario-application-navigation ul {
-    list-style: none;
-    padding: $spacing-2 $spacing-0;
-    margin: $spacing-0;
-    border-bottom: 1px solid $ontario-greyscale-20;
-
-    @media screen and (min-width: $medium-breakpoint) {
-        border-bottom: none;
-    }
-}
-
-.ontario-application-navigation li {
-    border-top: 1px solid $ontario-greyscale-20;
-    padding: $spacing-0;
-
-    &:last-of-type {
-        border-bottom: 1px solid $ontario-greyscale-20;
-    }
-}
-
-.ontario-application-navigation a {
-    color: $ontario-colour-black;
-    display: block;
-    font-weight: 600;
-    text-decoration: none;
-    padding: $spacing-3 $spacing-5;
-
-    &:hover {
-        text-decoration: underline;
-        background-color: $application-header-nav-link--hover;
-    }
-
-    &:active {
-        text-decoration: underline;
-        background-color: $ontario-greyscale-20;
-    }
-
-    &:focus,
-    &:active {
-        @extend %ontario-focus;
-        box-shadow: 0 0 0 4px $ontario-colour-focus inset;
-    }
-
-    &.ontario-link--active {
-        border-left: 6px solid $ontario-colour-black;
-        background-color: $ontario-greyscale-5;
-    }
-
-    @media screen and (max-width: $medium-breakpoint) {
-        padding: $spacing-3 $spacing-6;
-    }
-}
-
-.ontario-application-overlay {
+.ontario-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -254,8 +142,8 @@ $application-header-nav-link--hover: #e5e5e5;
     z-index: 2;
 }
 
-.ontario-application-navigation--open {
-    .ontario-application-navigation .ontario-header-button {
+.ontario-navigation--open {
+    .ontario-navigation .ontario-header-button {
         visibility: visible;
     }
 
@@ -270,7 +158,7 @@ $application-header-nav-link--hover: #e5e5e5;
         }
     }
 
-    .ontario-application-overlay {
+    .ontario-overlay {
         display: block;
 
         @media screen and (min-width: $medium-breakpoint) {

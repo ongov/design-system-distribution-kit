@@ -57,7 +57,6 @@ $mobile-icon-margin: 0;
     .ontario-icon {
         width: rem-calc(32);
         height: rem-calc(32);
-        margin: $default-icon-margin-top $default-icon-margin-right $default-icon-margin-bottom $default-icon-margin-left;
     }
 
     &:hover {
@@ -91,7 +90,6 @@ $mobile-icon-margin: 0;
         .ontario-icon {
             width: rem-calc(32);
             height: rem-calc(32);
-            margin: $tablet-icon-margin-top $tablet-icon-margin-right $tablet-icon-margin-bottom $tablet-icon-margin-left;
         }
     }
 
