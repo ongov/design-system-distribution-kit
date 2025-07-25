@@ -13,7 +13,7 @@
   font-size: 1.125rem;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  line-height: calc(14/9);
+  line-height: calc(14 / 9);
   margin: 0 calc(1rem + 0.75rem) 1.5rem 0;
   min-width: 10rem;
   padding: 0.625rem 1.5rem;

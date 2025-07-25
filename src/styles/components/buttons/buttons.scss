@@ -16,7 +16,7 @@ $ontario-button-bg-secondary: $ontario-colour-white;
     font-size: 1.125rem;
     font-family: $ontario-font-open-sans;
     font-weight: 600;
-    line-height: calc(14/9);
+    line-height: calc(14 / 9);
     margin: $spacing-0 calc(#{$spacing-4} + #{$spacing-3}) $spacing-5 $spacing-0;
     min-width: 10rem;
     padding: math.div($spacing-4 + $spacing-1, 2) $spacing-5;
@@ -35,10 +35,9 @@ $ontario-button-bg-secondary: $ontario-colour-white;
         width: $full-width;
     }
 
-    .ontario-icon{
+    .ontario-icon {
         margin-right: 4px;
     }
-
 }
 
 .ontario-button--primary {
@@ -53,7 +52,7 @@ $ontario-button-bg-secondary: $ontario-colour-white;
     &:focus {
         background-color: $ontario-button-bg-primary--hover;
         color: $ontario-colour-white;
-        transition: background-color .2s ease-out, $ontario-focus-transition;
+        transition: background-color 0.2s ease-out, $ontario-focus-transition;
     }
 
     &:active {
@@ -84,7 +83,7 @@ $ontario-button-bg-secondary: $ontario-colour-white;
         background-color: $ontario-colour-button-secondary--hover;
         border-color: $ontario-colour-link--hover;
         color: $ontario-colour-link--hover;
-        transition: background-color .2s ease-out, $ontario-focus-transition;
+        transition: background-color 0.2s ease-out, $ontario-focus-transition;
     }
 
     &:active {
@@ -97,7 +96,6 @@ $ontario-button-bg-secondary: $ontario-colour-white;
     &:visited {
         color: $ontario-colour-link;
     }
-
 }
 
 .ontario-button--tertiary {
@@ -115,7 +113,7 @@ $ontario-button-bg-secondary: $ontario-colour-white;
         background-color: $ontario-colour-button-tertiary--hover;
         color: $ontario-colour-link--hover;
         text-decoration: underline;
-        transition: background-color .2s ease-out, $ontario-focus-transition;
+        transition: background-color 0.2s ease-out, $ontario-focus-transition;
     }
 
     &:active {
@@ -128,7 +126,4 @@ $ontario-button-bg-secondary: $ontario-colour-white;
     &:visited {
         color: $ontario-colour-link;
     }
-
-
-
 }

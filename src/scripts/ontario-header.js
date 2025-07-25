@@ -44,7 +44,7 @@ function deferInFn(fn) {
         body.classList.add(mobileMenuActiveClass);
         header.parentNode.classList.add(isActiveClass);
         navpanel.scrollTop = 0;
-        addA11yVisiblity(navpanel);
+        addA11yVisiblity(navpanel, "ontario-header");
         focusUser({ element: navpanel, callbackOnEscape: hideNavPanel });
         deferInFn(unbindOpenBttnToggler);
 
@@ -60,7 +60,7 @@ function deferInFn(fn) {
 
         body.classList.remove(mobileMenuActiveClass);
         header.parentNode.classList.remove(isActiveClass);
-        removeA11yVisiblity(navpanelDomEl);
+        removeA11yVisiblity(navpanelDomEl, "ontario-header");
 
         // unbind clickables: document, closebttn
         unbindCloseBttnToggler();

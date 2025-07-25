@@ -1,6 +1,12 @@
 @use "sass:math";
-@import "../../sass/variables-import";
-@import "../../sass/tools/focus.placeholder";
+@import "../../../sass/variables-import";
+@import "../../../sass/tools/focus.placeholder";
+
+$ontario-search-input-padding: 7.2rem;
+$ontario-search-input-padding--mobile: 6.4rem;
+
+$ontario-header-logo-width: 180px;
+$ontario-header-logo-width--mobile: 45px;
 
 .ontario-header {
     position: relative;
@@ -24,7 +30,7 @@
 }
 
 .ontario-header__logo-container {
-    height: 46px;
+    height: $ontario-logo-height;
 }
 
 .ontario-header__logo-container a {
@@ -33,6 +39,18 @@
 
     &:focus {
         box-shadow: 0 0 0 $global-radius $ontario-colour-focus;
+    }
+}
+
+.ontario-header__logo-container {
+    img {
+        width: $ontario-header-logo-width--mobile;
+        height: $ontario-logo-height;
+
+        @media screen and (min-width: $small-breakpoint) {
+            width: $ontario-header-logo-width;
+            height: $ontario-logo-height;
+        }
     }
 }
 
@@ -53,9 +71,9 @@
 .ontario-header__search-input.ontario-input {
     border-width: 0;
     margin-bottom: $spacing-0;
-    height: 48px;
+    height: $standard-input-height;
     padding-left: $spacing-3;
-    padding-right: 7.2rem;
+    padding-right: $ontario-search-input-padding;
 
     &:invalid + input[type="reset"] {
         display: none;
@@ -93,7 +111,7 @@
 
     @media screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
         padding-left: $spacing-4;
-        padding-right: 6.4rem;
+        padding-right: $ontario-search-input-padding--mobile;
     }
 }
 
@@ -191,7 +209,7 @@ input[type="reset"].ontario-header__search-reset {
     font-size: 1.125rem;
     font-weight: 600;
     font-family: $ontario-font-open-sans;
-    height: 48px;
+    height: $standard-input-height;
     line-height: math.div(14, 9);
     text-align: center;
     text-decoration: none;
@@ -237,6 +255,10 @@ input[type="reset"].ontario-header__search-reset {
     &:focus {
         background-color: $ontario-greyscale-70;
     }
+
+    @media screen and (max-width: $xsmall-breakpoint) {
+        padding: calc(#{$spacing-3} / 2);
+    }
 }
 
 .ontario-header-button--without-outline {
@@ -262,10 +284,7 @@ input[type="reset"].ontario-header__search-reset {
     }
 
     svg {
-        width: 2rem;
-        height: 2rem;
         margin-right: 6px;
-        margin-bottom: 0;
 
         @media screen and (max-width: $xsmall-breakpoint) {
             margin-right: 0;
@@ -325,7 +344,7 @@ input[type="reset"].ontario-header__search-reset {
     @media screen and (min-width: $small-breakpoint) {
         flex-direction: row;
         padding: $spacing-1 $spacing-2 $spacing-1 $spacing-4;
-        height: 48px;
+        height: $standard-input-height;
 
         span {
             top: 0;

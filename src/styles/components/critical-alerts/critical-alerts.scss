@@ -5,6 +5,8 @@
     font-weight: 400;
     margin: $spacing-0;
     padding: $spacing-4 0;
+    position: relative;
+    z-index: 5;
 }
 
 .ontario-critical-alert__body {
@@ -40,4 +42,3 @@
         color: $ontario-colour-black;
     }
 }
-

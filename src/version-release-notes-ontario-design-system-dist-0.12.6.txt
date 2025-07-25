@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.5](#a0.12.5)
 -   [Release 0.12.4](#a0.12.4)
 -   [Release 0.12.3](#a0.12.3)
 -   [Release 0.12.2](#a0.12.2)
@@ -33,6 +34,21 @@ label: Release notes
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release - {{{ _config.project.releaseDate }}}
 
+### Elements
+
+Added in this release:
+
+-   Application header (code)
+-   Back to top
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.5"></a> 0.12.5 Release - January 13, 2022
+
 ### Platform
 
 -   Updated prototyping kit information and instructions for designers
@@ -43,7 +59,7 @@ label: Release notes
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 0.12.5]({{path '../../dist/ontario-design-system-dist-0.12.5.zip'}})
 
 <hr>
 

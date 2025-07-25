@@ -3,6 +3,8 @@
   font-weight: 400;
   margin: 0;
   padding: 1rem 0;
+  position: relative;
+  z-index: 5;
 }
 
 .ontario-critical-alert__body {
