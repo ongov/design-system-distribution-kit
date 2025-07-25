@@ -8,11 +8,41 @@ function handleSearch() {
 	console.log('Searching...');
 }
 
+/**
+ * Add a click listener to the search reset button to clear and focus the search input.
+ *
+ * @param {string} searchResetButtonId Id of the search reset button
+ * @param {string} searchInputId Id of the search input
+ */
 function addSearchResetOnClickListener(searchResetButtonId, searchInputId) {
 	document.getElementById(searchResetButtonId).addEventListener('click', () => {
-		document.getElementById(searchInputId).focus();
+		const searchInput = document.getElementById(searchInputId);
+		if (searchInput) {
+			// Reset the search box contents
+			const searchResetButton = document.getElementById(searchResetButtonId);
+			searchInput.value = '';
+			searchResetButton.style.display = 'none';
+
+			// Focus the search box
+			searchInput.focus();
+		}
 	});
 }
 
-addSearchResetOnClickListener('search-example-1-reset-button', 'search-example-1');
-addSearchResetOnClickListener('search-example-2-reset-button', 'search-example-2');
+/**
+ * Add an input event listener to the search input to show/hide the search reset button.
+ *
+ * @param {string} searchInputId Id of the search input
+ * @param {string} searchResetButtonId Id of the search reset button
+ */
+function addResetButtonOnSearchInputListener(searchResetButtonId, searchInputId) {
+	const resetButton = document.getElementById(searchResetButtonId);
+	const searchInput = document.getElementById(searchInputId);
+	document.getElementById(searchInputId)?.addEventListener('input', function () {
+		if (searchInput.value !== '') {
+			resetButton.style.display = 'block';
+		} else {
+			resetButton.style.display = 'none';
+		}
+	});
+}

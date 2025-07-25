@@ -22,7 +22,10 @@
 </form>
 
 <script>
-    addSearchResetOnClickListener('search-example-1-reset-button', 'search-example-1');
+    window.addEventListener('load', () => {
+        addSearchResetOnClickListener('search-example-1-reset-button', 'search-example-1');
+        addResetButtonOnSearchInputListener('search-example-1-reset-button', 'search-example-1');
+    });
 </script>
 </dd><!-- End: @search-box--default -->
 
@@ -49,7 +52,10 @@
 </form>
 
 <script>
-    addSearchResetOnClickListener('search-example-2-reset-button', 'search-example-1');
+    window.addEventListener('load', () => {
+        addSearchResetOnClickListener('search-example-2-reset-button', 'search-example-2');
+        addResetButtonOnSearchInputListener('search-example-2-reset-button', 'search-example-2');
+    });
 </script>
 </dd><!-- End: @search-box--example-with-hint-text -->
 

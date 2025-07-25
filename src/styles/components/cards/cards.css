@@ -89,7 +89,7 @@
 .ontario-card {
   box-shadow: 0rem 0.1875rem 0.5rem 0.0625rem rgba(0, 0, 0, 0.4);
   border-radius: 4px;
-  margin: 0 2.5rem 2.5rem 0;
+  margin: 0 2rem 2rem 0;
   max-width: 50%;
   padding: 0;
   list-style-type: none;
@@ -116,7 +116,7 @@
   margin-right: 0;
 }
 .ontario-card--cards-per-row-3 .ontario-card {
-  width: calc(33.3% - 1.75rem);
+  width: calc(33.3333% - 1.75rem);
 }
 .ontario-card--cards-per-row-3 .ontario-card:nth-child(3n) {
   margin-right: 0;
@@ -137,7 +137,7 @@
 }
 @media screen and (max-width: 40em) {
   .ontario-card {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     width: 100% !important;
     max-width: 100%;
   }
@@ -180,6 +180,7 @@
   transition: -webkit-text-decoration 0.3s ease-in-out;
   transition: text-decoration 0.3s ease-in-out;
   transition: text-decoration 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
+  background-color: #FFFFFF;
 }
 .ontario-card:hover .ontario-card__heading {
   -webkit-text-decoration-line: underline;
@@ -204,9 +205,6 @@
           text-decoration-line: underline;
   -webkit-text-decoration-color: #FFFFFF;
           text-decoration-color: #FFFFFF;
-}
-.ontario-card--image-true .ontario-card__heading {
-  border-radius: 0;
 }
 .ontario-card--no-description .ontario-card__heading {
   padding: 1rem 1.5rem;
@@ -255,6 +253,9 @@
 .ontario-card__description {
   margin: 0;
   padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .ontario-card__description p:last-of-type {
   margin-bottom: 0;

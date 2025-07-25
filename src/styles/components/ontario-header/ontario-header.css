@@ -427,3 +427,7 @@ input[type=reset].ontario-header__search-reset:focus {
 .ontario-navigation--open .ontario-navigation .ontario-header-button {
   visibility: visible;
 }
+
+#ontario-search-reset {
+  display: none;
+}
