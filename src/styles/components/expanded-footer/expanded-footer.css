@@ -40,25 +40,6 @@
   }
 }
 
-.ontario-footer__links-container--two-column-list {
-  -webkit-column-count: 1;
-     -moz-column-count: 1;
-          column-count: 1;
-  display: block;
-  margin: 0;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__links-container--two-column-list {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-  }
-  .ontario-footer__links-container--two-column-list .ontario-footer__link {
-    padding: 0;
-    margin: 0 1rem 1rem 0;
-  }
-}
-
 .ontario-footer__links-container li {
   padding: 0.25rem 0;
 }
@@ -83,8 +64,58 @@
   }
 }
 
-.ontario-footer__copyright a {
+.ontario-footer p {
+  max-width: 48rem;
+  width: 100%;
+}
+.ontario-footer p a {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.ontario-footer p a:visited {
+  color: #FFFFFF;
+}
+.ontario-footer p a:active {
+  color: #e6e6e6;
+}
+.ontario-footer p a:focus, .ontario-footer p a:hover {
+  text-decoration: none;
+}
+
+/* Supergraphic background */
+.ontario-footer--default,
+.ontario-footer__expanded-top-section {
+  position: relative;
+}
+.ontario-footer--default:before,
+.ontario-footer__expanded-top-section:before {
+  background-color: #333333;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ontario-footer__links-container--two-column-list {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+  display: block;
   margin: 0;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__links-container--two-column-list {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+  .ontario-footer__links-container--two-column-list .ontario-footer__link {
+    padding: 0;
+    margin: 0 1rem 1rem 0;
+  }
 }
 
 .ontario-footer__links-container--social {
@@ -130,29 +161,6 @@
   }
 }
 
-.ontario-footer p {
-  max-width: 48rem;
-  width: 100%;
-}
-.ontario-footer p a {
-  color: #FFFFFF;
-  font-weight: 600;
-}
-.ontario-footer p a:visited {
-  color: #FFFFFF;
-}
-.ontario-footer p a:active {
-  color: #e6e6e6;
-}
-.ontario-footer p a:focus, .ontario-footer p a:hover {
-  text-decoration: none;
-}
-
-.ontario-footer__ministry-logo {
-  width: 100%;
-  max-width: 255px;
-}
-
 .ontario-button.ontario-footer__button {
   background-color: #1a1a1a;
   border: 2px solid #FFFFFF;
@@ -167,83 +175,15 @@
   background-color: #666666;
 }
 
-/* Supergraphic background */
-.ontario-footer--default,
-.ontario-footer--partnernship,
-.ontario-footer__expanded-top-section {
-  position: relative;
-}
-.ontario-footer--default:before,
-.ontario-footer--partnernship:before,
-.ontario-footer__expanded-top-section:before {
-  background-color: #333333;
-  background-repeat: no-repeat;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.ontario-footer--default:before {
-  background-image: url("../logos/footer-default-supergraphic-logo.svg");
+.ontario-footer__button + .ontario-footer__links-container {
+  margin-top: 1.5rem;
 }
 
 .ontario-footer__expanded-top-section:before {
   background-image: url("../logos/footer-expanded-supergraphic-logo.svg");
 }
 
-/* Default footer */
-.ontario-footer--default {
-  background-color: #1a1a1a;
-  border-bottom: 4px solid #4d4d4d;
-}
-.ontario-footer--default:before {
-  background-size: 112.5rem;
-  background-position: calc(50vw - 73.5rem) -64rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer--default:before {
-    background-size: 180rem;
-    background-position: calc(50vw - 120rem) -106rem;
-  }
-}
-@media screen and (min-width: 73em) {
-  .ontario-footer--default:before {
-    background-size: 275rem;
-    background-position: calc(50vw - 187rem) -160rem;
-  }
-}
-
-/* Partnership footer */
-.ontario-footer--partnership {
-  background-color: #1a1a1a;
-}
-
-.ontario-footer__partnership-logo-container {
-  text-align: right;
-}
-@media screen and (max-width: 40em) {
-  .ontario-footer__partnership-logo-container {
-    text-align: left;
-  }
-}
-
-.ontario-footer__ontario-logo {
-  display: inline-block;
-  height: 46px;
-  margin-bottom: 1.5rem;
-  margin-top: 0;
-}
-@media screen and (min-width: 73em) {
-  .ontario-footer__ontario-logo {
-    margin-top: -5px;
-  }
-}
-
-/* expanded footer */
-.ontario-footer--expanded {
+.ontario-footer.ontario-footer--expanded {
   padding-top: 0;
   background-color: #1a1a1a;
   border-bottom: 4px solid #4d4d4d;

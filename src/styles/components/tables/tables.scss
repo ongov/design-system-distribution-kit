@@ -84,21 +84,21 @@ caption {
 }
 
 table {
-	border-collapse: collapse;
-	font-size: $ontario-remcalc-17px;
-	display: table;
-	line-height: rem-calc(26);
-	font-weight: normal;
-	padding: $ontario-remcalc-40px;
+    border-collapse: collapse;
+    font-size: $ontario-remcalc-17px;
+    display: table;
+    line-height: rem-calc(26);
+    font-weight: normal;
+    margin: 0 0 $ontario-remcalc-40px;
 
-	&.ontario-table--full-container-width {
-		display: table;
-		width: 100% !important;
-	}
+    &.ontario-table--full-container-width {
+        display: table;
+        width: 100% !important;
+    }
 
-	@media screen and (max-width: $small-breakpoint) {
-		font-size: $ontario-remcalc-16px;
-	}
+    @media screen and (max-width: $small-breakpoint) {
+        font-size: $ontario-remcalc-16px;
+    }
 }
 
 table.ontario-table--condensed {
@@ -317,7 +317,11 @@ td {
 
 	img {
 		vertical-align: top;
+		@media screen and (max-width: $small-breakpoint) {
+            max-width: none !important;
+        }
 	}
+	
 }
 
 td.ontario-table-cell--numeric {

@@ -47,7 +47,7 @@
 		<div class="ontario-column ontario-small-12">
 		<!-- inject:menu:html -->
 		<div id="main-header">
-            <span>Release 0.12.10</span>
+            <span>Release 0.12.11</span>
             <h1><a href="https://designsystem.ontario.ca/" title="Ontario Design System Examples">Ontario Design System Examples</a></h1>
             <p class="ontario-lead-statement">To preview this page you may use the <a href=https://www.npmjs.com/package/serve>Serve</a> command`serve dist`</p><ul>
 <li><a href='#Colours'>Colours</a></li>
@@ -131,7 +131,16 @@
 <li><a href='#Tables'>Tables</a></li>
 
 		
-<li><a href='#Footers'>Footers</a></li>
+<li><a href='#Simple-footer'>Simple footer</a></li>
+
+		
+<li><a href='#Expanded-footer'>Expanded footer</a></li>
+
+		
+<li><a href='#Application-header'>Application header</a></li>
+
+		
+<li><a href='#Ontario-header'>Ontario header</a></li>
 
 		
 <li><a href='#Step-indicator'>Step indicator</a></li>
@@ -622,7 +631,49 @@ Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
     <script src="../../scripts/ontario-expand-collapse.js"></script>
 </dd><!-- End: @hint-text--hint-expander -->
 
-<dt class="fractal-dt ontario-padding-bottom-24-!">Hint expander with checkboxes</dt><!-- Start: @hint-text--hint-expander-with-checkboxes --><dd>
+<dt class="fractal-dt ontario-padding-bottom-24-!">Hint expander for a group of selection items</dt><!-- Start: @hint-text--hint-expander-with-radios --><dd>
+<div class="ontario-form-group">
+        <fieldset class="ontario-fieldset">
+            <legend class="ontario-fieldset__legend">
+                Do you have a legal issue?<span class="ontario-label__flag">(required/optional)</span>
+            </legend>
+            <div class="ontario-radios">
+                <div class="ontario-radios__item">
+                    <input class="ontario-radios__input" id="radio-button-option-1" name="radio-buttons" type="radio" value="option-1">
+                    <label class="ontario-label ontario-radios__label" for="radio-button-option-1">
+                        Yes
+                    </label>
+                </div>
+                <div class="ontario-radios__item">
+                    <input class="ontario-radios__input" id="radio-button-option-2" name="radio-buttons" type="radio" value="option-2">
+                    <label class="ontario-label ontario-radios__label" for="radio-button-option-2">
+                        No
+                    </label>
+                </div>
+                <div class="ontario-hint-expander__container">
+                    <button class="ontario-hint-expander__button" id="hint-expander-button-id-3" aria-controls="hint-expander-content-3" aria-expanded="false" data-toggle="ontario-collapse">
+                        <span class="ontario-hint-expander__button-icon--close"><svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-up"></use></svg></span>
+                        <span class="ontario-hint-expander__button-icon--open"><svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-down"></use></svg></span>
+                        What are some examples of legal issues?
+                    </button>
+                    <div class="ontario-hint-expander__content" id="hint-expander-content-3" aria-labelledby="hint-expander-button-id-3" aria-hidden="true" data-toggle="ontario-expander-content">
+                        <p>Legal issues may include:</p>
+                        <ul>
+                            <li>Criminal matters</li>
+                            <li>Family law issues like divorce, child custody or support</li>
+                            <li>Immigration and refugee matters</li>
+                            <li>Civil claims, including ones made in small claims court</li>
+                            <li>Issues before a tribunal or board, including landlord/tenant issues</li>
+                            <li>Social assistance review</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</dd><!-- End: @hint-text--hint-expander-with-radios -->
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">Hint expander for an individual selection item</dt><!-- Start: @hint-text--hint-expander-with-checkboxes --><dd>
 <fieldset class="ontario-fieldset">
         <legend class="ontario-fieldset__legend">
             Do you have children?<span class="ontario-label__flag">(required/optional)</span>
@@ -672,48 +723,6 @@ Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
         </div>
     </fieldset>
 </dd><!-- End: @hint-text--hint-expander-with-checkboxes -->
-
-<dt class="fractal-dt ontario-padding-bottom-24-!">Hint expander with radios</dt><!-- Start: @hint-text--hint-expander-with-radios --><dd>
-<div class="ontario-form-group">
-        <fieldset class="ontario-fieldset">
-            <legend class="ontario-fieldset__legend">
-                Do you have a legal issue?<span class="ontario-label__flag">(required/optional)</span>
-            </legend>
-            <div class="ontario-radios">
-                <div class="ontario-radios__item">
-                    <input class="ontario-radios__input" id="radio-button-option-1" name="radio-buttons" type="radio" value="option-1">
-                    <label class="ontario-label ontario-radios__label" for="radio-button-option-1">
-                        Yes
-                    </label>
-                </div>
-                <div class="ontario-radios__item">
-                    <input class="ontario-radios__input" id="radio-button-option-2" name="radio-buttons" type="radio" value="option-2">
-                    <label class="ontario-label ontario-radios__label" for="radio-button-option-2">
-                        No
-                    </label>
-                </div>
-                <div class="ontario-hint-expander__container">
-                    <button class="ontario-hint-expander__button" id="hint-expander-button-id-3" aria-controls="hint-expander-content-3" aria-expanded="false" data-toggle="ontario-collapse">
-                        <span class="ontario-hint-expander__button-icon--close"><svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-up"></use></svg></span>
-                        <span class="ontario-hint-expander__button-icon--open"><svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-down"></use></svg></span>
-                        What are some examples of legal issues?
-                    </button>
-                    <div class="ontario-hint-expander__content" id="hint-expander-content-3" aria-labelledby="hint-expander-button-id-3" aria-hidden="true" data-toggle="ontario-expander-content">
-                        <p>Legal issues may include:</p>
-                        <ul>
-                            <li>Criminal matters</li>
-                            <li>Family law issues like divorce, child custody or support</li>
-                            <li>Immigration and refugee matters</li>
-                            <li>Civil claims, including ones made in small claims court</li>
-                            <li>Issues before a tribunal or board, including landlord/tenant issues</li>
-                            <li>Social assistance review</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-    </div>
-</dd><!-- End: @hint-text--hint-expander-with-radios -->
 
 
 		<hr><h2 id=Labels--default>Labels default</h2>
@@ -1083,22 +1092,22 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                                 Votes/Programs
                             </th>
                             <th scope="col" class="ontario-table-cell--numeric">
-                                Estimates 2020-21 $
+                                Estimates 2020-21&nbsp;$
                             </th>
                             <th scope="col" class="ontario-table-cell--numeric">
-                                Change from estimates 2019-20 $
+                                Change from estimates 2019-20&nbsp;$
                             </th>
                             <th scope="col" class="ontario-table-cell--numeric">
                                 Change from estimates 2019-20 %
                             </th>
                             <th scope="col" class="ontario-table-cell--numeric">
-                                Estimates 2019-20 $
+                                Estimates 2019-20&nbsp;$
                             </th>
                             <th scope="col" class="ontario-table-cell--numeric">
-                                Interim actuals 2019-20 $
+                                Interim actuals 2019-20&nbsp;$
                             </th>
                             <th scope="col" class="ontario-table-cell--numeric">
-                                Actuals 2018-19 $
+                                Actuals 2018-19&nbsp;$
                             </th>
                     </tr>             
                 </thead>
@@ -1365,7 +1374,589 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 </dd><!-- End: @tables-- -->
 
 
-		<hr><h2 id=Footers>Footers</h2><iframe src='./html-samples/footers.html' width='1100' height='1000'></iframe>'
+		<hr><h2 id=Simple-footer>Simple footer</h2>
+
+<footer class='ontario-footer ontario-footer--default'>
+	<div class='ontario-row'>
+		<div class='ontario-columns ontario-small-12'>
+			<ul class='ontario-footer__links-container ontario-footer__links-container--inline'>
+				<li><a class='ontario-footer__link' href='https://www.ontario.ca/page/accessibility'>Accessibility</a></li>
+				<li><a class='ontario-footer__link' href='https://www.ontario.ca/page/privacy-statement'>Privacy</a></li>
+				<li><a class='ontario-footer__link' href='#'>Contact us</a></li>
+			</ul>
+			<div class='ontario-footer__copyright'>
+				<a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario'>&copy;
+					Queen’s Printer for Ontario,
+					<span class='ontario-nbsp'>2012&ndash;22</span></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+		<hr><h2 id=Expanded-footer>Expanded footer</h2>
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">Two column expanded footer</dt><!-- Start: @expanded-footer--default --><dd>
+<footer class='ontario-footer ontario-footer--expanded'>
+	<div class='ontario-footer__expanded-top-section'>
+		<div class='ontario-row'>
+			<div
+				class='ontario-columns ontario-small-12 ontario-medium-6'
+			>
+                <h2 class='ontario-h4'>Ontario Design System</h2>
+				<p>The Ontario Design System provides principles, guidance and code to help teams design and build accessible, mobile-friendly government websites and digital services.</p>
+                    <h3 class='ontario-h5'>Latest release:</h3>
+                    <ul>
+                        <li>Built on: June 3, 2022</li>
+                        <li>Distribution package version 0.12.10</li>
+                    </ul>
+			</div>
+            <div
+				class='ontario-columns ontario-small-12 ontario-medium-6'
+			>
+                    <h2 class='ontario-h4'>Help us improve the design system</h2>
+                    <p>You can check our <a href='#'>help and feedback page</a> if you don&#x27;t see the component you need.</p>
+                    <a class='ontario-footer__button ontario-button ontario-margin-bottom-0-!' href='#'>Send us an email</a>
+            </div>
+		</div>
+    </div>
+        <div class='ontario-row ontario-footer__expanded-bottom-section'>
+		    <div class='ontario-columns ontario-small-12'>
+                <ul class='ontario-footer__links-container ontario-footer__links-container--inline'>
+                    <li><a class='ontario-footer__link' href='https://www.ontario.ca/page/accessibility'>Accessibility</a></li>
+                    <li><a class='ontario-footer__link' href='https://www.ontario.ca/page/privacy-statement'>Privacy</a></li>
+                    <li><a class='ontario-footer__link' href='#'>Contact us</a></li>
+                </ul>
+                <div class='ontario-footer__copyright'>
+                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario'>&copy; Queen’s Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;22</span></a>
+                </div>
+		    </div>
+	    </div>
+</footer>
+</dd><!-- End: @expanded-footer--default -->
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">Three column expanded footer version one</dt><!-- Start: @expanded-footer--expanded-footer-version-one --><dd>
+<footer class='ontario-footer ontario-footer--expanded'>
+	<div class='ontario-footer__expanded-top-section'>
+		<div class='ontario-row'>
+			<div
+				class='ontario-columns ontario-small-12 ontario-expanded-footer__one-third-block ontario-medium-12 ontario-large-4'
+			>
+                <h2 class='ontario-h4'>Ontario Design System</h2>
+				<p>The Ontario Design System provides principles, guidance and code to help teams design and build accessible, mobile-friendly government websites and digital services.</p>
+			</div>
+                <div class='ontario-columns ontario-small-12 ontario-medium-6 ontario-large-4 ontario-expanded-footer__one-third-block'>
+                        <h2 class='ontario-h4'>Popular pages</h2>
+                        <ul class='ontario-footer__links-container ontario-footer__links-container--two-column-list'>
+                            <li>
+                                <a class='ontario-footer__link' href='#'>For designers</a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='#'>For developers</a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='#'>Fonts and typography</a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='#'>Colours</a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='#'>Buttons</a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='#'>Grid</a>
+                            </li>
+                        </ul>
+                </div>
+            <div
+				class='ontario-columns ontario-small-12 ontario-medium-6 ontario-large-4 ontario-expanded-footer__one-third-block'
+			>
+                        <h2 class='ontario-h4'>Latest release:</h2>
+                        <ul>
+                            <li>Built on: June 3, 2022</li>
+                            <li>Distribution package version 0.12.10</li>
+                        </ul>
+
+            </div>
+		</div>
+    </div>
+        <div class='ontario-row ontario-footer__expanded-bottom-section'>
+		    <div class='ontario-columns ontario-small-12'>
+                <ul class='ontario-footer__links-container ontario-footer__links-container--inline'>
+                    <li><a class='ontario-footer__link' href='https://www.ontario.ca/page/accessibility'>Accessibility</a></li>
+                    <li><a class='ontario-footer__link' href='https://www.ontario.ca/page/privacy-statement'>Privacy</a></li>
+                    <li><a class='ontario-footer__link' href='#'>Contact us</a></li>
+                </ul>
+                <div class='ontario-footer__copyright'>
+                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario'>&copy; Queen’s Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;22</span></a>
+                </div>
+		    </div>
+	    </div>
+</footer>
+</dd><!-- End: @expanded-footer--expanded-footer-version-one -->
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">Three column expanded footer version two</dt><!-- Start: @expanded-footer--expanded-footer-version-two --><dd>
+<footer class='ontario-footer ontario-footer--expanded'>
+	<div class='ontario-footer__expanded-top-section'>
+		<div class='ontario-row'>
+			<div
+				class='ontario-columns ontario-small-12 ontario-expanded-footer__one-third-block ontario-medium-12 ontario-large-4'
+			>
+                <h2 class='ontario-h4'>Ontario Design System</h2>
+				<p>The Ontario Design System provides principles, guidance and code to help teams design and build accessible, mobile-friendly government websites and digital services.</p>
+			</div>
+                <div class='ontario-columns ontario-small-12 ontario-medium-6 ontario-large-4 ontario-expanded-footer__one-third-block'>
+                        <h2 class='ontario-h4'>Latest release:</h2>
+                        <ul>
+                            <li>Built on: June 3, 2022</li>
+                            <li>Distribution package version 0.12.10</li>
+                        </ul>
+                </div>
+            <div
+				class='ontario-columns ontario-small-12 ontario-medium-6 ontario-large-4 ontario-expanded-footer__one-third-block'
+			>
+                        <h2 class='ontario-h4'>Help us improve the design system</h2>
+                        <p>You can check our <a href='#'>help and feedback page</a> if you don&#x27;t see the component you need.</p>
+                        <a class='ontario-footer__button ontario-button ontario-margin-bottom-0-!' href='#'>Send us an email</a>
+                        <ul class='ontario-footer__links-container ontario-footer__links-container--social'>
+                            <li>
+                                <a class='ontario-footer__link' href='' aria-label='Facebook'>
+                                    <svg
+                                        class='ontario-icon'
+                                        alt=''
+                                        sol:category='communication'
+                                        aria-hidden='true'
+                                        focusable='false'
+                                        viewBox='0 0 24 24'
+                                        preserveAspectRatio='xMidYMid meet'
+                                    >
+                                        <use href='../../icons/ontario-icons-secondary.svg#ontario-icon-facebook'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='' aria-label='Twitter'>
+                                    <svg
+                                        class='ontario-icon'
+                                        alt=''
+                                        sol:category='communication'
+                                        aria-hidden='true'
+                                        focusable='false'
+                                        viewBox='0 0 24 24'
+                                        preserveAspectRatio='xMidYMid meet'
+                                    >
+                                        <use href='../../icons/ontario-icons-secondary.svg#ontario-icon-twitter'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='' aria-label='Instagram'>
+                                    <svg
+                                        class='ontario-icon'
+                                        alt=''
+                                        sol:category='communication'
+                                        aria-hidden='true'
+                                        focusable='false'
+                                        viewBox='0 0 24 24'
+                                        preserveAspectRatio='xMidYMid meet'
+                                    >
+                                        <use href='../../icons/ontario-icons-secondary.svg#ontario-icon-instagram'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='ontario-footer__link' href='' aria-label='Youtube'>
+                                    <svg
+                                        class='ontario-icon'
+                                        alt=''
+                                        sol:category='communication'
+                                        aria-hidden='true'
+                                        focusable='false'
+                                        viewBox='0 0 24 24'
+                                        preserveAspectRatio='xMidYMid meet'
+                                    >
+                                        <use href='../../icons/ontario-icons-secondary.svg#ontario-icon-youtube'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+            </div>
+		</div>
+    </div>
+        <div class='ontario-row ontario-footer__expanded-bottom-section'>
+		    <div class='ontario-columns ontario-small-12'>
+                <ul class='ontario-footer__links-container ontario-footer__links-container--inline'>
+                    <li><a class='ontario-footer__link' href='https://www.ontario.ca/page/accessibility'>Accessibility</a></li>
+                    <li><a class='ontario-footer__link' href='https://www.ontario.ca/page/privacy-statement'>Privacy</a></li>
+                    <li><a class='ontario-footer__link' href='#'>Contact us</a></li>
+                </ul>
+                <div class='ontario-footer__copyright'>
+                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario'>&copy; Queen’s Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;22</span></a>
+                </div>
+		    </div>
+	    </div>
+</footer>
+</dd><!-- End: @expanded-footer--expanded-footer-version-two -->
+
+
+		<hr><h2 id=Application-header>Application header</h2>
+
+<div class="documentation-only--application">
+    <div class="ontario-header__container">
+        <header
+            class="ontario-application-header ontario-header"
+            id="ontario-header"
+        >
+            <div class="ontario-row">
+                <div
+                    class="ontario-columns ontario-small-6 ontario-application-header__logo"
+                >
+                    <a href="https://www.ontario.ca/page/government-ontario">
+                        <img
+                            src="../../logos/ontario-logo--desktop.svg"
+                            alt="Government of Ontario"
+                        />
+                    </a>
+                </div>
+                <div
+                    class="ontario-columns ontario-small-6 ontario-application-header__lang-toggle"
+                >
+                    <a
+                        href="#"
+                        class="ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline"
+                    >
+                        <abbr
+                            title="Français"
+                            class="ontario-show-for-small-only"
+                        >
+                            FR
+                        </abbr>
+                        <span class="ontario-show-for-medium">
+                            Français
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="ontario-application-subheader-menu__container">
+            <section class="ontario-application-subheader">
+                <div class="ontario-row">
+                    <div
+                        class="ontario-columns ontario-small-12 ontario-application-subheader__container"
+                    >
+                        <p class="ontario-application-subheader__heading">
+                            <a href="#">Application name</a>
+                        </p>
+
+                        <div
+                            class="ontario-application-subheader__menu-container"
+                        >
+                            <ul
+                                class="ontario-application-subheader__menu ontario-show-for-large"
+                            >
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">Link 4</a></li>
+                                <li><a href="#">Link 5</a></li>
+                            </ul>
+                            <ul
+                                class="ontario-application-subheader__menu ontario-hide-for-small ontario-show-for-medium ontario-hide-for-large"
+                            >
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                            </ul>
+
+                            <button
+                                class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                                id="ontario-header-menu-toggler"
+                                aria-controls="ontario-navigation"
+                                aria-label="open menu"
+                                type="button"
+                            >
+                                <svg
+                                    class="ontario-icon"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                    preserveAspectRatio="xMidYMid meet"
+                                >
+                                    <use xlink:href="#ontario-icon-menu"></use>
+                                </svg>
+                                <span>Menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <nav class="ontario-navigation" id="ontario-navigation">
+                <button
+                    class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                    id="ontario-header-nav-toggler"
+                    aria-controls="ontario-navigation"
+                    aria-label="close"
+                >
+                    <svg
+                        class="ontario-icon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet"
+                    >
+                        <use xlink:href="#ontario-icon-close"></use>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+                <div class="ontario-navigation__container">
+                    <ul>
+                            <li class="ontario-show-for-small-only"><a
+                                    href="#"
+                                >Link
+                                    1</a></li>
+                            <li class="ontario-show-for-small-only"><a
+                                    href="#"
+                                >Link
+                                    2</a></li>
+                            <li class="ontario-hide-for-large"><a href="#">Link
+                                    3</a></li>
+                            <li class="ontario-hide-for-large"><a href="#">Link
+                                    4</a></li>
+                            <li class="ontario-hide-for-large"><a href="#">Link
+                                    5</a></li>
+                            <li><a href="#">Link 6</a></li>
+                            <li><a href="#">Link 7</a></li>
+                            <li><a href="#">Link 8</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="ontario-overlay"></div>
+</div>
+<script src="../../scripts/ontario-a11y.js"></script>
+<script src="../../scripts/ontario-header.js"></script>
+
+
+		<hr><h2 id=Ontario-header>Ontario header</h2>
+
+<div class="documentation-only">
+    <!-- documentation-only class is used only for documentation, please don't wrap header using this div/class -->
+    <div class="ontario-header__container">
+        <header class="ontario-header" id="ontario-header">
+            <div class="ontario-row">
+                <div
+                    class="ontario-header__logo-container ontario-columns ontario-small-2 ontario-medium-4 ontario-large-3"
+                >
+                    <a href="https://www.ontario.ca/page/government-ontario">
+                        <img
+                            class="ontario-show-for-medium"
+                            src="../../logos/ontario-logo--desktop.svg"
+                            alt="Government of Ontario"
+                        />
+                        <img
+                            class="ontario-show-for-small-only"
+                            src="../../logos/ontario-logo--mobile.svg"
+                            alt="Government of Ontario"
+                        />
+                    </a>
+                </div>
+
+                <form
+                    name="searchForm"
+                    id="ontario-search-form-container"
+                    onsubmit="return false"
+                    class="ontario-header__search-container ontario-columns ontario-small-10 ontario-medium-offset-3 ontario-medium-6 ontario-large-offset-0 ontario-large-6"
+                    novalidate
+                >
+                    <label
+                        for="ontario-search-input-field"
+                        class="ontario-show-for-sr"
+                    >Search</label>
+                    <input
+                        type="text"
+                        name="search"
+                        id="ontario-search-input-field"
+                        autocomplete="off"
+                        aria-autocomplete="none"
+                        class="ontario-input ontario-header__search-input"
+                        required
+                    />
+                    <input
+                        class="ontario-header__search-reset"
+                        id="ontario-search-reset"
+                        type="reset"
+                        value=""
+                        aria-label="Clear field"
+                    />
+                    <button
+                        class="ontario-header__search-submit"
+                        id="ontario-search-submit"
+                        type="submit"
+                        onclick="doSearch()"
+                    >
+                        <span class="ontario-show-for-sr">Submit</span>
+                        <svg
+                            class="ontario-icon"
+                            focusable="false"
+                            sol:category="primary"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+                            <use xlink:href="#ontario-icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div
+                    class="ontario-header__nav-right-container ontario-columns ontario-small-10 ontario-medium-8 ontario-large-3"
+                >
+                    <a
+                        href=""
+                        class="ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline"
+                    >
+                        <abbr
+                            title="Français"
+                            class="ontario-show-for-small-only"
+                        >
+                            FR
+                        </abbr>
+                        <span class="ontario-show-for-medium">
+                            Français
+                        </span>
+                    </a>
+
+                    <button
+                        class="ontario-header__search-toggler ontario-header-button ontario-header-button--without-outline ontario-hide-for-large"
+                        id="ontario-header-search-toggler"
+                        aria-controls="ontario-search-form-container"
+                        type="button"
+                    >
+                        <svg
+                            class="ontario-icon"
+                            focusable="false"
+                            sol:category="primary"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+                            <use xlink:href="#ontario-icon-search"></use>
+                        </svg>
+                        <span class="ontario-show-for-medium ontario-show">
+                            Search
+                        </span>
+                    </button>
+
+                    <button
+                        class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                        id="ontario-header-menu-toggler"
+                        aria-controls="ontario-navigation"
+                        aria-label="open menu"
+                        type="button"
+                    >
+                        <svg
+                            class="ontario-icon"
+                            focusable="false"
+                            sol:category="primary"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+                            <use xlink:href="#ontario-icon-menu"></use>
+                        </svg>
+
+                        <span>Menu</span>
+                    </button>
+                </div>
+                <div
+                    class="ontario-header__search-close-container ontario-columns ontario-small-2 ontario-medium-3"
+                >
+                    <button
+                        class="ontario-header__search-close ontario-header-button ontario-header-button--without-outline"
+                        id="ontario-header-search-close"
+                        aria-label="close search bar"
+                        type="button"
+                    >
+                        <span aria-hidden="true">close</span>
+                        <svg
+                            class="ontario-icon"
+                            focusable="false"
+                            sol:category="primary"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+                            <use xlink:href="#ontario-icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav class="ontario-navigation" id="ontario-navigation">
+            <button
+                class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                id="ontario-header-nav-toggler"
+                aria-controls="ontario-navigation"
+                aria-label="close"
+            >
+                <svg
+                    class="ontario-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    preserveAspectRatio="xMidYMid meet"
+                >
+                    <use xlink:href="#ontario-icon-close"></use>
+                </svg>
+                <span>Menu</span>
+            </button>
+            <div class="ontario-navigation__container">
+                <ul>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Arts and culture</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Business and economy</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Driving and roads</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Education and training</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Environment and energy</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Government</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Health and wellness</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Home and community</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Jobs and employment</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Law and safety</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Rural and north</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Taxes and benefits</a>
+                        </li>
+                        <li class="ontario-header-navigation__menu-item">
+                            <a href="#">Travel and recreation</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="ontario-overlay"></div>
+
+    <script src="../../scripts/ontario-a11y.js"></script>
+    <script src="../../scripts/ontario-header.js"></script>
+    <script src="../../scripts/ontario-search.js"></script>
+    <!-- end documentation-only, below div should be removed, it is only used for documentation purposes -->
+</div>
+
+
 		<hr><h2 id=Step-indicator>Step indicator</h2>
 
 <dt class="fractal-dt ontario-padding-bottom-24-!">Indicator for step 1 (no back button)</dt><!-- Start: @step-indicator--default --><dd>
