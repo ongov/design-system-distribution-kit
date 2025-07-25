@@ -155,6 +155,7 @@ function deferInFn(fn) {
         clearInputField = document.getElementById("ontario-search-clear-input-field"),
         searchToggler = document.getElementById("ontario-header-search-toggler"),
         searchClose = document.getElementById("ontario-header-search-close"),
+        searchSubmit = document.getElementById("ontario-search-submit"),
         clearInputClass = "ontario-header__search-clear-input--hide",
         searchOpenClass = "ontario-header--search-open";
 
@@ -170,7 +171,10 @@ function deferInFn(fn) {
         clearInputField.classList.toggle(clearInputClass);
     }
 
-    searchInputField.addEventListener("input", function (e) {
+    searchInputField.addEventListener("keyup", function (e) {
+        if (e.key === "Enter" || e.keyCode === KEYCODE.ENTER) {
+            searchSubmit.click()
+        }
         if (e.target.value && clearInputField.classList.contains(clearInputClass)) {
             toggleClearInputField();
         } else if (!e.target.value && !clearInputField.classList.contains(clearInputClass)) {
@@ -178,8 +182,11 @@ function deferInFn(fn) {
         }
     });
 
-    clearInputField.addEventListener("click", function () {
-        toggleClearInputField("hide");
+    clearInputField.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (e.target.value === undefined) {
+            toggleClearInputField("hide");
+        }
     });
 
     clearInputField.addEventListener("keyup", function (e) {

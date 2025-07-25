@@ -73,7 +73,8 @@
     margin: $spacing-0;
     padding: $spacing-2 0;
     width: 20rem;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     height: calc(100vh - 80px);
 
     @media screen and (max-width: $xsmall-breakpoint) {

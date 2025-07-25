@@ -11,6 +11,7 @@
     margin: $spacing-6;
     padding: $spacing-5 0 $spacing-5 $spacing-5;
 
+
     @media screen and (max-width: $small-breakpoint) {
         font-size: rem-calc(18);
         letter-spacing: 0.03rem;
@@ -34,11 +35,11 @@
     margin: 0 0 $spacing-5 0;
 
     &::before {
-        content: "\201C";
+        content: open-quote;
     }
 
     &::after {
-        content: "\201D";
+        content: close-quote;
     }
 }
 
@@ -64,3 +65,13 @@
         content: "\2014 \0020";
     }
 }
+
+blockquote {
+    quotes: "\201C" "\201D";
+}
+
+html[lang="fr"] blockquote {
+    quotes: "« " " »";
+}
+
+

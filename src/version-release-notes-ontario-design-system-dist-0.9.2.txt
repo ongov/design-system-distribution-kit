@@ -2,19 +2,47 @@
 title: Design system release notes
 label: Release notes
 ---
+<div class="ontario-row fractal-release-versions">
+<div class="ontario-columns ontario-small-12 ontario-medium-4 ontario-large-3">
+
 * [Release {{{ _config.project.version }}}](#latest)
+* [Release 0.9.0](#a0.9.0)
 * [Release 0.8.4](#a0.8.4)
 * [Release 0.7.0](#a0.7.0)
 * [Release 0.6.1](#a0.6.1)
+
+</div>
+<div class="ontario-columns ontario-small-12 ontario-medium-8 ontario-large-9">
+
 * [Release 0.5.2](#a0.5.2)
 * [Release 0.4](#a4)
 * [Release 0.3](#a3)
 * [Release 0.2](#a2)
 * [Release 0.1](#a1)
 
+</div>
+</div>
+
 <hr class="dark">
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release - {{{ _config.project.releaseDate }}}
+
+### Elements
+- Added in this release:
+  - Blockquote component now uses French quotation marks when html lang="fr"
+
+### Known bugs and issues
+  - Added missing graphics to distribution package
+  - Removed extra margin-bottom property in checkboxes.scss
+  - Changed icon from transparent to white for informational alerts
+  - Removed invisible characters that showed up in guidance text on Chrome for Windows
+  
+### Distribution package
+- Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.9.0"></a> 0.9.0 Release - December 17, 2020
 
 ### Elements
 - Added in this release:
@@ -23,7 +51,7 @@ label: Release notes
   - Images and photography
 
 ### Distribution package
-- Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+- Download: [Design System 0.9.0]({{path '../../dist/ontario-design-system-dist-0.9.0.zip'}})
 
 <hr>
 
@@ -73,9 +101,9 @@ This is the sixth Alpha release of the Ontario Design System.
 - Added a maximum line length for text components
 
 ### Known bugs and issues
-- Resolved: issue with grid breakpoints not being triggered at the exact pixel width expected
-- Resolved: square highlight on click of radio button
-- Resolved: label length wrapping for longer texts
+- Fixed: issue with grid breakpoints not being triggered at the exact pixel width expected
+- Fixed: square highlight on click of radio button
+- Fixed: label length wrapping for longer texts
 
 ### Distribution package
 - Download: [Design System 0.6.1]({{path '../../dist/ontario-design-system-dist-0.6.1.zip'}})
@@ -123,7 +151,7 @@ As of this release:
 - The system colour palette has some minor additions
 
 ### Known bugs and issues:
-- Resolved: the order of the icons in the preview box does not match the order of the "Notes" table
+- Fixed: the order of the icons in the preview box does not match the order of the "Notes" table
 
 ### Distribution package
 - Download: [Design System 0.4.0]({{path '../../dist/ontario-design-system-dist-0.4.0.zip'}})

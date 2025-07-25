@@ -35,10 +35,10 @@
   margin: 0 0 1.5rem 0;
 }
 .ontario-blockquote p::before {
-  content: "“";
+  content: open-quote;
 }
 .ontario-blockquote p::after {
-  content: "”";
+  content: close-quote;
 }
 
 .ontario-blockquote__attribution,
@@ -63,4 +63,12 @@
 }
 .ontario-blockquote__attribution::before {
   content: "— ";
+}
+
+blockquote {
+  quotes: "“" "”";
+}
+
+html[lang=fr] blockquote {
+  quotes: "« " " »";
 }
