@@ -7,6 +7,10 @@
     Global spacing variables
 --------------------------------- */
 /*** 1 - Breakpoint sizes for media queries ***/
+.ontario-step-indicator {
+  margin-bottom: 2.5rem;
+}
+
 .ontario-step-indicator .ontario-step-indicator--without-back-button,
 .ontario-step-indicator .ontario-step-indicator--with-back-button {
   display: flex;

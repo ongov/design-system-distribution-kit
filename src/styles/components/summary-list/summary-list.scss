@@ -11,7 +11,7 @@
 .ontario-summary-list {
 	max-width: globalVariables.$standard-width;
 	float: revert;
-	margin-bottom: spacing.$spacing-8;
+	margin-bottom: spacing.$spacing-9;
 
 	&.summary-list-full-width {
 		max-width: 100%;
@@ -94,7 +94,7 @@
 		}
 
 		.ontario-summary-list__value {
-			padding: spacing.$spacing-0 spacing.$spacing-5;
+			padding: spacing.$spacing-0 spacing.$spacing-0 spacing.$spacing-0 spacing.$spacing-5;
 
 			@media screen and (max-width: breakpoints.$small-breakpoint) {
 				flex: revert;
@@ -125,7 +125,7 @@
 			font-size: fontSizes.$ontario-font-size-standard-body-text;
 			color: colours.$ontario-colour-link;
 			font-weight: fontWeights.$ontario-font-weights-normal;
-			padding: spacing.$spacing-0;
+			padding: spacing.$spacing-0 spacing.$spacing-0 spacing.$spacing-0 spacing.$spacing-5;
 
 			&.hidden {
 				visibility: hidden;
@@ -186,10 +186,6 @@
 			gap: spacing.$spacing-3;
 		}
 	}
-}
-
-.ontario-summary-list:not(:first-of-type) {
-	margin-bottom: spacing.$spacing-9;
 }
 
 .ontario-summary-list__title {

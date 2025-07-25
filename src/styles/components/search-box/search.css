@@ -41,9 +41,14 @@
 /* -------------------------------
     Global typography variables
 --------------------------------- */
+:root {
+  --header-search-reset: url(../icons/svg/ontario-icon-close.svg);
+}
+
 .ontario-search__container {
   max-width: 34rem;
   margin-bottom: 2.5rem;
+  position: relative;
 }
 
 .ontario-search__input-container {
@@ -143,7 +148,7 @@ input[type=reset].ontario-search__reset {
   position: absolute;
   display: flex;
   align-items: center;
-  top: 0.5rem;
+  top: 0.75rem;
   right: 6rem;
   height: 1.5rem;
   width: 1.5rem;
@@ -151,7 +156,7 @@ input[type=reset].ontario-search__reset {
   margin: 0;
   padding: 0.25rem;
   background-size: 1.5rem;
-  background-image: url("../icons/ontario-icons-close.svg");
+  background-image: var(--header-search-reset);
   background-position: center center;
   background-repeat: no-repeat;
   background-color: transparent;

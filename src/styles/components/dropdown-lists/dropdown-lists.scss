@@ -3,9 +3,13 @@
 
 $icon-dir: '../icons' !default;
 
+:root {
+	--dropdown-arrow: url('#{$icon-dir}/ontario-material-dropdown-arrow-48px.svg');
+}
+
 .ontario-dropdown {
 	background-color: colours.$ontario-colour-white;
-	background-image: url('#{$icon-dir}/ontario-material-dropdown-arrow-48px.svg');
+	background-image: var(--dropdown-arrow);
 	background-position: right spacing.$spacing-2 center;
 	background-repeat: no-repeat;
 	background-size: spacing.$spacing-6;

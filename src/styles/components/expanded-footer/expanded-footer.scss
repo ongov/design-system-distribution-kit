@@ -7,6 +7,10 @@
 
 $logo-dir: '../logos' !default;
 
+:root {
+	--footer-expanded-supergraphic: url('#{$logo-dir}/footer-expanded-supergraphic-logo.svg');
+}
+
 /************************************************************
     The following styles up until the next comment for
     expanded footer specific styles are shared with the
@@ -193,7 +197,7 @@ $logo-dir: '../logos' !default;
 }
 
 .ontario-footer__expanded-top-section:before {
-	background-image: url('#{$logo-dir}/footer-expanded-supergraphic-logo.svg');
+	background-image: var(--footer-expanded-supergraphic);
 }
 
 .ontario-footer.ontario-footer--expanded {

@@ -5,6 +5,10 @@
 
 $ontario-icon-size: 24px;
 
+.ontario-step-indicator {
+	margin-bottom: spacing.$spacing-7;
+}
+
 .ontario-step-indicator .ontario-step-indicator--without-back-button,
 .ontario-step-indicator .ontario-step-indicator--with-back-button {
 	display: flex;

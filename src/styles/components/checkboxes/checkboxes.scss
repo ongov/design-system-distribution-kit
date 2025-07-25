@@ -14,6 +14,10 @@ $ontario-checkboxes-size: 28px;
 $ontario-checkboxes-size-mobile: 32px;
 $ontario-checkbox-border-size: 2px;
 
+:root {
+	--checkbox-background: url('#{$icon-dir}/ontario-checkbox-background-no-width.svg');
+}
+
 .ontario-checkboxes {
 	margin-bottom: spacing.$spacing-7;
 	max-width: globalVariables.$standard-width;
@@ -89,7 +93,7 @@ $ontario-checkbox-border-size: 2px;
 	// ✔✔✔ Check mark styles ✔✔✔
 	&:after {
 		content: '';
-		background-image: url('#{$icon-dir}/ontario-checkbox-background-no-width.svg');
+		background-image: var(--checkbox-background);
 		background-repeat: no-repeat;
 		height: $ontario-checkboxes-size + $ontario-checkbox-border-size;
 		width: $ontario-checkboxes-size + $ontario-checkbox-border-size;

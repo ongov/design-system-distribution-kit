@@ -64,6 +64,27 @@ label: Release notes
 
 Added in this release:
 
+-   Search autocomplete
+
+#### Bugs and known issues
+
+-   Bottom margin added to step indicator component
+-   Removed extra class from radio button labels
+
+#### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <span id="release2024">2024 releases</span>
+
+### 1.8.0 Release – May 14, 2024
+
+#### Elements
+
+Added in this release:
+
 -   In-page navigation
 -   Summary list
 -   Form review
@@ -78,11 +99,9 @@ Added in this release:
 
 #### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 1.8.0]({{path '../../dist/ontario-design-system-dist-1.8.0.zip'}})
 
 <hr>
-
-## <span id="release2024">2024 releases</span>
 
 ### 1.7.0 Release – March 15, 2024
 

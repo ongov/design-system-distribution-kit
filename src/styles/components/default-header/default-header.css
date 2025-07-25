@@ -53,6 +53,10 @@
   transition: box-shadow 0.1s ease-in-out;
 }
 
+:root {
+  --header-search-reset: url(../icons/svg/ontario-icon-close.svg);
+}
+
 .ontario-header {
   position: relative;
   background-color: #1a1a1a;
@@ -187,7 +191,7 @@ input[type=reset].ontario-header__search-reset {
   color: black;
   margin: 0;
   padding: 0.5rem;
-  background-image: url(../icons/ontario-icons-close.svg);
+  background-image: var(--header-search-reset);
   background-position: center center;
   background-repeat: no-repeat;
   background-color: transparent;

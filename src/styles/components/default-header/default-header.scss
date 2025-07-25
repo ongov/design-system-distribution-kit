@@ -10,6 +10,10 @@
 $ontario-search-input-padding: 7.2rem;
 $ontario-search-input-padding--mobile: 6.4rem;
 
+:root {
+	--header-search-reset: url(../icons/svg/ontario-icon-close.svg);
+}
+
 .ontario-header {
 	position: relative;
 	background-color: colours.$ontario-colour-black;
@@ -162,8 +166,7 @@ input[type='reset'].ontario-header__search-reset {
 	color: black;
 	margin: spacing.$spacing-0;
 	padding: spacing.$spacing-2;
-
-	background-image: url(../icons/ontario-icons-close.svg);
+	background-image: var(--header-search-reset);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: transparent;

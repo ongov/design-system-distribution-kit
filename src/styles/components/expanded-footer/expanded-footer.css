@@ -41,6 +41,10 @@
 /* -------------------------------
     Global typography variables
 --------------------------------- */
+:root {
+  --footer-expanded-supergraphic: url("../logos/footer-expanded-supergraphic-logo.svg");
+}
+
 /************************************************************
     The following styles up until the next comment for
     expanded footer specific styles are shared with the
@@ -214,7 +218,7 @@
 }
 
 .ontario-footer__expanded-top-section:before {
-  background-image: url("../logos/footer-expanded-supergraphic-logo.svg");
+  background-image: var(--footer-expanded-supergraphic);
 }
 
 .ontario-footer.ontario-footer--expanded {

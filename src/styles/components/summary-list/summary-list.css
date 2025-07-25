@@ -86,7 +86,7 @@
 .ontario-summary-list {
   max-width: 48rem;
   float: revert;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .ontario-summary-list.summary-list-full-width {
   max-width: 100%;
@@ -143,7 +143,7 @@
   }
 }
 .ontario-summary-list .ontario-summary-list__row .ontario-summary-list__value {
-  padding: 0 1.5rem;
+  padding: 0 0 0 1.5rem;
 }
 @media screen and (max-width: 40em) {
   .ontario-summary-list .ontario-summary-list__row .ontario-summary-list__value {
@@ -173,7 +173,7 @@
   font-size: 1rem;
   color: #0066CC;
   font-weight: 400;
-  padding: 0;
+  padding: 0 0 0 1.5rem;
 }
 .ontario-summary-list .ontario-summary-list__row .ontario-summary-list-change__button.hidden {
   visibility: hidden;
@@ -224,10 +224,6 @@
     align-items: flex-start;
     gap: 0.75rem;
   }
-}
-
-.ontario-summary-list:not(:first-of-type) {
-  margin-bottom: 4rem;
 }
 
 .ontario-summary-list__title {

@@ -27,6 +27,10 @@
 /* icon colours */
 /* service ontario header colours */
 /*** 1 - Breakpoint sizes for media queries ***/
+:root {
+  --footer-default-supergraphic: url("../logos/footer-default-supergraphic-logo.svg");
+}
+
 /************************************************************
     The following styles up until the next comment for
     simple footer specific styles are shared with the
@@ -108,7 +112,7 @@
   border-bottom: 4px solid #4d4d4d;
 }
 .ontario-footer--default:before {
-  background-image: url("../logos/footer-default-supergraphic-logo.svg");
+  background-image: var(--footer-default-supergraphic);
   background-size: 112.5rem;
   background-position: calc(50vw - 73.5rem) -64rem;
   background-color: #333333;
