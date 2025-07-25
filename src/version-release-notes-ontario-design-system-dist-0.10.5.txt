@@ -6,14 +6,16 @@ label: Release notes
 <div class="ontario-columns ontario-small-12 ontario-medium-4 ontario-large-3">
 
 * [Release {{{ _config.project.version }}}](#latest)
+* [Release 0.9.2](#a0.9.2)
 * [Release 0.9.0](#a0.9.0)
 * [Release 0.8.4](#a0.8.4)
 * [Release 0.7.0](#a0.7.0)
-* [Release 0.6.1](#a0.6.1)
+
 
 </div>
 <div class="ontario-columns ontario-small-12 ontario-medium-8 ontario-large-9">
 
+* [Release 0.6.1](#a0.6.1)
 * [Release 0.5.2](#a0.5.2)
 * [Release 0.4](#a4)
 * [Release 0.3](#a3)
@@ -27,6 +29,23 @@ label: Release notes
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release - {{{ _config.project.releaseDate }}}
 
+### Platform
+  - Official release of the [design system prototyping kit]({{path './for-designers.html#prototyping-kit'}})
+  - Updated information for designers and developers
+  - Updated help and feedback information
+
+### Known bugs and issues
+  - Fixed: header accessibility bug - pressing enter on search input does not trigger search
+  - Fixed: hyphen replaced with en-dash in footer component
+  - Fixed: order of menu items in French version of design system
+  
+### Distribution package
+- Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.9.2"></a> 0.9.2 Release - January 15, 2021
+
 ### Elements
 - Added in this release:
   - Blockquote component now uses French quotation marks when html lang="fr"
@@ -38,7 +57,8 @@ label: Release notes
   - Removed invisible characters that showed up in guidance text on Chrome for Windows
   
 ### Distribution package
-- Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+- Download: [Design System 0.9.2]({{path '../../dist/ontario-design-system-dist-0.9.2.zip'}})
+
 
 <hr>
 
@@ -173,7 +193,7 @@ This is the third Alpha release of the Ontario Design System.
 * In this release, we’ve included:
   * icons
   * links
-* We’ve also included a survey to gather your [feedback about the design system]({{path '../give-feedback.html'}}).
+* We’ve also included a survey to gather your [feedback about the design system]({{path '../help-feedback.html'}}).
 
 ### Known bugs and issues
 * We’re still having issues with the design system on mobile that we’re working to resolve
