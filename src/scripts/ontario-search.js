@@ -3,3 +3,7 @@ function doSearch() {
 	var searchInputField = document.getElementById('ontario-search-input-field');
 	console.log('search input field:', searchInputField.value);
 }
+
+function handleSearch() {
+	console.log('Searching...');
+}

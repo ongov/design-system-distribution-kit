@@ -1,0 +1,117 @@
+@use 'sass:math';
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/global.variables' as globalVariables;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/spacing.variables' as spacing;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/colours.variables' as colours;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/breakpoints.variables' as breakpoints;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/typography.variables' as typography;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-weights.variables' as fontWeights;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-sizes.variables' as fontSizes;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/2-tools/functions/global.functions' as globalFunctions;
+
+.ontario-summary-list {
+	max-width: globalVariables.$standard-width;
+	float: revert;
+	margin-bottom: spacing.$spacing-8;
+
+	dl.ontario-summary-list__container {
+		margin: spacing.$spacing-0;
+	}
+
+	.ontario-summary-list__row {
+		display: flex;
+		flex-direction: row;
+		padding: (spacing.$spacing-4 + globalFunctions.rem-calc(3)) spacing.$spacing-0;
+		border-bottom: 1px solid colours.$ontario-greyscale-20;
+		align-items: center;
+		justify-content: space-between;
+		margin: spacing.$spacing-0 !important;
+
+		&.compact {
+			padding: spacing.$spacing-3 spacing.$spacing-0;
+		}
+
+		.ontario-summary-list__value {
+			flex: 1;
+			padding: spacing.$spacing-0 spacing.$spacing-5;
+		}
+
+		.ontario-summary-list__key {
+			@extend %h5-styles;
+			flex: 1;
+			margin-bottom: spacing.$spacing-0;
+		}
+
+		dt,
+		dd {
+			margin: spacing.$spacing-0 !important; // using important as fractal default styles were causing issues
+			text-align: left;
+		}
+
+		.ontario-summary-list-change__button {
+			display: block;
+			text-decoration: underline;
+			cursor: pointer;
+			font-size: fontSizes.$ontario-font-size-standard-body-text;
+			color: colours.$ontario-colour-link;
+			font-weight: fontWeights.$ontario-font-weights-normal;
+			padding: spacing.$spacing-0;
+
+			&:hover {
+				color: colours.$ontario-colour-link--hover;
+			}
+
+			&:active {
+				color: colours.$ontario-colour-link--active;
+			}
+		}
+
+		@media screen and (max-width: breakpoints.$small-breakpoint) {
+			flex-direction: column;
+			align-items: revert;
+
+			.ontario-summary-list__key {
+				padding-bottom: spacing.$spacing-1;
+			}
+
+			.ontario-summary-list__value {
+				flex: revert;
+				padding: spacing.$spacing-0;
+			}
+
+			.ontario-summary-list-button__container {
+				align-self: flex-start;
+
+				.ontario-summary-list-change__button {
+					margin-top: spacing.$spacing-3;
+				}
+			}
+		}
+	}
+
+	.ontario-summary-list-heading__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 3px solid colours.$ontario-colour-black;
+		gap: spacing.$spacing-6;
+		padding-bottom: spacing.$spacing-3;
+
+		.ontario-summary-list__heading {
+			@extend %h3-styles;
+			margin-bottom: spacing.$spacing-0;
+		}
+
+		.ontario-summary-list-change__button {
+			padding: spacing.$spacing-0;
+		}
+	}
+}
+
+.ontario-summary-list:not(:first-of-type) {
+	margin-bottom: spacing.$spacing-9;
+}
+
+.ontario-summary-list__title {
+	margin-bottom: spacing.$spacing-6;
+}

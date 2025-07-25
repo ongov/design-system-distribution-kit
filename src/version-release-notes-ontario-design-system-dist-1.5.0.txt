@@ -8,6 +8,8 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 1.4.0](#a1.4.0)
+-   [Release 1.3.0](#a1.3.0)
 -   [Release 1.2.1](#a1.2.1)
 -   [Release 1.1.0](#a1.1.0)
 -   [Release 1.0.0](#a1.0.0)
@@ -48,6 +50,52 @@ label: Release notes
 
 Added in this release:
 
+-   Cards
+
+Updated:
+
+-   Social media icons for X (formerly Twitter) and Facebook
+
+### Platform
+
+-   Added: information about the Angular web components library
+
+### Bugs and known issues
+
+-   Fixed: improved aria label for the menu in the Ontario.ca header
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a1.4.0"></a> 1.4.0 Release - July 19, 2023
+
+### Elements
+
+Added in this release:
+
+-   ServiceOntario application header
+
+### Bugs and known issues
+
+-   Fixed: the live validation script was missing from the distribution package
+-   Fixed: the path for the fonts was incorrect in the distribution package CSS
+-   Fixed: the `ontario-icon-arrow-up` PNG icon was missing from the distribution package
+
+### Distribution package
+
+-   Download: [Design System 1.4.0]({{path '../../dist/ontario-design-system-dist-1.4.0.zip'}})
+
+<hr>
+
+## <a name="a1.3.0"></a> 1.3.0 Release - June 16, 2023
+
+### Elements
+
+Added in this release:
+
 -   Live validation pattern for alerting users to form errors
 
 ### Bugs and known issues
@@ -59,7 +107,7 @@ Added in this release:
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 1.3.0]({{path '../../dist/ontario-design-system-dist-1.3.0.zip'}})
 
 <hr>
 

@@ -1,0 +1,118 @@
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
+.ontario-badge__container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.ontario-badge__label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #4d4d4d;
+}
+
+.ontario-badge {
+  display: inline-block;
+  background-color: #E2F0F4;
+  color: #4d4d4d;
+  padding: 0.25rem 0.5rem;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+}
+
+.ontario-badge--default-light {
+  background-color: #E2F0F4;
+  color: #4d4d4d;
+}
+
+.ontario-badge--default-heavy {
+  background-color: #1080A6;
+  color: #FFFFFF;
+}
+
+.ontario-badge--neutral-light {
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+}
+
+.ontario-badge--neutral-heavy {
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+}
+
+.ontario-badge--alert-light {
+  background-color: #FCEFF0;
+  color: #4d4d4d;
+}
+
+.ontario-badge--alert-heavy {
+  background-color: #CD0000;
+  color: #FFFFFF;
+}
+
+.ontario-badge--warning-light {
+  background-color: #FEF6DC;
+  color: #4d4d4d;
+}
+
+.ontario-badge--warning-heavy {
+  background-color: #FFD440;
+  color: #1a1a1a;
+}
+
+.ontario-badge--success-light {
+  background-color: #E5f0E9;
+  color: #4d4d4d;
+}
+
+.ontario-badge--success-heavy {
+  background-color: #118847;
+  color: #FFFFFF;
+}

@@ -10,6 +10,7 @@
 /*** 2 - Upper-bound ***/
 /*** 3 - Grid calc ***/
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* Asset URL builder */
 /* Image asset helper */
 /* Font asset helper */
@@ -73,7 +74,8 @@ h6,
 .ontario-h5, h4,
 .ontario-h4, h3,
 .ontario-h3, h2,
-.ontario-h2, h1 > .ontario-label--heading, h1,
+.ontario-h2, h1 > .ontario-label--heading, .ontario-fieldset__legend--large h1,
+.ontario-fieldset__legend--heading h1, h1,
 .ontario-h1 {
   font-style: normal;
   font-weight: 700;
@@ -83,7 +85,8 @@ h6,
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1 > .ontario-label--heading, h1,
+h1 > .ontario-label--heading, .ontario-fieldset__legend--large h1,
+.ontario-fieldset__legend--heading h1, h1,
 .ontario-h1 {
   font-size: 2rem;
   letter-spacing: 0.04rem;
@@ -92,7 +95,8 @@ h1 > .ontario-label--heading, h1,
   max-width: 70rem;
 }
 @media screen and (min-width: 40em) {
-  h1 > .ontario-label--heading, h1,
+  h1 > .ontario-label--heading, .ontario-fieldset__legend--large h1,
+.ontario-fieldset__legend--heading h1, h1,
 .ontario-h1 {
     font-size: 2.5rem;
     letter-spacing: 0.04rem;
@@ -3156,14 +3160,12 @@ ol ol {
 
 .ontario-fieldset__legend--large,
 .ontario-fieldset__legend--heading {
-  font-size: 1.75rem;
   letter-spacing: 0.02rem;
   line-height: 1.2;
 }
 .ontario-fieldset__legend--large h1,
 .ontario-fieldset__legend--heading h1 {
   display: inline-block;
-  font-size: inherit;
   margin: 0;
 }
 @media screen and (max-width: 40em) {
@@ -3172,6 +3174,10 @@ ol ol {
     font-size: 1.4375rem;
     line-height: 1.39;
   }
+}
+
+.ontario-fieldset__legend--large {
+  font-size: 1.75rem;
 }
 
 .ontario-fieldset__legend-required-flag,
@@ -3506,6 +3512,7 @@ ontario-page-alert[type=error] a:active {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -3585,6 +3592,7 @@ ontario-page-alert[type=error] a:active {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -4340,9 +4348,32 @@ ontario-page-alert[type=error] a:active {
   top: -4.35rem;
 }
 
-.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button,
-.ontario-service-header + .ontario-service-application-subheader-menu__container .ontario-header-button {
+.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button {
   top: -4.25rem;
+}
+
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button {
+  top: -4.6rem;
+  background-color: #03713D;
+}
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button:hover {
+  background-color: #048B4B;
+}
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button:active {
+  background-color: #024122;
+}
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button:focus {
+  box-shadow: 0 0 0 4px #42C7FF;
+}
+@media screen and (max-width: 20em) {
+  .ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button {
+    top: -5.5rem;
+  }
+}
+@media screen and (min-width: 40em) {
+  .ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button {
+    top: -4.85rem;
+  }
 }
 
 .ontario-navigation.ontario-navigation--open .ontario-navigation__container {
@@ -4473,6 +4504,7 @@ ontario-page-alert[type=error] a:active {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -4668,6 +4700,7 @@ ontario-page-alert[type=error] a:active {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -4789,6 +4822,426 @@ ontario-page-alert[type=error] a:active {
 .ontario-button--tertiary:visited {
   color: #0066CC;
 }
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Focus placeholder variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder
+--------------------------------- */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+.ontario-card__heading {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ontario-card__heading {
+  font-size: 1.25rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+  max-width: 48rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-card__heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.0313rem;
+    line-height: 1.5;
+  }
+}
+
+.ontario-card__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+}
+@media screen and (max-width: 40em) {
+  .ontario-card__container {
+    flex-direction: column;
+  }
+}
+
+.ontario-card {
+  box-shadow: 0rem 0.1875rem 0.5rem 0.0625rem rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  margin: 0 2.5rem 2.5rem 0;
+  max-width: 50%;
+  padding: 0;
+  list-style-type: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+.ontario-card:hover {
+  box-shadow: 0rem 0.375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.35);
+}
+.ontario-card:focus-within {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.ontario-card:active {
+  box-shadow: 0 0 0 4px #009ADB;
+  background-color: #f2f2f2;
+}
+.ontario-card--cards-per-row-4 .ontario-card {
+  width: calc(25% - 2rem);
+}
+.ontario-card--cards-per-row-4 .ontario-card:nth-child(4n) {
+  margin-right: 0;
+}
+.ontario-card--cards-per-row-3 .ontario-card {
+  width: calc(33.3% - 1.75rem);
+}
+.ontario-card--cards-per-row-3 .ontario-card:nth-child(3n) {
+  margin-right: 0;
+}
+.ontario-card--cards-per-row-2 .ontario-card {
+  width: calc(50% - 1.25rem);
+}
+.ontario-card--cards-per-row-2 .ontario-card:nth-child(2n) {
+  margin-right: 0;
+}
+@media screen and (max-width: 73em) {
+  .ontario-card--cards-per-row-4 .ontario-card {
+    width: calc(50% - 1.25rem);
+  }
+  .ontario-card--cards-per-row-4 .ontario-card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 40em) {
+  .ontario-card {
+    margin-bottom: 3rem;
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
+.ontario-card--position-horizontal {
+  display: flex;
+  width: 50%;
+}
+@media screen and (max-width: 40em) {
+  .ontario-card--position-horizontal {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.ontario-card--position-horizontal .ontario-card__image-container,
+.ontario-card--position-horizontal .ontario-card__text-container {
+  position: relative;
+}
+.ontario-card--position-horizontal a:focus-within {
+  box-shadow: none;
+  outline: none;
+}
+.ontario-card--position-horizontal a:active {
+  box-shadow: none;
+}
+.ontario-card--position-horizontal img {
+  height: 100%;
+  position: absolute;
+}
+
+.ontario-card--position-horizontal__image-right {
+  flex-direction: row-reverse;
+}
+
+.ontario-card__heading {
+  margin: 0;
+  border-radius: 4px 4px 0 0;
+  padding: 1.25rem 1.5rem 0.5rem 1.5rem;
+  transition: -webkit-text-decoration 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
+}
+.ontario-card:hover .ontario-card__heading {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #1a1a1a;
+          text-decoration-color: #1a1a1a;
+}
+.ontario-card--light .ontario-card__heading {
+  background-color: #f2f2f2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 4px 4px 0 0;
+}
+.ontario-card--dark .ontario-card__heading {
+  background-color: #1a1a1a;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 4px 4px 0 0;
+}
+.ontario-card--dark:hover .ontario-card__heading {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #FFFFFF;
+          text-decoration-color: #FFFFFF;
+}
+.ontario-card--image-true .ontario-card__heading {
+  border-radius: 0;
+}
+.ontario-card--no-description .ontario-card__heading {
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 4px 4px;
+}
+.ontario-card__heading a {
+  color: #1a1a1a;
+  text-decoration: none;
+  outline: none;
+}
+.ontario-card--dark .ontario-card__heading a {
+  color: #FFFFFF;
+}
+.ontario-card__heading a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.ontario-card__heading a:focus {
+  box-shadow: none;
+}
+.ontario-card__heading a:active {
+  outline: none;
+}
+@media screen and (max-width: 73em) {
+  .ontario-card__heading {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.ontario-card--position-horizontal .ontario-card__text-container {
+  width: 66.6%;
+}
+.ontario-card--image--one-fourth .ontario-card__text-container {
+  width: 75%;
+}
+.ontario-card--no-image .ontario-card__text-container {
+  width: 100%;
+}
+
+.ontario-card__description {
+  margin: 0;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+.ontario-card__description p:last-of-type {
+  margin-bottom: 0;
+}
+.ontario-card--light .ontario-card__description, .ontario-card--dark .ontario-card__description {
+  padding-top: 1rem;
+}
+@media screen and (max-width: 73em) {
+  .ontario-card__description {
+    padding: 0.5rem 1rem 1.5rem 1rem;
+  }
+  .ontario-card--light .ontario-card__description, .ontario-card--dark .ontario-card__description {
+    padding-top: 1rem;
+  }
+}
+
+.ontario-card--position-vertical .ontario-card__image-container {
+  margin-bottom: -0.5rem;
+}
+.ontario-card--position-horizontal .ontario-card__image-container {
+  width: 33.3%;
+}
+.ontario-card--image--one-fourth .ontario-card__image-container {
+  width: 25%;
+}
+
+.ontario-card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100% 100%;
+}
+.ontario-card--position-vertical .ontario-card__image {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.ontario-card--position-horizontal__image-right .ontario-card__image {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.ontario-card--position-horizontal__image-left .ontario-card__image {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
+.ontario-badge__container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.ontario-badge__label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #4d4d4d;
+}
+
+.ontario-badge {
+  display: inline-block;
+  background-color: #E2F0F4;
+  color: #4d4d4d;
+  padding: 0.25rem 0.5rem;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+}
+
+.ontario-badge--default-light {
+  background-color: #E2F0F4;
+  color: #4d4d4d;
+}
+
+.ontario-badge--default-heavy {
+  background-color: #1080A6;
+  color: #FFFFFF;
+}
+
+.ontario-badge--neutral-light {
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+}
+
+.ontario-badge--neutral-heavy {
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+}
+
+.ontario-badge--alert-light {
+  background-color: #FCEFF0;
+  color: #4d4d4d;
+}
+
+.ontario-badge--alert-heavy {
+  background-color: #CD0000;
+  color: #FFFFFF;
+}
+
+.ontario-badge--warning-light {
+  background-color: #FEF6DC;
+  color: #4d4d4d;
+}
+
+.ontario-badge--warning-heavy {
+  background-color: #FFD440;
+  color: #1a1a1a;
+}
+
+.ontario-badge--success-light {
+  background-color: #E5f0E9;
+  color: #4d4d4d;
+}
+
+.ontario-badge--success-heavy {
+  background-color: #118847;
+  color: #FFFFFF;
+}
 /* -------------------------------
     Global spacing variables
 --------------------------------- */
@@ -4820,6 +5273,7 @@ ontario-page-alert[type=error] a:active {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -4897,6 +5351,181 @@ ontario-page-alert[type=error] a:active {
     stroke-dashoffset: -124px;
   }
 }
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+.ontario-search__container {
+  height: 3rem;
+  max-width: 34rem;
+}
+
+.ontario-search__input-container {
+  position: relative;
+}
+
+.ontario-search__label {
+  margin-bottom: 0.5rem;
+}
+
+.ontario-search__input.ontario-input {
+  border: 2px solid #1a1a1a;
+  margin-bottom: 0;
+  height: 3rem;
+  padding-left: 0.75rem;
+  padding-right: 8.5rem;
+}
+.ontario-search__input.ontario-input:invalid + input[type=reset] {
+  display: none;
+}
+.ontario-search__input.ontario-input:focus ~ .ontario-header__search-submit {
+  background-color: #0066CC;
+  color: #FFFFFF;
+}
+.ontario-search__input.ontario-input:focus ~ .ontario-header__search-submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-search__input.ontario-input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.ontario-search__input.ontario-input:invalid:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  -moz-box-shadow: none;
+}
+.ontario-search__input.ontario-input:invalid:not(:focus) {
+  box-shadow: none;
+  -moz-box-shadow: none;
+}
+@media screen and (min-width: 40em) and (max-width: 73em) {
+  .ontario-search__input.ontario-input {
+    padding-left: 1rem;
+    padding-right: 6.4rem;
+  }
+}
+
+.ontario-search__submit {
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: #0066CC;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  width: 5rem;
+  line-height: 1.56;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  cursor: pointer;
+}
+.ontario-search__submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-search__submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #009ADB;
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-search__submit:active {
+  background-color: #002142;
+  color: #FFFFFF;
+}
+.ontario-search__submit svg {
+  color: #FFFFFF;
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (max-width: 40em) {
+  .ontario-search__submit {
+    width: 4rem;
+  }
+}
+
+input[type=reset].ontario-search__reset {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0.5rem;
+  right: 6rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0.25rem;
+  background-size: 1.5rem;
+  background-image: url("../icons/ontario-icons-close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input[type=reset].ontario-search__reset:focus {
+  box-shadow: inset 0 0 0 4px #009ADB;
+}
+@media screen and (max-width: 40em) {
+  input[type=reset].ontario-search__reset {
+    right: 5rem;
+  }
+}
+
+input[type=search].ontario-search__input::-webkit-search-decoration,
+input[type=search].ontario-search__input::-webkit-search-cancel-button,
+input[type=search].ontario-search__input::-webkit-search-results-button,
+input[type=search].ontario-search__input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
 /* -------------------------------
     Global spacing variables
 --------------------------------- */
@@ -4933,6 +5562,7 @@ ontario-page-alert[type=error] a:active {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -5300,6 +5930,7 @@ tfoot tr {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -5415,6 +6046,7 @@ html[lang=fr] blockquote {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -6206,6 +6838,85 @@ html[lang=fr] blockquote {
 /* callout backgrounds */
 /* icon colours */
 /* service ontario header colours */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+.ontario-critical-alert {
+  background-color: #FFD440;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 5;
+}
+
+.ontario-critical-alert__body {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.ontario-critical-alert__icon svg {
+  width: 28px;
+  height: 28px;
+  margin: 0 0.85rem 0 0;
+}
+
+.ontario-critical-alert p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.ontario-critical-alert a {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+.ontario-critical-alert a:hover, .ontario-critical-alert a:focus {
+  text-decoration: none;
+}
+.ontario-critical-alert a:visited {
+  color: #1a1a1a;
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
 /*** 1 - Breakpoint sizes for media queries ***/
 .ontario-alert {
   border-width: 0 0 0 4px;
@@ -6345,84 +7056,6 @@ html[lang=fr] blockquote {
 /* callout backgrounds */
 /* icon colours */
 /* service ontario header colours */
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-.ontario-critical-alert {
-  background-color: #FFD440;
-  font-weight: 400;
-  margin: 0;
-  padding: 1rem 0;
-  position: relative;
-  z-index: 5;
-}
-
-.ontario-critical-alert__body {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.ontario-critical-alert__icon svg {
-  width: 28px;
-  height: 28px;
-  margin: 0 0.85rem 0 0;
-}
-
-.ontario-critical-alert p {
-  margin: 0;
-  padding: 0;
-  line-height: 1.8;
-}
-
-.ontario-critical-alert a {
-  color: #1a1a1a;
-  font-weight: 700;
-}
-.ontario-critical-alert a:hover, .ontario-critical-alert a:focus {
-  text-decoration: none;
-}
-.ontario-critical-alert a:visited {
-  color: #1a1a1a;
-}
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
 /*** 1 - Breakpoint sizes for media queries ***/
 /* -------------------------------
     Global font-weight variables
@@ -6431,6 +7064,7 @@ html[lang=fr] blockquote {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -6827,47 +7461,6 @@ html[lang=fr] blockquote {
     background-position: calc(50vw - 187rem) -160rem;
   }
 }
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
-.ontario-dropdown {
-  background-color: #FFFFFF;
-  background-image: url("../icons/ontario-material-dropdown-arrow-48px.svg");
-  background-position: right 0.5rem center;
-  background-repeat: no-repeat;
-  background-size: 2rem;
-  padding-right: 2.25rem;
-  cursor: pointer;
-}
-
-/* These styles are to fix differences in default styling for dropdowns in IE */
-.ontario-dropdown::-ms-expand {
-  display: none;
-}
-
-.ontario-dropdown option {
-  font-weight: normal;
-}
 /*
 *  Global variables
 *
@@ -7030,6 +7623,47 @@ html[lang=fr] blockquote {
 /* callout backgrounds */
 /* icon colours */
 /* service ontario header colours */
+.ontario-dropdown {
+  background-color: #FFFFFF;
+  background-image: url("../icons/ontario-material-dropdown-arrow-48px.svg");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+
+/* These styles are to fix differences in default styling for dropdowns in IE */
+.ontario-dropdown::-ms-expand {
+  display: none;
+}
+
+.ontario-dropdown option {
+  font-weight: normal;
+}
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
 /*
 *  Global variables
 *
@@ -7091,6 +7725,7 @@ html[lang=fr] blockquote {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -7210,6 +7845,7 @@ html[lang=fr] blockquote {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -7325,6 +7961,7 @@ html[lang=fr] blockquote {
     margin-top: 1rem;
   }
 }
+@charset "UTF-8";
 /*
 *  Global variables
 *
@@ -7361,6 +7998,122 @@ html[lang=fr] blockquote {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+h1 .ontario-label--heading {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 .ontario-label--heading {
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.29;
+  margin: 2.5rem 0 1.5rem 0;
+  max-width: 70rem;
+}
+@media screen and (min-width: 40em) {
+  h1 .ontario-label--heading {
+    font-size: 2.5rem;
+    letter-spacing: 0.04rem;
+    line-height: 1.2;
+  }
+}
+
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
+.ontario-label {
+  cursor: pointer;
+  color: #1a1a1a;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  max-width: 38.75em;
+  white-space: normal;
+  width: 100%;
+}
+@media screen and (max-width: 40em) {
+  .ontario-label {
+    font-size: 1.125rem;
+    line-height: 1.56;
+  }
+}
+
+.ontario-label--large {
+  font-size: 1.75rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.2;
+  max-width: 26.25em;
+}
+@media screen and (max-width: 40em) {
+  .ontario-label--large {
+    font-size: 1.4375rem;
+    line-height: 1.39;
+  }
+}
+
+h1 .ontario-label--heading {
+  display: inline-block;
+  margin: 0;
+}
+
+.ontario-label__flag {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.ontario-label__flag:before {
+  content: " ";
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -7467,121 +8220,6 @@ html[lang=fr] blockquote {
 
 .ontario-radios__input:checked + .ontario-radios__label:after {
   opacity: 1;
-}
-@charset "UTF-8";
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-h1 .ontario-label--heading {
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
-  font-feature-settings: normal;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h1 .ontario-label--heading {
-  font-size: 2rem;
-  letter-spacing: 0.04rem;
-  line-height: 1.29;
-  margin: 2.5rem 0 1.5rem 0;
-  max-width: 70rem;
-}
-@media screen and (min-width: 40em) {
-  h1 .ontario-label--heading {
-    font-size: 2.5rem;
-    letter-spacing: 0.04rem;
-    line-height: 1.2;
-  }
-}
-
-/* -------------------------------
-    Global font-size variables
---------------------------------- */
-.ontario-label {
-  cursor: pointer;
-  color: #1a1a1a;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1875rem;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0 0 1rem 0;
-  max-width: 38.75em;
-  white-space: normal;
-  width: 100%;
-}
-@media screen and (max-width: 40em) {
-  .ontario-label {
-    font-size: 1.125rem;
-    line-height: 1.56;
-  }
-}
-
-.ontario-label--large {
-  font-size: 1.75rem;
-  letter-spacing: 0.02rem;
-  line-height: 1.2;
-  max-width: 26.25em;
-}
-@media screen and (max-width: 40em) {
-  .ontario-label--large {
-    font-size: 1.4375rem;
-    line-height: 1.39;
-  }
-}
-
-h1 .ontario-label--heading {
-  display: inline-block;
-  margin: 0;
-}
-
-.ontario-label__flag {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.ontario-label__flag:before {
-  content: " ";
 }
 /*
 *  Global variables
@@ -7700,6 +8338,7 @@ h1 .ontario-label--heading {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -7798,18 +8437,180 @@ h1 .ontario-label--heading {
 .ontario-date--error input {
   border: 0.125rem solid #CD0000;
 }
-.ontario-icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  /* The default vertical-align is `baseline`, which leaves a few pixels of space below the icon. Using `center` prevents this. For icons shown alongside text, you may want to use a more precise value, e.g. `vertical-align: -4px` or `vertical-align: -0.15em`. */
-  vertical-align: middle;
-  /* Paths and strokes that overflow the viewBox can show in IE11. */
-  overflow: hidden;
-  margin-bottom: 2px;
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+.ontario-summary-list .ontario-summary-list__row .ontario-summary-list__key, .ontario-summary-list .ontario-summary-list-heading__container .ontario-summary-list__heading {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ontario-summary-list .ontario-summary-list-heading__container .ontario-summary-list__heading {
+  font-size: 1.4375rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.39;
+  margin: 0 0 0.75rem 0;
+  max-width: 48rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-summary-list .ontario-summary-list-heading__container .ontario-summary-list__heading {
+    font-size: 1.75rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.43;
+  }
+}
+
+.ontario-summary-list .ontario-summary-list__row .ontario-summary-list__key {
+  font-size: 1.125rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.56;
+  margin: 0 0 0.75rem 0;
+  max-width: 48rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-summary-list .ontario-summary-list__row .ontario-summary-list__key {
+    font-size: 1.1875rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.5;
+  }
+}
+
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
+.ontario-summary-list {
+  max-width: 48rem;
+  float: revert;
+  margin-bottom: 3rem;
+}
+.ontario-summary-list dl.ontario-summary-list__container {
+  margin: 0;
+}
+.ontario-summary-list .ontario-summary-list__row {
+  display: flex;
+  flex-direction: row;
+  padding: 1.1875rem 0;
+  border-bottom: 1px solid #cccccc;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 !important;
+}
+.ontario-summary-list .ontario-summary-list__row.compact {
+  padding: 0.75rem 0;
+}
+.ontario-summary-list .ontario-summary-list__row .ontario-summary-list__value {
+  flex: 1;
+  padding: 0 1.5rem;
+}
+.ontario-summary-list .ontario-summary-list__row .ontario-summary-list__key {
+  flex: 1;
+  margin-bottom: 0;
+}
+.ontario-summary-list .ontario-summary-list__row dt,
+.ontario-summary-list .ontario-summary-list__row dd {
+  margin: 0 !important;
+  text-align: left;
+}
+.ontario-summary-list .ontario-summary-list__row .ontario-summary-list-change__button {
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #0066CC;
+  font-weight: 400;
+  padding: 0;
+}
+.ontario-summary-list .ontario-summary-list__row .ontario-summary-list-change__button:hover {
+  color: #00478F;
+}
+.ontario-summary-list .ontario-summary-list__row .ontario-summary-list-change__button:active {
+  color: #002142;
+}
+@media screen and (max-width: 40em) {
+  .ontario-summary-list .ontario-summary-list__row {
+    flex-direction: column;
+    align-items: revert;
+  }
+  .ontario-summary-list .ontario-summary-list__row .ontario-summary-list__key {
+    padding-bottom: 0.25rem;
+  }
+  .ontario-summary-list .ontario-summary-list__row .ontario-summary-list__value {
+    flex: revert;
+    padding: 0;
+  }
+  .ontario-summary-list .ontario-summary-list__row .ontario-summary-list-button__container {
+    align-self: flex-start;
+  }
+  .ontario-summary-list .ontario-summary-list__row .ontario-summary-list-button__container .ontario-summary-list-change__button {
+    margin-top: 0.75rem;
+  }
+}
+.ontario-summary-list .ontario-summary-list-heading__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #1a1a1a;
+  gap: 2rem;
+  padding-bottom: 0.75rem;
+}
+.ontario-summary-list .ontario-summary-list-heading__container .ontario-summary-list__heading {
+  margin-bottom: 0;
+}
+.ontario-summary-list .ontario-summary-list-heading__container .ontario-summary-list-change__button {
+  padding: 0;
+}
+
+.ontario-summary-list:not(:first-of-type) {
+  margin-bottom: 4rem;
+}
+
+.ontario-summary-list__title {
+  margin-bottom: 2rem;
 }
 /*
 *  Global variables
@@ -7847,6 +8648,7 @@ h1 .ontario-label--heading {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -7924,9 +8726,6 @@ h1 .ontario-label--heading {
 
 .ontario-application-subheader .ontario-header-button {
   display: flex;
-}
-.ontario-application-subheader .ontario-header-button:last-of-type {
-  display: none;
 }
 
 .ontario-application-subheader .ontario-header-button {
@@ -8069,6 +8868,7 @@ h1 .ontario-label--heading {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -8340,6 +9140,7 @@ input[type=reset].ontario-header__search-reset:focus {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -8768,133 +9569,7 @@ input[type=reset].ontario-header__search-reset:focus {
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-/* -------------------------------
-    Global font-size variables
---------------------------------- */
-.ontario-back-to-top--default {
-  position: fixed;
-  bottom: 5%;
-  right: 2%;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.1s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  padding: 0.5rem 1rem 0.5rem 0.75rem;
-  background: #e6e6e6;
-  border: 0.125rem solid #FFFFFF;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0 0.125rem 0.25rem rgba(26, 26, 26, 0.6);
-  color: #1a1a1a;
-  line-height: 1.25rem;
-  font-size: 1rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  z-index: 10000;
-  cursor: pointer;
-}
-.ontario-back-to-top--default svg.ontario-icon {
-  margin: 0.125rem 0.5rem 0 0;
-  width: 2rem;
-  height: 2rem;
-}
-.ontario-back-to-top--default:hover {
-  background-color: #cccccc;
-}
-.ontario-back-to-top--default:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 0.25rem #009ADB, 0 0.1875rem 0.3125rem 0.1875rem rgba(0, 0, 0, 0.6);
-  outline: 0.25rem solid transparent;
-  transition: 0.1s ease-in-out;
-}
-.ontario-back-to-top--default:active {
-  background-color: #b2b2b2;
-  box-shadow: 0 0 0 0.25rem #009ADB, 0 0.3125rem 0.4375rem 0.1875rem rgba(0, 0, 0, 0.6);
-  outline: 0.25rem solid transparent;
-  transition: background-color 0s, box-shadow 0.1s ease-in-out;
-}
-.ontario-back-to-top--default:visited {
-  color: #FFFFFF;
-}
-@media screen and (max-width: 73em) {
-  .ontario-back-to-top--default {
-    flex-direction: column;
-    height: 4.75rem;
-    padding: 0.375rem 0.75rem 0.5625rem 0.75rem;
-  }
-  .ontario-back-to-top--default svg.ontario-icon {
-    margin: 0.0625rem 0 0.25rem 0;
-    width: 2rem;
-    height: 2rem;
-  }
-}
-@media screen and (max-width: 40em) {
-  .ontario-back-to-top--default {
-    display: block;
-    padding: 0.5rem;
-    font-size: 0;
-    width: 3rem;
-    height: 3rem;
-  }
-  .ontario-back-to-top--default svg.ontario-icon {
-    margin: 0;
-  }
-  @-moz-document url-prefix() {
-    .ontario-back-to-top--default svg.ontario-icon {
-      padding: 0 0.25rem 0.25rem 0;
-    }
-  }
-}
-
-.active {
-  visibility: visible;
-  opacity: 1;
-}
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -8987,9 +9662,6 @@ input[type=reset].ontario-header__search-reset:focus {
 
 .ontario-service-subheader .ontario-header-button {
   display: flex;
-}
-.ontario-service-subheader .ontario-header-button:last-of-type {
-  display: none;
 }
 
 .ontario-service-subheader .ontario-header-button {
@@ -9134,6 +9806,147 @@ a .ontario-service-subheader__heading-container:focus {
 
 .ontario-colour-service-ontario-header-active {
   background-color: #024122;
+}
+.ontario-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  /* The default vertical-align is `baseline`, which leaves a few pixels of space below the icon. Using `center` prevents this. For icons shown alongside text, you may want to use a more precise value, e.g. `vertical-align: -4px` or `vertical-align: -0.15em`. */
+  vertical-align: middle;
+  /* Paths and strokes that overflow the viewBox can show in IE11. */
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* Pixel to REM Conversion */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
+.ontario-back-to-top--default {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+  background: #e6e6e6;
+  border: 0.125rem solid #FFFFFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0.125rem 0.25rem rgba(26, 26, 26, 0.6);
+  color: #1a1a1a;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  z-index: 10000;
+  cursor: pointer;
+}
+.ontario-back-to-top--default svg.ontario-icon {
+  margin: 0.125rem 0.5rem 0 0;
+  width: 2rem;
+  height: 2rem;
+}
+.ontario-back-to-top--default:hover {
+  background-color: #cccccc;
+}
+.ontario-back-to-top--default:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 0.25rem #009ADB, 0 0.1875rem 0.3125rem 0.1875rem rgba(0, 0, 0, 0.6);
+  outline: 0.25rem solid transparent;
+  transition: 0.1s ease-in-out;
+}
+.ontario-back-to-top--default:active {
+  background-color: #b2b2b2;
+  box-shadow: 0 0 0 0.25rem #009ADB, 0 0.3125rem 0.4375rem 0.1875rem rgba(0, 0, 0, 0.6);
+  outline: 0.25rem solid transparent;
+  transition: background-color 0s, box-shadow 0.1s ease-in-out;
+}
+.ontario-back-to-top--default:visited {
+  color: #FFFFFF;
+}
+@media screen and (max-width: 73em) {
+  .ontario-back-to-top--default {
+    flex-direction: column;
+    height: 4.75rem;
+    padding: 0.375rem 0.75rem 0.5625rem 0.75rem;
+  }
+  .ontario-back-to-top--default svg.ontario-icon {
+    margin: 0.0625rem 0 0.25rem 0;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 40em) {
+  .ontario-back-to-top--default {
+    display: block;
+    padding: 0.5rem;
+    font-size: 0;
+    width: 3rem;
+    height: 3rem;
+  }
+  .ontario-back-to-top--default svg.ontario-icon {
+    margin: 0;
+  }
+  @-moz-document url-prefix() {
+    .ontario-back-to-top--default svg.ontario-icon {
+      padding: 0 0.25rem 0.25rem 0;
+    }
+  }
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
 }
 /*
 *  Global colour variables

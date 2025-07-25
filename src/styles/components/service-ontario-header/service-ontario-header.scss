@@ -56,10 +56,6 @@
 
 .ontario-service-subheader .ontario-header-button {
 	display: flex;
-
-	&:last-of-type {
-		display: none;
-	}
 }
 
 .ontario-service-subheader .ontario-header-button {
@@ -83,6 +79,7 @@
 		box-shadow: 0 0 0 4px colours.$ontario-colour-service-ontario-header-focus;
 	}
 }
+
 .ontario-service-subheader__link {
 	text-decoration: none;
 }

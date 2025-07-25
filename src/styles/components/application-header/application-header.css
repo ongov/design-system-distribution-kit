@@ -34,6 +34,7 @@
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -111,9 +112,6 @@
 
 .ontario-application-subheader .ontario-header-button {
   display: flex;
-}
-.ontario-application-subheader .ontario-header-button:last-of-type {
-  display: none;
 }
 
 .ontario-application-subheader .ontario-header-button {

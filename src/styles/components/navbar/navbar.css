@@ -34,6 +34,7 @@
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -789,9 +790,32 @@
   top: -4.35rem;
 }
 
-.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button,
-.ontario-service-header + .ontario-service-application-subheader-menu__container .ontario-header-button {
+.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button {
   top: -4.25rem;
+}
+
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button {
+  top: -4.6rem;
+  background-color: #03713D;
+}
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button:hover {
+  background-color: #048B4B;
+}
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button:active {
+  background-color: #024122;
+}
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button:focus {
+  box-shadow: 0 0 0 4px #42C7FF;
+}
+@media screen and (max-width: 20em) {
+  .ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button {
+    top: -5.5rem;
+  }
+}
+@media screen and (min-width: 40em) {
+  .ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button {
+    top: -4.85rem;
+  }
 }
 
 .ontario-navigation.ontario-navigation--open .ontario-navigation__container {

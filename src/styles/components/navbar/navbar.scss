@@ -10,6 +10,9 @@
 @use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-weights.variables' as fontWeights;
 
 $header-close-button--top-value: -4.35rem;
+$service-header-close-button--top-value: -4.85rem;
+$service-header-close-button--top-value-mobile: -4.6rem;
+$service-header-close-button--top-value-xs-mobile: -5.5rem;
 
 .ontario-navigation {
 	position: absolute;
@@ -57,9 +60,33 @@ $header-close-button--top-value: -4.35rem;
 	top: $header-close-button--top-value;
 }
 
-.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button,
-.ontario-service-header + .ontario-service-application-subheader-menu__container .ontario-header-button {
+.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button {
 	top: ((spacing.$spacing-9 * -1) + (spacing.$spacing-1 * -1));
+}
+
+.ontario-service-header + .ontario-service-subheader-menu__container .ontario-header-button {
+	top: $service-header-close-button--top-value-mobile; // Note that this value may need to change depending on the length of the subheader application name
+	background-color: colours.$ontario-colour-service-ontario-header-brand;
+
+	&:hover {
+		background-color: colours.$ontario-colour-service-ontario-header-hover;
+	}
+
+	&:active {
+		background-color: colours.$ontario-colour-service-ontario-header-active;
+	}
+
+	&:focus {
+		box-shadow: 0 0 0 4px colours.$ontario-colour-service-ontario-header-focus;
+	}
+
+	@media screen and (max-width: breakpoints.$xsmall-breakpoint) {
+		top: $service-header-close-button--top-value-xs-mobile;
+	}
+
+	@media screen and (min-width: breakpoints.$small-breakpoint) {
+		top: $service-header-close-button--top-value;
+	}
 }
 
 .ontario-navigation.ontario-navigation--open .ontario-navigation__container {
