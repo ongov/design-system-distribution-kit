@@ -8,7 +8,6 @@
 @use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-weights.variables' as fontWeights;
 
 .ontario-fieldset__legend {
-	cursor: pointer;
 	color: colours.$ontario-colour-black;
 	font-family: typography.$ontario-font-raleway-modified;
 	font-size: 1.1875rem;

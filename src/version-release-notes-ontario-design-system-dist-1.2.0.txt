@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 1.1.0](#a1.1.0)
 -   [Release 1.0.0](#a1.0.0)
 -   [Release 0.12.13](#a0.12.13)
 -   [Release 0.12.12](#a0.12.12)
@@ -42,6 +43,27 @@ label: Release notes
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release – {{{ _config.project.releaseDate }}}
 
+### Elements
+
+Added in this release:
+
+-   Favicon files and implementation guidance
+
+### Bugs and known issues
+
+-   Fixed: broken links to fonts from `ds-theme-min.css`
+-   Fixed: missing aria-label for the search button in the mobile version of the [ontario.ca](https://www.ontario.ca/) header
+-   Fixed: missing `role="img"` on Ontario logo in all versions of the header
+-   Fixed: date input now includes `aria-describedBy` and `role="group"` to improve accessibility
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a1.1.0"></a> 1.1.0 Release - January 26, 2023
+
 ### Platform
 
 -   The design system website is now using the design system's global styles package.
@@ -59,7 +81,7 @@ label: Release notes
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 1.1.0]({{path '../../dist/ontario-design-system-dist-1.1.0.zip'}})
 
 <hr>
 

@@ -71,7 +71,6 @@
     Global font-size variables
 --------------------------------- */
 .ontario-fieldset__legend {
-  cursor: pointer;
   color: #1a1a1a;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1875rem;
