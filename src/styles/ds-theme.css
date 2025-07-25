@@ -165,6 +165,22 @@
   padding-left: 4rem !important;
 }
 
+.ontario-padding-top-80-\! {
+  padding-top: 5rem !important;
+}
+
+.ontario-padding-bottom-80-\! {
+  padding-bottom: 5rem !important;
+}
+
+.ontario-padding-right-80-\! {
+  padding-right: 5rem !important;
+}
+
+.ontario-padding-left-80-\! {
+  padding-left: 5rem !important;
+}
+
 .ontario-margin-top-0-\! {
   margin-top: 0 !important;
 }
@@ -281,7 +297,7 @@
   margin-top: 2.5rem !important;
 }
 
-.ontario-margin-bottom-40-\!, .ontario-image-example-container.ontario-image-example-container__margin {
+.ontario-margin-bottom-40-\!, .ontario-image-example-container__margin {
   margin-bottom: 2.5rem !important;
 }
 
@@ -325,6 +341,22 @@
   margin-left: 4rem !important;
 }
 
+.ontario-margin-top-80-\! {
+  margin-top: 5rem !important;
+}
+
+.ontario-margin-bottom-80-\! {
+  margin-bottom: 5rem !important;
+}
+
+.ontario-margin-right-80-\! {
+  margin-right: 5rem !important;
+}
+
+.ontario-margin-left-80-\! {
+  margin-left: 5rem !important;
+}
+
 /**
  * Mixin that adds spacing to a position and mark it as important
  * $type is the type of spacing to use and can be either padding or margin
@@ -357,14 +389,14 @@
 .ontario-image-example-container__header--info, .ontario-image-example-container__header--dont, .ontario-image-example-container__header--do {
   font-size: 1.125rem;
   letter-spacing: 0.03rem;
-  line-height: 1.5;
+  line-height: 1.56;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
   .ontario-image-example-container__header--info, .ontario-image-example-container__header--dont, .ontario-image-example-container__header--do {
     font-size: 1.1875rem;
     letter-spacing: 0.025rem;
-    line-height: 1.56;
+    line-height: 1.5;
   }
 }
 
@@ -528,6 +560,22 @@
   padding-left: 4rem !important;
 }
 
+.ontario-padding-top-80-\! {
+  padding-top: 5rem !important;
+}
+
+.ontario-padding-bottom-80-\! {
+  padding-bottom: 5rem !important;
+}
+
+.ontario-padding-right-80-\! {
+  padding-right: 5rem !important;
+}
+
+.ontario-padding-left-80-\! {
+  padding-left: 5rem !important;
+}
+
 .ontario-margin-top-0-\! {
   margin-top: 0 !important;
 }
@@ -644,7 +692,7 @@
   margin-top: 2.5rem !important;
 }
 
-.ontario-margin-bottom-40-\!, .ontario-image-example-container.ontario-image-example-container__margin {
+.ontario-margin-bottom-40-\!, .ontario-image-example-container__margin {
   margin-bottom: 2.5rem !important;
 }
 
@@ -688,6 +736,22 @@
   margin-left: 4rem !important;
 }
 
+.ontario-margin-top-80-\! {
+  margin-top: 5rem !important;
+}
+
+.ontario-margin-bottom-80-\! {
+  margin-bottom: 5rem !important;
+}
+
+.ontario-margin-right-80-\! {
+  margin-right: 5rem !important;
+}
+
+.ontario-margin-left-80-\! {
+  margin-left: 5rem !important;
+}
+
 /**
  * Mixin for ontario-image-example-container
  * Create different type of container headings
@@ -724,14 +788,14 @@
 .ontario-image-example-container__header--info, .ontario-image-example-container__header--dont, .ontario-image-example-container__header--do {
   font-size: 1.125rem;
   letter-spacing: 0.03rem;
-  line-height: 1.5;
+  line-height: 1.56;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
   .ontario-image-example-container__header--info, .ontario-image-example-container__header--dont, .ontario-image-example-container__header--do {
     font-size: 1.1875rem;
     letter-spacing: 0.025rem;
-    line-height: 1.56;
+    line-height: 1.5;
   }
 }
 
@@ -814,6 +878,10 @@ h3 + h4,
 h4 + h5,
 h5 + h6 {
   margin-top: 2rem;
+}
+
+p code, td code, li code {
+  line-height: 2.25rem;
 }
 
 /* -------------------------------
@@ -1023,7 +1091,7 @@ caption {
 
 .ontario-table-container {
   position: relative;
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0.5rem 0 2.5rem 0;
 }
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6):nth-child(even),
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6) ~ tr:nth-child(even) {
@@ -1057,7 +1125,6 @@ table {
   display: table;
   line-height: 1.625rem;
   font-weight: normal;
-  margin: 0 0 2.5rem;
 }
 table.ontario-table--full-container-width {
   display: table;
@@ -3249,7 +3316,7 @@ h1,
 .ontario-h1 {
   font-size: 2rem;
   letter-spacing: 0.04rem;
-  line-height: 1.2;
+  line-height: 1.29;
   margin: 2.5rem 0 1.5rem 0;
 }
 @media screen and (min-width: 40em) {
@@ -3257,7 +3324,7 @@ h1,
 .ontario-h1 {
     font-size: 2.5rem;
     letter-spacing: 0.04rem;
-    line-height: 1.29;
+    line-height: 1.2;
   }
 }
 
@@ -3265,7 +3332,7 @@ h2,
 .ontario-h2 {
   font-size: 1.6875rem;
   letter-spacing: 0.03rem;
-  line-height: 1.33;
+  line-height: 1.37;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
@@ -3273,7 +3340,7 @@ h2,
 .ontario-h2 {
     font-size: 2.0625rem;
     letter-spacing: 0.02rem;
-    line-height: 1.37;
+    line-height: 1.33;
   }
 }
 
@@ -3281,7 +3348,7 @@ h3,
 .ontario-h3 {
   font-size: 1.4375rem;
   letter-spacing: 0.02rem;
-  line-height: 1.43;
+  line-height: 1.39;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
@@ -3289,7 +3356,7 @@ h3,
 .ontario-h3 {
     font-size: 1.75rem;
     letter-spacing: 0.02rem;
-    line-height: 1.39;
+    line-height: 1.43;
   }
 }
 
@@ -3313,7 +3380,7 @@ h5,
 .ontario-h5 {
   font-size: 1.125rem;
   letter-spacing: 0.03rem;
-  line-height: 1.5;
+  line-height: 1.56;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
@@ -3321,15 +3388,15 @@ h5,
 .ontario-h5 {
     font-size: 1.1875rem;
     letter-spacing: 0.025rem;
-    line-height: 1.56;
+    line-height: 1.5;
   }
 }
 
 h6,
 .ontario-h6 {
   font-size: 1rem;
+  line-height: 1.56;
   letter-spacing: 0.03rem;
-  line-height: 1.5;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
@@ -3337,7 +3404,7 @@ h6,
 .ontario-h6 {
     font-size: 1rem;
     letter-spacing: 0.025rem;
-    line-height: 1.56;
+    line-height: 1.5;
   }
 }
 
@@ -3603,6 +3670,22 @@ strong {
   padding-left: 4rem !important;
 }
 
+.ontario-padding-top-80-\! {
+  padding-top: 5rem !important;
+}
+
+.ontario-padding-bottom-80-\! {
+  padding-bottom: 5rem !important;
+}
+
+.ontario-padding-right-80-\! {
+  padding-right: 5rem !important;
+}
+
+.ontario-padding-left-80-\! {
+  padding-left: 5rem !important;
+}
+
 .ontario-margin-top-0-\! {
   margin-top: 0 !important;
 }
@@ -3761,6 +3844,132 @@ strong {
 
 .ontario-margin-left-64-\! {
   margin-left: 4rem !important;
+}
+
+.ontario-margin-top-80-\! {
+  margin-top: 5rem !important;
+}
+
+.ontario-margin-bottom-80-\! {
+  margin-bottom: 5rem !important;
+}
+
+.ontario-margin-right-80-\! {
+  margin-right: 5rem !important;
+}
+
+.ontario-margin-left-80-\! {
+  margin-left: 5rem !important;
+}
+.ontario-hide {
+  display: none !important;
+}
+
+.ontario-invisible {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ontario-hide-for-small-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 0em), screen and (min-width: 40em) {
+  .ontario-show-for-small-only {
+    display: none !important;
+  }
+}
+@media print, screen and (min-width: 40em) {
+  .ontario-hide-for-medium {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .ontario-show-for-medium {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 72.9375em) {
+  .ontario-hide-for-medium-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 39.9375em), screen and (min-width: 73em) {
+  .ontario-show-for-medium-only {
+    display: none !important;
+  }
+}
+@media print, screen and (min-width: 73em) {
+  .ontario-hide-for-large {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 72.9375em) {
+  .ontario-show-for-large {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 73em) and (max-width: 95.9375em) {
+  .ontario-hide-for-large-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 72.9375em), screen and (min-width: 96em) {
+  .ontario-show-for-large-only {
+    display: none !important;
+  }
+}
+.ontario-show-for-sr,
+.ontario-show-on-focus {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.ontario-show-on-focus:active,
+.ontario-show-on-focus:focus {
+  position: static !important;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+}
+
+.ontario-show-for-landscape,
+.ontario-hide-for-portrait {
+  display: block !important;
+}
+
+@media screen and (orientation: landscape) {
+  .ontario-show-for-landscape,
+.ontario-hide-for-portrait {
+    display: block !important;
+  }
+}
+@media screen and (orientation: portrait) {
+  .ontario-show-for-landscape,
+.ontario-hide-for-portrait {
+    display: none !important;
+  }
+}
+.ontario-hide-for-landscape,
+.ontario-show-for-portrait {
+  display: none !important;
+}
+
+@media screen and (orientation: landscape) {
+  .ontario-hide-for-landscape,
+.ontario-show-for-portrait {
+    display: none !important;
+  }
+}
+@media screen and (orientation: portrait) {
+  .ontario-hide-for-landscape,
+.ontario-show-for-portrait {
+    display: block !important;
+  }
 }
 .ontario-padding-top-0-\! {
   padding-top: 0 !important;
@@ -3922,6 +4131,22 @@ strong {
   padding-left: 4rem !important;
 }
 
+.ontario-padding-top-80-\! {
+  padding-top: 5rem !important;
+}
+
+.ontario-padding-bottom-80-\! {
+  padding-bottom: 5rem !important;
+}
+
+.ontario-padding-right-80-\! {
+  padding-right: 5rem !important;
+}
+
+.ontario-padding-left-80-\! {
+  padding-left: 5rem !important;
+}
+
 .ontario-margin-top-0-\! {
   margin-top: 0 !important;
 }
@@ -4082,6 +4307,22 @@ strong {
   margin-left: 4rem !important;
 }
 
+.ontario-margin-top-80-\! {
+  margin-top: 5rem !important;
+}
+
+.ontario-margin-bottom-80-\! {
+  margin-bottom: 5rem !important;
+}
+
+.ontario-margin-right-80-\! {
+  margin-right: 5rem !important;
+}
+
+.ontario-margin-left-80-\! {
+  margin-left: 5rem !important;
+}
+
 /**
  * Mixin that adds spacing to a position and mark it as important
  * $type is the type of spacing to use and can be either padding or margin
@@ -4121,116 +4362,6 @@ strong {
   .ontario-lists--two-column-list li {
     padding: 0;
     margin: 0 1rem 1rem 0;
-  }
-}
-.ontario-hide {
-  display: none !important;
-}
-
-.ontario-invisible {
-  visibility: hidden;
-}
-
-@media screen and (max-width: 39.9375em) {
-  .ontario-hide-for-small-only {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 0em), screen and (min-width: 40em) {
-  .ontario-show-for-small-only {
-    display: none !important;
-  }
-}
-@media print, screen and (min-width: 40em) {
-  .ontario-hide-for-medium {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 39.9375em) {
-  .ontario-show-for-medium {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 40em) and (max-width: 72.9375em) {
-  .ontario-hide-for-medium-only {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 39.9375em), screen and (min-width: 73em) {
-  .ontario-show-for-medium-only {
-    display: none !important;
-  }
-}
-@media print, screen and (min-width: 73em) {
-  .ontario-hide-for-large {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 72.9375em) {
-  .ontario-show-for-large {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 73em) and (max-width: 95.9375em) {
-  .ontario-hide-for-large-only {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 72.9375em), screen and (min-width: 96em) {
-  .ontario-show-for-large-only {
-    display: none !important;
-  }
-}
-.ontario-show-for-sr,
-.ontario-show-on-focus {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-}
-
-.ontario-show-on-focus:active,
-.ontario-show-on-focus:focus {
-  position: static !important;
-  width: auto;
-  height: auto;
-  overflow: visible;
-  clip: auto;
-}
-
-.ontario-show-for-landscape,
-.ontario-hide-for-portrait {
-  display: block !important;
-}
-
-@media screen and (orientation: landscape) {
-  .ontario-show-for-landscape,
-.ontario-hide-for-portrait {
-    display: block !important;
-  }
-}
-@media screen and (orientation: portrait) {
-  .ontario-show-for-landscape,
-.ontario-hide-for-portrait {
-    display: none !important;
-  }
-}
-.ontario-hide-for-landscape,
-.ontario-show-for-portrait {
-  display: none !important;
-}
-
-@media screen and (orientation: landscape) {
-  .ontario-hide-for-landscape,
-.ontario-show-for-portrait {
-    display: none !important;
-  }
-}
-@media screen and (orientation: portrait) {
-  .ontario-hide-for-landscape,
-.ontario-show-for-portrait {
-    display: block !important;
   }
 }
 @charset "UTF-8";
@@ -4529,6 +4660,375 @@ html[lang=fr] blockquote {
 .ontario-alert--error a:active {
   color: #280000;
 }
+.ontario-nbsp {
+  white-space: nowrap;
+}
+
+/************************************************************
+    The following styles up until the next comment for
+    expanded footer specific styles are shared with the
+    simple footer.
+
+    Any style updates or additions will need to be
+    replicated in the simple-footer.scss file as well.
+************************************************************/
+.ontario-footer {
+  color: #FFFFFF;
+  margin-top: 5rem;
+  padding: 4rem 0;
+}
+
+.ontario-footer .ontario-columns *:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 40em) {
+  .ontario-footer:not(.ontario-footer--default) .ontario-columns:first-child {
+    margin-bottom: 3rem;
+  }
+  .ontario-footer .ontario-footer__expanded-bottom-section .ontario-columns:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.ontario-footer__links-container {
+  list-style: none;
+  margin: 0 0 1rem 0;
+}
+@media screen and (min-width: 73em) {
+  .ontario-footer__links-container {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.ontario-footer__links-container--inline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__links-container--inline {
+    flex-direction: row;
+  }
+}
+
+.ontario-footer__links-container li {
+  padding: 0.25rem 0;
+}
+
+.ontario-footer__link {
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.5rem 0;
+  margin: 0;
+  text-decoration: underline;
+}
+.ontario-footer__link:hover, .ontario-footer__link:focus {
+  text-decoration: none;
+}
+.ontario-footer__link:visited, .ontario-footer__link:active, .ontario-footer__link:hover {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__link {
+    padding: 0;
+    margin: 0 3rem 1rem 0;
+  }
+}
+
+/*************************************
+    Expanded footer specific styles
+**************************************/
+.ontario-footer p {
+  max-width: 48rem;
+  width: 100%;
+}
+.ontario-footer p a {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.ontario-footer p a:visited {
+  color: #FFFFFF;
+}
+.ontario-footer p a:active {
+  color: #e6e6e6;
+}
+.ontario-footer p a:focus, .ontario-footer p a:hover {
+  text-decoration: none;
+}
+
+.ontario-footer__links-container--two-column-list {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+  display: block;
+  margin: 0;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__links-container--two-column-list {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+  .ontario-footer__links-container--two-column-list .ontario-footer__link {
+    padding: 0;
+    margin: 0 1rem 1rem 0;
+  }
+}
+
+.ontario-footer__links-container--social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ontario-footer__links-container--social .ontario-footer__link {
+  background: transparent;
+  border-radius: 45%;
+  margin: 0 1rem 0.75rem 0;
+  padding: 0;
+  outline: none;
+  height: calc(3rem + 0.5rem);
+  width: calc(3rem + 0.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ontario-footer__links-container--social .ontario-footer__link:hover, .ontario-footer__links-container--social .ontario-footer__link:focus {
+  background-color: black;
+}
+.ontario-footer__links-container--social .ontario-footer__link:hover .ontario-icon, .ontario-footer__links-container--social .ontario-footer__link:focus .ontario-icon {
+  fill: #FFFFFF;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__links-container--social .ontario-footer__link {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.ontario-footer__links-container--social .ontario-footer__link .ontario-icon {
+  fill: #FFFFFF;
+  width: 36px;
+  height: 36px;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__links-container--social .ontario-footer__link .ontario-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.ontario-button.ontario-footer__button {
+  background-color: #1a1a1a;
+  border: 2px solid #FFFFFF;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.ontario-button.ontario-footer__button:hover, .ontario-button.ontario-footer__button:focus {
+  background-color: #4d4d4d;
+}
+.ontario-button.ontario-footer__button:active {
+  background-color: #666666;
+}
+
+.ontario-footer__button + .ontario-footer__links-container {
+  margin-top: 1.5rem;
+}
+
+.ontario-footer__expanded-top-section:before {
+  background-image: url("../logos/footer-expanded-supergraphic-logo.svg");
+}
+
+.ontario-footer.ontario-footer--expanded {
+  padding-top: 0;
+  background-color: #1a1a1a;
+  border-bottom: 4px solid #4d4d4d;
+}
+
+.ontario-footer__expanded-top-section {
+  background-color: #262626;
+  padding: 4rem 0;
+  position: relative;
+}
+.ontario-footer__expanded-top-section:before {
+  background-color: #333333;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 165rem;
+  background-position: calc(50vw - 125rem) -64rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__expanded-top-section:before {
+    background-size: 250rem;
+    background-position: calc(50vw - 195rem) -106rem;
+  }
+}
+@media screen and (min-width: 73em) {
+  .ontario-footer__expanded-top-section:before {
+    background-size: 305rem;
+    background-position: calc(50vw - 222rem) -160rem;
+  }
+}
+
+.ontario-footer__expanded-top-section .ontario-footer__link {
+  text-decoration: underline;
+}
+.ontario-footer__expanded-top-section .ontario-footer__link:hover, .ontario-footer__expanded-top-section .ontario-footer__link:focus {
+  text-decoration: none;
+}
+.ontario-footer__expanded-top-section .ontario-footer__link:active {
+  color: #e6e6e6;
+}
+
+.ontario-footer__expanded-top-section ul {
+  margin-bottom: 0;
+}
+
+.ontario-expanded-footer__one-third-block {
+  margin-bottom: 0;
+}
+.ontario-expanded-footer__one-third-block:first-of-type, .ontario-expanded-footer__one-third-block:nth-child(2) {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-expanded-footer__one-third-block {
+    margin-bottom: 0;
+  }
+  .ontario-expanded-footer__one-third-block:first-of-type {
+    margin-bottom: 3rem;
+  }
+  .ontario-expanded-footer__one-third-block:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 73em) {
+  .ontario-expanded-footer__one-third-block {
+    margin-bottom: 0;
+  }
+  .ontario-expanded-footer__one-third-block:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.ontario-footer__expanded-bottom-section {
+  background-color: #1a1a1a;
+  padding-top: 4rem;
+}
+.ontario-nbsp {
+  white-space: nowrap;
+}
+
+/************************************************************
+    The following styles up until the next comment for
+    simple footer specific styles are shared with the
+    expanded footer.
+
+    Any style updates or additions will need to be
+    replicated in the expanded-footer.scss file as well.
+************************************************************/
+.ontario-footer {
+  color: #FFFFFF;
+  margin-top: 5rem;
+  padding: 4rem 0;
+}
+
+.ontario-footer .ontario-columns *:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 40em) {
+  .ontario-footer:not(.ontario-footer--default) .ontario-columns:first-child {
+    margin-bottom: 3rem;
+  }
+  .ontario-footer .ontario-footer__expanded-bottom-section .ontario-columns:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.ontario-footer__links-container {
+  list-style: none;
+  margin: 0 0 1rem 0;
+}
+@media screen and (min-width: 73em) {
+  .ontario-footer__links-container {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.ontario-footer__links-container--inline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__links-container--inline {
+    flex-direction: row;
+  }
+}
+
+.ontario-footer__links-container li {
+  padding: 0.25rem 0;
+}
+
+.ontario-footer__link {
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.5rem 0;
+  margin: 0;
+  text-decoration: underline;
+}
+.ontario-footer__link:hover, .ontario-footer__link:focus {
+  text-decoration: none;
+}
+.ontario-footer__link:visited, .ontario-footer__link:active, .ontario-footer__link:hover {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer__link {
+    padding: 0;
+    margin: 0 3rem 1rem 0;
+  }
+}
+
+/*************************************
+    Simple footer specific styles
+*************************************/
+/* Supergraphic background */
+.ontario-footer--default {
+  position: relative;
+  background-color: #1a1a1a;
+  border-bottom: 4px solid #4d4d4d;
+}
+.ontario-footer--default:before {
+  background-image: url("../logos/footer-default-supergraphic-logo.svg");
+  background-size: 112.5rem;
+  background-position: calc(50vw - 73.5rem) -64rem;
+  background-color: #333333;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 40em) {
+  .ontario-footer--default:before {
+    background-size: 180rem;
+    background-position: calc(50vw - 120rem) -106rem;
+  }
+}
+@media screen and (min-width: 73em) {
+  .ontario-footer--default:before {
+    background-size: 275rem;
+    background-position: calc(50vw - 187rem) -160rem;
+  }
+}
 .ontario-checkboxes {
   margin-bottom: 2.5rem;
   max-width: 48rem;
@@ -4654,6 +5154,24 @@ html[lang=fr] blockquote {
 .ontario-dropdown option {
   font-weight: normal;
 }
+.ontario-error-messaging__container {
+  display: flex;
+  align-items: top;
+  margin: -0.25rem 0 0.5rem 0;
+  color: #D81A21;
+}
+
+.ontario-error-messaging__content {
+  margin-left: 0.5rem;
+}
+
+.ontario-input__error {
+  border-color: #D81A21 !important;
+}
+
+.ontario-checkboxes__single-option .ontario-checkboxes__error .ontario-checkboxes__label:before {
+  border-color: #D81A21;
+}
 @charset "UTF-8";
 .ontario-fieldset__legend--large h1,
 .ontario-fieldset__legend--heading h1 {
@@ -4669,7 +5187,7 @@ html[lang=fr] blockquote {
 .ontario-fieldset__legend--heading h1 {
   font-size: 2rem;
   letter-spacing: 0.04rem;
-  line-height: 1.2;
+  line-height: 1.29;
   margin: 2.5rem 0 1.5rem 0;
 }
 @media screen and (min-width: 40em) {
@@ -4677,7 +5195,7 @@ html[lang=fr] blockquote {
 .ontario-fieldset__legend--heading h1 {
     font-size: 2.5rem;
     letter-spacing: 0.04rem;
-    line-height: 1.29;
+    line-height: 1.2;
   }
 }
 
@@ -4706,6 +5224,7 @@ html[lang=fr] blockquote {
   letter-spacing: 0.02rem;
   line-height: 1.2;
   max-width: 26.25em;
+  margin-top: 1rem;
 }
 .ontario-fieldset__legend--large h1,
 .ontario-fieldset__legend--heading h1 {
@@ -4726,6 +5245,75 @@ html[lang=fr] blockquote {
   font-weight: 400;
 }
 .ontario-fieldset__legend__flag:before {
+  content: " ";
+}
+@charset "UTF-8";
+h1 .ontario-label--heading {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 .ontario-label--heading {
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.29;
+  margin: 2.5rem 0 1.5rem 0;
+}
+@media screen and (min-width: 40em) {
+  h1 .ontario-label--heading {
+    font-size: 2.5rem;
+    letter-spacing: 0.04rem;
+    line-height: 1.2;
+  }
+}
+
+.ontario-label {
+  cursor: pointer;
+  color: #1a1a1a;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  max-width: 38.75em;
+  white-space: normal;
+  width: 100%;
+}
+@media screen and (max-width: 40em) {
+  .ontario-label {
+    font-size: 1.125rem;
+    line-height: 1.56;
+  }
+}
+
+.ontario-label--large {
+  font-size: 1.75rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.2;
+  max-width: 26.25em;
+}
+@media screen and (max-width: 40em) {
+  .ontario-label--large {
+    font-size: 1.4375rem;
+    line-height: 1.39;
+  }
+}
+
+h1 .ontario-label--heading {
+  display: inline-block;
+  margin: 0;
+}
+
+.ontario-label__flag {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.ontario-label__flag:before {
   content: " ";
 }
 .ontario-hint-expander__button:focus, .ontario-hint-expander__button:active {
@@ -4823,75 +5411,6 @@ html[lang=fr] blockquote {
     margin-top: 1rem;
   }
 }
-.ontario-step-indicator {
-  /**
-  * Tertiary button defaults are overridden to achieve the mini-button specifications
-  * width is unset in small screen size to remove unnecessary space being added to the button
-  * min-width and max-width are set for small screen size to ensure the "back" button doesn't break and protrude into the text to the right
-  */
-}
-.ontario-step-indicator .ontario-step-indicator--without-back-button {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.ontario-step-indicator .ontario-step-indicator--with-back-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.ontario-step-indicator .ontario-h4 {
-  margin: 1.125rem 0;
-}
-@media screen and (max-width: 40em) {
-  .ontario-step-indicator .ontario-h4 {
-    margin: 1rem 0;
-    text-align: right;
-  }
-}
-.ontario-step-indicator .ontario-button.ontario-button--tertiary {
-  margin: 0.75rem 0;
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  min-width: 3rem;
-}
-@media screen and (max-width: 40em) {
-  .ontario-step-indicator .ontario-button.ontario-button--tertiary {
-    margin: 0.375rem 0;
-    width: unset;
-    min-width: 7.5rem;
-    max-width: 8rem;
-  }
-}
-.ontario-step-indicator .ontario-button.ontario-button--tertiary .ontario-icon {
-  margin: 0 0.375rem 0 0;
-  padding: 0;
-}
-.ontario-step-indicator hr {
-  padding: 0;
-  margin: 0;
-}
-.ontario-step-indicator p {
-  max-width: 48rem;
-}
-.ontario-error-messaging__container {
-  display: flex;
-  align-items: top;
-  margin: -0.25rem 0 0.5rem 0;
-  color: #D81A21;
-}
-
-.ontario-error-messaging__content {
-  margin-left: 0.5rem;
-}
-
-.ontario-input__error {
-  border-color: #D81A21 !important;
-}
-
-.ontario-checkboxes__single-option .ontario-checkboxes__error .ontario-checkboxes__label:before {
-  border-color: #D81A21;
-}
 * .ontario-radios {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -4987,382 +5506,56 @@ html[lang=fr] blockquote {
 .ontario-radios__input:checked + .ontario-radios__label:after {
   opacity: 1;
 }
-.ontario-input:focus, .ontario-input:active {
-  box-shadow: 0 0 0 4px #009ADB;
-  outline: 4px solid transparent;
-  transition: box-shadow 0.1s ease-in-out;
+.ontario-step-indicator {
+  /**
+  * Tertiary button defaults are overridden to achieve the mini-button specifications
+  * width is unset in small screen size to remove unnecessary space being added to the button
+  * min-width and max-width are set for small screen size to ensure the "back" button doesn't break and protrude into the text to the right
+  */
 }
-
-.ontario-input {
-  border: 2px solid #1a1a1a;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #1a1a1a;
-  display: block;
-  font-size: 1rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0 0 2.5rem;
-  max-width: 48rem;
-  width: 100%;
-  padding: 0.625rem 1rem;
-  transition: box-shadow 0.1s ease-in-out;
-}
-.ontario-input--2-char-width {
-  max-width: 8ex;
-}
-
-.ontario-input--3-char-width {
-  max-width: 10ex;
-}
-
-.ontario-input--4-char-width {
-  max-width: 12ex;
-}
-
-.ontario-input--5-char-width {
-  max-width: 14ex;
-}
-
-.ontario-input--7-char-width {
-  max-width: 17ex;
-}
-
-.ontario-input--10-char-width {
-  max-width: 23ex;
-}
-
-.ontario-input--20-char-width {
-  max-width: 41ex;
-}
-
-.ontario-form-group:last-of-type {
-  margin-bottom: 3rem;
-}
-@charset "UTF-8";
-h1 .ontario-label--heading {
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
-  font-feature-settings: normal;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h1 .ontario-label--heading {
-  font-size: 2rem;
-  letter-spacing: 0.04rem;
-  line-height: 1.2;
-  margin: 2.5rem 0 1.5rem 0;
-}
-@media screen and (min-width: 40em) {
-  h1 .ontario-label--heading {
-    font-size: 2.5rem;
-    letter-spacing: 0.04rem;
-    line-height: 1.29;
-  }
-}
-
-.ontario-label {
-  cursor: pointer;
-  color: #1a1a1a;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1875rem;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0 0 1rem 0;
-  max-width: 38.75em;
-  white-space: normal;
-  width: 100%;
-}
-@media screen and (max-width: 40em) {
-  .ontario-label {
-    font-size: 1.125rem;
-    line-height: 1.56;
-  }
-}
-
-.ontario-label--large {
-  font-size: 1.75rem;
-  letter-spacing: 0.02rem;
-  line-height: 1.2;
-  max-width: 26.25em;
-}
-@media screen and (max-width: 40em) {
-  .ontario-label--large {
-    font-size: 1.4375rem;
-    line-height: 1.39;
-  }
-}
-
-h1 .ontario-label--heading {
-  display: inline-block;
-  margin: 0;
-}
-
-.ontario-label__flag {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.ontario-label__flag:before {
-  content: " ";
-}
-.ontario-nbsp {
-  white-space: nowrap;
-}
-
-.ontario-footer {
-  color: #FFFFFF;
-  padding: 4rem 0;
-}
-
-.ontario-footer .ontario-columns *:last-child {
-  margin-bottom: 0;
-}
-@media screen and (max-width: 73em) {
-  .ontario-footer .ontario-columns {
-    margin-bottom: 3rem;
-  }
-  .ontario-footer .ontario-columns:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.ontario-footer__links-container {
-  list-style: none;
-  margin: 0 0 1rem 0;
-}
-@media screen and (min-width: 73em) {
-  .ontario-footer__links-container {
-    margin-bottom: 0.5rem;
-  }
-}
-
-.ontario-footer__links-container--inline {
+.ontario-step-indicator .ontario-step-indicator--without-back-button {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__links-container--inline {
-    flex-direction: row;
-  }
-}
-
-.ontario-footer__links-container li {
-  padding: 0.25rem 0;
-}
-
-.ontario-footer__link {
-  color: #FFFFFF;
-  display: inline-block;
-  padding: 0.5rem 0;
-  margin: 0;
-  text-decoration: underline;
-}
-.ontario-footer__link:hover, .ontario-footer__link:focus {
-  text-decoration: none;
-}
-.ontario-footer__link:visited, .ontario-footer__link:active, .ontario-footer__link:hover {
-  color: #FFFFFF;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__link {
-    padding: 0;
-    margin: 0 3rem 1rem 0;
-  }
-}
-
-.ontario-footer p {
-  max-width: 48rem;
-  width: 100%;
-}
-.ontario-footer p a {
-  color: #FFFFFF;
-  font-weight: 600;
-}
-.ontario-footer p a:visited {
-  color: #FFFFFF;
-}
-.ontario-footer p a:active {
-  color: #e6e6e6;
-}
-.ontario-footer p a:focus, .ontario-footer p a:hover {
-  text-decoration: none;
-}
-
-/* Supergraphic background */
-.ontario-footer--default,
-.ontario-footer__expanded-top-section {
-  position: relative;
-}
-.ontario-footer--default:before,
-.ontario-footer__expanded-top-section:before {
-  background-color: #333333;
-  background-repeat: no-repeat;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.ontario-footer__links-container--two-column-list {
-  -webkit-column-count: 1;
-     -moz-column-count: 1;
-          column-count: 1;
-  display: block;
-  margin: 0;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__links-container--two-column-list {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-  }
-  .ontario-footer__links-container--two-column-list .ontario-footer__link {
-    padding: 0;
-    margin: 0 1rem 1rem 0;
-  }
-}
-
-.ontario-footer__links-container--social {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.ontario-footer__links-container--social .ontario-footer__link {
-  background: transparent;
-  border-radius: 45%;
-  margin: 0 1rem 0.75rem 0;
-  padding: 0;
-  outline: none;
-  height: calc(3rem + 0.5rem);
-  width: calc(3rem + 0.5rem);
-  display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
-.ontario-footer__links-container--social .ontario-footer__link:hover, .ontario-footer__links-container--social .ontario-footer__link:focus {
-  background-color: black;
+.ontario-step-indicator .ontario-step-indicator--with-back-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.ontario-footer__links-container--social .ontario-footer__link:hover .ontario-icon, .ontario-footer__links-container--social .ontario-footer__link:focus .ontario-icon {
-  fill: #FFFFFF;
+.ontario-step-indicator .ontario-h4 {
+  margin: 1.125rem 0;
 }
-@media screen and (min-width: 40em) {
-  .ontario-footer__links-container--social .ontario-footer__link {
-    height: 3rem;
-    width: 3rem;
+@media screen and (max-width: 40em) {
+  .ontario-step-indicator .ontario-h4 {
+    margin: 1rem 0;
+    text-align: right;
   }
 }
-
-.ontario-footer__links-container--social .ontario-footer__link .ontario-icon {
-  fill: #FFFFFF;
-  width: 36px;
-  height: 36px;
+.ontario-step-indicator .ontario-button.ontario-button--tertiary {
+  margin: 0.75rem 0;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  min-width: 3rem;
 }
-@media screen and (min-width: 40em) {
-  .ontario-footer__links-container--social .ontario-footer__link .ontario-icon {
-    width: 32px;
-    height: 32px;
+@media screen and (max-width: 40em) {
+  .ontario-step-indicator .ontario-button.ontario-button--tertiary {
+    margin: 0.375rem 0;
+    width: unset;
+    min-width: 7.5rem;
+    max-width: 8rem;
   }
 }
-
-.ontario-button.ontario-footer__button {
-  background-color: #1a1a1a;
-  border: 2px solid #FFFFFF;
-  border-color: #FFFFFF;
-  color: #FFFFFF;
-  margin-bottom: 2rem;
+.ontario-step-indicator .ontario-button.ontario-button--tertiary .ontario-icon {
+  margin: 0 0.375rem 0 0;
+  padding: 0;
 }
-.ontario-button.ontario-footer__button:hover, .ontario-button.ontario-footer__button:focus {
-  background-color: #4d4d4d;
+.ontario-step-indicator hr {
+  padding: 0;
+  margin: 0;
 }
-.ontario-button.ontario-footer__button:active {
-  background-color: #666666;
-}
-
-.ontario-footer__button + .ontario-footer__links-container {
-  margin-top: 1.5rem;
-}
-
-.ontario-footer__expanded-top-section:before {
-  background-image: url("../logos/footer-expanded-supergraphic-logo.svg");
-}
-
-.ontario-footer.ontario-footer--expanded {
-  padding-top: 0;
-  background-color: #1a1a1a;
-  border-bottom: 4px solid #4d4d4d;
-}
-
-.ontario-footer__expanded-top-section {
-  background-color: #262626;
-  padding: 4rem 0;
-}
-.ontario-footer__expanded-top-section:before {
-  background-size: 165rem;
-  background-position: calc(50vw - 125rem) -64rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__expanded-top-section:before {
-    background-size: 250rem;
-    background-position: calc(50vw - 195rem) -106rem;
-  }
-}
-@media screen and (min-width: 73em) {
-  .ontario-footer__expanded-top-section:before {
-    background-size: 305rem;
-    background-position: calc(50vw - 222rem) -160rem;
-  }
-}
-
-.ontario-footer__expanded-top-section .ontario-footer__link {
-  text-decoration: underline;
-}
-.ontario-footer__expanded-top-section .ontario-footer__link:hover, .ontario-footer__expanded-top-section .ontario-footer__link:focus {
-  text-decoration: none;
-}
-.ontario-footer__expanded-top-section .ontario-footer__link:active {
-  color: #e6e6e6;
-}
-
-.ontario-footer__expanded-top-section ul {
-  margin-bottom: 0;
-}
-
-.ontario-expanded-footer__one-third-block {
-  margin-bottom: 0;
-}
-.ontario-expanded-footer__one-third-block:first-of-type, .ontario-expanded-footer__one-third-block:nth-child(2) {
-  margin-bottom: 3rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-expanded-footer__one-third-block {
-    margin-bottom: 0;
-  }
-  .ontario-expanded-footer__one-third-block:first-of-type {
-    margin-bottom: 3rem;
-  }
-  .ontario-expanded-footer__one-third-block:nth-child(2) {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 73em) {
-  .ontario-expanded-footer__one-third-block {
-    margin-bottom: 0;
-  }
-  .ontario-expanded-footer__one-third-block:first-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.ontario-footer__expanded-bottom-section {
-  background-color: #1a1a1a;
-  padding-top: 4rem;
+.ontario-step-indicator p {
+  max-width: 48rem;
 }
 .ontario-textarea {
   display: block;
@@ -5544,130 +5737,307 @@ h1 .ontario-label--heading {
     display: none;
   }
 }
-.ontario-nbsp {
-  white-space: nowrap;
+.ontario-input:focus, .ontario-input:active {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
 }
 
-.ontario-footer {
-  color: #FFFFFF;
-  padding: 4rem 0;
-}
-
-.ontario-footer .ontario-columns *:last-child {
-  margin-bottom: 0;
-}
-@media screen and (max-width: 73em) {
-  .ontario-footer .ontario-columns {
-    margin-bottom: 3rem;
-  }
-  .ontario-footer .ontario-columns:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.ontario-footer__links-container {
-  list-style: none;
-  margin: 0 0 1rem 0;
-}
-@media screen and (min-width: 73em) {
-  .ontario-footer__links-container {
-    margin-bottom: 0.5rem;
-  }
-}
-
-.ontario-footer__links-container--inline {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__links-container--inline {
-    flex-direction: row;
-  }
-}
-
-.ontario-footer__links-container li {
-  padding: 0.25rem 0;
-}
-
-.ontario-footer__link {
-  color: #FFFFFF;
-  display: inline-block;
-  padding: 0.5rem 0;
-  margin: 0;
-  text-decoration: underline;
-}
-.ontario-footer__link:hover, .ontario-footer__link:focus {
-  text-decoration: none;
-}
-.ontario-footer__link:visited, .ontario-footer__link:active, .ontario-footer__link:hover {
-  color: #FFFFFF;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__link {
-    padding: 0;
-    margin: 0 3rem 1rem 0;
-  }
-}
-
-.ontario-footer p {
+.ontario-input {
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #1a1a1a;
+  display: block;
+  font-size: 1rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0 0 2.5rem;
   max-width: 48rem;
   width: 100%;
+  padding: 0.625rem 1rem;
+  transition: box-shadow 0.1s ease-in-out;
 }
-.ontario-footer p a {
-  color: #FFFFFF;
+.ontario-input--2-char-width {
+  max-width: 8ex;
+  max-width: 8ex;
+}
+
+.ontario-input--3-char-width {
+  max-width: 10ex;
+  min-width: 10ex;
+}
+
+.ontario-input--4-char-width {
+  max-width: 12ex;
+  min-width: 12ex;
+}
+
+.ontario-input--5-char-width {
+  max-width: 14ex;
+  min-width: 14ex;
+}
+
+.ontario-input--7-char-width {
+  max-width: 17ex;
+  min-width: 17ex;
+}
+
+.ontario-input--10-char-width {
+  max-width: 23ex;
+  min-width: 23ex;
+}
+
+.ontario-input--20-char-width {
+  max-width: 41ex;
+  min-width: 41ex;
+}
+
+.ontario-form-group:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.ontario-date__group {
+  display: flex;
+}
+.ontario-date__group label {
   font-weight: 600;
 }
-.ontario-footer p a:visited {
-  color: #FFFFFF;
-}
-.ontario-footer p a:active {
-  color: #e6e6e6;
-}
-.ontario-footer p a:focus, .ontario-footer p a:hover {
-  text-decoration: none;
+.ontario-date__group input {
+  margin-top: 1rem;
 }
 
-/* Supergraphic background */
-.ontario-footer--default,
-.ontario-footer__expanded-top-section {
-  position: relative;
+.ontario-date__group-input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
 }
-.ontario-footer--default:before,
-.ontario-footer__expanded-top-section:before {
-  background-color: #333333;
-  background-repeat: no-repeat;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+
+.ontario-date--error input {
+  border: 0.125rem solid #CD0000;
+}
+.ontario-header-button:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.ontario-header {
+  position: relative;
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 5.75rem;
+}
+.ontario-header .ontario-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ontario-header svg {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+
+.ontario-header__logo-container {
+  height: 46px;
+}
+
+.ontario-header__logo-container a {
+  display: inline-block;
   height: 100%;
 }
+.ontario-header__logo-container a:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+}
 
-.ontario-footer--default {
-  background-color: #1a1a1a;
-  border-bottom: 4px solid #4d4d4d;
-}
-.ontario-footer--default:before {
-  background-size: 112.5rem;
-  background-position: calc(50vw - 73.5rem) -64rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer--default:before {
-    background-size: 180rem;
-    background-position: calc(50vw - 120rem) -106rem;
-  }
+/* Header search styles */
+.ontario-header__search-container {
+  position: relative;
+  display: none;
 }
 @media screen and (min-width: 73em) {
-  .ontario-footer--default:before {
-    background-size: 275rem;
-    background-position: calc(50vw - 187rem) -160rem;
+  .ontario-header__search-container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 40em) {
+  .ontario-header__search-container {
+    padding-right: 1rem;
   }
 }
 
-.ontario-footer--default:before {
-  background-image: url("../logos/footer-default-supergraphic-logo.svg");
+.ontario-header__search-input.ontario-input {
+  border-width: 0;
+  margin-bottom: 0;
+  height: 48px;
+  padding-left: 0.75rem;
+  padding-right: 7.2rem;
+}
+.ontario-header__search-input.ontario-input:invalid + input[type=reset] {
+  display: none;
+}
+.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit {
+  background-color: #0066CC;
+  color: #FFFFFF;
+}
+.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-input.ontario-input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.ontario-header__search-input.ontario-input:invalid:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  -moz-box-shadow: none;
+}
+.ontario-header__search-input.ontario-input:invalid:not(:focus) {
+  box-shadow: none;
+  -moz-box-shadow: none;
+}
+@media screen and (min-width: 40em) and (max-width: 73em) {
+  .ontario-header__search-input.ontario-input {
+    padding-left: 1rem;
+    padding-right: 6.4rem;
+  }
+}
+
+.ontario-header__search-submit {
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  height: 100%;
+  line-height: 1.56;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  cursor: pointer;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.ontario-header__search-submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #009ADB;
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit:active {
+  background-color: #002142;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit svg {
+  margin-right: 0;
+}
+
+input[type=reset].ontario-header__search-reset {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 11px;
+  right: 80px;
+  height: 28px;
+  width: 28px;
+  color: black;
+  margin: 0;
+  padding: 0.5rem;
+  background-image: url(../icons/ontario-icons-close.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input[type=reset].ontario-header__search-reset:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+}
+
+/* Header menu & language toggle & close search button styles */
+.ontario-header__nav-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Header buttons */
+.ontario-header-button {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 48px;
+  line-height: 1.5555555556;
+  text-align: center;
+  text-decoration: none;
+}
+.ontario-header-button:hover, .ontario-header-button:focus, .ontario-header-button:visited {
+  color: #FFFFFF;
+}
+
+.ontario-header-button--with-outline,
+.ontario-header-button--without-outline {
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+}
+.ontario-header-button--with-outline:hover,
+.ontario-header-button--without-outline:hover {
+  background-color: #4d4d4d;
+}
+.ontario-header-button--with-outline:active,
+.ontario-header-button--without-outline:active {
+  background-color: #666666;
+}
+.ontario-header-button--with-outline:focus,
+.ontario-header-button--without-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header-button--with-outline {
+  border: 2px solid #FFFFFF;
+  margin: 0 0 0 1rem;
+  padding: calc(0.75rem / 2) 1rem;
+}
+.ontario-header-button--with-outline:hover {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.ontario-header-button--with-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header-button--without-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header__language-toggler {
+  padding: 0.75rem;
+}
+.ontario-header__language-toggler abbr[title] {
+  text-decoration: none;
 }
 .ontario-header-button:focus {
   box-shadow: 0 0 0 4px #009ADB;
@@ -6040,229 +6410,6 @@ input[type=reset].ontario-header__search-reset:focus {
     display: none;
   }
 }
-.ontario-header-button:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-  outline: 4px solid transparent;
-  transition: box-shadow 0.1s ease-in-out;
-}
-
-.ontario-header {
-  position: relative;
-  background-color: #1a1a1a;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  height: 5.75rem;
-}
-.ontario-header .ontario-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ontario-header svg {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0;
-}
-
-.ontario-header__logo-container {
-  height: 46px;
-}
-
-.ontario-header__logo-container a {
-  display: inline-block;
-  height: 100%;
-}
-.ontario-header__logo-container a:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-}
-
-/* Header search styles */
-.ontario-header__search-container {
-  position: relative;
-  display: none;
-}
-@media screen and (min-width: 73em) {
-  .ontario-header__search-container {
-    display: flex;
-  }
-}
-@media screen and (min-width: 40em) {
-  .ontario-header__search-container {
-    padding-right: 1rem;
-  }
-}
-
-.ontario-header__search-input.ontario-input {
-  border-width: 0;
-  margin-bottom: 0;
-  height: 48px;
-  padding-left: 0.75rem;
-  padding-right: 7.2rem;
-}
-.ontario-header__search-input.ontario-input:invalid + input[type=reset] {
-  display: none;
-}
-.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit {
-  background-color: #0066CC;
-  color: #FFFFFF;
-}
-.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit:hover {
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-input.ontario-input::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.ontario-header__search-input.ontario-input:invalid:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-  -moz-box-shadow: none;
-}
-.ontario-header__search-input.ontario-input:invalid:not(:focus) {
-  box-shadow: none;
-  -moz-box-shadow: none;
-}
-@media screen and (min-width: 40em) and (max-width: 73em) {
-  .ontario-header__search-input.ontario-input {
-    padding-left: 1rem;
-    padding-right: 6.4rem;
-  }
-}
-
-.ontario-header__search-submit {
-  border: 0;
-  border-radius: 0 3px 3px 0;
-  background-color: #f2f2f2;
-  color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.125rem;
-  height: 100%;
-  line-height: 1.56;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  cursor: pointer;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-.ontario-header__search-submit:hover {
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #009ADB;
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit:active {
-  background-color: #002142;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit svg {
-  margin-right: 0;
-}
-
-input[type=reset].ontario-header__search-reset {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 11px;
-  right: 80px;
-  height: 28px;
-  width: 28px;
-  color: black;
-  margin: 0;
-  padding: 0.5rem;
-  background-image: url(../icons/ontario-icons-close.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-input[type=reset].ontario-header__search-reset:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-}
-
-/* Header menu & language toggle & close search button styles */
-.ontario-header__nav-right-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-/* Header buttons */
-.ontario-header-button {
-  background-color: #1a1a1a;
-  border: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  font-weight: 600;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 48px;
-  line-height: 1.5555555556;
-  text-align: center;
-  text-decoration: none;
-}
-.ontario-header-button:hover, .ontario-header-button:focus, .ontario-header-button:visited {
-  color: #FFFFFF;
-}
-
-.ontario-header-button--with-outline,
-.ontario-header-button--without-outline {
-  background-color: #1a1a1a;
-  color: #FFFFFF;
-}
-.ontario-header-button--with-outline:hover,
-.ontario-header-button--without-outline:hover {
-  background-color: #4d4d4d;
-}
-.ontario-header-button--with-outline:active,
-.ontario-header-button--without-outline:active {
-  background-color: #666666;
-}
-.ontario-header-button--with-outline:focus,
-.ontario-header-button--without-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header-button--with-outline {
-  border: 2px solid #FFFFFF;
-  margin: 0 0 0 1rem;
-  padding: calc(0.75rem / 2) 1rem;
-}
-.ontario-header-button--with-outline:hover {
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-}
-.ontario-header-button--with-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header-button--without-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header__language-toggler {
-  padding: 0.75rem;
-}
-.ontario-header__language-toggler abbr[title] {
-  text-decoration: none;
-}
 .ontario-icon {
   display: inline-block;
   width: 24px;
@@ -6524,12 +6671,7 @@ input[type=reset].ontario-header__search-reset:focus {
 .ontario-navigation .ontario-header-button:active {
   background-color: #1a1a1a;
 }
-.ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
+.ontario-accordion__button {
   font-style: normal;
   font-weight: 700;
   text-rendering: optimizeLegibility;
@@ -6538,24 +6680,14 @@ input[type=reset].ontario-header__search-reset:focus {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
+.ontario-accordion__button {
   font-size: 1.25rem;
   letter-spacing: 0.03rem;
   line-height: 1.5;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
-  .ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
+  .ontario-accordion__button {
     font-size: 1.5rem;
     letter-spacing: 0.0313rem;
     line-height: 1.5;
@@ -6626,13 +6758,6 @@ input[type=reset].ontario-header__search-reset:focus {
   padding: 0.75rem 0.5rem;
   text-align: left;
   width: 100%;
-}
-.ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
   margin-bottom: 0;
 }
 .ontario-accordion__button .ontario-accordion__button-icon--close,
@@ -6797,106 +6922,6 @@ input[type=reset].ontario-header__search-reset:focus {
 .ontario-button--tertiary:visited {
   color: #0066CC;
 }
-.ontario-nbsp {
-  white-space: nowrap;
-}
-
-.ontario-footer {
-  color: #FFFFFF;
-  padding: 4rem 0;
-}
-
-.ontario-footer .ontario-columns *:last-child {
-  margin-bottom: 0;
-}
-@media screen and (max-width: 73em) {
-  .ontario-footer .ontario-columns {
-    margin-bottom: 3rem;
-  }
-  .ontario-footer .ontario-columns:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.ontario-footer__links-container {
-  list-style: none;
-  margin: 0 0 1rem 0;
-}
-@media screen and (min-width: 73em) {
-  .ontario-footer__links-container {
-    margin-bottom: 0.5rem;
-  }
-}
-
-.ontario-footer__links-container--inline {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__links-container--inline {
-    flex-direction: row;
-  }
-}
-
-.ontario-footer__links-container li {
-  padding: 0.25rem 0;
-}
-
-.ontario-footer__link {
-  color: #FFFFFF;
-  display: inline-block;
-  padding: 0.5rem 0;
-  margin: 0;
-  text-decoration: underline;
-}
-.ontario-footer__link:hover, .ontario-footer__link:focus {
-  text-decoration: none;
-}
-.ontario-footer__link:visited, .ontario-footer__link:active, .ontario-footer__link:hover {
-  color: #FFFFFF;
-}
-@media screen and (min-width: 40em) {
-  .ontario-footer__link {
-    padding: 0;
-    margin: 0 3rem 1rem 0;
-  }
-}
-
-.ontario-footer p {
-  max-width: 48rem;
-  width: 100%;
-}
-.ontario-footer p a {
-  color: #FFFFFF;
-  font-weight: 600;
-}
-.ontario-footer p a:visited {
-  color: #FFFFFF;
-}
-.ontario-footer p a:active {
-  color: #e6e6e6;
-}
-.ontario-footer p a:focus, .ontario-footer p a:hover {
-  text-decoration: none;
-}
-
-/* Supergraphic background */
-.ontario-footer--default,
-.ontario-footer__expanded-top-section {
-  position: relative;
-}
-.ontario-footer--default:before,
-.ontario-footer__expanded-top-section:before {
-  background-color: #333333;
-  background-repeat: no-repeat;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 caption {
   background-color: #0000001a;
   padding: 1.125rem 1rem 1.125rem 1.5rem;
@@ -6916,7 +6941,7 @@ caption {
 
 .ontario-table-container {
   position: relative;
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0.5rem 0 2.5rem 0;
 }
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6):nth-child(even),
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6) ~ tr:nth-child(even) {
@@ -6950,7 +6975,6 @@ table {
   display: table;
   line-height: 1.625rem;
   font-weight: normal;
-  margin: 0 0 2.5rem;
 }
 table.ontario-table--full-container-width {
   display: table;

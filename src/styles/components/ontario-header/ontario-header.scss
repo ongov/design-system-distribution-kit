@@ -128,7 +128,7 @@ $ontario-header-logo-width--mobile: 45px;
     align-items: center;
 
     font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    font-weight: $ontario-font-weight-semi-bold;
     font-size: 1.125rem;
     height: 100%;
     line-height: 1.56;
@@ -209,7 +209,7 @@ input[type="reset"].ontario-header__search-reset {
     align-items: center;
 
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: $ontario-font-weight-semi-bold;
     font-family: $ontario-font-open-sans;
     height: $standard-input-height;
     line-height: math.div(14, 9);
@@ -315,7 +315,7 @@ input[type="reset"].ontario-header__search-reset {
 
 .ontario-header__search-close {
     flex-direction: column-reverse;
-    font-weight: 400;
+    font-weight: $ontario-font-weight-normal;
     margin-right: $spacing-4;
     padding: math.div($spacing-5, 10) $spacing-1;
     position: relative;

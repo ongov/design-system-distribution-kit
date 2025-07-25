@@ -4,7 +4,7 @@
     border-left: 4px solid $ontario-greyscale-70;
     font-family: $ontario-font-raleway-modified;
     font-size: rem-calc(19);
-    font-weight: 400;
+    font-weight: $ontario-font-weight-normal;
     letter-spacing: 0.025rem;
     line-height: 1.56;
     max-width: $standard-width;
@@ -59,7 +59,7 @@
 
 .ontario-blockquote__attribution {
     font-style: normal;
-    font-weight: 700;
+    font-weight: $ontario-font-weight-bold;
 
     &::before {
         content: "\2014 \0020";

@@ -44,19 +44,19 @@ caption {
 }
 
 .ontario-table-container {
-	position: relative;
-	margin: $ontario-remcalc-8px 0 $ontario-remcalc-24px 0; //Excludes 20px scrollbar on top and bottom
+    position: relative;
+    margin: $ontario-remcalc-8px 0 $ontario-remcalc-40px 0; //Excludes 20px scrollbar on top and bottom
 
-	table:not(.ontario-table--no-zebra-stripes) {
-		tbody {
-			tr:first-child:nth-last-child(n + 6),
-			tr:first-child:nth-last-child(n + 6) ~ tr {
-				&:nth-child(even) {
-					background-color: $ontario-table-zebra-striping;
-				}
-			}
-		}
-	}
+    table:not(.ontario-table--no-zebra-stripes) {
+        tbody {
+            tr:first-child:nth-last-child(n + 6),
+            tr:first-child:nth-last-child(n + 6) ~ tr {
+                &:nth-child(even) {
+                    background-color: $ontario-table-zebra-striping;
+                }
+            }
+        }
+    }
 }
 
 .ontario-table-div {
@@ -89,7 +89,6 @@ table {
     display: table;
     line-height: rem-calc(26);
     font-weight: normal;
-    margin: 0 0 $ontario-remcalc-40px;
 
     &.ontario-table--full-container-width {
         display: table;

@@ -75,7 +75,7 @@
 
     a {
         color: $ontario-colour-white;
-        font-weight: 600;
+        font-weight: $ontario-font-weight-semi-bold;
         text-decoration: none;
 
         &:hover,
@@ -110,7 +110,7 @@
     display: block;
     font-family: $ontario-font-open-sans;
     font-size: rem-calc(18);
-    font-weight: 600;
+    font-weight: $ontario-font-weight-semi-bold;
     height: $standard-input-height;
     line-height: rem-calc(23);
     padding: $spacing-3;

@@ -1,9 +1,4 @@
-.ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
+.ontario-accordion__button {
   font-style: normal;
   font-weight: 700;
   text-rendering: optimizeLegibility;
@@ -12,24 +7,14 @@
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
+.ontario-accordion__button {
   font-size: 1.25rem;
   letter-spacing: 0.03rem;
   line-height: 1.5;
   margin: 0 0 0.75rem 0;
 }
 @media screen and (min-width: 40em) {
-  .ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
+  .ontario-accordion__button {
     font-size: 1.5rem;
     letter-spacing: 0.0313rem;
     line-height: 1.5;
@@ -100,13 +85,6 @@
   padding: 0.75rem 0.5rem;
   text-align: left;
   width: 100%;
-}
-.ontario-accordion__button p,
-.ontario-accordion__button h2,
-.ontario-accordion__button h3,
-.ontario-accordion__button h4,
-.ontario-accordion__button h5,
-.ontario-accordion__button h6 {
   margin-bottom: 0;
 }
 .ontario-accordion__button .ontario-accordion__button-icon--close,

@@ -17,7 +17,7 @@ caption {
 
 .ontario-table-container {
   position: relative;
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0.5rem 0 2.5rem 0;
 }
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6):nth-child(even),
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6) ~ tr:nth-child(even) {
@@ -51,7 +51,6 @@ table {
   display: table;
   line-height: 1.625rem;
   font-weight: normal;
-  margin: 0 0 2.5rem;
 }
 table.ontario-table--full-container-width {
   display: table;

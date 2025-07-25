@@ -158,6 +158,22 @@
   padding-left: 4rem !important;
 }
 
+.ontario-padding-top-80-\! {
+  padding-top: 5rem !important;
+}
+
+.ontario-padding-bottom-80-\! {
+  padding-bottom: 5rem !important;
+}
+
+.ontario-padding-right-80-\! {
+  padding-right: 5rem !important;
+}
+
+.ontario-padding-left-80-\! {
+  padding-left: 5rem !important;
+}
+
 .ontario-margin-top-0-\! {
   margin-top: 0 !important;
 }
@@ -316,6 +332,22 @@
 
 .ontario-margin-left-64-\! {
   margin-left: 4rem !important;
+}
+
+.ontario-margin-top-80-\! {
+  margin-top: 5rem !important;
+}
+
+.ontario-margin-bottom-80-\! {
+  margin-bottom: 5rem !important;
+}
+
+.ontario-margin-right-80-\! {
+  margin-right: 5rem !important;
+}
+
+.ontario-margin-left-80-\! {
+  margin-left: 5rem !important;
 }
 
 /**

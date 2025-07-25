@@ -11,14 +11,14 @@ h1 .ontario-label--heading {
 h1 .ontario-label--heading {
   font-size: 2rem;
   letter-spacing: 0.04rem;
-  line-height: 1.2;
+  line-height: 1.29;
   margin: 2.5rem 0 1.5rem 0;
 }
 @media screen and (min-width: 40em) {
   h1 .ontario-label--heading {
     font-size: 2.5rem;
     letter-spacing: 0.04rem;
-    line-height: 1.29;
+    line-height: 1.2;
   }
 }
 

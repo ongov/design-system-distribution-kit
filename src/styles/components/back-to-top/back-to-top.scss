@@ -50,7 +50,7 @@ $mobile-icon-margin: 0;
     line-height: rem-calc(20);
     font-size: 1rem;
     font-family: $ontario-font-open-sans;
-    font-weight: 600;
+    font-weight: $ontario-font-weight-semi-bold;
     z-index: 10000;
     cursor: pointer;
 

@@ -71,16 +71,9 @@
     padding: $spacing-3 $spacing-2;
     text-align: left;
     width: $full-width;
+    @extend %h4-styles;
+    margin-bottom: 0;
 
-    p,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @extend %h4-styles;
-        margin-bottom: 0;
-    }
 
     .ontario-accordion__button-icon--close,
     .ontario-accordion__button-icon--open {

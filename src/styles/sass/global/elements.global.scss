@@ -92,6 +92,10 @@ h5 + h6 {
 	margin-top: 2rem;
 }
 
+p code, td code, li code {
+    line-height: 2.25rem;
+}
+
 /* -------------------------------
         Forms
 --------------------------------- */
@@ -113,7 +117,7 @@ input[type='checkbox'] + label,
 input[type='radio'] + label {
 	font-family: $ontario-font-open-sans;
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: $ontario-font-weight-normal;
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -246,7 +250,7 @@ hr.dark {
  * The `40` numeric value is used here instead of the equivalent spacing variable because the mixin needs
  * the exact numeric value to populate the class name
  */
-.ontario-image-example-container.ontario-image-example-container__margin {
+.ontario-image-example-container__margin {
 	@include ontario-spacing-important(margin, bottom, 40);
 }
 

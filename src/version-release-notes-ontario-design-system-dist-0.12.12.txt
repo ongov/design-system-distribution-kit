@@ -8,6 +8,8 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.11](#a0.12.11)
+-   [Release 0.12.10](#a0.12.10)
 -   [Release 0.12.9](#a0.12.9)
 -   [Release 0.12.8](#a0.12.8)
 -   [Release 0.12.7](#a0.12.7)
@@ -42,6 +44,50 @@ label: Release notes
 
 Added in this release:
 
+-   Dates - patterns for date input and display
+
+Updated:
+
+-   Footers now include standard top margin
+
+### Bugs and known issues
+
+-   Fixed: the accordion component was failing HTML validation due to a heading hierarchy issue
+-   Fixed: heading line heights were incorrect (desktop had the height intended for mobile and vice versa)
+-   Fixed: the distribution package was missing some generic footer styles
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.11"></a> 0.12.11 Release - August 4, 2022
+
+### Platform
+
+-   We have improved the design of images in our guidance content.
+
+### Elements
+
+-   Guidance on footers has been updated and clarified
+
+### Bugs and known issues
+
+-   Fixed: the header menu was not closing when a menu item was clicked
+
+### Distribution package
+
+-   Download: [Design System 0.12.11]({{path '../../dist/ontario-design-system-dist-0.12.11.zip'}})
+
+<hr>
+
+## <a name="a0.12.10"></a> 0.12.10 Release - June 3, 2022
+
+### Elements
+
+Added in this release:
+
 -   Error messaging
 
 ### Bugs and known issues
@@ -50,7 +96,7 @@ Added in this release:
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 0.12.10]({{path '../../dist/ontario-design-system-dist-0.12.10.zip'}})
 
 <hr>
 
