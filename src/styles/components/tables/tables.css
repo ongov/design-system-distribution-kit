@@ -1,5 +1,5 @@
 caption {
-  background-color: #0000001A;
+  background-color: #0000001a;
   padding: 1.125rem 1rem 1.125rem 1.5rem;
   text-align: left;
   font-weight: bold;
@@ -11,6 +11,7 @@ caption {
   caption {
     font-size: 1.25rem;
     line-height: 1.875rem;
+    padding-left: 1rem;
   }
 }
 
@@ -20,7 +21,7 @@ caption {
 }
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6):nth-child(even),
 .ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6) ~ tr:nth-child(even) {
-  background-color: #0000000D;
+  background-color: #0000000d;
 }
 
 .ontario-table-div {
@@ -50,6 +51,7 @@ table {
   display: table;
   line-height: 1.625rem;
   font-weight: normal;
+  padding: 2.5rem;
 }
 table.ontario-table--full-container-width {
   display: table;
@@ -119,7 +121,7 @@ tbody {
 tbody tr {
   border: solid;
   border-width: 0.0625rem 0;
-  border-color: #0000004D;
+  border-color: #0000004d;
 }
 tbody tr:last-child {
   border-width: 0.1875rem 0;
@@ -127,7 +129,7 @@ tbody tr:last-child {
   border-color: #1a1a1a;
 }
 tbody tr.ontario-table-row--highlight {
-  background-color: #E191003C !important;
+  background-color: #e191003c !important;
 }
 tbody tr.ontario-table-row--highlight th {
   padding-left: 1.5rem;
@@ -169,6 +171,10 @@ thead th.ontario-table-cell--numeric {
   thead th.ontario-table-cell--numeric {
     padding: 1.53125rem 1rem 1.53125rem 0.5rem;
   }
+}
+
+td.ontario-table-cell--numeric strong {
+  font-family: "Courier Prime", Courier, "Courier New", monospace;
 }
 
 .ontario-table-header--column-span-1 {
@@ -276,9 +282,9 @@ tfoot th {
 }
 
 tr.ontario-table-row--subtotal {
-  background-color: #007B9E1D !important;
+  background-color: #007b9e1d !important;
 }
 
 tfoot tr {
-  background-color: #0077A056 !important;
+  background-color: #0077a056 !important;
 }

@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.9](#a0.12.9)
 -   [Release 0.12.8](#a0.12.8)
 -   [Release 0.12.7](#a0.12.7)
 -   [Release 0.12.6](#a0.12.6)
@@ -37,7 +38,23 @@ label: Release notes
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release – {{{ _config.project.releaseDate }}}
 
+### Elements
+
+Added in this release:
+
+-   Error messaging
+
+### Bugs and known issues
+
+-   Multiple bug fixes for the Tables component
+
 ### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.9"></a> 0.12.9 Release - May 13, 2022
 
 ### Elements
 
@@ -54,7 +71,8 @@ Updated:
 -   HTML improvements to the ontario.ca header
 
 ### Distribution package
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+-   Download: [Design System 0.12.9]({{path '../../dist/ontario-design-system-dist-0.12.9.zip'}})
 
 <hr>
 
