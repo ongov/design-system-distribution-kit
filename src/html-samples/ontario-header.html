@@ -34,7 +34,7 @@
                     <label
                         for="ontario-search-input-field"
                         class="ontario-show-for-sr"
-                    >Search</label>
+                    >Enter search topic</label>
                     <input
                         type="text"
                         name="search"
@@ -42,7 +42,7 @@
                         autocomplete="off"
                         aria-autocomplete="none"
                         class="ontario-input ontario-header__search-input"
-                        required
+                        aria-required="true"
                     />
                     <input
                         class="ontario-header__search-reset"
@@ -56,6 +56,7 @@
                         id="ontario-search-submit"
                         type="submit"
                         onclick="doSearch()"
+                        aria-label="Search"
                     >
                         <span class="ontario-show-for-sr">Submit</span>
                         <svg
@@ -109,44 +110,16 @@
                     </button>
 
                     <button
-                        class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
-                        id="ontario-header-menu-toggler"
-                        aria-controls="ontario-navigation"
-                        aria-label="Show navigation menu"
-                        type="button"
+                        class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline'
+                        id='ontario-header-menu-toggler'
+                        aria-controls='ontario-navigation'
+                        aria-label='Show navigation menu'
+                        type='button'
                     >
-                        <svg
-                            class="ontario-icon"
-                            focusable="false"
-                            sol:category="primary"
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                        >
-                            <use xlink:href="#ontario-icon-menu"></use>
+                        <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
+                            <use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use>
                         </svg>
-
                         <span>Menu</span>
-                    </button>
-                </div>
-                <div
-                    class="ontario-header__search-close-container ontario-columns ontario-small-2 ontario-medium-3"
-                >
-                    <button
-                        class="ontario-header__search-close ontario-header-button ontario-header-button--without-outline"
-                        id="ontario-header-search-close"
-                        aria-label="Close search bar"
-                        type="button"
-                    >
-                        <span aria-hidden="true">close</span>
-                        <svg
-                            class="ontario-icon"
-                            focusable="false"
-                            sol:category="primary"
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                        >
-                            <use xlink:href="#ontario-icon-close"></use>
-                        </svg>
                     </button>
                 </div>
             </div>

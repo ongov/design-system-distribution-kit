@@ -34,6 +34,7 @@
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -42,6 +43,7 @@
 --------------------------------- */
 .ontario-search__container {
   max-width: 34rem;
+  margin-bottom: 2.5rem;
 }
 
 .ontario-search__input-container {
@@ -83,10 +85,11 @@
   box-shadow: none;
   -moz-box-shadow: none;
 }
-@media screen and (min-width: 40em) and (max-width: 73em) {
+@media screen and (max-width: 40em) {
   .ontario-search__input.ontario-input {
     padding-left: 1rem;
-    padding-right: 6.4rem;
+    padding-right: 7.75rem;
+    background-color: transparent;
   }
 }
 
@@ -132,7 +135,7 @@
 }
 @media screen and (max-width: 40em) {
   .ontario-search__submit {
-    width: 4rem;
+    width: 3rem;
   }
 }
 
@@ -161,7 +164,7 @@ input[type=reset].ontario-search__reset:focus {
 }
 @media screen and (max-width: 40em) {
   input[type=reset].ontario-search__reset {
-    right: 5rem;
+    right: 5.5rem;
   }
 }
 

@@ -72,7 +72,7 @@
 				<div class="ontario-column ontario-small-12">
 					<!-- inject:menu:html -->
 					<div id="main-header">
-            <span>Release 1.6.0</span>
+            <span>Release 1.7.0</span>
             <h1><a href="https://designsystem.ontario.ca/" title="Ontario Design System Examples">Ontario Design System Examples</a></h1>
             <p class="ontario-lead-statement">To preview this page you may use the <a href=https://www.npmjs.com/package/serve>Serve</a> command`serve` from within the distribution package.</p><ul>
 <li><a href='#Typography'>Typography</a></li>
@@ -298,6 +298,15 @@
 
 					
 <li><a href='#Loading-indicator'>Loading indicator</a></li>
+
+					
+<li><a href='#Badges'>Badges</a></li>
+
+					
+<li><a href='#Search-box'>Search box</a></li>
+
+					
+<li><a href='#Back-button'>Back button</a></li>
 </ul> </div>
 					<!-- endinject -->
 					<!-- inject:body:html -->
@@ -1369,7 +1378,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 			</ul>
 			<div class='ontario-footer__copyright'>
 				<a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information'>&copy; King's Printer for Ontario,
-					<span class='ontario-nbsp'>2012&ndash;23</span></a>
+					<span class='ontario-nbsp'>2012&ndash;24</span></a>
 			</div>
 		</div>
 	</div>
@@ -1409,7 +1418,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                     <li><a class='ontario-footer__link' href='#'>Contact us</a></li>
                 </ul>
                 <div class='ontario-footer__copyright'>
-                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information'> &copy; King's Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;23</span></a>
+                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information'> &copy; King's Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;24</span></a>
                 </div>
 		    </div>
 	    </div>
@@ -1469,7 +1478,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                     <li><a class='ontario-footer__link' href='#'>Contact us</a></li>
                 </ul>
                 <div class='ontario-footer__copyright'>
-                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information'> &copy; King's Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;23</span></a>
+                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information'> &copy; King's Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;24</span></a>
                 </div>
 		    </div>
 	    </div>
@@ -1573,7 +1582,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                     <li><a class='ontario-footer__link' href='#'>Contact us</a></li>
                 </ul>
                 <div class='ontario-footer__copyright'>
-                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information'> &copy; King's Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;23</span></a>
+                    <a class='ontario-footer__link' href='https://www.ontario.ca/page/copyright-information'> &copy; King's Printer for Ontario, <span class='ontario-nbsp'>2012&ndash;24</span></a>
                 </div>
 		    </div>
 	    </div>
@@ -1621,18 +1630,18 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 								<li><a href='#'>Link 2</a></li>
 							</ul>
 
-							<button
-								class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline'
-								id='ontario-header-menu-toggler'
-								aria-controls='ontario-navigation'
-								aria-label='Show navigation menu'
-								type='button'
-							>
-								<svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
-									<use xlink:href='#ontario-icon-menu'></use>
-								</svg>
-								<span>Menu</span>
-							</button>
+                            <button
+                                class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline'
+                                id='ontario-header-menu-toggler'
+                                aria-controls='ontario-navigation'
+                                aria-label='Show navigation menu'
+                                type='button'
+                            >
+                                <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
+                                    <use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use>
+                                </svg>
+                                <span>Menu</span>
+                            </button>
 						</div>
 					</div>
 				</div>
@@ -1720,7 +1729,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                     <label
                         for="ontario-search-input-field"
                         class="ontario-show-for-sr"
-                    >Search</label>
+                    >Enter search topic</label>
                     <input
                         type="text"
                         name="search"
@@ -1728,7 +1737,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                         autocomplete="off"
                         aria-autocomplete="none"
                         class="ontario-input ontario-header__search-input"
-                        required
+                        aria-required="true"
                     />
                     <input
                         class="ontario-header__search-reset"
@@ -1742,6 +1751,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                         id="ontario-search-submit"
                         type="submit"
                         onclick="doSearch()"
+                        aria-label="Search"
                     >
                         <span class="ontario-show-for-sr">Submit</span>
                         <svg
@@ -1795,44 +1805,16 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                     </button>
 
                     <button
-                        class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
-                        id="ontario-header-menu-toggler"
-                        aria-controls="ontario-navigation"
-                        aria-label="Show navigation menu"
-                        type="button"
+                        class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline'
+                        id='ontario-header-menu-toggler'
+                        aria-controls='ontario-navigation'
+                        aria-label='Show navigation menu'
+                        type='button'
                     >
-                        <svg
-                            class="ontario-icon"
-                            focusable="false"
-                            sol:category="primary"
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                        >
-                            <use xlink:href="#ontario-icon-menu"></use>
+                        <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
+                            <use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use>
                         </svg>
-
                         <span>Menu</span>
-                    </button>
-                </div>
-                <div
-                    class="ontario-header__search-close-container ontario-columns ontario-small-2 ontario-medium-3"
-                >
-                    <button
-                        class="ontario-header__search-close ontario-header-button ontario-header-button--without-outline"
-                        id="ontario-header-search-close"
-                        aria-label="Close search bar"
-                        type="button"
-                    >
-                        <span aria-hidden="true">close</span>
-                        <svg
-                            class="ontario-icon"
-                            focusable="false"
-                            sol:category="primary"
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                        >
-                            <use xlink:href="#ontario-icon-close"></use>
-                        </svg>
                     </button>
                 </div>
             </div>
@@ -2632,7 +2614,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-3">
     <li class="ontario-card ontario-card--default  ontario-card--position-vertical  ">
             <div class="ontario-card__image-container">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-4_3.svg" alt="">
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-4_3.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2652,7 +2634,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-3">
     <li class="ontario-card ontario-card--light  ontario-card--position-vertical  ">
             <div class="ontario-card__image-container">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-16_9.svg" alt="">
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-16_9.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2672,7 +2654,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-3">
     <li class="ontario-card ontario-card--dark  ontario-card--position-vertical  ">
             <div class="ontario-card__image-container">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-2_1.svg" alt="">
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-2_1.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2692,7 +2674,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-3">
     <li class="ontario-card ontario-card--default ontario-card--no-description ontario-card--position-vertical  ">
             <div class="ontario-card__image-container">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-4_3.svg" alt="">
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-4_3.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2709,7 +2691,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-3">
     <li class="ontario-card ontario-card--light ontario-card--no-description ontario-card--position-vertical  ">
             <div class="ontario-card__image-container">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-16_9.svg" alt="">
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-16_9.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2726,7 +2708,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-3">
     <li class="ontario-card ontario-card--dark ontario-card--no-description ontario-card--position-vertical  ">
             <div class="ontario-card__image-container">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-2_1.svg" alt="">
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-2_1.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2743,9 +2725,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-2">
     <li class="ontario-card ontario-card--image--one-third   ontario-card--position-horizontal ontario-card--position-horizontal__image-left">
             <div class="ontario-card__image-container">
-                <a href="#">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-9_16.svg" alt="">
-                </a>
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-9_16.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2765,9 +2745,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-2">
     <li class="ontario-card ontario-card--image--one-third   ontario-card--position-horizontal ontario-card--position-horizontal__image-right">
             <div class="ontario-card__image-container">
-                <a href="#">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-9_16.svg" alt="">
-                </a>
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-9_16.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2787,9 +2765,7 @@ What is your delivery address?
 <ul class="ontario-card__container ontario-card--cards-per-row-2">
     <li class="ontario-card ontario-card--image--one-fourth   ontario-card--position-horizontal ontario-card--position-horizontal__image-left">
             <div class="ontario-card__image-container">
-                <a href="#">
-                    <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-9_16.svg" alt="">
-                </a>
+                <img class="ontario-card__image" src="../../markdown-assets/cards/en/card_image-ratio-9_16.svg" alt="card component image">
             </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -2833,6 +2809,99 @@ What is your delivery address?
 		<p>Loading</p>
 	</div>
 </div>
+
+
+					<hr><h2 id=Badges>Badges</h2>
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">Default</dt><!-- Start: @badges--default --><dd>
+<div class="ontario-badge__container">
+    <span class="ontario-badge ontario-badge--default-heavy">Default</span>
+    <span class="ontario-badge ontario-badge--default-light">Default Light</span>
+    <span class="ontario-badge ontario-badge--neutral-heavy">Neutral</span>
+    <span class="ontario-badge ontario-badge--neutral-light">Neutral Light</span>
+
+</div>
+</dd><!-- End: @badges--default -->
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">System feedback</dt><!-- Start: @badges--system-feedback --><dd>
+<div class="ontario-badge__container">
+
+        <span class="ontario-badge ontario-badge--alert-heavy">Alert</span>
+        <span class="ontario-badge ontario-badge--warning-heavy">Warning</span>
+        <span class="ontario-badge ontario-badge--success-heavy">Success</span>
+</div>
+</dd><!-- End: @badges--system-feedback -->
+
+
+					<hr><h2 id=Search-box>Search box</h2>
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">Default</dt><!-- Start: @search-box--default --><dd>
+<form action name="searchForm" id="search-example-1-form" onsubmit="return false" class="ontario-search__container" novalidate>
+    <label class="ontario-label " for="search-example-1">
+        Search the directory</label>
+
+
+    <div class="ontario-search__input-container">
+        <input type="search" name="search" id="search-example-1" autocomplete="off" aria-autocomplete="none"
+            class="ontario-input ontario-search__input" required />
+        <input class="ontario-search__reset" id="search-example-1-reset-button" type="reset" value=""
+            aria-label="Clear field" />
+        <button class="ontario-search__submit" id="search-example-1-submit-button" type="submit" onclick="handleSearch()">
+            <span class="ontario-show-for-sr">Submit</span>
+            <svg class="ontario-icon" focusable="false" sol:category="primary" viewBox="0 0 24 24"
+                preserveAspectRatio="xMidYMid meet">
+                <use xlink:href="#ontario-icon-search"></use>
+            </svg>
+        </button>
+    </div>
+</form>
+
+
+</dd><!-- End: @search-box--default -->
+
+<dt class="fractal-dt ontario-padding-bottom-24-!">Example with hint text</dt><!-- Start: @search-box--example-with-hint-text --><dd>
+<form action name="searchForm" id="search-example-2-form" onsubmit="return false" class="ontario-search__container" novalidate>
+    <label class="ontario-label ontario-search__label" for="search-example-2">
+        Search the directory</label>
+
+    <p id="search-example-2-hint" class="ontario-hint">Search by employee name or organization name.</p>
+
+    <div class="ontario-search__input-container">
+        <input type="search" name="search" id="search-example-2" autocomplete="off" aria-autocomplete="none"
+            class="ontario-input ontario-search__input" required />
+        <input class="ontario-search__reset" id="search-example-2-reset-button" type="reset" value=""
+            aria-label="Clear field" />
+        <button class="ontario-search__submit" id="search-example-2-submit-button" type="submit" onclick="handleSearch()">
+            <span class="ontario-show-for-sr">Submit</span>
+            <svg class="ontario-icon" focusable="false" sol:category="primary" viewBox="0 0 24 24"
+                preserveAspectRatio="xMidYMid meet">
+                <use xlink:href="#ontario-icon-search"></use>
+            </svg>
+        </button>
+    </div>
+</form>
+
+
+</dd><!-- End: @search-box--example-with-hint-text -->
+
+
+					<hr><h2 id=Back-button>Back button</h2>
+
+<button class="ontario-button ontario-button--tertiary">
+    <svg
+        class="ontario-icon"
+        alt=""
+        aria-hidden="true"
+        focusable="false"
+        sol:category="primary"
+        viewBox="0 0 24 24"
+        preserveAspectRatio="xMidYMid meet"
+    >
+        <use href="#ontario-icon-chevron-left"></use>
+    </svg>
+    Back
+</button>
+
 
 
 					<!-- endinject -->

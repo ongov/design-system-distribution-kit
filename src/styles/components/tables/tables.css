@@ -34,6 +34,7 @@
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -157,7 +158,7 @@ table.ontario-table--condensed tfoot tr td.ontario-table-cell--numeric {
 
 tbody {
   font-size: 1rem;
-  vertical-align: text-top;
+  vertical-align: top;
 }
 tbody tr {
   border: solid;
@@ -188,7 +189,7 @@ thead {
   border: solid;
   border-width: 0.1875rem 0;
   border-color: #1a1a1a;
-  vertical-align: text-top;
+  vertical-align: top;
 }
 thead th {
   text-align: left;
@@ -330,7 +331,7 @@ tbody tr.ontario-table-row--subtotal th {
 }
 
 tfoot {
-  vertical-align: text-top;
+  vertical-align: top;
 }
 tfoot th {
   padding: 1.4375rem 1rem 1.4375rem 1.5rem;

@@ -29,6 +29,7 @@
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
+/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -43,6 +44,7 @@
   flex-direction: column;
   gap: 2.5rem;
   align-items: flex-start;
+  padding: 1.5rem 1rem;
 }
 
 .ontario-badge__label {

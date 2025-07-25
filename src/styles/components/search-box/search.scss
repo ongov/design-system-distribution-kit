@@ -8,19 +8,20 @@
 @use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-weights.variables' as fontWeights;
 @use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/2-tools/functions/global.functions' as globalFunctions;
 
-$ontario-input-height: globalFunctions.rem-calc(48);
+$ontario-input-height: globalFunctions.px-to-rem(48);
 $ontario-search-icon-size: 2rem;
 $ontario-reset-icon-size: 1.5rem;
-$ontario-serach-button-width: 5rem;
-$ontario-serach-button-width-mobile: 4rem;
+$ontario-search-button-width: 5rem;
+$ontario-search-button-width--mobile: 3rem;
 $ontario-search-input-padding: 8.5rem;
-$ontario-search-input-padding--mobile: 6.4rem;
+$ontario-search-input-padding--mobile: 7.75rem;
 $ontario-search-desktop-width: 34rem;
 $ontario-search-mobile-width: 20.5rem;
 $ontario-reset-icon-path: '../icons/ontario-icons-close.svg';
 
 .ontario-search__container {
 	max-width: $ontario-search-desktop-width;
+	margin-bottom: spacing.$spacing-7;
 }
 
 .ontario-search__input-container {
@@ -72,9 +73,10 @@ $ontario-reset-icon-path: '../icons/ontario-icons-close.svg';
 		-moz-box-shadow: none;
 	}
 
-	@media screen and (min-width: breakpoints.$small-breakpoint) and (max-width: breakpoints.$medium-breakpoint) {
+	@media screen and (max-width: breakpoints.$small-breakpoint) {
 		padding-left: spacing.$spacing-4;
 		padding-right: $ontario-search-input-padding--mobile;
+		background-color: transparent;
 	}
 }
 
@@ -91,7 +93,7 @@ $ontario-reset-icon-path: '../icons/ontario-icons-close.svg';
 	font-family: typography.$ontario-font-open-sans;
 	font-weight: fontWeights.$ontario-font-weights-semi-bold;
 	font-size: 1.125rem;
-	width: $ontario-serach-button-width;
+	width: $ontario-search-button-width;
 	line-height: lineheight.$ontario-line-height-8;
 
 	position: absolute;
@@ -126,7 +128,7 @@ $ontario-reset-icon-path: '../icons/ontario-icons-close.svg';
 	}
 
 	@media screen and (max-width: breakpoints.$small-breakpoint) {
-		width: $ontario-serach-button-width-mobile;
+		width: $ontario-search-button-width--mobile;
 	}
 }
 
@@ -135,7 +137,7 @@ input[type='reset'].ontario-search__reset {
 	display: flex;
 	align-items: center;
 	top: spacing.$spacing-2;
-	right: $ontario-serach-button-width + spacing.$spacing-4;
+	right: $ontario-search-button-width + spacing.$spacing-4;
 	height: $ontario-reset-icon-size;
 	width: $ontario-reset-icon-size;
 	color: colours.$ontario-colour-black;
@@ -155,7 +157,7 @@ input[type='reset'].ontario-search__reset {
 	}
 
 	@media screen and (max-width: breakpoints.$small-breakpoint) {
-		right: $ontario-serach-button-width-mobile + spacing.$spacing-4;
+		right: $ontario-search-button-width--mobile + spacing.$spacing-7;
 	}
 }
 

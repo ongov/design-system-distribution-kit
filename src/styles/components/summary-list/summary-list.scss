@@ -74,7 +74,7 @@
 	.ontario-summary-list__row {
 		display: flex;
 		flex-direction: row;
-		padding: (spacing.$spacing-4 + globalFunctions.rem-calc(3)) spacing.$spacing-0;
+		padding: (spacing.$spacing-4 + globalFunctions.px-to-rem(3)) spacing.$spacing-0;
 		border-bottom: 1px solid colours.$ontario-greyscale-20;
 		align-items: flex-start;
 		justify-content: space-between;

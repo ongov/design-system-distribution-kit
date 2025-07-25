@@ -10,6 +10,7 @@
 	flex-direction: column;
 	gap: spacing.$spacing-7;
 	align-items: flex-start;
+	padding: spacing.$spacing-5 spacing.$spacing-4;
 }
 
 .ontario-badge__label {
@@ -29,7 +30,7 @@
 	font-family: typography.$ontario-font-raleway-modified;
 	font-size: fontSizes.$ontario-font-size-standard-body-text;
 	font-weight: fontWeights.$ontario-font-weights-bold;
-	line-height: globalFunctions.rem-calc(25);
+	line-height: globalFunctions.px-to-rem(25);
 	letter-spacing: 0.03rem;
 	text-transform: uppercase;
 }
