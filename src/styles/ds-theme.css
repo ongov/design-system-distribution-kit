@@ -1101,78 +1101,78 @@ h6,
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Courier Prime"), local("Courier-prime-regular"), url("../../../fonts/courier-prime-400/CourierPrime-Regular.ttf") format("truetype");
+  src: local("Courier Prime"), local("Courier-prime-regular"), url("../fonts/courier-prime-400/CourierPrime-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Courier Prime";
   font-weight: 400;
   font-style: italic;
   font-display: swap;
-  src: local("Courier Prime Italic"), local("Courier-prime-italic"), url("../../../fonts/courier-prime-400--italic/CourierPrime-Italic.ttf") format("truetype");
+  src: local("Courier Prime Italic"), local("Courier-prime-italic"), url("../fonts/courier-prime-400--italic/CourierPrime-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Courier Prime";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Courier Prime Bold"), local("Courier-prime-bold"), url("../../../fonts/courier-prime-700/CourierPrime-Bold.ttf") format("truetype");
+  src: local("Courier Prime Bold"), local("Courier-prime-bold"), url("../fonts/courier-prime-700/CourierPrime-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Courier Prime";
   font-weight: 700;
   font-style: italic;
   font-display: swap;
-  src: local("Courier Prime Bold Italic"), local("Courier-prime-bold-italic"), url("../../../fonts/courier-prime-700--italic/CourierPrime-BoldItalic.ttf") format("truetype");
+  src: local("Courier Prime Bold Italic"), local("Courier-prime-bold-italic"), url("../fonts/courier-prime-700--italic/CourierPrime-BoldItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../../../fonts/open-sans-400/open-sans-400.woff2") format("woff2"), url("../../../fonts/open-sans-400/open-sans-400.woff") format("woff"), url("../../../fonts/open-sans-400/open-sans-400.svg#OpenSans") format("svg"), local("Open Sans"), local("Open-Sans-regular");
+  src: url("../fonts/open-sans-400/open-sans-400.woff2") format("woff2"), url("../fonts/open-sans-400/open-sans-400.woff") format("woff"), url("../fonts/open-sans-400/open-sans-400.svg#OpenSans") format("svg"), local("Open Sans"), local("Open-Sans-regular");
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("../../../fonts/open-sans-600/open-sans-600.woff2") format("woff2"), url("../../../fonts/open-sans-600/open-sans-600.woff") format("woff"), url("../../../fonts/open-sans-600/open-sans-600.svg#OpenSans") format("svg"), local("Open Sans Semibold"), local("Open-Sans-600");
+  src: url("../fonts/open-sans-600/open-sans-600.woff2") format("woff2"), url("../fonts/open-sans-600/open-sans-600.woff") format("woff"), url("../fonts/open-sans-600/open-sans-600.svg#OpenSans") format("svg"), local("Open Sans Semibold"), local("Open-Sans-600");
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: italic;
   font-display: swap;
-  src: url("../../../fonts/open-sans-400--italic/open-sans-400--italic.woff2") format("woff2"), url("../../../fonts/open-sans-400--italic/open-sans-400--italic.woff") format("woff"), url("../../../fonts/open-sans-400--italic/open-sans-400--italic.svg#OpenSans") format("svg"), local("Open Sans Italic"), local("Open-Sans-italic");
+  src: url("../fonts/open-sans-400--italic/open-sans-400--italic.woff2") format("woff2"), url("../fonts/open-sans-400--italic/open-sans-400--italic.woff") format("woff"), url("../fonts/open-sans-400--italic/open-sans-400--italic.svg#OpenSans") format("svg"), local("Open Sans Italic"), local("Open-Sans-italic");
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
   font-display: swap;
   src: local("Open Sans Bold"), local("Open-Sans-700");
-  src: url("../../../fonts/open-sans-700/open-sans-700.eot");
-  src: url("../../../fonts/open-sans-700/open-sans-700.eot?#iefix") format("embedded-opentype"), url("../../../fonts/open-sans-700/open-sans-700.woff2") format("woff2"), url("../../../fonts/open-sans-700/open-sans-700.woff") format("woff"), url("../../../fonts/open-sans-700/open-sans-700.ttf") format("truetype"), url("../../../fonts/open-sans-700/open-sans-700.svg");
+  src: url("../fonts/open-sans-700/open-sans-700.eot");
+  src: url("../fonts/open-sans-700/open-sans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-700/open-sans-700.woff2") format("woff2"), url("../fonts/open-sans-700/open-sans-700.woff") format("woff"), url("../fonts/open-sans-700/open-sans-700.ttf") format("truetype"), url("../fonts/open-sans-700/open-sans-700.svg");
 }
 @font-face {
   font-family: "Raleway";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../../../fonts/raleway-modified-400/raleway-modified-400.woff2") format("woff2"), url("../../../fonts/raleway-modified-400/raleway-modified-400.woff") format("woff"), url("../../../fonts/raleway-modified-400/raleway-modified-400.svg") format("svg"), local("Raleway"), local("Raleway-400");
+  src: url("../fonts/raleway-modified-400/raleway-modified-400.woff2") format("woff2"), url("../fonts/raleway-modified-400/raleway-modified-400.woff") format("woff"), url("../fonts/raleway-modified-400/raleway-modified-400.svg") format("svg"), local("Raleway"), local("Raleway-400");
 }
 @font-face {
   font-family: "Raleway";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("../../../fonts/raleway-modified-600/raleway-modified-600.woff2") format("woff2"), url("../../../fonts/raleway-modified-600/raleway-modified-600.woff") format("woff"), url("../../../fonts/raleway-modified-600/raleway-modified-600.svg") format("svg"), local("Raleway SemiBold"), local("Raleway-600");
+  src: url("../fonts/raleway-modified-600/raleway-modified-600.woff2") format("woff2"), url("../fonts/raleway-modified-600/raleway-modified-600.woff") format("woff"), url("../fonts/raleway-modified-600/raleway-modified-600.svg") format("svg"), local("Raleway SemiBold"), local("Raleway-600");
 }
 @font-face {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../../../fonts/raleway-modified-700/raleway-modified-700.woff2") format("woff2"), url("../../../fonts/raleway-modified-700/raleway-modified-700.woff") format("woff"), url("../../../fonts/raleway-modified-700/raleway-modified-700.svg") format("svg"), local("Raleway Bold"), local("Raleway-700");
+  src: url("../fonts/raleway-modified-700/raleway-modified-700.woff2") format("woff2"), url("../fonts/raleway-modified-700/raleway-modified-700.woff") format("woff"), url("../fonts/raleway-modified-700/raleway-modified-700.svg") format("svg"), local("Raleway Bold"), local("Raleway-700");
 }
 /*
 *  Global elements
@@ -6206,84 +6206,6 @@ html[lang=fr] blockquote {
 /* callout backgrounds */
 /* icon colours */
 /* service ontario header colours */
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-.ontario-critical-alert {
-  background-color: #FFD440;
-  font-weight: 400;
-  margin: 0;
-  padding: 1rem 0;
-  position: relative;
-  z-index: 5;
-}
-
-.ontario-critical-alert__body {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.ontario-critical-alert__icon svg {
-  width: 28px;
-  height: 28px;
-  margin: 0 0.85rem 0 0;
-}
-
-.ontario-critical-alert p {
-  margin: 0;
-  padding: 0;
-  line-height: 1.8;
-}
-
-.ontario-critical-alert a {
-  color: #1a1a1a;
-  font-weight: 700;
-}
-.ontario-critical-alert a:hover, .ontario-critical-alert a:focus {
-  text-decoration: none;
-}
-.ontario-critical-alert a:visited {
-  color: #1a1a1a;
-}
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
 /*** 1 - Breakpoint sizes for media queries ***/
 .ontario-alert {
   border-width: 0 0 0 4px;
@@ -6394,6 +6316,84 @@ html[lang=fr] blockquote {
 }
 .ontario-alert--error a:active {
   color: #280000;
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+.ontario-critical-alert {
+  background-color: #FFD440;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 5;
+}
+
+.ontario-critical-alert__body {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.ontario-critical-alert__icon svg {
+  width: 28px;
+  height: 28px;
+  margin: 0 0.85rem 0 0;
+}
+
+.ontario-critical-alert p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.ontario-critical-alert a {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+.ontario-critical-alert a:hover, .ontario-critical-alert a:focus {
+  text-decoration: none;
+}
+.ontario-critical-alert a:visited {
+  color: #1a1a1a;
 }
 /*
 *  Global variables
@@ -6827,11 +6827,6 @@ html[lang=fr] blockquote {
     background-position: calc(50vw - 187rem) -160rem;
   }
 }
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
 /* -------------------------------
     Global spacing variables
 --------------------------------- */
@@ -6855,1174 +6850,23 @@ html[lang=fr] blockquote {
 /* callout backgrounds */
 /* icon colours */
 /* service ontario header colours */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-/* -------------------------------
-    Focus placeholder variables
---------------------------------- */
-/* -------------------------------
-    Focus placeholder
---------------------------------- */
-.ontario-header-button:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-  outline: 4px solid transparent;
-  transition: box-shadow 0.1s ease-in-out;
-}
-
-.ontario-header {
-  position: relative;
-  background-color: #1a1a1a;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  height: 5.75rem;
-}
-.ontario-header .ontario-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ontario-header svg {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0;
-}
-
-.ontario-header__logo-container {
-  height: 46px;
-}
-
-.ontario-header__logo-container a {
-  display: inline-block;
-  height: 100%;
-}
-.ontario-header__logo-container a:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-}
-
-/* Header search styles */
-.ontario-header__search-container {
-  position: relative;
-  display: none;
-}
-@media screen and (min-width: 73em) {
-  .ontario-header__search-container {
-    display: flex;
-  }
-}
-@media screen and (min-width: 40em) {
-  .ontario-header__search-container {
-    padding-right: 1rem;
-  }
-}
-
-.ontario-header__search-input.ontario-input {
-  border-width: 0;
-  margin-bottom: 0;
-  height: 48px;
-  padding-left: 0.75rem;
-  padding-right: 7.2rem;
-}
-.ontario-header__search-input.ontario-input:invalid + input[type=reset] {
-  display: none;
-}
-.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit {
-  background-color: #0066CC;
-  color: #FFFFFF;
-}
-.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit:hover {
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-input.ontario-input::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.ontario-header__search-input.ontario-input:invalid:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-  -moz-box-shadow: none;
-}
-.ontario-header__search-input.ontario-input:invalid:not(:focus) {
-  box-shadow: none;
-  -moz-box-shadow: none;
-}
-@media screen and (min-width: 40em) and (max-width: 73em) {
-  .ontario-header__search-input.ontario-input {
-    padding-left: 1rem;
-    padding-right: 6.4rem;
-  }
-}
-
-.ontario-header__search-submit {
-  border: 0;
-  border-radius: 0 3px 3px 0;
-  background-color: #f2f2f2;
-  color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.125rem;
-  height: 100%;
-  line-height: 1.56;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  cursor: pointer;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-.ontario-header__search-submit:hover {
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #009ADB;
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit:active {
-  background-color: #002142;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit svg {
-  margin-right: 0;
-}
-
-input[type=reset].ontario-header__search-reset {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 11px;
-  right: 80px;
-  height: 28px;
-  width: 28px;
-  color: black;
-  margin: 0;
-  padding: 0.5rem;
-  background-image: url(../icons/ontario-icons-close.svg);
-  background-position: center center;
+.ontario-dropdown {
+  background-color: #FFFFFF;
+  background-image: url("../icons/ontario-material-dropdown-arrow-48px.svg");
+  background-position: right 0.5rem center;
   background-repeat: no-repeat;
-  background-color: transparent;
-  outline: none;
-  border: none;
+  background-size: 2rem;
+  padding-right: 2.25rem;
   cursor: pointer;
 }
-input[type=reset].ontario-header__search-reset:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-}
 
-/* Header menu & language toggle & close search button styles */
-.ontario-header__nav-right-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-/* Header buttons */
-.ontario-header-button {
-  background-color: #1a1a1a;
-  border: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  font-weight: 600;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 48px;
-  line-height: 1.5555555556;
-  text-align: center;
-  text-decoration: none;
-}
-.ontario-header-button:hover, .ontario-header-button:focus, .ontario-header-button:visited {
-  color: #FFFFFF;
-}
-
-.ontario-header-button--with-outline,
-.ontario-header-button--without-outline {
-  background-color: #1a1a1a;
-  color: #FFFFFF;
-}
-.ontario-header-button--with-outline:hover,
-.ontario-header-button--without-outline:hover {
-  background-color: #4d4d4d;
-}
-.ontario-header-button--with-outline:active,
-.ontario-header-button--without-outline:active {
-  background-color: #666666;
-}
-.ontario-header-button--with-outline:focus,
-.ontario-header-button--without-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header-button--with-outline {
-  border: 2px solid #FFFFFF;
-  margin: 0 0 0 1rem;
-  padding: calc(0.75rem / 2) 1rem;
-}
-.ontario-header-button--with-outline:hover {
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-}
-.ontario-header-button--with-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header-button--without-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header__language-toggler {
-  padding: 0.75rem;
-}
-.ontario-header__language-toggler abbr[title] {
-  text-decoration: none;
-}
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-.ontario-application-subheader__heading {
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
-  font-feature-settings: normal;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.ontario-application-subheader__heading {
-  font-size: 1.25rem;
-  letter-spacing: 0.03rem;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
-  max-width: 48rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-application-subheader__heading {
-    font-size: 1.5rem;
-    letter-spacing: 0.0313rem;
-    line-height: 1.5;
-  }
-}
-
-.ontario-header.ontario-application-header {
-  height: 3.125rem;
-  z-index: 5;
-}
-
-.ontario-application-header__logo,
-.ontario-application-header__logo a,
-.ontario-application-header__lang-toggle,
-.ontario-application-subheader__container,
-.ontario-application-subheader__menu-container,
-.ontario-application-subheader__menu {
-  display: flex;
-}
-
-.ontario-application-header__logo img {
-  width: 100px;
-  height: 25px;
-}
-
-.ontario-application-header__lang-toggle {
-  justify-content: flex-end;
-}
-.ontario-application-header__lang-toggle a {
-  font-size: 1rem;
-  line-height: 1.375rem;
-  height: auto;
-  padding: 0.5rem 0.75rem;
-}
-
-.ontario-application-subheader {
-  padding: 1.25rem 0;
-  background-color: #404040;
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-}
-@media screen and (min-width: 73em) {
-  .ontario-application-subheader {
-    z-index: 0;
-  }
-}
-.ontario-application-subheader > .ontario-row {
-  position: relative;
-}
-
-.ontario-application-subheader .ontario-header-button {
-  display: flex;
-}
-.ontario-application-subheader .ontario-header-button:last-of-type {
+/* These styles are to fix differences in default styling for dropdowns in IE */
+.ontario-dropdown::-ms-expand {
   display: none;
 }
 
-.ontario-application-subheader .ontario-header-button {
-  background-color: #4d4d4d;
-}
-.ontario-application-subheader .ontario-header-button .ontario-icon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0;
-}
-.ontario-application-subheader .ontario-header-button:hover {
-  background-color: #666666;
-}
-.ontario-application-subheader .ontario-header-button:active {
-  background-color: #1a1a1a;
-}
-
-.ontario-application-subheader__heading {
-  padding: 0.375rem 0;
-  margin-bottom: 0;
-  max-width: 65%;
-}
-.ontario-application-subheader__heading a {
-  color: #FFFFFF;
-  font-weight: 600;
-  text-decoration: none;
-}
-.ontario-application-subheader__heading a:hover, .ontario-application-subheader__heading a:active, .ontario-application-subheader__heading a:visited {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.ontario-application-subheader__container {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ontario-application-subheader__menu {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  align-items: center;
-}
-
-.ontario-application-subheader__menu li {
-  padding: 0;
-  margin-left: 1rem;
-}
-
-.ontario-application-subheader__menu a {
-  border-radius: 4px;
-  color: #FFFFFF;
-  display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
-  height: 48px;
-  line-height: 1.4375rem;
-  padding: 0.75rem;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.ontario-application-subheader__menu a.ontario-link--active {
-  border-radius: 4px 4px 0 0;
-  border-bottom: 4px solid #FFFFFF;
-}
-.ontario-application-subheader__menu a:hover {
-  color: #FFFFFF;
-  background-color: #666666;
-}
-.ontario-application-subheader__menu a:active {
-  color: #FFFFFF;
-  background-color: #1a1a1a;
-}
-
-.ontario-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.ontario-navigation--open .ontario-application-subheader .ontario-header-button:first-of-type {
-  display: none;
-}
-.ontario-navigation--open .ontario-application-subheader .ontario-header-button:last-of-type {
-  display: flex;
-}
-@media screen and (max-width: 73em) {
-  .ontario-navigation--open .ontario-application-subheader-menu__container {
-    position: relative;
-    z-index: 3;
-  }
-}
-.ontario-navigation--open .ontario-overlay {
-  display: block;
-}
-@media screen and (min-width: 73em) {
-  .ontario-navigation--open .ontario-overlay {
-    display: none;
-  }
-}
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-/* -------------------------------
-    Focus placeholder variables
---------------------------------- */
-/* -------------------------------
-    Focus placeholder
---------------------------------- */
-.ontario-header-button:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-  outline: 4px solid transparent;
-  transition: box-shadow 0.1s ease-in-out;
-}
-
-/* -------------------------------
-    Global font-size variables
---------------------------------- */
-.ontario-header {
-  position: relative;
-  overflow: hidden;
-  z-index: 5;
-  background-color: #1a1a1a;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  height: 5.75rem;
-}
-.ontario-header .ontario-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ontario-header svg {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0;
-}
-
-.ontario-header__logo-container {
-  height: 46px;
-}
-
-.ontario-header__logo-container a {
-  display: inline-block;
-  height: 100%;
-}
-.ontario-header__logo-container a:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-}
-
-.ontario-header__logo-container img {
-  width: 45px;
-  height: 46px;
-}
-@media screen and (min-width: 40em) {
-  .ontario-header__logo-container img {
-    width: 180px;
-    height: 46px;
-  }
-}
-
-/* Header search styles */
-.ontario-header__search-container {
-  position: relative;
-  display: none;
-}
-@media screen and (min-width: 73em) {
-  .ontario-header__search-container {
-    display: flex;
-  }
-}
-@media screen and (min-width: 40em) {
-  .ontario-header__search-container {
-    padding-right: 1rem;
-  }
-}
-
-.ontario-header__search-input.ontario-input {
-  border-width: 0;
-  margin-bottom: 0;
-  height: 48px;
-  padding-left: 0.75rem;
-  padding-right: 7.2rem;
-}
-.ontario-header__search-input.ontario-input:invalid + input[type=reset] {
-  display: none;
-}
-.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit {
-  background-color: #0066CC;
-  color: #FFFFFF;
-}
-.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit:hover {
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-input.ontario-input::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.ontario-header__search-input.ontario-input:invalid:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-  -moz-box-shadow: none;
-}
-.ontario-header__search-input.ontario-input:invalid:not(:focus) {
-  box-shadow: none;
-  -moz-box-shadow: none;
-}
-@media screen and (min-width: 40em) and (max-width: 73em) {
-  .ontario-header__search-input.ontario-input {
-    padding-left: 1rem;
-    padding-right: 6.4rem;
-  }
-}
-
-.ontario-header__search-submit {
-  border: 0;
-  border-radius: 0 3px 3px 0;
-  background-color: #f2f2f2;
-  color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.125rem;
-  height: 100%;
-  line-height: 1.56;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  cursor: pointer;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-.ontario-header__search-submit:hover {
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #009ADB;
-  background-color: #00478F;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit:active {
-  background-color: #002142;
-  color: #FFFFFF;
-}
-.ontario-header__search-submit svg {
-  margin-right: 0;
-}
-
-input[type=reset].ontario-header__search-reset {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 11px;
-  right: 80px;
-  height: 28px;
-  width: 28px;
-  color: black;
-  margin: 0;
-  padding: 0.5rem;
-  background-image: url(../icons/ontario-icons-close.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-input[type=reset].ontario-header__search-reset:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-}
-
-/* Header menu & language toggle & close search button styles */
-.ontario-header__nav-right-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-/* Header buttons */
-.ontario-header-button {
-  background-color: #1a1a1a;
-  border: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  font-weight: 600;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 48px;
-  line-height: 1.5555555556;
-  text-align: center;
-  text-decoration: none;
-}
-.ontario-header-button:hover, .ontario-header-button:focus, .ontario-header-button:visited {
-  color: #FFFFFF;
-}
-
-.ontario-header-button--with-outline,
-.ontario-header-button--without-outline {
-  background-color: #1a1a1a;
-  color: #FFFFFF;
-}
-.ontario-header-button--with-outline:hover,
-.ontario-header-button--without-outline:hover {
-  background-color: #4d4d4d;
-}
-.ontario-header-button--with-outline:active,
-.ontario-header-button--without-outline:active {
-  background-color: #666666;
-}
-.ontario-header-button--with-outline:focus,
-.ontario-header-button--without-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header-button--with-outline {
-  border: 2px solid #FFFFFF;
-  margin: 0 0 0 1rem;
-  padding: 0.375rem 1rem;
-}
-.ontario-header-button--with-outline:hover {
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-}
-.ontario-header-button--with-outline:focus {
-  background-color: #4d4d4d;
-}
-@media screen and (max-width: 20em) {
-  .ontario-header-button--with-outline {
-    padding: 0.375rem;
-  }
-}
-
-.ontario-header-button--without-outline:focus {
-  background-color: #4d4d4d;
-}
-
-.ontario-header__menu-toggler {
-  padding: 0.375rem 1rem;
-}
-@media screen and (max-width: 20em) {
-  .ontario-header__menu-toggler {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-}
-.ontario-header__menu-toggler span {
-  display: flex;
-}
-@media screen and (max-width: 20em) {
-  .ontario-header__menu-toggler span {
-    display: none;
-  }
-}
-.ontario-header__menu-toggler svg {
-  margin-right: 6px;
-  width: 2rem;
-  height: 2rem;
-}
-@media screen and (max-width: 20em) {
-  .ontario-header__menu-toggler svg {
-    margin-right: 0;
-  }
-}
-
-.ontario-header__language-toggler {
-  padding: 0.75rem;
-}
-.ontario-header__language-toggler abbr[title] {
-  text-decoration: none;
-}
-
-.ontario-header__search-toggler {
-  padding: 0.5rem 0.75rem;
-  margin-left: 1rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-header__search-toggler svg {
-    margin-right: 4px;
-  }
-}
-
-.ontario-header__search-close {
-  flex-direction: column-reverse;
-  font-weight: 400;
-  margin-right: 1rem;
-  padding: 0.15rem 0.25rem;
-  position: relative;
-  height: 60px;
-  display: none;
-}
-.ontario-header__search-close span {
-  position: relative;
-  top: -3px;
-  font-size: 1rem;
-  margin-left: 0;
-}
-@media screen and (min-width: 39.9375em) {
-  .ontario-header__search-close span {
-    margin-right: 4px;
-  }
-}
-.ontario-header__search-close span:hover, .ontario-header__search-close span:focus {
-  outline: none;
-  text-decoration: none;
-}
-.ontario-header__search-close svg {
-  top: 0;
-}
-@media screen and (min-width: 40em) {
-  .ontario-header__search-close {
-    flex-direction: row;
-    padding: 0.25rem 0.5rem 0.25rem 1rem;
-    height: 48px;
-  }
-  .ontario-header__search-close span {
-    top: 0;
-  }
-  .ontario-header__search-close svg {
-    position: relative;
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 73em) {
-  .ontario-header--search-open .ontario-header__search-close {
-    display: none;
-  }
-}
-
-.ontario-header__search-close-container {
-  display: none;
-  justify-content: flex-end;
-  padding-right: 0;
-}
-@media screen and (max-width: 40em) {
-  .ontario-header__search-close-container {
-    width: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 73em) {
-  .ontario-header--search-open .ontario-header__logo-container,
-.ontario-header--search-open .ontario-header__nav-right-container {
-    display: none;
-  }
-
-  .ontario-header--search-open .ontario-header__search-close-container,
-.ontario-header--search-open .ontario-header__search-container,
-.ontario-header--search-open .ontario-header__search-close {
-    display: flex;
-  }
-}
-.ontario-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.ontario-navigation--open .ontario-overlay {
-  display: block;
-}
-@media screen and (min-width: 73em) {
-  .ontario-navigation--open .ontario-overlay {
-    display: none;
-  }
-}
-
-.ontario-navigation--open .ontario-navigation .ontario-header-button {
-  visibility: visible;
-}
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
-/*** 1 - Breakpoint sizes for media queries ***/
-/* -------------------------------
-    Global font-weight variables
---------------------------------- */
-/* -------------------------------
-    Global letter-spacing variables
---------------------------------- */
-/* Rem calc function */
-/* -------------------------------
-    Global line-height variables
---------------------------------- */
-/* -------------------------------
-    Global typography variables
---------------------------------- */
-.ontario-service-subheader__description, .ontario-service-subheader__heading {
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
-  font-feature-settings: normal;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.ontario-service-subheader__heading {
-  font-size: 1.4375rem;
-  letter-spacing: 0.02rem;
-  line-height: 1.39;
-  margin: 0 0 0.75rem 0;
-  max-width: 48rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-service-subheader__heading {
-    font-size: 1.75rem;
-    letter-spacing: 0.02rem;
-    line-height: 1.43;
-  }
-}
-
-.ontario-service-subheader__description {
-  font-size: 1.125rem;
-  letter-spacing: 0.03rem;
-  line-height: 1.56;
-  margin: 0 0 0.75rem 0;
-  max-width: 48rem;
-}
-@media screen and (min-width: 40em) {
-  .ontario-service-subheader__description {
-    font-size: 1.1875rem;
-    letter-spacing: 0.025rem;
-    line-height: 1.5;
-  }
-}
-
-.ontario-header.ontario-service-header {
-  height: 3.125rem;
-  z-index: 5;
-}
-
-.ontario-service-header__logo,
-.ontario-service-header__logo a,
-.ontario-service-header__lang-toggle,
-.ontario-service-subheader__container,
-.ontario-service-subheader__menu-container,
-.ontario-service-subheader__menu {
-  display: flex;
-}
-
-.ontario-service-header__logo img {
-  width: 100px;
-  height: 25px;
-}
-
-.ontario-service-header__lang-toggle {
-  justify-content: flex-end;
-}
-.ontario-service-header__lang-toggle a {
-  font-size: 1rem;
-  line-height: 1.375rem;
-  height: auto;
-  padding: 0.5rem 0.75rem;
-}
-
-.ontario-service-subheader {
-  padding: 1rem 0;
-  background-color: #03713D;
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-}
-@media screen and (min-width: 73em) {
-  .ontario-service-subheader {
-    z-index: 0;
-  }
-}
-.ontario-service-subheader > .ontario-row {
-  position: relative;
-}
-
-.ontario-service-subheader .ontario-header-button {
-  display: flex;
-}
-.ontario-service-subheader .ontario-header-button:last-of-type {
-  display: none;
-}
-
-.ontario-service-subheader .ontario-header-button {
-  background-color: #03713D;
-}
-.ontario-service-subheader .ontario-header-button .ontario-icon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0;
-}
-.ontario-service-subheader .ontario-header-button:hover {
-  background-color: #048B4B;
-}
-.ontario-service-subheader .ontario-header-button:active {
-  background-color: #024122;
-}
-.ontario-service-subheader .ontario-header-button:focus {
-  box-shadow: 0 0 0 4px #42C7FF;
-}
-
-.ontario-service-subheader__link {
-  text-decoration: none;
-}
-
-a .ontario-service-subheader__heading-container {
-  color: #FFFFFF;
-  font-weight: 600;
-  text-decoration: none;
-}
-a .ontario-service-subheader__heading-container:hover, a .ontario-service-subheader__heading-container:active, a .ontario-service-subheader__heading-container:visited {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-a .ontario-service-subheader__heading-container:focus {
-  box-shadow: 0 0 0 4px #42C7FF;
-}
-
-.ontario-service-subheader__heading {
-  font-weight: 600;
-  padding: 0 0 0.125rem 0;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-
-.ontario-service-subheader__description {
-  padding: 0.125rem 0 0.25rem 0;
-  margin-bottom: 0;
-  color: #FFFFFF;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.ontario-service-subheader__container {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ontario-service-subheader__menu {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  align-items: center;
-}
-
-.ontario-service-subheader__menu li {
-  padding: 0;
-  margin-left: 1rem;
-}
-
-.ontario-service-subheader__menu a {
-  border-radius: 4px;
-  color: #FFFFFF;
-  display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
-  height: 48px;
-  line-height: 1.4375rem;
-  padding: 0.75rem;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.ontario-service-subheader__menu a.ontario-link--active {
-  border-radius: 4px 4px 0 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-.ontario-service-subheader__menu a:hover {
-  color: #FFFFFF;
-  background-color: #048B4B;
-}
-.ontario-service-subheader__menu a:active {
-  color: #FFFFFF;
-  background-color: #024122;
-}
-.ontario-service-subheader__menu a:focus {
-  box-shadow: 0 0 0 4px #42C7FF;
-}
-
-.ontario-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(26, 26, 26, 0.6);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.ontario-navigation--open .ontario-service-subheader .ontario-header-button:first-of-type {
-  display: none;
-}
-.ontario-navigation--open .ontario-service-subheader .ontario-header-button:last-of-type {
-  display: flex;
-}
-@media screen and (max-width: 73em) {
-  .ontario-navigation--open .ontario-service-subheader-menu__container {
-    position: relative;
-    z-index: 3;
-  }
-}
-.ontario-navigation--open .ontario-overlay {
-  display: block;
-}
-@media screen and (min-width: 73em) {
-  .ontario-navigation--open .ontario-overlay {
-    display: none;
-  }
-}
-
-.ontario-colour-service-ontario-header-brand {
-  background-color: #03713D;
-}
-
-.ontario-colour-service-ontario-header-focus {
-  background-color: #42C7FF;
-}
-
-.ontario-colour-service-ontario-header-hover {
-  background-color: #048B4B;
-}
-
-.ontario-colour-service-ontario-header-active {
-  background-color: #024122;
+.ontario-dropdown option {
+  font-weight: normal;
 }
 /*
 *  Global variables
@@ -8162,47 +7006,6 @@ a .ontario-service-subheader__heading-container:focus {
 
 .ontario-checkboxes__input:checked + .ontario-checkboxes__label:before {
   background-color: #1a1a1a;
-}
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
-/*
-*  Global colour variables
-*
-*  1 - Greyscale colours
-*  2 - System colours
-*  3 - Accent colours
-*    3.1 - Main
-*    3.2 - Light
-*    3.3 - Dark
-*    3.4 - Callout backgrounds
-*/
-/*** 1 - Greyscale colours ***/
-/*** 2 - System colours ***/
-/*** 3 - Accent colours ***/
-/* Main */
-/* Light */
-/* Dark */
-/* callout backgrounds */
-/* icon colours */
-/* service ontario header colours */
-.ontario-dropdown {
-  background-color: #FFFFFF;
-  background-image: url("../icons/ontario-material-dropdown-arrow-48px.svg");
-  background-position: right 0.5rem center;
-  background-repeat: no-repeat;
-  background-size: 2rem;
-  padding-right: 2.25rem;
-  cursor: pointer;
-}
-
-/* These styles are to fix differences in default styling for dropdowns in IE */
-.ontario-dropdown::-ms-expand {
-  display: none;
-}
-
-.ontario-dropdown option {
-  font-weight: normal;
 }
 /* -------------------------------
     Global spacing variables
@@ -8788,21 +7591,6 @@ h1 .ontario-label--heading {
 /* -------------------------------
     Global spacing variables
 --------------------------------- */
-.ontario-textarea {
-  display: block;
-  width: 100%;
-  min-height: 144px;
-  margin: 0 0 1.5rem;
-  white-space: pre-wrap;
-}
-/*
-*  Global variables
-*
-*  Used across multiple components
-*/
-/* -------------------------------
-    Global spacing variables
---------------------------------- */
 /*** 1 - Breakpoint sizes for media queries ***/
 .ontario-step-indicator .ontario-step-indicator--without-back-button,
 .ontario-step-indicator .ontario-step-indicator--with-back-button {
@@ -8860,6 +7648,21 @@ h1 .ontario-label--heading {
 
 .ontario-step-indicator p {
   max-width: 48rem;
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+.ontario-textarea {
+  display: block;
+  width: 100%;
+  min-height: 144px;
+  margin: 0 0 1.5rem;
+  white-space: pre-wrap;
 }
 /*
 *  Global variables
@@ -9050,6 +7853,927 @@ h1 .ontario-label--heading {
 /* -------------------------------
     Global typography variables
 --------------------------------- */
+.ontario-application-subheader__heading {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ontario-application-subheader__heading {
+  font-size: 1.25rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+  max-width: 48rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-application-subheader__heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.0313rem;
+    line-height: 1.5;
+  }
+}
+
+.ontario-header.ontario-application-header {
+  height: 3.125rem;
+  z-index: 5;
+}
+
+.ontario-application-header__logo,
+.ontario-application-header__logo a,
+.ontario-application-header__lang-toggle,
+.ontario-application-subheader__container,
+.ontario-application-subheader__menu-container,
+.ontario-application-subheader__menu {
+  display: flex;
+}
+
+.ontario-application-header__logo img {
+  width: 100px;
+  height: 25px;
+}
+
+.ontario-application-header__lang-toggle {
+  justify-content: flex-end;
+}
+.ontario-application-header__lang-toggle a {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+}
+
+.ontario-application-subheader {
+  padding: 1.25rem 0;
+  background-color: #404040;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+@media screen and (min-width: 73em) {
+  .ontario-application-subheader {
+    z-index: 0;
+  }
+}
+.ontario-application-subheader > .ontario-row {
+  position: relative;
+}
+
+.ontario-application-subheader .ontario-header-button {
+  display: flex;
+}
+.ontario-application-subheader .ontario-header-button:last-of-type {
+  display: none;
+}
+
+.ontario-application-subheader .ontario-header-button {
+  background-color: #4d4d4d;
+}
+.ontario-application-subheader .ontario-header-button .ontario-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+.ontario-application-subheader .ontario-header-button:hover {
+  background-color: #666666;
+}
+.ontario-application-subheader .ontario-header-button:active {
+  background-color: #1a1a1a;
+}
+
+.ontario-application-subheader__heading {
+  padding: 0.375rem 0;
+  margin-bottom: 0;
+  max-width: 65%;
+}
+.ontario-application-subheader__heading a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+.ontario-application-subheader__heading a:hover, .ontario-application-subheader__heading a:active, .ontario-application-subheader__heading a:visited {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.ontario-application-subheader__container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ontario-application-subheader__menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.ontario-application-subheader__menu li {
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.ontario-application-subheader__menu a {
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  height: 48px;
+  line-height: 1.4375rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ontario-application-subheader__menu a.ontario-link--active {
+  border-radius: 4px 4px 0 0;
+  border-bottom: 4px solid #FFFFFF;
+}
+.ontario-application-subheader__menu a:hover {
+  color: #FFFFFF;
+  background-color: #666666;
+}
+.ontario-application-subheader__menu a:active {
+  color: #FFFFFF;
+  background-color: #1a1a1a;
+}
+
+.ontario-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.ontario-navigation--open .ontario-application-subheader .ontario-header-button:first-of-type {
+  display: none;
+}
+.ontario-navigation--open .ontario-application-subheader .ontario-header-button:last-of-type {
+  display: flex;
+}
+@media screen and (max-width: 73em) {
+  .ontario-navigation--open .ontario-application-subheader-menu__container {
+    position: relative;
+    z-index: 3;
+  }
+}
+.ontario-navigation--open .ontario-overlay {
+  display: block;
+}
+@media screen and (min-width: 73em) {
+  .ontario-navigation--open .ontario-overlay {
+    display: none;
+  }
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder
+--------------------------------- */
+.ontario-header-button:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.ontario-header {
+  position: relative;
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 5.75rem;
+}
+.ontario-header .ontario-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ontario-header svg {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+
+.ontario-header__logo-container {
+  height: 46px;
+}
+
+.ontario-header__logo-container a {
+  display: inline-block;
+  height: 100%;
+}
+.ontario-header__logo-container a:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+}
+
+/* Header search styles */
+.ontario-header__search-container {
+  position: relative;
+  display: none;
+}
+@media screen and (min-width: 73em) {
+  .ontario-header__search-container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 40em) {
+  .ontario-header__search-container {
+    padding-right: 1rem;
+  }
+}
+
+.ontario-header__search-input.ontario-input {
+  border-width: 0;
+  margin-bottom: 0;
+  height: 48px;
+  padding-left: 0.75rem;
+  padding-right: 7.2rem;
+}
+.ontario-header__search-input.ontario-input:invalid + input[type=reset] {
+  display: none;
+}
+.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit {
+  background-color: #0066CC;
+  color: #FFFFFF;
+}
+.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-input.ontario-input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.ontario-header__search-input.ontario-input:invalid:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  -moz-box-shadow: none;
+}
+.ontario-header__search-input.ontario-input:invalid:not(:focus) {
+  box-shadow: none;
+  -moz-box-shadow: none;
+}
+@media screen and (min-width: 40em) and (max-width: 73em) {
+  .ontario-header__search-input.ontario-input {
+    padding-left: 1rem;
+    padding-right: 6.4rem;
+  }
+}
+
+.ontario-header__search-submit {
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  height: 100%;
+  line-height: 1.56;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  cursor: pointer;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.ontario-header__search-submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #009ADB;
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit:active {
+  background-color: #002142;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit svg {
+  margin-right: 0;
+}
+
+input[type=reset].ontario-header__search-reset {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 11px;
+  right: 80px;
+  height: 28px;
+  width: 28px;
+  color: black;
+  margin: 0;
+  padding: 0.5rem;
+  background-image: url(../icons/ontario-icons-close.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input[type=reset].ontario-header__search-reset:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+}
+
+/* Header menu & language toggle & close search button styles */
+.ontario-header__nav-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Header buttons */
+.ontario-header-button {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 48px;
+  line-height: 1.5555555556;
+  text-align: center;
+  text-decoration: none;
+}
+.ontario-header-button:hover, .ontario-header-button:focus, .ontario-header-button:visited {
+  color: #FFFFFF;
+}
+
+.ontario-header-button--with-outline,
+.ontario-header-button--without-outline {
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+}
+.ontario-header-button--with-outline:hover,
+.ontario-header-button--without-outline:hover {
+  background-color: #4d4d4d;
+}
+.ontario-header-button--with-outline:active,
+.ontario-header-button--without-outline:active {
+  background-color: #666666;
+}
+.ontario-header-button--with-outline:focus,
+.ontario-header-button--without-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header-button--with-outline {
+  border: 2px solid #FFFFFF;
+  margin: 0 0 0 1rem;
+  padding: calc(0.75rem / 2) 1rem;
+}
+.ontario-header-button--with-outline:hover {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.ontario-header-button--with-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header-button--without-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header__language-toggler {
+  padding: 0.75rem;
+}
+.ontario-header__language-toggler abbr[title] {
+  text-decoration: none;
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder
+--------------------------------- */
+.ontario-header-button:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
+.ontario-header {
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 5.75rem;
+}
+.ontario-header .ontario-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ontario-header svg {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+
+.ontario-header__logo-container {
+  height: 46px;
+}
+
+.ontario-header__logo-container a {
+  display: inline-block;
+  height: 100%;
+}
+.ontario-header__logo-container a:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+}
+
+.ontario-header__logo-container img {
+  width: 45px;
+  height: 46px;
+}
+@media screen and (min-width: 40em) {
+  .ontario-header__logo-container img {
+    width: 180px;
+    height: 46px;
+  }
+}
+
+/* Header search styles */
+.ontario-header__search-container {
+  position: relative;
+  display: none;
+}
+@media screen and (min-width: 73em) {
+  .ontario-header__search-container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 40em) {
+  .ontario-header__search-container {
+    padding-right: 1rem;
+  }
+}
+
+.ontario-header__search-input.ontario-input {
+  border-width: 0;
+  margin-bottom: 0;
+  height: 48px;
+  padding-left: 0.75rem;
+  padding-right: 7.2rem;
+}
+.ontario-header__search-input.ontario-input:invalid + input[type=reset] {
+  display: none;
+}
+.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit {
+  background-color: #0066CC;
+  color: #FFFFFF;
+}
+.ontario-header__search-input.ontario-input:focus ~ .ontario-header__search-submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-input.ontario-input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.ontario-header__search-input.ontario-input:invalid:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  -moz-box-shadow: none;
+}
+.ontario-header__search-input.ontario-input:invalid:not(:focus) {
+  box-shadow: none;
+  -moz-box-shadow: none;
+}
+@media screen and (min-width: 40em) and (max-width: 73em) {
+  .ontario-header__search-input.ontario-input {
+    padding-left: 1rem;
+    padding-right: 6.4rem;
+  }
+}
+
+.ontario-header__search-submit {
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  height: 100%;
+  line-height: 1.56;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  cursor: pointer;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.ontario-header__search-submit:hover {
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #009ADB;
+  background-color: #00478F;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit:active {
+  background-color: #002142;
+  color: #FFFFFF;
+}
+.ontario-header__search-submit svg {
+  margin-right: 0;
+}
+
+input[type=reset].ontario-header__search-reset {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 11px;
+  right: 80px;
+  height: 28px;
+  width: 28px;
+  color: black;
+  margin: 0;
+  padding: 0.5rem;
+  background-image: url(../icons/ontario-icons-close.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input[type=reset].ontario-header__search-reset:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+}
+
+/* Header menu & language toggle & close search button styles */
+.ontario-header__nav-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Header buttons */
+.ontario-header-button {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 48px;
+  line-height: 1.5555555556;
+  text-align: center;
+  text-decoration: none;
+}
+.ontario-header-button:hover, .ontario-header-button:focus, .ontario-header-button:visited {
+  color: #FFFFFF;
+}
+
+.ontario-header-button--with-outline,
+.ontario-header-button--without-outline {
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+}
+.ontario-header-button--with-outline:hover,
+.ontario-header-button--without-outline:hover {
+  background-color: #4d4d4d;
+}
+.ontario-header-button--with-outline:active,
+.ontario-header-button--without-outline:active {
+  background-color: #666666;
+}
+.ontario-header-button--with-outline:focus,
+.ontario-header-button--without-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header-button--with-outline {
+  border: 2px solid #FFFFFF;
+  margin: 0 0 0 1rem;
+  padding: 0.375rem 1rem;
+}
+.ontario-header-button--with-outline:hover {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.ontario-header-button--with-outline:focus {
+  background-color: #4d4d4d;
+}
+@media screen and (max-width: 20em) {
+  .ontario-header-button--with-outline {
+    padding: 0.375rem;
+  }
+}
+
+.ontario-header-button--without-outline:focus {
+  background-color: #4d4d4d;
+}
+
+.ontario-header__menu-toggler {
+  padding: 0.375rem 1rem;
+}
+@media screen and (max-width: 20em) {
+  .ontario-header__menu-toggler {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+.ontario-header__menu-toggler span {
+  display: flex;
+}
+@media screen and (max-width: 20em) {
+  .ontario-header__menu-toggler span {
+    display: none;
+  }
+}
+.ontario-header__menu-toggler svg {
+  margin-right: 6px;
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (max-width: 20em) {
+  .ontario-header__menu-toggler svg {
+    margin-right: 0;
+  }
+}
+
+.ontario-header__language-toggler {
+  padding: 0.75rem;
+}
+.ontario-header__language-toggler abbr[title] {
+  text-decoration: none;
+}
+
+.ontario-header__search-toggler {
+  padding: 0.5rem 0.75rem;
+  margin-left: 1rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-header__search-toggler svg {
+    margin-right: 4px;
+  }
+}
+
+.ontario-header__search-close {
+  flex-direction: column-reverse;
+  font-weight: 400;
+  margin-right: 1rem;
+  padding: 0.15rem 0.25rem;
+  position: relative;
+  height: 60px;
+  display: none;
+}
+.ontario-header__search-close span {
+  position: relative;
+  top: -3px;
+  font-size: 1rem;
+  margin-left: 0;
+}
+@media screen and (min-width: 39.9375em) {
+  .ontario-header__search-close span {
+    margin-right: 4px;
+  }
+}
+.ontario-header__search-close span:hover, .ontario-header__search-close span:focus {
+  outline: none;
+  text-decoration: none;
+}
+.ontario-header__search-close svg {
+  top: 0;
+}
+@media screen and (min-width: 40em) {
+  .ontario-header__search-close {
+    flex-direction: row;
+    padding: 0.25rem 0.5rem 0.25rem 1rem;
+    height: 48px;
+  }
+  .ontario-header__search-close span {
+    top: 0;
+  }
+  .ontario-header__search-close svg {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 73em) {
+  .ontario-header--search-open .ontario-header__search-close {
+    display: none;
+  }
+}
+
+.ontario-header__search-close-container {
+  display: none;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+@media screen and (max-width: 40em) {
+  .ontario-header__search-close-container {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 73em) {
+  .ontario-header--search-open .ontario-header__logo-container,
+.ontario-header--search-open .ontario-header__nav-right-container {
+    display: none;
+  }
+
+  .ontario-header--search-open .ontario-header__search-close-container,
+.ontario-header--search-open .ontario-header__search-container,
+.ontario-header--search-open .ontario-header__search-close {
+    display: flex;
+  }
+}
+.ontario-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.ontario-navigation--open .ontario-overlay {
+  display: block;
+}
+@media screen and (min-width: 73em) {
+  .ontario-navigation--open .ontario-overlay {
+    display: none;
+  }
+}
+
+.ontario-navigation--open .ontario-navigation .ontario-header-button {
+  visibility: visible;
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
 /* -------------------------------
     Global font-size variables
 --------------------------------- */
@@ -9134,6 +8858,282 @@ h1 .ontario-label--heading {
 .active {
   visibility: visible;
   opacity: 1;
+}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* service ontario header colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+.ontario-service-subheader__description, .ontario-service-subheader__heading {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ontario-service-subheader__heading {
+  font-size: 1.4375rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.39;
+  margin: 0 0 0.75rem 0;
+  max-width: 48rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-service-subheader__heading {
+    font-size: 1.75rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.43;
+  }
+}
+
+.ontario-service-subheader__description {
+  font-size: 1.125rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.56;
+  margin: 0 0 0.75rem 0;
+  max-width: 48rem;
+}
+@media screen and (min-width: 40em) {
+  .ontario-service-subheader__description {
+    font-size: 1.1875rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.5;
+  }
+}
+
+.ontario-header.ontario-service-header {
+  height: 3.125rem;
+  z-index: 5;
+}
+
+.ontario-service-header__logo,
+.ontario-service-header__logo a,
+.ontario-service-header__lang-toggle,
+.ontario-service-subheader__container,
+.ontario-service-subheader__menu-container,
+.ontario-service-subheader__menu {
+  display: flex;
+}
+
+.ontario-service-header__logo img {
+  width: 100px;
+  height: 25px;
+}
+
+.ontario-service-header__lang-toggle {
+  justify-content: flex-end;
+}
+.ontario-service-header__lang-toggle a {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+}
+
+.ontario-service-subheader {
+  padding: 1rem 0;
+  background-color: #03713D;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+@media screen and (min-width: 73em) {
+  .ontario-service-subheader {
+    z-index: 0;
+  }
+}
+.ontario-service-subheader > .ontario-row {
+  position: relative;
+}
+
+.ontario-service-subheader .ontario-header-button {
+  display: flex;
+}
+.ontario-service-subheader .ontario-header-button:last-of-type {
+  display: none;
+}
+
+.ontario-service-subheader .ontario-header-button {
+  background-color: #03713D;
+}
+.ontario-service-subheader .ontario-header-button .ontario-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+.ontario-service-subheader .ontario-header-button:hover {
+  background-color: #048B4B;
+}
+.ontario-service-subheader .ontario-header-button:active {
+  background-color: #024122;
+}
+.ontario-service-subheader .ontario-header-button:focus {
+  box-shadow: 0 0 0 4px #42C7FF;
+}
+
+.ontario-service-subheader__link {
+  text-decoration: none;
+}
+
+a .ontario-service-subheader__heading-container {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+a .ontario-service-subheader__heading-container:hover, a .ontario-service-subheader__heading-container:active, a .ontario-service-subheader__heading-container:visited {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+a .ontario-service-subheader__heading-container:focus {
+  box-shadow: 0 0 0 4px #42C7FF;
+}
+
+.ontario-service-subheader__heading {
+  font-weight: 600;
+  padding: 0 0 0.125rem 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.ontario-service-subheader__description {
+  padding: 0.125rem 0 0.25rem 0;
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ontario-service-subheader__container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ontario-service-subheader__menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.ontario-service-subheader__menu li {
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.ontario-service-subheader__menu a {
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  height: 48px;
+  line-height: 1.4375rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ontario-service-subheader__menu a.ontario-link--active {
+  border-radius: 4px 4px 0 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+.ontario-service-subheader__menu a:hover {
+  color: #FFFFFF;
+  background-color: #048B4B;
+}
+.ontario-service-subheader__menu a:active {
+  color: #FFFFFF;
+  background-color: #024122;
+}
+.ontario-service-subheader__menu a:focus {
+  box-shadow: 0 0 0 4px #42C7FF;
+}
+
+.ontario-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(26, 26, 26, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.ontario-navigation--open .ontario-service-subheader .ontario-header-button:first-of-type {
+  display: none;
+}
+.ontario-navigation--open .ontario-service-subheader .ontario-header-button:last-of-type {
+  display: flex;
+}
+@media screen and (max-width: 73em) {
+  .ontario-navigation--open .ontario-service-subheader-menu__container {
+    position: relative;
+    z-index: 3;
+  }
+}
+.ontario-navigation--open .ontario-overlay {
+  display: block;
+}
+@media screen and (min-width: 73em) {
+  .ontario-navigation--open .ontario-overlay {
+    display: none;
+  }
+}
+
+.ontario-colour-service-ontario-header-brand {
+  background-color: #03713D;
+}
+
+.ontario-colour-service-ontario-header-focus {
+  background-color: #42C7FF;
+}
+
+.ontario-colour-service-ontario-header-hover {
+  background-color: #048B4B;
+}
+
+.ontario-colour-service-ontario-header-active {
+  background-color: #024122;
 }
 /*
 *  Global colour variables
