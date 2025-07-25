@@ -4,9 +4,11 @@ label: Release notes
 ---
 
 <div class="ontario-row fractal-release-versions">
-<div class="ontario-columns ontario-small-12 ontario-medium-4 ontario-large-3">
+<div class="ontario-columns ontario-small-12 ontario-large-6">
+<div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.4](#a0.12.4)
 -   [Release 0.12.3](#a0.12.3)
 -   [Release 0.12.2](#a0.12.2)
 -   [Release 0.11.7](#a0.11.7)
@@ -14,10 +16,6 @@ label: Release notes
 -   [Release 0.10.5](#a0.10.5)
 -   [Release 0.9.2](#a0.9.2)
 -   [Release 0.9.0](#a0.9.0)
-
-</div>
-<div class="ontario-columns ontario-small-12 ontario-medium-8 ontario-large-9">
-
 -   [Release 0.8.4](#a0.8.4)
 -   [Release 0.7.0](#a0.7.0)
 -   [Release 0.6.1](#a0.6.1)
@@ -29,10 +27,27 @@ label: Release notes
 
 </div>
 </div>
+</div>
 
 <hr class="dark">
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release - {{{ _config.project.releaseDate }}}
+
+### Platform
+
+-   Updated prototyping kit information and instructions for designers
+
+### Known bugs and issues
+
+-   Replaced deprecated use of `/` as a division in SASS
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.4"></a> 0.12.4 Release - December 3, 2021
 
 ### Known bugs and issues
 
@@ -43,7 +58,7 @@ label: Release notes
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 0.12.4]({{path '../../dist/ontario-design-system-dist-0.12.4.zip'}})
 
 <hr>
 
