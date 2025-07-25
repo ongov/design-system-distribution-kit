@@ -34,7 +34,6 @@
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
-/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -42,7 +41,6 @@
     Global typography variables
 --------------------------------- */
 .ontario-search__container {
-  height: 3rem;
   max-width: 34rem;
 }
 

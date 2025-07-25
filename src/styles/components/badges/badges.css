@@ -29,7 +29,6 @@
     Global letter-spacing variables
 --------------------------------- */
 /* Rem calc function */
-/* Pixel to REM Conversion */
 /* -------------------------------
     Global line-height variables
 --------------------------------- */
@@ -41,8 +40,9 @@
 --------------------------------- */
 .ontario-badge__container {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
 }
 
 .ontario-badge__label {
@@ -87,29 +87,14 @@
   color: #FFFFFF;
 }
 
-.ontario-badge--alert-light {
-  background-color: #FCEFF0;
-  color: #4d4d4d;
-}
-
 .ontario-badge--alert-heavy {
   background-color: #CD0000;
   color: #FFFFFF;
 }
 
-.ontario-badge--warning-light {
-  background-color: #FEF6DC;
-  color: #4d4d4d;
-}
-
 .ontario-badge--warning-heavy {
   background-color: #FFD440;
   color: #1a1a1a;
-}
-
-.ontario-badge--success-light {
-  background-color: #E5f0E9;
-  color: #4d4d4d;
 }
 
 .ontario-badge--success-heavy {

@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 1.5.0](#a1.5.0)
 -   [Release 1.4.0](#a1.4.0)
 -   [Release 1.3.0](#a1.3.0)
 -   [Release 1.2.1](#a1.2.1)
@@ -50,6 +51,25 @@ label: Release notes
 
 Added in this release:
 
+-   Search box
+-   Badges
+
+### Platform
+
+-   Added: information about our npm packages
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a1.5.0"></a> 1.5.0 Release – October 5, 2023
+
+### Elements
+
+Added in this release:
+
 -   Cards
 
 Updated:
@@ -66,7 +86,7 @@ Updated:
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 1.4.0]({{path '../../dist/ontario-design-system-dist-1.5.0.zip'}})
 
 <hr>
 

@@ -7,8 +7,9 @@
 
 .ontario-badge__container {
 	display: flex;
-	flex-direction: row;
-	gap: spacing.$spacing-6;
+	flex-direction: column;
+	gap: spacing.$spacing-7;
+	align-items: flex-start;
 }
 
 .ontario-badge__label {
@@ -53,29 +54,14 @@
 	color: colours.$ontario-colour-white;
 }
 
-.ontario-badge--alert-light {
-	background-color: colours.$ontario-colour-alert-light;
-	color: colours.$ontario-greyscale-70;
-}
-
 .ontario-badge--alert-heavy {
 	background-color: colours.$ontario-colour-alert;
 	color: colours.$ontario-colour-white;
 }
 
-.ontario-badge--warning-light {
-	background-color: colours.$ontario-colour-warning-light;
-	color: colours.$ontario-greyscale-70;
-}
-
 .ontario-badge--warning-heavy {
 	background-color: colours.$ontario-colour-warning;
 	color: colours.$ontario-colour-black;
-}
-
-.ontario-badge--success-light {
-	background-color: colours.$ontario-colour-success-light;
-	color: colours.$ontario-greyscale-70;
 }
 
 .ontario-badge--success-heavy {

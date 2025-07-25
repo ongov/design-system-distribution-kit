@@ -13,8 +13,62 @@
 	float: revert;
 	margin-bottom: spacing.$spacing-8;
 
+	&.summary-list-full-width {
+		max-width: 100%;
+	}
+
 	dl.ontario-summary-list__container {
 		margin: spacing.$spacing-0;
+
+		// Default Ratio 1:1
+		.ontario-summary-list__key,
+		.ontario-summary-list__value {
+			flex: 1;
+		}
+
+		// 1:2 ratio
+		&.ontario-summary-list-ratio__1-2 {
+			.ontario-summary-list__key {
+				flex: 1;
+			}
+
+			.ontario-summary-list__value {
+				flex: 2;
+			}
+		}
+
+		// 1:3 ratio
+		&.ontario-summary-list-ratio__1-3 {
+			.ontario-summary-list__key {
+				flex: 1;
+			}
+
+			.ontario-summary-list__value {
+				flex: 3;
+			}
+		}
+
+		// 2:1 ratio
+		&.ontario-summary-list-ratio__2-1 {
+			.ontario-summary-list__key {
+				flex: 2;
+			}
+
+			.ontario-summary-list__value {
+				flex: 1;
+			}
+		}
+
+		// 2:3 ratio
+		&.ontario-summary-list-ratio__2-3 {
+			.ontario-summary-list__key {
+				flex: 2;
+			}
+
+			.ontario-summary-list__value {
+				flex: 3;
+			}
+		}
 	}
 
 	.ontario-summary-list__row {
@@ -22,7 +76,7 @@
 		flex-direction: row;
 		padding: (spacing.$spacing-4 + globalFunctions.rem-calc(3)) spacing.$spacing-0;
 		border-bottom: 1px solid colours.$ontario-greyscale-20;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-between;
 		margin: spacing.$spacing-0 !important;
 
@@ -30,21 +84,38 @@
 			padding: spacing.$spacing-3 spacing.$spacing-0;
 		}
 
-		.ontario-summary-list__value {
-			flex: 1;
-			padding: spacing.$spacing-0 spacing.$spacing-5;
-		}
-
 		.ontario-summary-list__key {
 			@extend %h5-styles;
-			flex: 1;
 			margin-bottom: spacing.$spacing-0;
+
+			@media screen and (max-width: breakpoints.$small-breakpoint) {
+				padding-bottom: spacing.$spacing-1;
+			}
+		}
+
+		.ontario-summary-list__value {
+			padding: spacing.$spacing-0 spacing.$spacing-5;
+
+			@media screen and (max-width: breakpoints.$small-breakpoint) {
+				flex: revert;
+				padding: spacing.$spacing-0;
+			}
 		}
 
 		dt,
 		dd {
 			margin: spacing.$spacing-0 !important; // using important as fractal default styles were causing issues
 			text-align: left;
+		}
+
+		.ontario-summary-list-button__container {
+			text-align: right;
+			flex-basis: 3.5rem;
+
+			@media screen and (max-width: breakpoints.$small-breakpoint) {
+				flex-basis: revert;
+				align-self: flex-start;
+			}
 		}
 
 		.ontario-summary-list-change__button {
@@ -56,6 +127,10 @@
 			font-weight: fontWeights.$ontario-font-weights-normal;
 			padding: spacing.$spacing-0;
 
+			&.hidden {
+				visibility: hidden;
+			}
+
 			&:hover {
 				color: colours.$ontario-colour-link--hover;
 			}
@@ -63,28 +138,22 @@
 			&:active {
 				color: colours.$ontario-colour-link--active;
 			}
+
+			@media screen and (max-width: breakpoints.$small-breakpoint) {
+				margin-top: spacing.$spacing-3;
+			}
 		}
 
 		@media screen and (max-width: breakpoints.$small-breakpoint) {
 			flex-direction: column;
 			align-items: revert;
+		}
+	}
 
-			.ontario-summary-list__key {
-				padding-bottom: spacing.$spacing-1;
-			}
-
-			.ontario-summary-list__value {
-				flex: revert;
-				padding: spacing.$spacing-0;
-			}
-
-			.ontario-summary-list-button__container {
-				align-self: flex-start;
-
-				.ontario-summary-list-change__button {
-					margin-top: spacing.$spacing-3;
-				}
-			}
+	.ontario-summary-list__row--no-actions {
+		&::after {
+			content: '';
+			width: 3.5rem;
 		}
 	}
 
@@ -102,8 +171,19 @@
 			margin-bottom: spacing.$spacing-0;
 		}
 
+		.ontario-summary-list-heading__buttons {
+			display: flex;
+			gap: 2rem;
+		}
+
 		.ontario-summary-list-change__button {
 			padding: spacing.$spacing-0;
+		}
+
+		@media screen and (max-width: breakpoints.$small-breakpoint) {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: spacing.$spacing-3;
 		}
 	}
 }
