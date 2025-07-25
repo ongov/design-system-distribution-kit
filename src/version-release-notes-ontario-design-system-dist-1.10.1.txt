@@ -60,16 +60,15 @@ label: Release notes
 
 ### {{{ _config.project.version }}} Release – {{{ _config.project.releaseDate }}}
 
-#### Elements
+#### Platform
 
-Added in this release:
-
--   Search autocomplete
+-   Button guidance updates
 
 #### Bugs and known issues
 
--   Bottom margin added to step indicator component
--   Removed extra class from radio button labels
+-   Summary list padding location fix
+-   Focus ring spacing around the action button on summary list
+-   Missing background colour when card height auto-adjusts
 
 #### Distribution package
 
@@ -78,6 +77,34 @@ Added in this release:
 <hr>
 
 ## <span id="release2024">2024 releases</span>
+
+### 1.9.1 Release – December 2nd, 2024
+
+#### Platform
+
+-   Fonts guidance updates
+-   Accordion guidance updates
+-   Header guidance updates
+-   npm package migration guidance
+
+#### Elements
+
+Added in this release:
+
+-   Search autocomplete
+
+#### Bugs and known issues
+
+-   Fixed: Bottom margin added to step indicator component
+-   Fixed: Removed extra class from radio button labels
+-   Fixed: Search box clear button alignment
+-   Fixed: Header language toggle attribute updates
+-   Fixed: Summary list padding
+-   Fixed: Missing Table of Contents Smooth Scroll Script
+
+#### Distribution package
+
+-   Download: [Design System 1.9.1]({{path '../../dist/ontario-design-system-dist-1.9.1.zip'}})
 
 ### 1.8.0 Release – May 14, 2024
 
