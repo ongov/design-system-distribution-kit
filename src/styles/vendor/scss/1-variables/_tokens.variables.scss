@@ -1,6 +1,5 @@
 
-// Do not edit directly
-// Generated on Thu, 18 Apr 2024 14:16:47 GMT
+// Do not edit directly, this file was auto-generated.
 
 $ontario-breakpoints-xsmall: 20em;
 $ontario-breakpoints-small: 40em;
@@ -89,8 +88,12 @@ $ontario-colour-accent-service-ontario-header-brand: #03713D;
 $ontario-colour-accent-service-ontario-header-focus: #42C7FF;
 $ontario-colour-accent-service-ontario-header-hover: #048B4B;
 $ontario-colour-accent-service-ontario-header-active: #024122;
+$ontario-font-courier-prime: "Courier Prime", Courier, "Courier New", monospace;
+$ontario-font-open-sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ontario-font-raleway-modified: "Raleway Modified", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $ontario-global-tokens-radius: 4px;
-$ontario-global-tokens-pixel-value: 0.063em;
+$ontario-global-tokens-breakpoint-transition-value: 0.00125em;
+$ontario-global-tokens-pixel-value: 0.0625em;
 $ontario-global-tokens-max-value: 999999999999;
 $ontario-global-tokens-width-narrower: 26.25em;
 $ontario-global-tokens-width-narrow: 38.75em;
@@ -129,9 +132,15 @@ $ontario-spacing-7: 2.5rem;
 $ontario-spacing-8: 3rem;
 $ontario-spacing-9: 4rem;
 $ontario-spacing-10: 5rem;
+$ontario-font-weights-thin: 100;
+$ontario-font-weights-extra-light: 200;
+$ontario-font-weights-light: 300;
 $ontario-font-weights-normal: 400;
+$ontario-font-weights-medium: 500;
 $ontario-font-weights-semi-bold: 600;
 $ontario-font-weights-bold: 700;
+$ontario-font-weights-extra-bold: 800;
+$ontario-font-weights-black: 900;
 $ontario-z-index-auto: auto;
 $ontario-z-index-inherit: inherit;
 $ontario-z-index-initial: initial;

@@ -1,1 +1,15 @@
-.ontario-textarea{display:block;width:100%;min-height:144px;margin:0 0 1.5rem;white-space:pre-wrap}
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+.ontario-textarea {
+  display: block;
+  width: 100%;
+  min-height: 144px;
+  margin: 0 0 1.5rem;
+  white-space: pre-wrap;
+}

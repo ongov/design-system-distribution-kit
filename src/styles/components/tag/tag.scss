@@ -1,7 +1,7 @@
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/global.variables' as globalVariables;
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/colours.variables' as colours;
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/breakpoints.variables' as breakpoints;
-@use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/typography.variables' as typography;
+@use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/fonts.variables' as fonts;
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/spacing.variables' as spacing;
 
 .ontario-tag {
@@ -12,7 +12,7 @@
 	display: inline-block;
 	font-size: 0.625rem;
 	font-weight: 500;
-	font-family: typography.$ontario-font-raleway-modified;
+	font-family: fonts.$ontario-font-raleway-modified;
 	font-style: normal;
 	padding: spacing.$spacing-0 spacing.$spacing-3;
 	text-align: center;
