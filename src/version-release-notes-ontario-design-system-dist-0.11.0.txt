@@ -6,6 +6,7 @@ label: Release notes
 <div class="ontario-columns ontario-small-12 ontario-medium-4 ontario-large-3">
 
 * [Release {{{ _config.project.version }}}](#latest)
+* [Release 0.10.5](#a0.10.5)
 * [Release 0.9.2](#a0.9.2)
 * [Release 0.9.0](#a0.9.0)
 * [Release 0.8.4](#a0.8.4)
@@ -29,6 +30,18 @@ label: Release notes
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release - {{{ _config.project.releaseDate }}}
 
+### Elements
+  - Added in this release:
+    - Accordion
+    - Hint expander
+  
+### Distribution package
+- Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.10.5"></a> 0.10.5 Release - March 2, 2021
+
 ### Platform
   - Official release of the [design system prototyping kit]({{path './for-designers.html#prototyping-kit'}})
   - Updated information for designers and developers
@@ -40,7 +53,7 @@ label: Release notes
   - Fixed: order of menu items in French version of design system
   
 ### Distribution package
-- Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+- Download: [Design System 0.10.5]({{path '../../dist/ontario-design-system-dist-0.10.5.zip'}})
 
 <hr>
 
