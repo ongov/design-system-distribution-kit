@@ -1,25 +1,25 @@
-@import "../../../sass/variables-import";
-@import "../../../sass/tools/focus.placeholder";
+@import '../../../sass/variables-import';
+@import '../../../sass/tools/focus.placeholder';
 
 .ontario-input {
-    border: 2px solid $ontario-colour-black;
-    border-radius: $global-radius;
-    box-sizing: border-box;
-    color: $ontario-colour-black;
-    display: block;
-    font-size: 1rem;
-    font-family: $ontario-font-open-sans;
-    line-height: 1.5;
-    margin: 0 0 $spacing-7;
-    max-width: $standard-width;
-    width: $full-width;
-    padding: 0.625rem $spacing-4;
-    transition: box-shadow 0.1s ease-in-out;
+	border: 2px solid $ontario-colour-black;
+	border-radius: $global-radius;
+	box-sizing: border-box;
+	color: $ontario-colour-black;
+	display: block;
+	font-size: 1rem;
+	font-family: $ontario-font-open-sans;
+	line-height: 1.5;
+	margin: 0 0 $spacing-7;
+	max-width: $standard-width;
+	width: $full-width;
+	padding: 0.625rem $spacing-4;
+	transition: box-shadow 0.1s ease-in-out;
 
-    &:focus,
-    &:active {
-        @extend %ontario-focus;
-    }
+	&:focus,
+	&:active {
+		@extend %ontario-focus;
+	}
 }
 
 .ontario-input--2-char-width {
@@ -59,7 +59,12 @@
 
 //General forms
 .ontario-form-group:last-of-type {
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
+
+	.ontario-checkboxes,
+	.ontario-radios {
+		margin-bottom: 0;
+	}
 }
 
 //Date inputs

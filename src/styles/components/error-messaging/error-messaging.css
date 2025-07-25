@@ -3,6 +3,7 @@
   align-items: top;
   margin: -0.25rem 0 0.5rem 0;
   color: #D81A21;
+  max-width: 48rem;
 }
 
 .ontario-error-messaging__content {

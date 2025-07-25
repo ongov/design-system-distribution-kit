@@ -86,6 +86,7 @@
 }
 
 .ontario-application-subheader__heading {
+  padding: 0.375rem 0;
   margin-bottom: 0;
   max-width: 65%;
 }

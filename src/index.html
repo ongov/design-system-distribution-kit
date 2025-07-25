@@ -10,6 +10,17 @@
 	<!-- inject:head:html -->
 	<!-- endinject -->
 	<style>
+
+		.ontario-row .ontario-header__container .ontario-row, .ontario-row footer .ontario-row {
+			margin: 0 auto;
+   			max-width: 72rem;
+   			width: 100%;
+		}
+
+		.ontario-row footer{
+			margin: 0;
+		}
+
 		body {
 			background: #CCCCCC;
 		}
@@ -38,6 +49,17 @@
 		.icons-list li {
 			list-style: none;
 		}
+
+        /* Styles override to fix loading indicator taking over the entire page. */
+        .ontario-loading-indicator__overlay {
+            position: static;
+            padding: 5rem;
+        }
+
+        .ontario-loading-indicator {
+            position: static;
+            transform: none;
+        }
 	</style>
 </head>
 
@@ -47,13 +69,13 @@
 		<div class="ontario-column ontario-small-12">
 		<!-- inject:menu:html -->
 		<div id="main-header">
-            <span>Release 0.12.13</span>
+            <span>Release 1.0.0</span>
             <h1><a href="https://designsystem.ontario.ca/" title="Ontario Design System Examples">Ontario Design System Examples</a></h1>
             <p class="ontario-lead-statement">To preview this page you may use the <a href=https://www.npmjs.com/package/serve>Serve</a> command`serve dist`</p><ul>
 <li><a href='#Colours'>Colours</a></li>
 
 		
-<li><a href='#Typegraphy'>Typegraphy</a></li>
+<li><a href='#Typography'>Typography</a></li>
 
 		
 <li><a href='#12col-grid'>12col grid</a></li>
@@ -264,6 +286,12 @@
 		
 		
 <li><a href='#Fieldsets'>Fieldsets</a></li>
+
+		
+<li><a href='#Accordions'>Accordions</a></li>
+
+		
+<li><a href='#Loading-indicator'>Loading indicator</a></li>
 </ul> </div>
 		<!-- endinject -->
 		<!-- inject:body:html -->
@@ -307,7 +335,7 @@
 </table>
 </div>
 
-		<hr><h2 id=Typegraphy>Typegraphy</h2>
+		<hr><h2 id=Typography>Typography</h2>
 
 <h2>Header samples</h2>
 
@@ -602,7 +630,7 @@ Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
         <label class="ontario-label" for="hint-text-example">
             Label<span class="ontario-label__flag">(required/optional)</span>
         </label>
-            <p class="ontario-hint" id="hint-text-example-hint">Hint text placeholder</p>
+            <p class="ontario-hint" id="hint-text-example-hint">Hint text placeholder.</p>
         <input  aria-describedby="hint-text-example-hint" class="ontario-input" type="text" id="hint-text-example">
     </div>
 </dd><!-- End: @hint-text--default -->
@@ -678,7 +706,7 @@ Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
         <legend class="ontario-fieldset__legend">
             Do you have children?<span class="ontario-label__flag">(required/optional)</span>
         </legend>
-        <p class="ontario-hint" id="hint-text-checkbox-hint">Select all that apply</p>
+        <p class="ontario-hint" id="hint-text-checkbox-hint">Select all that apply.</p>
         <div class="ontario-checkboxes">
             <div class="ontario-checkboxes__item">
                 <input class="ontario-checkboxes__input" id="checkbox-option-1" name="options" type="checkbox" value="option-1">
@@ -1403,7 +1431,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 			>
                 <h2 class='ontario-h4'>Ontario Design System</h2>
 				<p>The Ontario Design System provides principles, guidance and code to help teams design and build accessible, mobile-friendly government websites and digital services.</p>
-                    <h3 class='ontario-h5'>Latest release:</h3>
+                    <h3 class='ontario-h5'>Latest release</h3>
                     <ul>
                         <li>Built on: June 3, 2022</li>
                         <li>Distribution package version 0.12.10</li>
@@ -1444,7 +1472,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 				<p>The Ontario Design System provides principles, guidance and code to help teams design and build accessible, mobile-friendly government websites and digital services.</p>
 			</div>
                 <div class='ontario-columns ontario-small-12 ontario-medium-6 ontario-large-4 ontario-expanded-footer__one-third-block'>
-                        <h2 class='ontario-h4'>Popular pages</h2>
+                        <h2 class='ontario-h4'>Most visited pages</h2>
                         <ul class='ontario-footer__links-container ontario-footer__links-container--two-column-list'>
                             <li>
                                 <a class='ontario-footer__link' href='#'>For designers</a>
@@ -1469,7 +1497,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
             <div
 				class='ontario-columns ontario-small-12 ontario-medium-6 ontario-large-4 ontario-expanded-footer__one-third-block'
 			>
-                        <h2 class='ontario-h4'>Latest release:</h2>
+                        <h2 class='ontario-h4'>Latest release</h2>
                         <ul>
                             <li>Built on: June 3, 2022</li>
                             <li>Distribution package version 0.12.10</li>
@@ -1504,7 +1532,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 				<p>The Ontario Design System provides principles, guidance and code to help teams design and build accessible, mobile-friendly government websites and digital services.</p>
 			</div>
                 <div class='ontario-columns ontario-small-12 ontario-medium-6 ontario-large-4 ontario-expanded-footer__one-third-block'>
-                        <h2 class='ontario-h4'>Latest release:</h2>
+                        <h2 class='ontario-h4'>Latest release</h2>
                         <ul>
                             <li>Built on: June 3, 2022</li>
                             <li>Distribution package version 0.12.10</li>
@@ -2461,12 +2489,12 @@ What is your delivery address?
                 <label class="ontario-label" for="address-line-1">
                     Address line 1<span class="ontario-label__flag">(required)</span>
                 </label>
-                    <p id="address-line-1-hint" class="ontario-hint">Street and number or P.O. box</p>
+                    <p id="address-line-1-hint" class="ontario-hint">Street and number or P.O. box.</p>
                 <input required aria-describedby="address-line-1-hint" class="ontario-input" type="text" id="address-line-1">
                 <label class="ontario-label" for="address-line-2">
                     Address line 2<span class="ontario-label__flag">(optional)</span>
                 </label>
-                    <p id="address-line-2-hint" class="ontario-hint">Apartment, suite, unit, building, etc</p>
+                    <p id="address-line-2-hint" class="ontario-hint">Apartment, suite, unit, building, etc.</p>
                 <input  aria-describedby="address-line-2-hint" class="ontario-input" type="text" id="address-line-2">
                 <label class="ontario-label" for="city-town">
                     City/town<span class="ontario-label__flag">(required)</span>
@@ -2499,10 +2527,104 @@ What is your delivery address?
 </div>
 
 
+		<hr><h2 id=Accordions>Accordions</h2>
+
+<h2>Accepted identity documents</h2>
+<div class='ontario-accordions__container'>
+	<div class='ontario-accordion__controls'>
+		<button class='ontario-accordion__button--expand-all' aria-expanded='false'>
+			<span class='ontario-accordion--expand-open-all'>Expand all</span>
+			<span class='ontario-accordion--expand-close-all'>Collapse all</span>
+		</button>
+	</div>
+	<div class='ontario-accordion' id='accordion-1'>
+		<h3 class='ontario-accordion-heading'>
+			<button class='ontario-accordion__button' id='accordion-button-id-1' aria-controls='accordion-content-1' aria-expanded='false' data-toggle='ontario-collapse'>
+				<span class='ontario-accordion__button-icon--close'>
+					<svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-up"></use></svg>
+				</span>
+				<span class='ontario-accordion__button-icon--open'>
+					<svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-down"></use></svg>
+				</span>
+				Canadian Citizens
+			</button>
+		</h3>
+		<section class='ontario-accordion__content' id='accordion-content-1' aria-labelledby='accordion-button-id-1' aria-hidden='true' data-toggle='ontario-expander-content'>
+			<ul>
+				<li>passport (Canadian or foreign)</li>
+				<li>Canadian Citizenship Card with photo</li>
+				<li>Secure Certificate of Indian Status Card (issued on or after December 15, 2009 by Indian and Northern Affairs Canada)</li>
+				<li>Ontario Photo Card</li>
+			</ul>
+		</section>
+	</div>
+	<div class='ontario-accordion' id='accordion-2'>
+		<h3 class='ontario-accordion-heading'>
+			<button class='ontario-accordion__button' id='accordion-button-id-2' aria-controls='accordion-content-2' aria-expanded='false' data-toggle='ontario-collapse'>
+				<span class='ontario-accordion__button-icon--close'>
+					<svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-up"></use></svg>
+				</span>
+				<span class='ontario-accordion__button-icon--open'>
+					<svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-down"></use></svg>
+				</span>
+				Permanent Residents
+			</button>
+		</h3>
+		<section class='ontario-accordion__content' id='accordion-content-2' aria-labelledby='accordion-button-id-2' aria-hidden='true' data-toggle='ontario-expander-content'>
+			<ul>
+				<li>Permanent Resident (PR) Card</li>
+				<li>Record of Landing (IMM 1000)</li>
+				<li>Confirmation of Permanent Residence (IMM 5292) accompanied by a valid passport from country of origin</li>
+				<li>Ontario Photo Card</li>
+			</ul>
+		</section>
+	</div>
+	<div class='ontario-accordion' id='accordion-3'>
+		<h3 class='ontario-accordion-heading'>
+			<button class='ontario-accordion__button' id='accordion-button-id-3' aria-controls='accordion-content-3' aria-expanded='false' data-toggle='ontario-collapse'>
+				<span class='ontario-accordion__button-icon--close'>
+					<svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-up"></use></svg>
+				</span>
+				<span class='ontario-accordion__button-icon--open'>
+					<svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="#ontario-icon-chevron-down"></use></svg>
+				</span>
+				Temporary Residents
+			</button>
+		</h3>
+		<section class='ontario-accordion__content' id='accordion-content-3' aria-labelledby='accordion-button-id-3' aria-hidden='true' data-toggle='ontario-expander-content'>
+			<ul>
+				<li>Study Permit / Student Authorization (IMM 1442)</li>
+				<li>Work Permit / Employment Authorization (IMM 1442)</li>
+				<li>Visitor Record (IMM 1442)</li>
+				<li>Temporary Resident Permit (IMM 1442)</li>
+				<li>Refugee Status Claim (IMM 1434)</li>
+				<li>Acknowledgement of Intent to Claim Refugee Status (IMM 7703) with photo</li>
+				<li>Report Pursuant to the Immigration Act (IMM 1442) with photo</li>
+				<li>Ontario Photo Card</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<script src='../../scripts/ontario-expand-collapse.js'></script>
+
+		<hr><h2 id=Loading-indicator>Loading indicator</h2>
+
+<div class='ontario-loading-indicator__overlay' aria-hidden='false' role='alert' aria-live='assertive'>
+	<div class='ontario-loading-indicator'>
+		<svg class='ontario-loading-indicator__spinner' viewBox='0 0 66 66' xmlns='http://www.w3.org/2000/svg'>
+			<circle fill='none' stroke-width='6' stroke-linecap='round' cx='33' cy='33' r='30'></circle>
+		</svg>
+		<p>Loading</p>
+	</div>
+</div>
+
+
 		<!-- endinject -->
 		</div>
 	</div>
 </main>
-<script src="./scripts/tables.js"></script></body>
+<script src="./scripts/tables.js"></script>
+<script src="./scripts/ontario-expand-collapse.js"></script></body>
 
 </html>

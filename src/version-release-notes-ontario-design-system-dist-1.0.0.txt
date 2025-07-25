@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.13](#a0.12.13)
 -   [Release 0.12.12](#a0.12.12)
 -   [Release 0.12.11](#a0.12.11)
 -   [Release 0.12.10](#a0.12.10)
@@ -41,6 +42,34 @@ label: Release notes
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release – {{{ _config.project.releaseDate }}}
 
+### Platform
+
+Introducing web components, a new way for developers to work with the design system.
+
+### Elements
+
+Added in this release:
+
+-   Loading indicator
+
+Updated:
+
+-   Guidance on placement of a Terms of use link in the footer.
+
+### Bugs and known issues
+
+-   Fixed: headings have been reinstated in the accordion component.
+-   Fixed: error message text lacked a max-width property.
+-   Fixed: layout issues in the distribution package index.html file.
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.13"></a> 0.12.13 Release - October 4, 2022
+
 ### Elements
 
 Updated:
@@ -49,7 +78,7 @@ Updated:
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 0.12.13]({{path '../../dist/ontario-design-system-dist-0.12.13.zip'}})
 
 <hr>
 

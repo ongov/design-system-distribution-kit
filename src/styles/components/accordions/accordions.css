@@ -129,14 +129,27 @@
   margin-bottom: 0;
 }
 
-.ontario-expander--active .ontario-accordion__content,
-.ontario-expander--active .ontario-accordion__button-icon--close {
-  display: block;
-}
+.ontario-accordion__button-icon--close,
 .ontario-expander--active .ontario-accordion__button-icon--open {
   display: none;
 }
 
-.ontario-accordion__button-icon--close {
-  display: none;
+.ontario-expander--active ~ .ontario-accordion__content,
+.ontario-expander--active .ontario-accordion__button-icon--close {
+  display: block;
+}
+
+.ontario-accordions__container .ontario-h1,
+.ontario-accordions__container .ontario-h2,
+.ontario-accordions__container .ontario-h3,
+.ontario-accordions__container .ontario-h4,
+.ontario-accordions__container .ontario-h5,
+.ontario-accordions__container p,
+.ontario-accordions__container h1,
+.ontario-accordions__container h2,
+.ontario-accordions__container h3,
+.ontario-accordions__container h4,
+.ontario-accordions__container h5,
+.ontario-accordions__container h6 {
+  margin: 0;
 }
