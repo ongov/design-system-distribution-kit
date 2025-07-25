@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/global.variables' as globalVariables;
 @use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/spacing.variables' as spacing;
 @use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/colours.variables' as colours;
@@ -80,7 +81,7 @@
 }
 
 .ontario-application-subheader__heading {
-	padding: 0.375rem spacing.$spacing-0;
+	padding: math.div(spacing.$spacing-3, 2) spacing.$spacing-0;
 	@extend %h4-styles;
 	margin-bottom: spacing.$spacing-0;
 	max-width: 65%;

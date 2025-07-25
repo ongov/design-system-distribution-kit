@@ -72,7 +72,7 @@
 				<div class="ontario-column ontario-small-12">
 					<!-- inject:menu:html -->
 					<div id="main-header">
-            <span>Release 1.2.1</span>
+            <span>Release 1.3.0</span>
             <h1><a href="https://designsystem.ontario.ca/" title="Ontario Design System Examples">Ontario Design System Examples</a></h1>
             <p class="ontario-lead-statement">To preview this page you may use the <a href=https://www.npmjs.com/package/serve>Serve</a> command`serve` from within the distribution package.</p><ul>
 <li><a href='#Typography'>Typography</a></li>
@@ -163,6 +163,9 @@
 
 					
 <li><a href='#Ontario-header'>Ontario header</a></li>
+
+					
+<li><a href='#Service-ontario-header'>Service ontario header</a></li>
 
 					
 <li><a href='#Step-indicator'>Step indicator</a></li>
@@ -584,7 +587,7 @@ Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
 <div class="ontario-form-group">
         <label class="ontario-label" for="hint-expander-example">
             Enter your driver&#x27;s licence number<span class="ontario-label__flag">(required/optional)</span>
-                <span class="ontario-show-for-sr">More information on (label name) is available in the next element</span>
+                <span class="ontario-show-for-sr">More information on driver&#x27;s licence numbers is available in the next element.</span>
         </label>
         <input   class="ontario-input ontario-input--20-char-width" type="text" id="hint-expander-example">
             <div class="ontario-hint-expander__container">
@@ -609,6 +612,7 @@ Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
         <fieldset class="ontario-fieldset">
             <legend class="ontario-fieldset__legend">
                 Do you have a legal issue?<span class="ontario-label__flag">(required/optional)</span>
+                    <span class="ontario-show-for-sr">More information on legal issues is available in the next element.</span>
             </legend>
             <div class="ontario-radios">
                 <div class="ontario-radios__item">
@@ -675,6 +679,7 @@ Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
                 <input class="ontario-checkboxes__input" id="checkbox-option-4" name="options" type="checkbox" value="option-4">
                 <label class="ontario-checkboxes__label" for="checkbox-option-4">
                     I have a child in my temporary care
+                    <span class="ontario-show-for-sr">More information on temporary care is available in the next element.</span>
                 </label>
                 <div class="ontario-hint-expander__container">
                     <button class="ontario-hint-expander__button" id="hint-expander-button-id-1" aria-controls="hint-expander-content-1" aria-expanded="false" data-toggle="ontario-collapse">
@@ -1579,7 +1584,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 			<div class='ontario-row'>
 				<div class='ontario-columns ontario-small-6 ontario-application-header__logo'>
 					<a href='https://www.ontario.ca/page/government-ontario'>
-						<img src='../../logos/ontario-logo--desktop.svg' alt='Government of Ontario' role='img' />
+						<img src='../../logos/ontario-logo--desktop.svg' alt='Ontario.ca homepage' role='img' />
 					</a>
 				</div>
 				<div class='ontario-columns ontario-small-6 ontario-application-header__lang-toggle'>
@@ -1596,6 +1601,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 						<p class='ontario-application-subheader__heading'>
 							<a href='#'>Application name</a>
 						</p>
+
 
 						<div class='ontario-application-subheader__menu-container'>
 							<ul class='ontario-application-subheader__menu ontario-show-for-large'>
@@ -1689,13 +1695,13 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                             role="img"
                             class="ontario-show-for-medium"
                             src="../../logos/ontario-logo--desktop.svg"
-                            alt="Government of Ontario"
+                            alt="Ontario.ca homepage"
                         />
                         <img
                             role="img"
                             class="ontario-show-for-small-only"
                             src="../../logos/ontario-logo--mobile.svg"
-                            alt="Government of Ontario"
+                            alt="Ontario.ca homepage"
                         />
                     </a>
                 </div>
@@ -1896,6 +1902,117 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
     
     <!-- end documentation-only, below div should be removed, it is only used for documentation purposes -->
 </div>
+
+
+					<hr><h2 id=Service-ontario-header>Service ontario header</h2>
+
+<div class='documentation-only--application'>
+	<div class='ontario-header__container'>
+		<header class='ontario-service-header ontario-header' id='ontario-header'>
+			<div class='ontario-row'>
+				<div class='ontario-columns ontario-small-6 ontario-service-header__logo'>
+					<a href='https://www.ontario.ca/page/government-ontario'>
+						<img src='../../logos/ontario-logo--desktop.svg' alt='Ontario.ca homepage' role='img' />
+					</a>
+				</div>
+				<div class='ontario-columns ontario-small-6 ontario-service-header__lang-toggle'>
+					<a href='#' class='ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline'>
+						Français
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class='ontario-service-subheader-menu__container'>
+			<section class='ontario-service-subheader'>
+				<div class='ontario-row'>
+					<div class='ontario-columns ontario-small-12 ontario-service-subheader__container'>
+
+                        <a href='#' class='ontario-service-subheader__link'>
+                            <div class='ontario-service-subheader__heading-container'>
+                                <p class='ontario-service-subheader__heading'>
+                                    ServiceOntario
+                                </p>
+                                <p class='ontario-service-subheader__description'>
+                                    Ontario Photo Card Renewal
+                                </p>
+                            </div>
+                        </a>
+
+						<div class='ontario-service-subheader__menu-container'>
+							<ul class='ontario-service-subheader__menu ontario-show-for-large'>
+								<li><a href='#'>Link 1</a></li>
+								<li><a href='#'>Link 2</a></li>
+								<li><a href='#'>Link 3</a></li>
+								<li><a href='#'>Link 4</a></li>
+								<li><a href='#'>Link 5</a></li>
+							</ul>
+							<ul class='ontario-service-subheader__menu ontario-hide-for-small ontario-show-for-medium ontario-hide-for-large'>
+								<li><a href='#'>Link 1</a></li>
+								<li><a href='#'>Link 2</a></li>
+							</ul>
+
+							<button
+								class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline'
+								id='ontario-header-menu-toggler'
+								aria-controls='ontario-navigation'
+								aria-label='open menu'
+								type='button'
+							>
+								<svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
+									<use xlink:href='#ontario-icon-menu'></use>
+								</svg>
+								<span>Menu</span>
+							</button>
+
+                            <button
+                                class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                                id="ontario-header-nav-toggler"
+                                aria-controls="ontario-navigation"
+                                aria-label="close"
+                            >
+                                <svg
+                                    class="ontario-icon"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                    preserveAspectRatio="xMidYMid meet"
+                                >
+                                    <use xlink:href="#ontario-icon-close"></use>
+                                </svg>
+                                <span>Menu</span>
+                            </button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<nav class="ontario-navigation" id="ontario-navigation">
+			    <div class="ontario-navigation__container">
+			        <ul>
+			                <li class="ontario-show-for-small-only"><a
+			                        href="#"
+			                    >Link
+			                        1</a></li>
+			                <li class="ontario-show-for-small-only"><a
+			                        href="#"
+			                    >Link
+			                        2</a></li>
+			                <li class="ontario-hide-for-large"><a href="#">Link
+			                        3</a></li>
+			                <li class="ontario-hide-for-large"><a href="#">Link
+			                        4</a></li>
+			                <li class="ontario-hide-for-large"><a href="#">Link
+			                        5</a></li>
+			                <li><a href="#">Link 6</a></li>
+			                <li><a href="#">Link 7</a></li>
+			                <li><a href="#">Link 8</a></li>
+			        </ul>
+			    </div>
+			</nav>
+		</div>
+	</div>
+	<div class='ontario-overlay'></div>
+</div>
+
+
 
 
 					<hr><h2 id=Step-indicator>Step indicator</h2>

@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 1.2.1](#a1.2.1)
 -   [Release 1.1.0](#a1.1.0)
 -   [Release 1.0.0](#a1.0.0)
 -   [Release 0.12.13](#a0.12.13)
@@ -47,6 +48,27 @@ label: Release notes
 
 Added in this release:
 
+-   Live validation pattern for alerting users to form errors
+
+### Bugs and known issues
+
+-   Fixed: base SASS has been reinstated in the distribution package after being moved to the Global Styles NPM package
+-   Fixed: duplicate `$line-height-default` variable has been removed
+-   Fixed: the alt text for the Ontario logo now indicates that it is a link to the [ontario.ca](https://www.ontario.ca/) homepage in all versions of the header
+-   Fixed: the menu label in French has been changed from "Sujets" to "Menu" in all versions of the header
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a1.2.1"></a> 1.2.1 Release - March 7, 2023
+
+### Elements
+
+Added in this release:
+
 -   Favicon files and implementation guidance
 
 ### Bugs and known issues
@@ -58,7 +80,7 @@ Added in this release:
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 1.2.1]({{path '../../dist/ontario-design-system-dist-1.2.1.zip'}})
 
 <hr>
 

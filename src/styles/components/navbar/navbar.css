@@ -25,6 +25,7 @@
 /* Dark */
 /* callout backgrounds */
 /* icon colours */
+/* service ontario header colours */
 /*** 1 - Breakpoint sizes for media queries ***/
 /* -------------------------------
     Global font-weight variables
@@ -788,8 +789,9 @@
   top: -4.35rem;
 }
 
-.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button {
-  top: calc(-4rem + -0.25rem);
+.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button,
+.ontario-service-header + .ontario-service-application-subheader-menu__container .ontario-header-button {
+  top: -4.25rem;
 }
 
 .ontario-navigation.ontario-navigation--open .ontario-navigation__container {

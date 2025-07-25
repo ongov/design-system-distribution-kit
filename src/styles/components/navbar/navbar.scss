@@ -57,8 +57,9 @@ $header-close-button--top-value: -4.35rem;
 	top: $header-close-button--top-value;
 }
 
-.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button {
-	top: calc(-#{spacing.$spacing-9} + -#{spacing.$spacing-1});
+.ontario-application-header + .ontario-application-subheader-menu__container .ontario-header-button,
+.ontario-service-header + .ontario-service-application-subheader-menu__container .ontario-header-button {
+	top: ((spacing.$spacing-9 * -1) + (spacing.$spacing-1 * -1));
 }
 
 .ontario-navigation.ontario-navigation--open .ontario-navigation__container {
