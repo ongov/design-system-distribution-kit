@@ -47,7 +47,7 @@
 		<div class="ontario-column ontario-small-12">
 		<!-- inject:menu:html -->
 		<div id="main-header">
-            <span>Release 0.12.8</span>
+            <span>Release 0.12.9</span>
             <h1><a href="https://designsystem.ontario.ca/" title="Ontario Design System Examples">Ontario Design System Examples</a></h1>
             <p class="ontario-lead-statement">To preview this page you may use the <a href=https://www.npmjs.com/package/serve>Serve</a> command`serve dist`</p><ul>
 <li><a href='#Colours'>Colours</a></li>
@@ -252,7 +252,10 @@
 		
 		
 		
-		</ul> </div>
+		
+		
+<li><a href='#Fieldsets'>Fieldsets</a></li>
+</ul> </div>
 		<!-- endinject -->
 		<!-- inject:body:html -->
 		<hr><h2 id=Colours>Colours</h2>
@@ -450,7 +453,7 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis exercitationem be
     <div class="ontario-alert__body">
                 <p>Errors were found on this page:</p>
                 <ul>
-                    <li><a href="#">Your license plate number must be a valid plate number</a></li>
+                    <li><a href="#">Your licence plate number must be a valid plate number</a></li>
                     <li><a href="#">The odometer reading must be a valid number</a></li>
                     <li><a href="#">The name field must not be empty</a></li>
                 </ul>
@@ -515,7 +518,8 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis exercitationem be
 <div class="ontario-form-group">
     <fieldset class="ontario-fieldset" >
         <legend class="ontario-fieldset__legend">
-            Checkbox legend<span class="ontario-label__flag">(required/optional)</span>
+            undefined
+<span class="ontario-label__flag">(required/optional)</span>
             </legend>
         <div class="ontario-checkboxes">
             <div class="ontario-checkboxes__item">
@@ -747,7 +751,8 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis exercitationem be
 <div class="ontario-form-group">
 <fieldset class="ontario-fieldset" >
     <legend class="ontario-fieldset__legend">
-        Radio legend<span class="ontario-label__flag">(required/optional)</span>
+        undefined
+<span class="ontario-label__flag">(required/optional)</span>
         </legend>
     <div class="ontario-radios">
         <div class="ontario-radios__item">
@@ -1864,6 +1869,54 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis exercitationem be
 
 <svg class="ontario-icon" alt="" sol:category="communication" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="../../icons/ontario-icons-secondary.svg#ontario-icon-youtube"></use></svg>
 <span> ontario-icon-youtube</span></ul>
+		<hr><h2 id=Fieldsets>Fieldsets</h2>
+
+<div class="ontario-form-group">
+    <fieldset class="ontario-fieldset" >
+        <legend class="ontario-fieldset__legend ontario-fieldset__legend--large">
+What is your delivery address?
+        </legend>
+                <label class="ontario-label" for="address-line-1">
+                    Address line 1<span class="ontario-label__flag">(required)</span>
+                </label>
+                    <p id="address-line-1-hint" class="ontario-hint">Street and number or P.O. box</p>
+                <input required aria-describedby="address-line-1-hint" class="ontario-input" type="text" id="address-line-1">
+                <label class="ontario-label" for="address-line-2">
+                    Address line 2<span class="ontario-label__flag">(optional)</span>
+                </label>
+                    <p id="address-line-2-hint" class="ontario-hint">Apartment, suite, unit, building, etc</p>
+                <input  aria-describedby="address-line-2-hint" class="ontario-input" type="text" id="address-line-2">
+                <label class="ontario-label" for="city-town">
+                    City/town<span class="ontario-label__flag">(required)</span>
+                </label>
+                <input required  class="ontario-input" type="text" id="city-town">
+                <label class="ontario-label" for="province">
+                    Province<span class="ontario-label__flag">(required)</span>
+                </label>
+                <select required class="ontario-input ontario-dropdown" id="province" name="province">
+                        <option value="">Select</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="YT">Yukon</option>
+                </select>
+                <label class="ontario-label" for="postal-code">
+                    Postal code<span class="ontario-label__flag">(required)</span>
+                </label>
+                <input required  class="ontario-input ontario-input--7-char-width" type="text" id="postal-code">
+    </fieldset>
+</div>
+
+
 		<!-- endinject -->
 		</div>
 	</div>

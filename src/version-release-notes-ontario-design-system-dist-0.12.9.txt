@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.8](#a0.12.8)
 -   [Release 0.12.7](#a0.12.7)
 -   [Release 0.12.6](#a0.12.6)
 -   [Release 0.12.5](#a0.12.5)
@@ -34,27 +35,49 @@ label: Release notes
 
 <hr class="dark">
 
-## <a name="latest"></a> {{{ _config.project.version }}} Release - {{{ _config.project.releaseDate }}}
+## <a name="latest"></a> {{{ _config.project.version }}} Release – {{{ _config.project.releaseDate }}}
+
+### Distribution package
+
+### Elements
+
+Added in this release:
+
+-   Fieldsets
+
+Updated:
+
+-   Labels: clarification of the use of labels as headings
+
+### Bugs and known issues
+
+-   HTML improvements to the ontario.ca header
+
+### Distribution package
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.8"></a> 0.12.8 Release - April 29, 2022
 
 ### Distribution package
 
 -   Component added: tables
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 0.12.8]({{path '../../dist/ontario-design-system-dist-0.12.8.zip'}})
 
 <hr>
 
 ## <a name="a0.12.7"></a> 0.12.7 Release - April 25, 2022
 
-### Platform
+### Elements
 
 Added in this release:
 
--   Application header (code)
--   Back to top
+-   Tables
 
-### Known bugs and issues
+Updated:
 
--   Replaced deprecated use of `/` as a division in SASS
+-   Ontario.ca header menu behaviour
 
 ### Distribution package
 
@@ -64,7 +87,7 @@ Added in this release:
 
 ## <a name="a0.12.6"></a> 0.12.6 Release - February 25, 2022
 
-### Platform
+### Elements
 
 Added in this release:
 

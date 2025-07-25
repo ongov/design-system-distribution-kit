@@ -54,7 +54,8 @@ $mobile-icon-margin: 0;
     z-index: 10000;
     cursor: pointer;
 
-    .ontario-icon {
+    svg.ontario-icon {
+        margin: 0.125rem $spacing-2 0 0;
         width: rem-calc(32);
         height: rem-calc(32);
     }
@@ -87,7 +88,8 @@ $mobile-icon-margin: 0;
         flex-direction: column;
         height: rem-calc(76);
         padding: $tablet-padding-top $tablet-padding-right $tablet-padding-bottom $tablet-padding-left;
-        .ontario-icon {
+        svg.ontario-icon {
+            margin: $tablet-icon-margin-top $tablet-icon-margin-right $tablet-icon-margin-bottom $tablet-icon-margin-left;
             width: rem-calc(32);
             height: rem-calc(32);
         }
@@ -99,7 +101,7 @@ $mobile-icon-margin: 0;
         font-size: 0;
         width: rem-calc(48);
         height: rem-calc(48);
-        .ontario-icon {
+        svg.ontario-icon {
             margin: $mobile-icon-margin;
         }
     }

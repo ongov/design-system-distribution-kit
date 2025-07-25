@@ -2418,6 +2418,219 @@ tfoot tr {
 .ontario-row.ontario-expanded {
   max-width: none;
 }
+h6,
+.ontario-h6, h5,
+.ontario-h5, h4,
+.ontario-h4, h3,
+.ontario-h3, h2,
+.ontario-h2, h1,
+.ontario-h1 {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+.ontario-h1 {
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.2;
+  margin: 2.5rem 0 1.5rem 0;
+}
+@media screen and (min-width: 40em) {
+  h1,
+.ontario-h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.04rem;
+    line-height: 1.29;
+  }
+}
+
+h2,
+.ontario-h2 {
+  font-size: 1.6875rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.33;
+  margin: 0 0 0.75rem 0;
+}
+@media screen and (min-width: 40em) {
+  h2,
+.ontario-h2 {
+    font-size: 2.0625rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.37;
+  }
+}
+
+h3,
+.ontario-h3 {
+  font-size: 1.4375rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.43;
+  margin: 0 0 0.75rem 0;
+}
+@media screen and (min-width: 40em) {
+  h3,
+.ontario-h3 {
+    font-size: 1.75rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.39;
+  }
+}
+
+h4,
+.ontario-h4 {
+  font-size: 1.25rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+@media screen and (min-width: 40em) {
+  h4,
+.ontario-h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.0313rem;
+    line-height: 1.5;
+  }
+}
+
+h5,
+.ontario-h5 {
+  font-size: 1.125rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+@media screen and (min-width: 40em) {
+  h5,
+.ontario-h5 {
+    font-size: 1.1875rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.56;
+  }
+}
+
+h6,
+.ontario-h6 {
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+@media screen and (min-width: 40em) {
+  h6,
+.ontario-h6 {
+    font-size: 1rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.56;
+  }
+}
+
+.ontario-lead-statement {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 100%;
+}
+@media screen and (min-width: 40em) {
+  .ontario-lead-statement {
+    font-size: 1.375rem;
+  }
+}
+
+@font-face {
+  font-family: "Courier Prime";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Courier Prime"), local("Courier-prime-regular"), url("../fonts/courier-prime-400/CourierPrime-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-weight: 400;
+  font-style: italic;
+  src: local("Courier Prime Italic"), local("Courier-prime-italic"), url("../fonts/courier-prime-400--italic/CourierPrime-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Courier Prime Bold"), local("Courier-prime-bold"), url("../fonts/courier-prime-700/CourierPrime-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-weight: 700;
+  font-style: italic;
+  src: local("Courier Prime Bold Italic"), local("Courier-prime-bold-italic"), url("../fonts/courier-prime-700--italic/CourierPrime-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Open Sans"), local("Open-Sans-regular"), url("../fonts/open-sans-400/open-sans-400.woff2") format("woff2"), url("../fonts/open-sans-400/open-sans-400.woff") format("woff"), url("../fonts/open-sans-400/open-sans-400.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("Open-Sans-600");
+  src: url("../fonts/open-sans-600/open-sans-600.eot");
+  src: url("../fonts/open-sans-600/open-sans-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-600/open-sans-600.woff2") format("woff2"), url("../fonts/open-sans-600/open-sans-600.woff") format("woff"), url("../fonts/open-sans-600/open-sans-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: local("Open Sans Italic"), local("Open-Sans-italic"), url("../fonts/open-sans-400--italic/open-sans-400--italic.woff2") format("woff2"), url("../fonts/open-sans-400--italic/open-sans-400--italic.woff") format("woff"), url("../fonts/open-sans-400--italic/open-sans-400--italic.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("Open-Sans-600");
+  src: url("../fonts/open-sans-700/open-sans-700.eot");
+  src: url("../fonts/open-sans-700/open-sans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-700/open-sans-700.woff2") format("woff2"), url("../fonts/open-sans-700/open-sans-700.woff") format("woff"), url("../fonts/open-sans-700/open-sans-700.ttf") format("truetype"), url("../fonts/open-sans-700/open-sans-700.svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/raleway-modified-400/raleway-modified-400.woff2") format("woff2"), url("../fonts/raleway-modified-400/raleway-modified-400.woff") format("woff"), url("../fonts/raleway-modified-400/raleway-modified-400.svg") format("svg"), local("Raleway"), local("Raleway-400");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/raleway-modified-600/raleway-modified-600.woff2") format("woff2"), url("../fonts/raleway-modified-600/raleway-modified-600.woff") format("woff"), url("../fonts/raleway-modified-600/raleway-modified-600.svg") format("svg"), local("Raleway SemiBold"), local("Raleway-600");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/raleway-modified-700/raleway-modified-700.woff2") format("woff2"), url("../fonts/raleway-modified-700/raleway-modified-700.woff") format("woff"), url("../fonts/raleway-modified-700/raleway-modified-700.svg") format("svg"), local("Raleway Bold"), local("Raleway-700");
+}
+html {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+p {
+  font-size: inherit;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  margin: 0 0 1.5rem 0;
+}
+
+cite {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: inherit;
+}
 .ontario-lists--two-column-list-md ul {
   -webkit-column-count: 1;
      -moz-column-count: 1;
@@ -2772,219 +2985,6 @@ tfoot tr {
 .ontario-margin-left-64-\! {
   margin-left: 4rem !important;
 }
-h6,
-.ontario-h6, h5,
-.ontario-h5, h4,
-.ontario-h4, h3,
-.ontario-h3, h2,
-.ontario-h2, h1,
-.ontario-h1 {
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
-  font-feature-settings: normal;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h1,
-.ontario-h1 {
-  font-size: 2rem;
-  letter-spacing: 0.04rem;
-  line-height: 1.2;
-  margin: 2.5rem 0 1.5rem 0;
-}
-@media screen and (min-width: 40em) {
-  h1,
-.ontario-h1 {
-    font-size: 2.5rem;
-    letter-spacing: 0.04rem;
-    line-height: 1.29;
-  }
-}
-
-h2,
-.ontario-h2 {
-  font-size: 1.6875rem;
-  letter-spacing: 0.03rem;
-  line-height: 1.33;
-  margin: 0 0 0.75rem 0;
-}
-@media screen and (min-width: 40em) {
-  h2,
-.ontario-h2 {
-    font-size: 2.0625rem;
-    letter-spacing: 0.02rem;
-    line-height: 1.37;
-  }
-}
-
-h3,
-.ontario-h3 {
-  font-size: 1.4375rem;
-  letter-spacing: 0.02rem;
-  line-height: 1.43;
-  margin: 0 0 0.75rem 0;
-}
-@media screen and (min-width: 40em) {
-  h3,
-.ontario-h3 {
-    font-size: 1.75rem;
-    letter-spacing: 0.02rem;
-    line-height: 1.39;
-  }
-}
-
-h4,
-.ontario-h4 {
-  font-size: 1.25rem;
-  letter-spacing: 0.03rem;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
-}
-@media screen and (min-width: 40em) {
-  h4,
-.ontario-h4 {
-    font-size: 1.5rem;
-    letter-spacing: 0.0313rem;
-    line-height: 1.5;
-  }
-}
-
-h5,
-.ontario-h5 {
-  font-size: 1.125rem;
-  letter-spacing: 0.03rem;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
-}
-@media screen and (min-width: 40em) {
-  h5,
-.ontario-h5 {
-    font-size: 1.1875rem;
-    letter-spacing: 0.025rem;
-    line-height: 1.56;
-  }
-}
-
-h6,
-.ontario-h6 {
-  font-size: 1rem;
-  letter-spacing: 0.03rem;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
-}
-@media screen and (min-width: 40em) {
-  h6,
-.ontario-h6 {
-    font-size: 1rem;
-    letter-spacing: 0.025rem;
-    line-height: 1.56;
-  }
-}
-
-.ontario-lead-statement {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  max-width: 100%;
-}
-@media screen and (min-width: 40em) {
-  .ontario-lead-statement {
-    font-size: 1.375rem;
-  }
-}
-
-@font-face {
-  font-family: "Courier Prime";
-  font-weight: 400;
-  font-style: normal;
-  src: local("Courier Prime"), local("Courier-prime-regular"), url("../fonts/courier-prime-400/CourierPrime-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Courier Prime";
-  font-weight: 400;
-  font-style: italic;
-  src: local("Courier Prime Italic"), local("Courier-prime-italic"), url("../fonts/courier-prime-400--italic/CourierPrime-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Courier Prime";
-  font-weight: 700;
-  font-style: normal;
-  src: local("Courier Prime Bold"), local("Courier-prime-bold"), url("../fonts/courier-prime-700/CourierPrime-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Courier Prime";
-  font-weight: 700;
-  font-style: italic;
-  src: local("Courier Prime Bold Italic"), local("Courier-prime-bold-italic"), url("../fonts/courier-prime-700--italic/CourierPrime-BoldItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: local("Open Sans"), local("Open-Sans-regular"), url("../fonts/open-sans-400/open-sans-400.woff2") format("woff2"), url("../fonts/open-sans-400/open-sans-400.woff") format("woff"), url("../fonts/open-sans-400/open-sans-400.svg#OpenSans") format("svg");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 600;
-  src: local("Open Sans Semibold"), local("Open-Sans-600");
-  src: url("../fonts/open-sans-600/open-sans-600.eot");
-  src: url("../fonts/open-sans-600/open-sans-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-600/open-sans-600.woff2") format("woff2"), url("../fonts/open-sans-600/open-sans-600.woff") format("woff"), url("../fonts/open-sans-600/open-sans-600.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: italic;
-  src: local("Open Sans Italic"), local("Open-Sans-italic"), url("../fonts/open-sans-400--italic/open-sans-400--italic.woff2") format("woff2"), url("../fonts/open-sans-400--italic/open-sans-400--italic.woff") format("woff"), url("../fonts/open-sans-400--italic/open-sans-400--italic.svg#OpenSans") format("svg");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 700;
-  src: local("Open Sans Bold"), local("Open-Sans-600");
-  src: url("../fonts/open-sans-700/open-sans-700.eot");
-  src: url("../fonts/open-sans-700/open-sans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-700/open-sans-700.woff2") format("woff2"), url("../fonts/open-sans-700/open-sans-700.woff") format("woff"), url("../fonts/open-sans-700/open-sans-700.ttf") format("truetype"), url("../fonts/open-sans-700/open-sans-700.svg");
-}
-@font-face {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/raleway-modified-400/raleway-modified-400.woff2") format("woff2"), url("../fonts/raleway-modified-400/raleway-modified-400.woff") format("woff"), url("../fonts/raleway-modified-400/raleway-modified-400.svg") format("svg"), local("Raleway"), local("Raleway-400");
-}
-@font-face {
-  font-family: "Raleway";
-  font-weight: 600;
-  font-style: normal;
-  src: url("../fonts/raleway-modified-600/raleway-modified-600.woff2") format("woff2"), url("../fonts/raleway-modified-600/raleway-modified-600.woff") format("woff"), url("../fonts/raleway-modified-600/raleway-modified-600.svg") format("svg"), local("Raleway SemiBold"), local("Raleway-600");
-}
-@font-face {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/raleway-modified-700/raleway-modified-700.woff2") format("woff2"), url("../fonts/raleway-modified-700/raleway-modified-700.woff") format("woff"), url("../fonts/raleway-modified-700/raleway-modified-700.svg") format("svg"), local("Raleway Bold"), local("Raleway-700");
-}
-html {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  color: #1a1a1a;
-}
-
-p {
-  font-size: inherit;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-  margin: 0 0 1.5rem 0;
-}
-
-cite {
-  font-style: italic;
-  line-height: inherit;
-}
-
-strong {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  line-height: inherit;
-}
 .ontario-hide {
   display: none !important;
 }
@@ -3169,6 +3169,118 @@ blockquote {
 html[lang=fr] blockquote {
   quotes: "« " " »";
 }
+#root {
+  margin: 0 15px 15px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.ontario-callout,
+.ontario-aside {
+  border-left: 0.25rem solid #367A76;
+  padding: 1.5rem;
+}
+.ontario-callout *,
+.ontario-aside * {
+  max-width: 48rem;
+}
+.ontario-callout *:last-child,
+.ontario-aside *:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.ontario-callout {
+  margin: 2rem 0 2.5rem 0;
+  background-color: #f2f2f2;
+}
+
+.ontario-aside {
+  margin: 2rem 0 2.5rem 2rem;
+}
+
+@media screen and (max-width: 40em) {
+  .ontario-aside {
+    margin: 2rem 0 2.5rem 1rem;
+  }
+}
+.ontario-callout__title,
+.ontario-aside__title {
+  margin-bottom: 1rem;
+}
+
+.ontario-border-highlight--teal {
+  border-color: #367A76 !important;
+}
+
+.ontario-border-highlight--gold {
+  border-color: #86743D !important;
+}
+
+.ontario-border-highlight--yellow {
+  border-color: #8A600D !important;
+}
+
+.ontario-border-highlight--taupe {
+  border-color: #7B725C !important;
+}
+
+.ontario-border-highlight--green {
+  border-color: #2B8737 !important;
+}
+
+.ontario-border-highlight--lime {
+  border-color: #5F8129 !important;
+}
+
+.ontario-border-highlight--sky {
+  border-color: #1080A6 !important;
+}
+
+.ontario-border-highlight--blue {
+  border-color: #0369ac !important;
+}
+
+.ontario-border-highlight--purple {
+  border-color: #92278F !important;
+}
+.ontario-critical-alert {
+  background-color: #FFD440;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 5;
+}
+
+.ontario-critical-alert__body {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.ontario-critical-alert__icon svg {
+  width: 28px;
+  height: 28px;
+  margin: 0 0.85rem 0 0;
+}
+
+.ontario-critical-alert p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.ontario-critical-alert a {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+.ontario-critical-alert a:hover, .ontario-critical-alert a:focus {
+  text-decoration: none;
+}
+.ontario-critical-alert a:visited {
+  color: #1a1a1a;
+}
 .ontario-alert {
   border-width: 0 0 0 4px;
   border-style: solid;
@@ -3278,118 +3390,6 @@ html[lang=fr] blockquote {
 }
 .ontario-alert--error a:active {
   color: #280000;
-}
-.ontario-critical-alert {
-  background-color: #FFD440;
-  font-weight: 400;
-  margin: 0;
-  padding: 1rem 0;
-  position: relative;
-  z-index: 5;
-}
-
-.ontario-critical-alert__body {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.ontario-critical-alert__icon svg {
-  width: 28px;
-  height: 28px;
-  margin: 0 0.85rem 0 0;
-}
-
-.ontario-critical-alert p {
-  margin: 0;
-  padding: 0;
-  line-height: 1.8;
-}
-
-.ontario-critical-alert a {
-  color: #1a1a1a;
-  font-weight: 700;
-}
-.ontario-critical-alert a:hover, .ontario-critical-alert a:focus {
-  text-decoration: none;
-}
-.ontario-critical-alert a:visited {
-  color: #1a1a1a;
-}
-#root {
-  margin: 0 15px 15px 0;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-
-.ontario-callout,
-.ontario-aside {
-  border-left: 0.25rem solid #367A76;
-  padding: 1.5rem;
-}
-.ontario-callout *,
-.ontario-aside * {
-  max-width: 48rem;
-}
-.ontario-callout *:last-child,
-.ontario-aside *:last-child {
-  margin-bottom: 0.5rem;
-}
-
-.ontario-callout {
-  margin: 2rem 0 2.5rem 0;
-  background-color: #f2f2f2;
-}
-
-.ontario-aside {
-  margin: 2rem 0 2.5rem 2rem;
-}
-
-@media screen and (max-width: 40em) {
-  .ontario-aside {
-    margin: 2rem 0 2.5rem 1rem;
-  }
-}
-.ontario-callout__title,
-.ontario-aside__title {
-  margin-bottom: 1rem;
-}
-
-.ontario-border-highlight--teal {
-  border-color: #367A76 !important;
-}
-
-.ontario-border-highlight--gold {
-  border-color: #86743D !important;
-}
-
-.ontario-border-highlight--yellow {
-  border-color: #8A600D !important;
-}
-
-.ontario-border-highlight--taupe {
-  border-color: #7B725C !important;
-}
-
-.ontario-border-highlight--green {
-  border-color: #2B8737 !important;
-}
-
-.ontario-border-highlight--lime {
-  border-color: #5F8129 !important;
-}
-
-.ontario-border-highlight--sky {
-  border-color: #1080A6 !important;
-}
-
-.ontario-border-highlight--blue {
-  border-color: #0369ac !important;
-}
-
-.ontario-border-highlight--purple {
-  border-color: #92278F !important;
 }
 .ontario-checkboxes {
   margin-bottom: 2.5rem;
@@ -3515,6 +3515,175 @@ html[lang=fr] blockquote {
 
 .ontario-dropdown option {
   font-weight: normal;
+}
+@charset "UTF-8";
+.ontario-fieldset__legend--large h1,
+.ontario-fieldset__legend--heading h1 {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ontario-fieldset__legend--large h1,
+.ontario-fieldset__legend--heading h1 {
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.2;
+  margin: 2.5rem 0 1.5rem 0;
+}
+@media screen and (min-width: 40em) {
+  .ontario-fieldset__legend--large h1,
+.ontario-fieldset__legend--heading h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.04rem;
+    line-height: 1.29;
+  }
+}
+
+.ontario-fieldset__legend {
+  cursor: pointer;
+  color: #1a1a1a;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  max-width: 38.75em;
+  white-space: normal;
+  width: 100%;
+}
+@media screen and (max-width: 40em) {
+  .ontario-fieldset__legend {
+    font-size: 1.125rem;
+    line-height: 1.56;
+  }
+}
+
+.ontario-fieldset__legend--large,
+.ontario-fieldset__legend--heading {
+  font-size: 1.75rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.2;
+  max-width: 26.25em;
+}
+.ontario-fieldset__legend--large h1,
+.ontario-fieldset__legend--heading h1 {
+  display: inline-block;
+  margin: 0;
+}
+@media screen and (max-width: 40em) {
+  .ontario-fieldset__legend--large,
+.ontario-fieldset__legend--heading {
+    font-size: 1.4375rem;
+    line-height: 1.39;
+  }
+}
+
+.ontario-fieldset__legend__flag {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.ontario-fieldset__legend__flag:before {
+  content: " ";
+}
+.ontario-hint-expander__button:focus, .ontario-hint-expander__button:active {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.ontario-hint {
+  color: #4d4d4d;
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.ontario-hint-expander__container {
+  max-width: 48rem;
+}
+
+.ontario-hint-expander__button {
+  color: #0066CC;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  padding: 0 0.25rem 0 0;
+}
+.ontario-hint-expander__button-icon--close {
+  display: none;
+  margin-right: 0.25rem;
+}
+.ontario-hint-expander__button-icon--open {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+.ontario-hint-expander__button:hover {
+  color: #00478F;
+}
+.ontario-hint-expander__button:active {
+  color: #002142;
+}
+.ontario-hint-expander__content {
+  border-left: 4px solid #cccccc;
+  color: #1a1a1a;
+  background-color: #f2f2f2;
+  display: none;
+  padding: 1rem 1rem 1rem calc(1rem + 0.25rem);
+  margin: 0 0 1rem 0.25rem;
+}
+.ontario-hint-expander__content *:last-child {
+  margin-bottom: 0;
+}
+.ontario-hint-expander__content img {
+  width: 100%;
+}
+@media screen and (min-width: 40em) {
+  .ontario-hint-expander__content img {
+    width: 50%;
+  }
+}
+
+.ontario-hint-expander__content.ontario-expander__content--opened {
+  display: block;
+}
+
+.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--close {
+  display: inline-block;
+}
+.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--open {
+  display: none;
+}
+
+.ontario-input + .ontario-hint-expander__container {
+  margin-top: -1.5rem !important;
+}
+
+.ontario-checkboxes__item .ontario-hint-expander__container,
+.ontario-radios__item .ontario-hint-expander__container {
+  margin-left: 0.5rem;
+}
+
+.ontario-checkboxes__label + .ontario-hint-expander__container,
+.ontario-radios__label + .ontario-hint-expander__container {
+  margin-top: 0.75rem;
+}
+@media screen and (max-width: 40em) {
+  .ontario-checkboxes__label + .ontario-hint-expander__container,
+.ontario-radios__label + .ontario-hint-expander__container {
+    margin-top: 1rem;
+  }
 }
 @charset "UTF-8";
 h1 .ontario-label--heading {
@@ -3680,101 +3849,6 @@ h1 .ontario-label--heading {
 .ontario-radios__input:checked + .ontario-radios__label:after {
   opacity: 1;
 }
-.ontario-hint-expander__button:focus, .ontario-hint-expander__button:active {
-  box-shadow: 0 0 0 4px #009ADB;
-  outline: 4px solid transparent;
-  transition: box-shadow 0.1s ease-in-out;
-}
-
-.ontario-hint {
-  color: #4d4d4d;
-  display: inline-block;
-  margin: 0 0 1rem 0;
-  width: 100%;
-  max-width: 48rem;
-}
-
-.ontario-hint-expander__container {
-  max-width: 48rem;
-}
-
-.ontario-hint-expander__button {
-  color: #0066CC;
-  cursor: pointer;
-  background: none;
-  border: none;
-  display: flex;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: left;
-  margin: 0 0 1rem 0;
-  padding: 0 0.25rem 0 0;
-}
-.ontario-hint-expander__button-icon--close {
-  display: none;
-  margin-right: 0.25rem;
-}
-.ontario-hint-expander__button-icon--open {
-  display: inline-block;
-  margin-right: 0.25rem;
-}
-.ontario-hint-expander__button:hover {
-  color: #00478F;
-}
-.ontario-hint-expander__button:active {
-  color: #002142;
-}
-.ontario-hint-expander__content {
-  border-left: 4px solid #cccccc;
-  color: #1a1a1a;
-  background-color: #f2f2f2;
-  display: none;
-  padding: 1rem 1rem 1rem calc(1rem + 0.25rem);
-  margin: 0 0 1rem 0.25rem;
-}
-.ontario-hint-expander__content *:last-child {
-  margin-bottom: 0;
-}
-.ontario-hint-expander__content img {
-  width: 100%;
-}
-@media screen and (min-width: 40em) {
-  .ontario-hint-expander__content img {
-    width: 50%;
-  }
-}
-
-.ontario-hint-expander__content.ontario-expander__content--opened {
-  display: block;
-}
-
-.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--close {
-  display: inline-block;
-}
-.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--open {
-  display: none;
-}
-
-.ontario-input + .ontario-hint-expander__container {
-  margin-top: -1.5rem !important;
-}
-
-.ontario-checkboxes__item .ontario-hint-expander__container,
-.ontario-radios__item .ontario-hint-expander__container {
-  margin-left: 0.5rem;
-}
-
-.ontario-checkboxes__label + .ontario-hint-expander__container,
-.ontario-radios__label + .ontario-hint-expander__container {
-  margin-top: 0.75rem;
-}
-@media screen and (max-width: 40em) {
-  .ontario-checkboxes__label + .ontario-hint-expander__container,
-.ontario-radios__label + .ontario-hint-expander__container {
-    margin-top: 1rem;
-  }
-}
 .ontario-step-indicator {
   /**
   * Tertiary button defaults are overridden to achieve the mini-button specifications
@@ -3884,6 +3958,179 @@ h1 .ontario-label--heading {
 
 .ontario-form-group:last-of-type {
   margin-bottom: 3rem;
+}
+.ontario-application-subheader__heading {
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1rem;
+  font-feature-settings: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ontario-application-subheader__heading {
+  font-size: 1.25rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+@media screen and (min-width: 40em) {
+  .ontario-application-subheader__heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.0313rem;
+    line-height: 1.5;
+  }
+}
+
+.ontario-header.ontario-application-header {
+  height: 3.125rem;
+  z-index: 5;
+}
+
+.ontario-application-header__logo,
+.ontario-application-header__logo a,
+.ontario-application-header__lang-toggle,
+.ontario-application-subheader__container,
+.ontario-application-subheader__menu-container,
+.ontario-application-subheader__menu {
+  display: flex;
+}
+
+.ontario-application-header__logo img {
+  width: 100px;
+  height: 25px;
+}
+
+.ontario-application-header__lang-toggle {
+  justify-content: flex-end;
+}
+.ontario-application-header__lang-toggle a {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+}
+
+.ontario-application-subheader {
+  padding: calc(0.5rem + 0.75rem) 0;
+  background-color: #404040;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+@media screen and (min-width: 73em) {
+  .ontario-application-subheader {
+    z-index: 0;
+  }
+}
+.ontario-application-subheader > .ontario-row {
+  position: relative;
+}
+
+.ontario-application-subheader .ontario-header-button {
+  visibility: visible;
+}
+
+.ontario-application-subheader .ontario-header-button {
+  background-color: #4d4d4d;
+}
+.ontario-application-subheader .ontario-header-button .ontario-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+.ontario-application-subheader .ontario-header-button:hover {
+  background-color: #666666;
+}
+.ontario-application-subheader .ontario-header-button:active {
+  background-color: #1a1a1a;
+}
+
+.ontario-application-subheader__heading {
+  margin-bottom: 0;
+  max-width: 65%;
+}
+.ontario-application-subheader__heading a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+.ontario-application-subheader__heading a:hover, .ontario-application-subheader__heading a:active, .ontario-application-subheader__heading a:visited {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.ontario-application-subheader__container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ontario-application-subheader__menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.ontario-application-subheader__menu li {
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.ontario-application-subheader__menu a {
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  height: 48px;
+  line-height: 1.4375rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ontario-application-subheader__menu a.ontario-link--active {
+  border-radius: 4px 4px 0 0;
+  border-bottom: 4px solid #FFFFFF;
+}
+.ontario-application-subheader__menu a:hover {
+  background-color: #666666;
+}
+.ontario-application-subheader__menu a:active {
+  background-color: #1a1a1a;
+}
+
+.ontario-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.ontario-navigation--open .ontario-navigation .ontario-header-button {
+  visibility: visible;
+}
+.ontario-navigation--open .ontario-application-subheader .ontario-header-button {
+  visibility: hidden;
+}
+@media screen and (max-width: 73em) {
+  .ontario-navigation--open .ontario-application-subheader-menu__container {
+    position: relative;
+    z-index: 3;
+  }
+}
+.ontario-navigation--open .ontario-overlay {
+  display: block;
+}
+@media screen and (min-width: 73em) {
+  .ontario-navigation--open .ontario-overlay {
+    display: none;
+  }
 }
 .ontario-header-button:focus {
   box-shadow: 0 0 0 4px #009ADB;
@@ -4107,179 +4354,6 @@ input[type=reset].ontario-header__search-reset:focus {
 }
 .ontario-header__language-toggler abbr[title] {
   text-decoration: none;
-}
-.ontario-application-subheader__heading {
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
-  font-feature-settings: normal;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.ontario-application-subheader__heading {
-  font-size: 1.25rem;
-  letter-spacing: 0.03rem;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
-}
-@media screen and (min-width: 40em) {
-  .ontario-application-subheader__heading {
-    font-size: 1.5rem;
-    letter-spacing: 0.0313rem;
-    line-height: 1.5;
-  }
-}
-
-.ontario-header.ontario-application-header {
-  height: 3.125rem;
-  z-index: 5;
-}
-
-.ontario-application-header__logo,
-.ontario-application-header__logo a,
-.ontario-application-header__lang-toggle,
-.ontario-application-subheader__container,
-.ontario-application-subheader__menu-container,
-.ontario-application-subheader__menu {
-  display: flex;
-}
-
-.ontario-application-header__logo img {
-  width: 100px;
-  height: 25px;
-}
-
-.ontario-application-header__lang-toggle {
-  justify-content: flex-end;
-}
-.ontario-application-header__lang-toggle a {
-  font-size: 1rem;
-  line-height: 1.375rem;
-  height: auto;
-  padding: 0.5rem 0.75rem;
-}
-
-.ontario-application-subheader {
-  padding: calc(0.5rem + 0.75rem) 0;
-  background-color: #404040;
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-}
-@media screen and (min-width: 73em) {
-  .ontario-application-subheader {
-    z-index: 0;
-  }
-}
-.ontario-application-subheader > .ontario-row {
-  position: relative;
-}
-
-.ontario-application-subheader .ontario-header-button {
-  visibility: visible;
-}
-
-.ontario-application-subheader .ontario-header-button {
-  background-color: #4d4d4d;
-}
-.ontario-application-subheader .ontario-header-button .ontario-icon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0;
-}
-.ontario-application-subheader .ontario-header-button:hover {
-  background-color: #666666;
-}
-.ontario-application-subheader .ontario-header-button:active {
-  background-color: #1a1a1a;
-}
-
-.ontario-application-subheader__heading {
-  margin-bottom: 0;
-  max-width: 65%;
-}
-.ontario-application-subheader__heading a {
-  color: #FFFFFF;
-  font-weight: 600;
-  text-decoration: none;
-}
-.ontario-application-subheader__heading a:hover, .ontario-application-subheader__heading a:active, .ontario-application-subheader__heading a:visited {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.ontario-application-subheader__container {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ontario-application-subheader__menu {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  align-items: center;
-}
-
-.ontario-application-subheader__menu li {
-  padding: 0;
-  margin-left: 1rem;
-}
-
-.ontario-application-subheader__menu a {
-  border-radius: 4px;
-  color: #FFFFFF;
-  display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
-  height: 48px;
-  line-height: 1.4375rem;
-  padding: 0.75rem;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.ontario-application-subheader__menu a.ontario-link--active {
-  border-radius: 4px 4px 0 0;
-  border-bottom: 4px solid #FFFFFF;
-}
-.ontario-application-subheader__menu a:hover {
-  background-color: #666666;
-}
-.ontario-application-subheader__menu a:active {
-  background-color: #1a1a1a;
-}
-
-.ontario-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.ontario-navigation--open .ontario-navigation .ontario-header-button {
-  visibility: visible;
-}
-.ontario-navigation--open .ontario-application-subheader .ontario-header-button {
-  visibility: hidden;
-}
-@media screen and (max-width: 73em) {
-  .ontario-navigation--open .ontario-application-subheader-menu__container {
-    position: relative;
-    z-index: 3;
-  }
-}
-.ontario-navigation--open .ontario-overlay {
-  display: block;
-}
-@media screen and (min-width: 73em) {
-  .ontario-navigation--open .ontario-overlay {
-    display: none;
-  }
 }
 .ontario-header-button:focus {
   box-shadow: 0 0 0 4px #009ADB;
@@ -4652,6 +4726,19 @@ input[type=reset].ontario-header__search-reset:focus {
     display: none;
   }
 }
+.ontario-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  /* The default vertical-align is `baseline`, which leaves a few pixels of space below the icon. Using `center` prevents this. For icons shown alongside text, you may want to use a more precise value, e.g. `vertical-align: -4px` or `vertical-align: -0.15em`. */
+  vertical-align: middle;
+  /* Paths and strokes that overflow the viewBox can show in IE11. */
+  overflow: hidden;
+  margin-bottom: 2px;
+}
 .ontario-back-to-top--default {
   position: fixed;
   bottom: 5%;
@@ -4677,7 +4764,8 @@ input[type=reset].ontario-header__search-reset:focus {
   z-index: 10000;
   cursor: pointer;
 }
-.ontario-back-to-top--default .ontario-icon {
+.ontario-back-to-top--default svg.ontario-icon {
+  margin: 0.125rem 0.5rem 0 0;
   width: 2rem;
   height: 2rem;
 }
@@ -4705,7 +4793,8 @@ input[type=reset].ontario-header__search-reset:focus {
     height: 4.75rem;
     padding: 0.375rem 0.75rem 0.5625rem 0.75rem;
   }
-  .ontario-back-to-top--default .ontario-icon {
+  .ontario-back-to-top--default svg.ontario-icon {
+    margin: 0.0625rem 0 0.25rem 0;
     width: 2rem;
     height: 2rem;
   }
@@ -4718,7 +4807,7 @@ input[type=reset].ontario-header__search-reset:focus {
     width: 3rem;
     height: 3rem;
   }
-  .ontario-back-to-top--default .ontario-icon {
+  .ontario-back-to-top--default svg.ontario-icon {
     margin: 0;
   }
 }
@@ -4727,19 +4816,7 @@ input[type=reset].ontario-header__search-reset:focus {
   visibility: visible;
   opacity: 1;
 }
-.ontario-icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  /* The default vertical-align is `baseline`, which leaves a few pixels of space below the icon. Using `center` prevents this. For icons shown alongside text, you may want to use a more precise value, e.g. `vertical-align: -4px` or `vertical-align: -0.15em`. */
-  vertical-align: middle;
-  /* Paths and strokes that overflow the viewBox can show in IE11. */
-  overflow: hidden;
-  margin-bottom: 2px;
-}
+
 .ontario-tag {
   border: none;
   border-radius: 12px;
@@ -4910,7 +4987,6 @@ input[type=reset].ontario-header__search-reset:focus {
 .ontario-navigation .ontario-header-button:active {
   background-color: #1a1a1a;
 }
-
 .ontario-accordion__button p,
 .ontario-accordion__button h2,
 .ontario-accordion__button h3,
@@ -5074,50 +5150,6 @@ input[type=reset].ontario-header__search-reset:focus {
 
 .ontario-accordion__button-icon--close {
   display: none;
-}
-.ontario-fieldset__legend {
-  color: #1a1a1a;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1875rem;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  line-height: 1.5;
-  max-width: 38.75em;
-  white-space: normal;
-  width: 100%;
-}
-@media screen and (max-width: 40em) {
-  .ontario-fieldset__legend {
-    font-size: 1.125rem;
-    line-height: 1.56;
-  }
-}
-
-.ontario-fieldset__legend--large,
-.ontario-fieldset__legend--heading {
-  font-size: 1.75rem;
-  letter-spacing: 0.02rem;
-  line-height: 1.2;
-}
-.ontario-fieldset__legend--large h1,
-.ontario-fieldset__legend--heading h1 {
-  display: inline-block;
-  font-size: inherit;
-  margin: 0;
-}
-@media screen and (max-width: 40em) {
-  .ontario-fieldset__legend--large,
-.ontario-fieldset__legend--heading {
-    font-size: 1.4375rem;
-    line-height: 1.39;
-  }
-}
-
-.ontario-fieldset__legend-required-flag,
-.ontario-fieldset__legend-optional-flag {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
 }
 .ontario-button:focus, .ontario-button:active {
   box-shadow: 0 0 0 4px #009ADB;
