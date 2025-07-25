@@ -1072,497 +1072,6 @@ hr.dark {
 .ontario-image-example-container__hr--info {
   border-bottom: 4px solid #1080A6;
 }
-caption {
-  background-color: #0000001a;
-  padding: 1.125rem 1rem 1.125rem 1.5rem;
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.375rem;
-  line-height: 2.1875rem;
-  display: table-caption;
-}
-@media screen and (max-width: 40em) {
-  caption {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    padding-left: 1rem;
-  }
-}
-
-.ontario-table-container {
-  position: relative;
-  margin: 0.5rem 0 2.5rem 0;
-}
-.ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6):nth-child(even),
-.ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6) ~ tr:nth-child(even) {
-  background-color: #0000000d;
-}
-
-.ontario-table-div {
-  overflow-x: auto;
-  background: linear-gradient(to right, #FFFFFF 30%, rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 0), #FFFFFF 70%) 0 100%, linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(252, 0, 0, 0) 100.01%), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(252, 0, 0, 0) 100.01%);
-  background-repeat: no-repeat;
-  background-size: 2.5rem 100%, 2.5rem 100%, 0.875rem 100%, 0.875rem 100%;
-  background-position: 0 0, 100%, 0 0, 100%;
-  background-attachment: local, local, scroll, scroll;
-}
-@media screen and (max-width: 40em) {
-  .ontario-table-div {
-    overflow-x: scroll;
-  }
-}
-
-.ontario-table-scroll--wrapper {
-  height: 20px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  display: block;
-}
-
-table {
-  border-collapse: collapse;
-  font-size: 1.0625rem;
-  display: table;
-  line-height: 1.625rem;
-  font-weight: normal;
-}
-table.ontario-table--full-container-width {
-  display: table;
-  width: 100% !important;
-}
-@media screen and (max-width: 40em) {
-  table {
-    font-size: 1rem;
-  }
-}
-
-table.ontario-table--condensed td {
-  padding: 0.75rem 1rem 0.75rem 1.5rem;
-  text-align: left;
-}
-table.ontario-table--condensed td.ontario-table-cell--numeric {
-  padding: 0.75rem 1.5rem 0.75rem 1rem;
-  font-size: 1.0625rem;
-  text-align: right;
-}
-table.ontario-table--condensed tbody th,
-table.ontario-table--condensed tfoot th {
-  padding: 0.75rem 1rem 0.75rem 1.5rem;
-}
-table.ontario-table--condensed tr.ontario-table-row--highlight th img.ontario-table--highlight-indicator {
-  top: 1.0625rem;
-}
-table.ontario-table--condensed tr.ontario-table-row--subtotal th,
-table.ontario-table--condensed tr.ontario-table-row--subtotal td,
-table.ontario-table--condensed tfoot tr th,
-table.ontario-table--condensed tfoot tr td {
-  padding: 1rem 1rem 1rem 1.5rem;
-}
-table.ontario-table--condensed tr.ontario-table-row--subtotal td.ontario-table-cell--numeric,
-table.ontario-table--condensed tfoot tr td.ontario-table-cell--numeric {
-  text-align: right;
-  padding: 1rem 1.5rem 1rem 1rem;
-}
-@media screen and (max-width: 40em) {
-  table.ontario-table--condensed td {
-    padding: 0.75rem 0.5rem 0.75rem 1rem;
-    font-size: 1rem;
-  }
-  table.ontario-table--condensed td.ontario-table-cell--numeric {
-    padding: 0.75rem 1rem 0.75rem 0.5rem;
-  }
-  table.ontario-table--condensed tbody th {
-    padding: 0.75rem 0.5rem 0.75rem 1rem;
-  }
-  table.ontario-table--condensed tr.ontario-table-row--subtotal th,
-table.ontario-table--condensed tr.ontario-table-row--subtotal td,
-table.ontario-table--condensed tfoot tr th,
-table.ontario-table--condensed tfoot tr td {
-    padding: 1rem 0.5rem 1rem 1rem;
-  }
-  table.ontario-table--condensed tr.ontario-table-row--subtotal td.ontario-table-cell--numeric,
-table.ontario-table--condensed tfoot tr td.ontario-table-cell--numeric {
-    text-align: right;
-    padding: 1rem 1rem 1rem 0.5rem;
-  }
-}
-
-tbody {
-  font-size: 1rem;
-  vertical-align: text-top;
-}
-tbody tr {
-  border: solid;
-  border-width: 0.0625rem 0;
-  border-color: #0000004d;
-}
-tbody tr:last-child {
-  border-width: 0.1875rem 0;
-  border-top-width: 0;
-  border-color: #1a1a1a;
-}
-tbody tr.ontario-table-row--highlight {
-  background-color: #e191003c !important;
-}
-tbody tr.ontario-table-row--highlight th {
-  padding-left: 1.5rem;
-  display: flex;
-  position: relative;
-}
-tbody tr.ontario-table-row--highlight th img.ontario-table--highlight-indicator {
-  width: 0.5rem;
-  position: absolute;
-  top: 1.5rem;
-  left: 0;
-}
-
-thead {
-  border: solid;
-  border-width: 0.1875rem 0;
-  border-color: #1a1a1a;
-  vertical-align: text-top;
-}
-thead th {
-  text-align: left;
-  padding: 1.75rem 1rem 1.75rem 1.5rem;
-  margin: 0;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-}
-@media screen and (max-width: 40em) {
-  thead th {
-    font-size: 1rem;
-    line-height: 1.3125rem;
-    padding: 1.53125rem 0.5rem 1.53125rem 1rem;
-  }
-}
-thead th.ontario-table-cell--numeric {
-  padding: 1.75rem 1.5rem 1.75rem 1rem;
-  text-align: right;
-}
-@media screen and (max-width: 40em) {
-  thead th.ontario-table-cell--numeric {
-    padding: 1.53125rem 1rem 1.53125rem 0.5rem;
-  }
-}
-
-td.ontario-table-cell--numeric strong {
-  font-family: "Courier Prime", Courier, "Courier New", monospace;
-}
-
-.ontario-table-header--column-span-1 {
-  min-width: 8.33333vw;
-}
-
-.ontario-table-header--column-span-2 {
-  min-width: 16.66666vw;
-}
-
-.ontario-table-header--column-span-3 {
-  min-width: 25vw;
-}
-
-.ontario-table-header--column-span-4 {
-  min-width: 33.33333vw;
-}
-
-.ontario-table-header--column-span-5 {
-  min-width: 41.66666vw;
-}
-
-.ontario-table-header--column-span-6 {
-  min-width: 50vw;
-}
-
-.ontario-table-header--column-span-7 {
-  min-width: 58.33333vw;
-}
-
-.ontario-table-header--column-span-8 {
-  min-width: 66.66666vw;
-}
-
-.ontario-table-header--column-span-9 {
-  min-width: 75vw;
-}
-
-.ontario-table-header--column-span-10 {
-  min-width: 83.33333vw;
-}
-
-.ontario-table-header--column-span-11 {
-  min-width: 91.66666vw;
-}
-
-.ontario-table-header--column-span-12 {
-  min-width: 100vw;
-}
-
-tbody th,
-tfoot th {
-  padding: 1.1875rem 1rem 1.1875rem 1.5rem;
-  text-align: left;
-  letter-spacing: 0.025rem;
-  font-weight: bold;
-}
-@media screen and (max-width: 40em) {
-  tbody th,
-tfoot th {
-    font-size: 1rem;
-    line-height: 1.625rem;
-    padding: 1.1875rem 0.5rem 1.1875rem 1rem;
-  }
-}
-
-td {
-  padding: 1.1875rem 1rem 1.1875rem 1.5rem;
-  text-align: left;
-  letter-spacing: 0.025rem;
-}
-td img {
-  vertical-align: top;
-}
-@media screen and (max-width: 40em) {
-  td img {
-    max-width: none !important;
-  }
-}
-
-td.ontario-table-cell--numeric {
-  padding: 1.1875rem 1.5rem 1.1875rem 1rem;
-  text-align: right;
-  font-family: "Courier Prime", Courier, "Courier New", monospace;
-  font-size: 1.0625rem;
-}
-
-tr.ontario-table-row--subtotal,
-tfoot tr {
-  border: solid;
-  border-width: 0.1875rem 0;
-  font-size: 1rem;
-  border-color: #1a1a1a;
-}
-tr.ontario-table-row--subtotal td,
-tfoot tr td {
-  font-weight: bold;
-  padding: 1.4375rem 1rem 1.4375rem 1.5rem;
-}
-
-tbody tr.ontario-table-row--subtotal th {
-  padding: 1.4375rem 1rem 1.4375rem 1.5rem;
-}
-
-tfoot {
-  vertical-align: text-top;
-}
-tfoot th {
-  padding: 1.4375rem 1rem 1.4375rem 1.5rem;
-}
-
-tr.ontario-table-row--subtotal {
-  background-color: #007b9e1d !important;
-}
-
-tfoot tr {
-  background-color: #0077a056 !important;
-}
-
-/*Greyscale background colours*/
-.ontario-bg-white {
-  background-color: #FFFFFF;
-}
-
-.ontario-bg-greyscale-5 {
-  background-color: #f2f2f2;
-}
-
-.ontario-bg-greyscale-20 {
-  background-color: #cccccc;
-}
-
-.ontario-bg-greyscale-40 {
-  background-color: #999999;
-}
-
-.ontario-bg-greyscale-60 {
-  background-color: #666666;
-}
-
-.ontario-bg-greyscale-70 {
-  background-color: #4d4d4d;
-}
-
-.ontario-bg-black {
-  background-color: #1a1a1a;
-}
-
-/*Main palette background colours*/
-.ontario-bg-gold {
-  background-color: #CBA52E;
-}
-
-.ontario-bg-yellow {
-  background-color: #FCAF17;
-}
-
-.ontario-bg-taupe {
-  background-color: #C1B28F;
-}
-
-.ontario-bg-green {
-  background-color: #39B54A;
-}
-
-.ontario-bg-lime {
-  background-color: #8DC63F;
-}
-
-.ontario-bg-teal {
-  background-color: #49A7A2;
-}
-
-.ontario-bg-sky {
-  background-color: #00B2E3;
-}
-
-.ontario-bg-blue {
-  background-color: #3193CC;
-}
-
-.ontario-bg-purple {
-  background-color: #B975B7;
-}
-
-.ontario-bg-orange {
-  background-color: #F15A22;
-}
-
-.ontario-bg-red {
-  background-color: #F0454B;
-}
-
-.ontario-bg-magenta {
-  background-color: #F03093;
-}
-
-/*Light palette background colours*/
-.ontario-bg-light-gold {
-  background-color: #F0E7CC;
-}
-
-.ontario-bg-light-yellow {
-  background-color: #F8E5C3;
-}
-
-.ontario-bg-light-taupe {
-  background-color: #EBE7DB;
-}
-
-.ontario-bg-light-green {
-  background-color: #D1EFD4;
-}
-
-.ontario-bg-light-lime {
-  background-color: #DDEDC7;
-}
-
-.ontario-bg-light-teal {
-  background-color: #CFEDED;
-}
-
-.ontario-bg-light-sky {
-  background-color: #C5EEFA;
-}
-
-.ontario-bg-light-blue {
-  background-color: #DBE9F5;
-}
-
-.ontario-bg-light-purple {
-  background-color: #F1E3F2;
-}
-
-.ontario-bg-light-orange {
-  background-color: #FEE1D9;
-}
-
-.ontario-bg-light-red {
-  background-color: #FFE0E2;
-}
-
-.ontario-bg-light-magenta {
-  background-color: #FEDFF0;
-}
-
-/*Dark palette background colours*/
-.ontario-bg-dark-gold {
-  background-color: #86743D;
-}
-
-.ontario-bg-dark-yellow {
-  background-color: #8A600D;
-}
-
-.ontario-bg-dark-taupe {
-  background-color: #7B725C;
-}
-
-.ontario-bg-dark-green {
-  background-color: #2B8737;
-}
-
-.ontario-bg-dark-lime {
-  background-color: #5F8129;
-}
-
-.ontario-bg-dark-teal {
-  background-color: #367A76;
-}
-
-.ontario-bg-dark-sky {
-  background-color: #1080A6;
-}
-
-.ontario-bg-dark-blue {
-  background-color: #0369ac;
-}
-
-.ontario-bg-dark-purple {
-  background-color: #92278F;
-}
-
-.ontario-bg-dark-orange {
-  background-color: #C64A1C;
-}
-
-.ontario-bg-dark-red {
-  background-color: #D81A21;
-}
-
-.ontario-bg-dark-magenta {
-  background-color: #C00264;
-}
-
-/*Table component colours*/
-.ontario-bg-ontario-table-row-divider {
-  background-color: #0000004d;
-}
-
-.ontario-bg-ontario-table-caption-background {
-  background-color: #0000001a;
-}
-
-.ontario-bg-ontario-table-highlight {
-  background-color: #e191003c;
-}
-
-.ontario-bg-ontario-table-subtotal {
-  background-color: #007b9e1d;
-}
-
-.ontario-bg-ontario-table-total {
-  background-color: #0077a056;
-}
 .ontario-row {
   margin: 0 auto;
   max-width: 72rem;
@@ -3510,6 +3019,890 @@ strong {
   font-weight: 700;
   line-height: inherit;
 }
+caption {
+  background-color: #0000001a;
+  padding: 1.125rem 1rem 1.125rem 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 2.1875rem;
+  display: table-caption;
+}
+@media screen and (max-width: 40em) {
+  caption {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-left: 1rem;
+  }
+}
+
+.ontario-table-container {
+  position: relative;
+  margin: 0.5rem 0 2.5rem 0;
+}
+.ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6):nth-child(even),
+.ontario-table-container table:not(.ontario-table--no-zebra-stripes) tbody tr:first-child:nth-last-child(n+6) ~ tr:nth-child(even) {
+  background-color: #0000000d;
+}
+
+.ontario-table-div {
+  overflow-x: auto;
+  background: linear-gradient(to right, #FFFFFF 30%, rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 0), #FFFFFF 70%) 0 100%, linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(252, 0, 0, 0) 100.01%), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(252, 0, 0, 0) 100.01%);
+  background-repeat: no-repeat;
+  background-size: 2.5rem 100%, 2.5rem 100%, 0.875rem 100%, 0.875rem 100%;
+  background-position: 0 0, 100%, 0 0, 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+@media screen and (max-width: 40em) {
+  .ontario-table-div {
+    overflow-x: scroll;
+  }
+}
+
+.ontario-table-scroll--wrapper {
+  height: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 1.0625rem;
+  display: table;
+  line-height: 1.625rem;
+  font-weight: normal;
+}
+table.ontario-table--full-container-width {
+  display: table;
+  width: 100% !important;
+}
+@media screen and (max-width: 40em) {
+  table {
+    font-size: 1rem;
+  }
+}
+
+table.ontario-table--condensed td {
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+  text-align: left;
+}
+table.ontario-table--condensed td.ontario-table-cell--numeric {
+  padding: 0.75rem 1.5rem 0.75rem 1rem;
+  font-size: 1.0625rem;
+  text-align: right;
+}
+table.ontario-table--condensed tbody th,
+table.ontario-table--condensed tfoot th {
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+}
+table.ontario-table--condensed tr.ontario-table-row--highlight th img.ontario-table--highlight-indicator {
+  top: 1.0625rem;
+}
+table.ontario-table--condensed tr.ontario-table-row--subtotal th,
+table.ontario-table--condensed tr.ontario-table-row--subtotal td,
+table.ontario-table--condensed tfoot tr th,
+table.ontario-table--condensed tfoot tr td {
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+table.ontario-table--condensed tr.ontario-table-row--subtotal td.ontario-table-cell--numeric,
+table.ontario-table--condensed tfoot tr td.ontario-table-cell--numeric {
+  text-align: right;
+  padding: 1rem 1.5rem 1rem 1rem;
+}
+@media screen and (max-width: 40em) {
+  table.ontario-table--condensed td {
+    padding: 0.75rem 0.5rem 0.75rem 1rem;
+    font-size: 1rem;
+  }
+  table.ontario-table--condensed td.ontario-table-cell--numeric {
+    padding: 0.75rem 1rem 0.75rem 0.5rem;
+  }
+  table.ontario-table--condensed tbody th {
+    padding: 0.75rem 0.5rem 0.75rem 1rem;
+  }
+  table.ontario-table--condensed tr.ontario-table-row--subtotal th,
+table.ontario-table--condensed tr.ontario-table-row--subtotal td,
+table.ontario-table--condensed tfoot tr th,
+table.ontario-table--condensed tfoot tr td {
+    padding: 1rem 0.5rem 1rem 1rem;
+  }
+  table.ontario-table--condensed tr.ontario-table-row--subtotal td.ontario-table-cell--numeric,
+table.ontario-table--condensed tfoot tr td.ontario-table-cell--numeric {
+    text-align: right;
+    padding: 1rem 1rem 1rem 0.5rem;
+  }
+}
+
+tbody {
+  font-size: 1rem;
+  vertical-align: text-top;
+}
+tbody tr {
+  border: solid;
+  border-width: 0.0625rem 0;
+  border-color: #0000004d;
+}
+tbody tr:last-child {
+  border-width: 0.1875rem 0;
+  border-top-width: 0;
+  border-color: #1a1a1a;
+}
+tbody tr.ontario-table-row--highlight {
+  background-color: #e191003c !important;
+}
+tbody tr.ontario-table-row--highlight th {
+  padding-left: 1.5rem;
+  display: flex;
+  position: relative;
+}
+tbody tr.ontario-table-row--highlight th img.ontario-table--highlight-indicator {
+  width: 0.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+}
+
+thead {
+  border: solid;
+  border-width: 0.1875rem 0;
+  border-color: #1a1a1a;
+  vertical-align: text-top;
+}
+thead th {
+  text-align: left;
+  padding: 1.75rem 1rem 1.75rem 1.5rem;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 40em) {
+  thead th {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    padding: 1.53125rem 0.5rem 1.53125rem 1rem;
+  }
+}
+thead th.ontario-table-cell--numeric {
+  padding: 1.75rem 1.5rem 1.75rem 1rem;
+  text-align: right;
+}
+@media screen and (max-width: 40em) {
+  thead th.ontario-table-cell--numeric {
+    padding: 1.53125rem 1rem 1.53125rem 0.5rem;
+  }
+}
+
+td.ontario-table-cell--numeric strong {
+  font-family: "Courier Prime", Courier, "Courier New", monospace;
+}
+
+.ontario-table-header--column-span-1 {
+  min-width: 8.33333vw;
+}
+
+.ontario-table-header--column-span-2 {
+  min-width: 16.66666vw;
+}
+
+.ontario-table-header--column-span-3 {
+  min-width: 25vw;
+}
+
+.ontario-table-header--column-span-4 {
+  min-width: 33.33333vw;
+}
+
+.ontario-table-header--column-span-5 {
+  min-width: 41.66666vw;
+}
+
+.ontario-table-header--column-span-6 {
+  min-width: 50vw;
+}
+
+.ontario-table-header--column-span-7 {
+  min-width: 58.33333vw;
+}
+
+.ontario-table-header--column-span-8 {
+  min-width: 66.66666vw;
+}
+
+.ontario-table-header--column-span-9 {
+  min-width: 75vw;
+}
+
+.ontario-table-header--column-span-10 {
+  min-width: 83.33333vw;
+}
+
+.ontario-table-header--column-span-11 {
+  min-width: 91.66666vw;
+}
+
+.ontario-table-header--column-span-12 {
+  min-width: 100vw;
+}
+
+tbody th,
+tfoot th {
+  padding: 1.1875rem 1rem 1.1875rem 1.5rem;
+  text-align: left;
+  letter-spacing: 0.025rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 40em) {
+  tbody th,
+tfoot th {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    padding: 1.1875rem 0.5rem 1.1875rem 1rem;
+  }
+}
+
+td {
+  padding: 1.1875rem 1rem 1.1875rem 1.5rem;
+  text-align: left;
+  letter-spacing: 0.025rem;
+}
+td img {
+  vertical-align: top;
+}
+@media screen and (max-width: 40em) {
+  td img {
+    max-width: none !important;
+  }
+}
+
+td.ontario-table-cell--numeric {
+  padding: 1.1875rem 1.5rem 1.1875rem 1rem;
+  text-align: right;
+  font-family: "Courier Prime", Courier, "Courier New", monospace;
+  font-size: 1.0625rem;
+}
+
+tr.ontario-table-row--subtotal,
+tfoot tr {
+  border: solid;
+  border-width: 0.1875rem 0;
+  font-size: 1rem;
+  border-color: #1a1a1a;
+}
+tr.ontario-table-row--subtotal td,
+tfoot tr td {
+  font-weight: bold;
+  padding: 1.4375rem 1rem 1.4375rem 1.5rem;
+}
+
+tbody tr.ontario-table-row--subtotal th {
+  padding: 1.4375rem 1rem 1.4375rem 1.5rem;
+}
+
+tfoot {
+  vertical-align: text-top;
+}
+tfoot th {
+  padding: 1.4375rem 1rem 1.4375rem 1.5rem;
+}
+
+tr.ontario-table-row--subtotal {
+  background-color: #007b9e1d !important;
+}
+
+tfoot tr {
+  background-color: #0077a056 !important;
+}
+
+/*Greyscale background colours*/
+.ontario-bg-white {
+  background-color: #FFFFFF;
+}
+
+.ontario-bg-greyscale-5 {
+  background-color: #f2f2f2;
+}
+
+.ontario-bg-greyscale-20 {
+  background-color: #cccccc;
+}
+
+.ontario-bg-greyscale-40 {
+  background-color: #999999;
+}
+
+.ontario-bg-greyscale-60 {
+  background-color: #666666;
+}
+
+.ontario-bg-greyscale-70 {
+  background-color: #4d4d4d;
+}
+
+.ontario-bg-black {
+  background-color: #1a1a1a;
+}
+
+/*Main palette background colours*/
+.ontario-bg-gold {
+  background-color: #CBA52E;
+}
+
+.ontario-bg-yellow {
+  background-color: #FCAF17;
+}
+
+.ontario-bg-taupe {
+  background-color: #C1B28F;
+}
+
+.ontario-bg-green {
+  background-color: #39B54A;
+}
+
+.ontario-bg-lime {
+  background-color: #8DC63F;
+}
+
+.ontario-bg-teal {
+  background-color: #49A7A2;
+}
+
+.ontario-bg-sky {
+  background-color: #00B2E3;
+}
+
+.ontario-bg-blue {
+  background-color: #3193CC;
+}
+
+.ontario-bg-purple {
+  background-color: #B975B7;
+}
+
+.ontario-bg-orange {
+  background-color: #F15A22;
+}
+
+.ontario-bg-red {
+  background-color: #F0454B;
+}
+
+.ontario-bg-magenta {
+  background-color: #F03093;
+}
+
+/*Light palette background colours*/
+.ontario-bg-light-gold {
+  background-color: #F0E7CC;
+}
+
+.ontario-bg-light-yellow {
+  background-color: #F8E5C3;
+}
+
+.ontario-bg-light-taupe {
+  background-color: #EBE7DB;
+}
+
+.ontario-bg-light-green {
+  background-color: #D1EFD4;
+}
+
+.ontario-bg-light-lime {
+  background-color: #DDEDC7;
+}
+
+.ontario-bg-light-teal {
+  background-color: #CFEDED;
+}
+
+.ontario-bg-light-sky {
+  background-color: #C5EEFA;
+}
+
+.ontario-bg-light-blue {
+  background-color: #DBE9F5;
+}
+
+.ontario-bg-light-purple {
+  background-color: #F1E3F2;
+}
+
+.ontario-bg-light-orange {
+  background-color: #FEE1D9;
+}
+
+.ontario-bg-light-red {
+  background-color: #FFE0E2;
+}
+
+.ontario-bg-light-magenta {
+  background-color: #FEDFF0;
+}
+
+/*Dark palette background colours*/
+.ontario-bg-dark-gold {
+  background-color: #86743D;
+}
+
+.ontario-bg-dark-yellow {
+  background-color: #8A600D;
+}
+
+.ontario-bg-dark-taupe {
+  background-color: #7B725C;
+}
+
+.ontario-bg-dark-green {
+  background-color: #2B8737;
+}
+
+.ontario-bg-dark-lime {
+  background-color: #5F8129;
+}
+
+.ontario-bg-dark-teal {
+  background-color: #367A76;
+}
+
+.ontario-bg-dark-sky {
+  background-color: #1080A6;
+}
+
+.ontario-bg-dark-blue {
+  background-color: #0369ac;
+}
+
+.ontario-bg-dark-purple {
+  background-color: #92278F;
+}
+
+.ontario-bg-dark-orange {
+  background-color: #C64A1C;
+}
+
+.ontario-bg-dark-red {
+  background-color: #D81A21;
+}
+
+.ontario-bg-dark-magenta {
+  background-color: #C00264;
+}
+
+/*Table component colours*/
+.ontario-bg-ontario-table-row-divider {
+  background-color: #0000004d;
+}
+
+.ontario-bg-ontario-table-caption-background {
+  background-color: #0000001a;
+}
+
+.ontario-bg-ontario-table-highlight {
+  background-color: #e191003c;
+}
+
+.ontario-bg-ontario-table-subtotal {
+  background-color: #007b9e1d;
+}
+
+.ontario-bg-ontario-table-total {
+  background-color: #0077a056;
+}
+.ontario-padding-top-0-\! {
+  padding-top: 0 !important;
+}
+
+.ontario-padding-bottom-0-\! {
+  padding-bottom: 0 !important;
+}
+
+.ontario-padding-right-0-\! {
+  padding-right: 0 !important;
+}
+
+.ontario-padding-left-0-\! {
+  padding-left: 0 !important;
+}
+
+.ontario-padding-top-4-\! {
+  padding-top: 0.25rem !important;
+}
+
+.ontario-padding-bottom-4-\! {
+  padding-bottom: 0.25rem !important;
+}
+
+.ontario-padding-right-4-\! {
+  padding-right: 0.25rem !important;
+}
+
+.ontario-padding-left-4-\! {
+  padding-left: 0.25rem !important;
+}
+
+.ontario-padding-top-8-\! {
+  padding-top: 0.5rem !important;
+}
+
+.ontario-padding-bottom-8-\! {
+  padding-bottom: 0.5rem !important;
+}
+
+.ontario-padding-right-8-\! {
+  padding-right: 0.5rem !important;
+}
+
+.ontario-padding-left-8-\! {
+  padding-left: 0.5rem !important;
+}
+
+.ontario-padding-top-12-\! {
+  padding-top: 0.75rem !important;
+}
+
+.ontario-padding-bottom-12-\! {
+  padding-bottom: 0.75rem !important;
+}
+
+.ontario-padding-right-12-\! {
+  padding-right: 0.75rem !important;
+}
+
+.ontario-padding-left-12-\! {
+  padding-left: 0.75rem !important;
+}
+
+.ontario-padding-top-16-\! {
+  padding-top: 1rem !important;
+}
+
+.ontario-padding-bottom-16-\! {
+  padding-bottom: 1rem !important;
+}
+
+.ontario-padding-right-16-\! {
+  padding-right: 1rem !important;
+}
+
+.ontario-padding-left-16-\! {
+  padding-left: 1rem !important;
+}
+
+.ontario-padding-top-24-\! {
+  padding-top: 1.5rem !important;
+}
+
+.ontario-padding-bottom-24-\! {
+  padding-bottom: 1.5rem !important;
+}
+
+.ontario-padding-right-24-\! {
+  padding-right: 1.5rem !important;
+}
+
+.ontario-padding-left-24-\! {
+  padding-left: 1.5rem !important;
+}
+
+.ontario-padding-top-32-\! {
+  padding-top: 2rem !important;
+}
+
+.ontario-padding-bottom-32-\! {
+  padding-bottom: 2rem !important;
+}
+
+.ontario-padding-right-32-\! {
+  padding-right: 2rem !important;
+}
+
+.ontario-padding-left-32-\! {
+  padding-left: 2rem !important;
+}
+
+.ontario-padding-top-40-\! {
+  padding-top: 2.5rem !important;
+}
+
+.ontario-padding-bottom-40-\! {
+  padding-bottom: 2.5rem !important;
+}
+
+.ontario-padding-right-40-\! {
+  padding-right: 2.5rem !important;
+}
+
+.ontario-padding-left-40-\! {
+  padding-left: 2.5rem !important;
+}
+
+.ontario-padding-top-48-\! {
+  padding-top: 3rem !important;
+}
+
+.ontario-padding-bottom-48-\! {
+  padding-bottom: 3rem !important;
+}
+
+.ontario-padding-right-48-\! {
+  padding-right: 3rem !important;
+}
+
+.ontario-padding-left-48-\! {
+  padding-left: 3rem !important;
+}
+
+.ontario-padding-top-64-\! {
+  padding-top: 4rem !important;
+}
+
+.ontario-padding-bottom-64-\! {
+  padding-bottom: 4rem !important;
+}
+
+.ontario-padding-right-64-\! {
+  padding-right: 4rem !important;
+}
+
+.ontario-padding-left-64-\! {
+  padding-left: 4rem !important;
+}
+
+.ontario-padding-top-80-\! {
+  padding-top: 5rem !important;
+}
+
+.ontario-padding-bottom-80-\! {
+  padding-bottom: 5rem !important;
+}
+
+.ontario-padding-right-80-\! {
+  padding-right: 5rem !important;
+}
+
+.ontario-padding-left-80-\! {
+  padding-left: 5rem !important;
+}
+
+.ontario-margin-top-0-\! {
+  margin-top: 0 !important;
+}
+
+.ontario-margin-bottom-0-\! {
+  margin-bottom: 0 !important;
+}
+
+.ontario-margin-right-0-\! {
+  margin-right: 0 !important;
+}
+
+.ontario-margin-left-0-\! {
+  margin-left: 0 !important;
+}
+
+.ontario-margin-top-4-\! {
+  margin-top: 0.25rem !important;
+}
+
+.ontario-margin-bottom-4-\! {
+  margin-bottom: 0.25rem !important;
+}
+
+.ontario-margin-right-4-\! {
+  margin-right: 0.25rem !important;
+}
+
+.ontario-margin-left-4-\! {
+  margin-left: 0.25rem !important;
+}
+
+.ontario-margin-top-8-\! {
+  margin-top: 0.5rem !important;
+}
+
+.ontario-margin-bottom-8-\! {
+  margin-bottom: 0.5rem !important;
+}
+
+.ontario-margin-right-8-\! {
+  margin-right: 0.5rem !important;
+}
+
+.ontario-margin-left-8-\! {
+  margin-left: 0.5rem !important;
+}
+
+.ontario-margin-top-12-\! {
+  margin-top: 0.75rem !important;
+}
+
+.ontario-margin-bottom-12-\! {
+  margin-bottom: 0.75rem !important;
+}
+
+.ontario-margin-right-12-\! {
+  margin-right: 0.75rem !important;
+}
+
+.ontario-margin-left-12-\! {
+  margin-left: 0.75rem !important;
+}
+
+.ontario-margin-top-16-\! {
+  margin-top: 1rem !important;
+}
+
+.ontario-margin-bottom-16-\! {
+  margin-bottom: 1rem !important;
+}
+
+.ontario-margin-right-16-\! {
+  margin-right: 1rem !important;
+}
+
+.ontario-margin-left-16-\! {
+  margin-left: 1rem !important;
+}
+
+.ontario-margin-top-24-\! {
+  margin-top: 1.5rem !important;
+}
+
+.ontario-margin-bottom-24-\! {
+  margin-bottom: 1.5rem !important;
+}
+
+.ontario-margin-right-24-\! {
+  margin-right: 1.5rem !important;
+}
+
+.ontario-margin-left-24-\! {
+  margin-left: 1.5rem !important;
+}
+
+.ontario-margin-top-32-\! {
+  margin-top: 2rem !important;
+}
+
+.ontario-margin-bottom-32-\! {
+  margin-bottom: 2rem !important;
+}
+
+.ontario-margin-right-32-\! {
+  margin-right: 2rem !important;
+}
+
+.ontario-margin-left-32-\! {
+  margin-left: 2rem !important;
+}
+
+.ontario-margin-top-40-\! {
+  margin-top: 2.5rem !important;
+}
+
+.ontario-margin-bottom-40-\! {
+  margin-bottom: 2.5rem !important;
+}
+
+.ontario-margin-right-40-\! {
+  margin-right: 2.5rem !important;
+}
+
+.ontario-margin-left-40-\! {
+  margin-left: 2.5rem !important;
+}
+
+.ontario-margin-top-48-\! {
+  margin-top: 3rem !important;
+}
+
+.ontario-margin-bottom-48-\! {
+  margin-bottom: 3rem !important;
+}
+
+.ontario-margin-right-48-\! {
+  margin-right: 3rem !important;
+}
+
+.ontario-margin-left-48-\! {
+  margin-left: 3rem !important;
+}
+
+.ontario-margin-top-64-\! {
+  margin-top: 4rem !important;
+}
+
+.ontario-margin-bottom-64-\! {
+  margin-bottom: 4rem !important;
+}
+
+.ontario-margin-right-64-\! {
+  margin-right: 4rem !important;
+}
+
+.ontario-margin-left-64-\! {
+  margin-left: 4rem !important;
+}
+
+.ontario-margin-top-80-\! {
+  margin-top: 5rem !important;
+}
+
+.ontario-margin-bottom-80-\! {
+  margin-bottom: 5rem !important;
+}
+
+.ontario-margin-right-80-\! {
+  margin-right: 5rem !important;
+}
+
+.ontario-margin-left-80-\! {
+  margin-left: 5rem !important;
+}
+
+/**
+ * Mixin that adds spacing to a position and mark it as important
+ * $type is the type of spacing to use and can be either padding or margin
+ * $position is the direction to which the spacing is applied; can be top, right, bottom or left
+ * $size is the amount of px to be used as the spacing; can be 0, 4, 8, 12, 16, 24, 32, 40, 48 or 64
+ */
+.ontario-lists--two-column-list-md ul {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+  display: block;
+}
+@media screen and (min-width: 40em) {
+  .ontario-lists--two-column-list-md ul {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+  .ontario-lists--two-column-list-md ul li {
+    padding: 0;
+    margin: 0 1rem 1rem 0;
+  }
+}
+
+.ontario-lists--two-column-list {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+  display: block;
+}
+@media screen and (min-width: 40em) {
+  .ontario-lists--two-column-list {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+  .ontario-lists--two-column-list li {
+    padding: 0;
+    margin: 0 1rem 1rem 0;
+  }
+}
 .ontario-padding-top-0-\! {
   padding-top: 0 !important;
 }
@@ -3971,473 +4364,6 @@ strong {
     display: block !important;
   }
 }
-.ontario-padding-top-0-\! {
-  padding-top: 0 !important;
-}
-
-.ontario-padding-bottom-0-\! {
-  padding-bottom: 0 !important;
-}
-
-.ontario-padding-right-0-\! {
-  padding-right: 0 !important;
-}
-
-.ontario-padding-left-0-\! {
-  padding-left: 0 !important;
-}
-
-.ontario-padding-top-4-\! {
-  padding-top: 0.25rem !important;
-}
-
-.ontario-padding-bottom-4-\! {
-  padding-bottom: 0.25rem !important;
-}
-
-.ontario-padding-right-4-\! {
-  padding-right: 0.25rem !important;
-}
-
-.ontario-padding-left-4-\! {
-  padding-left: 0.25rem !important;
-}
-
-.ontario-padding-top-8-\! {
-  padding-top: 0.5rem !important;
-}
-
-.ontario-padding-bottom-8-\! {
-  padding-bottom: 0.5rem !important;
-}
-
-.ontario-padding-right-8-\! {
-  padding-right: 0.5rem !important;
-}
-
-.ontario-padding-left-8-\! {
-  padding-left: 0.5rem !important;
-}
-
-.ontario-padding-top-12-\! {
-  padding-top: 0.75rem !important;
-}
-
-.ontario-padding-bottom-12-\! {
-  padding-bottom: 0.75rem !important;
-}
-
-.ontario-padding-right-12-\! {
-  padding-right: 0.75rem !important;
-}
-
-.ontario-padding-left-12-\! {
-  padding-left: 0.75rem !important;
-}
-
-.ontario-padding-top-16-\! {
-  padding-top: 1rem !important;
-}
-
-.ontario-padding-bottom-16-\! {
-  padding-bottom: 1rem !important;
-}
-
-.ontario-padding-right-16-\! {
-  padding-right: 1rem !important;
-}
-
-.ontario-padding-left-16-\! {
-  padding-left: 1rem !important;
-}
-
-.ontario-padding-top-24-\! {
-  padding-top: 1.5rem !important;
-}
-
-.ontario-padding-bottom-24-\! {
-  padding-bottom: 1.5rem !important;
-}
-
-.ontario-padding-right-24-\! {
-  padding-right: 1.5rem !important;
-}
-
-.ontario-padding-left-24-\! {
-  padding-left: 1.5rem !important;
-}
-
-.ontario-padding-top-32-\! {
-  padding-top: 2rem !important;
-}
-
-.ontario-padding-bottom-32-\! {
-  padding-bottom: 2rem !important;
-}
-
-.ontario-padding-right-32-\! {
-  padding-right: 2rem !important;
-}
-
-.ontario-padding-left-32-\! {
-  padding-left: 2rem !important;
-}
-
-.ontario-padding-top-40-\! {
-  padding-top: 2.5rem !important;
-}
-
-.ontario-padding-bottom-40-\! {
-  padding-bottom: 2.5rem !important;
-}
-
-.ontario-padding-right-40-\! {
-  padding-right: 2.5rem !important;
-}
-
-.ontario-padding-left-40-\! {
-  padding-left: 2.5rem !important;
-}
-
-.ontario-padding-top-48-\! {
-  padding-top: 3rem !important;
-}
-
-.ontario-padding-bottom-48-\! {
-  padding-bottom: 3rem !important;
-}
-
-.ontario-padding-right-48-\! {
-  padding-right: 3rem !important;
-}
-
-.ontario-padding-left-48-\! {
-  padding-left: 3rem !important;
-}
-
-.ontario-padding-top-64-\! {
-  padding-top: 4rem !important;
-}
-
-.ontario-padding-bottom-64-\! {
-  padding-bottom: 4rem !important;
-}
-
-.ontario-padding-right-64-\! {
-  padding-right: 4rem !important;
-}
-
-.ontario-padding-left-64-\! {
-  padding-left: 4rem !important;
-}
-
-.ontario-padding-top-80-\! {
-  padding-top: 5rem !important;
-}
-
-.ontario-padding-bottom-80-\! {
-  padding-bottom: 5rem !important;
-}
-
-.ontario-padding-right-80-\! {
-  padding-right: 5rem !important;
-}
-
-.ontario-padding-left-80-\! {
-  padding-left: 5rem !important;
-}
-
-.ontario-margin-top-0-\! {
-  margin-top: 0 !important;
-}
-
-.ontario-margin-bottom-0-\! {
-  margin-bottom: 0 !important;
-}
-
-.ontario-margin-right-0-\! {
-  margin-right: 0 !important;
-}
-
-.ontario-margin-left-0-\! {
-  margin-left: 0 !important;
-}
-
-.ontario-margin-top-4-\! {
-  margin-top: 0.25rem !important;
-}
-
-.ontario-margin-bottom-4-\! {
-  margin-bottom: 0.25rem !important;
-}
-
-.ontario-margin-right-4-\! {
-  margin-right: 0.25rem !important;
-}
-
-.ontario-margin-left-4-\! {
-  margin-left: 0.25rem !important;
-}
-
-.ontario-margin-top-8-\! {
-  margin-top: 0.5rem !important;
-}
-
-.ontario-margin-bottom-8-\! {
-  margin-bottom: 0.5rem !important;
-}
-
-.ontario-margin-right-8-\! {
-  margin-right: 0.5rem !important;
-}
-
-.ontario-margin-left-8-\! {
-  margin-left: 0.5rem !important;
-}
-
-.ontario-margin-top-12-\! {
-  margin-top: 0.75rem !important;
-}
-
-.ontario-margin-bottom-12-\! {
-  margin-bottom: 0.75rem !important;
-}
-
-.ontario-margin-right-12-\! {
-  margin-right: 0.75rem !important;
-}
-
-.ontario-margin-left-12-\! {
-  margin-left: 0.75rem !important;
-}
-
-.ontario-margin-top-16-\! {
-  margin-top: 1rem !important;
-}
-
-.ontario-margin-bottom-16-\! {
-  margin-bottom: 1rem !important;
-}
-
-.ontario-margin-right-16-\! {
-  margin-right: 1rem !important;
-}
-
-.ontario-margin-left-16-\! {
-  margin-left: 1rem !important;
-}
-
-.ontario-margin-top-24-\! {
-  margin-top: 1.5rem !important;
-}
-
-.ontario-margin-bottom-24-\! {
-  margin-bottom: 1.5rem !important;
-}
-
-.ontario-margin-right-24-\! {
-  margin-right: 1.5rem !important;
-}
-
-.ontario-margin-left-24-\! {
-  margin-left: 1.5rem !important;
-}
-
-.ontario-margin-top-32-\! {
-  margin-top: 2rem !important;
-}
-
-.ontario-margin-bottom-32-\! {
-  margin-bottom: 2rem !important;
-}
-
-.ontario-margin-right-32-\! {
-  margin-right: 2rem !important;
-}
-
-.ontario-margin-left-32-\! {
-  margin-left: 2rem !important;
-}
-
-.ontario-margin-top-40-\! {
-  margin-top: 2.5rem !important;
-}
-
-.ontario-margin-bottom-40-\! {
-  margin-bottom: 2.5rem !important;
-}
-
-.ontario-margin-right-40-\! {
-  margin-right: 2.5rem !important;
-}
-
-.ontario-margin-left-40-\! {
-  margin-left: 2.5rem !important;
-}
-
-.ontario-margin-top-48-\! {
-  margin-top: 3rem !important;
-}
-
-.ontario-margin-bottom-48-\! {
-  margin-bottom: 3rem !important;
-}
-
-.ontario-margin-right-48-\! {
-  margin-right: 3rem !important;
-}
-
-.ontario-margin-left-48-\! {
-  margin-left: 3rem !important;
-}
-
-.ontario-margin-top-64-\! {
-  margin-top: 4rem !important;
-}
-
-.ontario-margin-bottom-64-\! {
-  margin-bottom: 4rem !important;
-}
-
-.ontario-margin-right-64-\! {
-  margin-right: 4rem !important;
-}
-
-.ontario-margin-left-64-\! {
-  margin-left: 4rem !important;
-}
-
-.ontario-margin-top-80-\! {
-  margin-top: 5rem !important;
-}
-
-.ontario-margin-bottom-80-\! {
-  margin-bottom: 5rem !important;
-}
-
-.ontario-margin-right-80-\! {
-  margin-right: 5rem !important;
-}
-
-.ontario-margin-left-80-\! {
-  margin-left: 5rem !important;
-}
-
-/**
- * Mixin that adds spacing to a position and mark it as important
- * $type is the type of spacing to use and can be either padding or margin
- * $position is the direction to which the spacing is applied; can be top, right, bottom or left
- * $size is the amount of px to be used as the spacing; can be 0, 4, 8, 12, 16, 24, 32, 40, 48 or 64
- */
-.ontario-lists--two-column-list-md ul {
-  -webkit-column-count: 1;
-     -moz-column-count: 1;
-          column-count: 1;
-  display: block;
-}
-@media screen and (min-width: 40em) {
-  .ontario-lists--two-column-list-md ul {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-  }
-  .ontario-lists--two-column-list-md ul li {
-    padding: 0;
-    margin: 0 1rem 1rem 0;
-  }
-}
-
-.ontario-lists--two-column-list {
-  -webkit-column-count: 1;
-     -moz-column-count: 1;
-          column-count: 1;
-  display: block;
-}
-@media screen and (min-width: 40em) {
-  .ontario-lists--two-column-list {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-  }
-  .ontario-lists--two-column-list li {
-    padding: 0;
-    margin: 0 1rem 1rem 0;
-  }
-}
-@charset "UTF-8";
-.ontario-blockquote {
-  border-left: 4px solid #4d4d4d;
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1875rem;
-  font-weight: 400;
-  letter-spacing: 0.025rem;
-  line-height: 1.56;
-  max-width: 48rem;
-  margin: 2rem;
-  padding: 1.5rem 0 1.5rem 1.5rem;
-}
-@media screen and (max-width: 40em) {
-  .ontario-blockquote {
-    font-size: 1.125rem;
-    letter-spacing: 0.03rem;
-    line-height: 1.5;
-    margin: 1.5rem 0 2rem 0;
-  }
-}
-
-.ontario-blockquote--short {
-  font-size: 1.75rem;
-  letter-spacing: 0.02rem;
-  line-height: 1.5;
-}
-@media screen and (max-width: 40em) {
-  .ontario-blockquote--short {
-    font-size: 1.4375rem;
-    line-height: 1.43;
-  }
-}
-
-.ontario-blockquote p {
-  margin: 0 0 1.5rem 0;
-}
-.ontario-blockquote p::before {
-  content: open-quote;
-}
-.ontario-blockquote p::after {
-  content: close-quote;
-}
-
-.ontario-blockquote__attribution,
-.ontario-blockquote__byline {
-  display: block;
-  font-size: 1rem;
-  letter-spacing: 0.025rem;
-  line-height: 1.56;
-  text-align: right;
-}
-@media screen and (max-width: 40em) {
-  .ontario-blockquote__attribution,
-.ontario-blockquote__byline {
-    letter-spacing: 0.03rem;
-    line-height: 1.5;
-  }
-}
-
-.ontario-blockquote__attribution {
-  font-style: normal;
-  font-weight: 700;
-}
-.ontario-blockquote__attribution::before {
-  content: "— ";
-}
-
-blockquote {
-  quotes: "“" "”";
-}
-
-html[lang=fr] blockquote {
-  quotes: "« " " »";
-}
 #root {
   margin: 0 15px 15px 0;
   position: fixed;
@@ -4549,6 +4475,80 @@ html[lang=fr] blockquote {
 }
 .ontario-critical-alert a:visited {
   color: #1a1a1a;
+}
+@charset "UTF-8";
+.ontario-blockquote {
+  border-left: 4px solid #4d4d4d;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  line-height: 1.56;
+  max-width: 48rem;
+  margin: 2rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+}
+@media screen and (max-width: 40em) {
+  .ontario-blockquote {
+    font-size: 1.125rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.5;
+    margin: 1.5rem 0 2rem 0;
+  }
+}
+
+.ontario-blockquote--short {
+  font-size: 1.75rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+}
+@media screen and (max-width: 40em) {
+  .ontario-blockquote--short {
+    font-size: 1.4375rem;
+    line-height: 1.43;
+  }
+}
+
+.ontario-blockquote p {
+  margin: 0 0 1.5rem 0;
+}
+.ontario-blockquote p::before {
+  content: open-quote;
+}
+.ontario-blockquote p::after {
+  content: close-quote;
+}
+
+.ontario-blockquote__attribution,
+.ontario-blockquote__byline {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+  line-height: 1.56;
+  text-align: right;
+}
+@media screen and (max-width: 40em) {
+  .ontario-blockquote__attribution,
+.ontario-blockquote__byline {
+    letter-spacing: 0.03rem;
+    line-height: 1.5;
+  }
+}
+
+.ontario-blockquote__attribution {
+  font-style: normal;
+  font-weight: 700;
+}
+.ontario-blockquote__attribution::before {
+  content: "— ";
+}
+
+blockquote {
+  quotes: "“" "”";
+}
+
+html[lang=fr] blockquote {
+  quotes: "« " " »";
 }
 .ontario-alert {
   border-width: 0 0 0 4px;
@@ -5136,24 +5136,6 @@ html[lang=fr] blockquote {
 .ontario-checkboxes__input:checked + .ontario-checkboxes__label:before {
   background-color: #1a1a1a;
 }
-.ontario-dropdown {
-  background-color: #FFFFFF;
-  background-image: url("../icons/ontario-material-dropdown-arrow-48px.svg");
-  background-position: right 0.5rem center;
-  background-repeat: no-repeat;
-  background-size: 2rem;
-  padding-right: calc(1rem* 2.25);
-  cursor: pointer;
-}
-
-/* These styles are to fix differences in default styling for dropdowns in IE */
-.ontario-dropdown::-ms-expand {
-  display: none;
-}
-
-.ontario-dropdown option {
-  font-weight: normal;
-}
 .ontario-error-messaging__container {
   display: flex;
   align-items: top;
@@ -5247,6 +5229,24 @@ html[lang=fr] blockquote {
 .ontario-fieldset__legend__flag:before {
   content: " ";
 }
+.ontario-dropdown {
+  background-color: #FFFFFF;
+  background-image: url("../icons/ontario-material-dropdown-arrow-48px.svg");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  padding-right: calc(1rem* 2.25);
+  cursor: pointer;
+}
+
+/* These styles are to fix differences in default styling for dropdowns in IE */
+.ontario-dropdown::-ms-expand {
+  display: none;
+}
+
+.ontario-dropdown option {
+  font-weight: normal;
+}
 @charset "UTF-8";
 h1 .ontario-label--heading {
   font-style: normal;
@@ -5315,101 +5315,6 @@ h1 .ontario-label--heading {
 }
 .ontario-label__flag:before {
   content: " ";
-}
-.ontario-hint-expander__button:focus, .ontario-hint-expander__button:active {
-  box-shadow: 0 0 0 4px #009ADB;
-  outline: 4px solid transparent;
-  transition: box-shadow 0.1s ease-in-out;
-}
-
-.ontario-hint {
-  color: #4d4d4d;
-  display: inline-block;
-  margin: 0 0 1rem 0;
-  width: 100%;
-  max-width: 48rem;
-}
-
-.ontario-hint-expander__container {
-  max-width: 48rem;
-}
-
-.ontario-hint-expander__button {
-  color: #0066CC;
-  cursor: pointer;
-  background: none;
-  border: none;
-  display: flex;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: left;
-  margin: 0 0 1rem 0;
-  padding: 0 0.25rem 0 0;
-}
-.ontario-hint-expander__button-icon--close {
-  display: none;
-  margin-right: 0.25rem;
-}
-.ontario-hint-expander__button-icon--open {
-  display: inline-block;
-  margin-right: 0.25rem;
-}
-.ontario-hint-expander__button:hover {
-  color: #00478F;
-}
-.ontario-hint-expander__button:active {
-  color: #002142;
-}
-.ontario-hint-expander__content {
-  border-left: 4px solid #cccccc;
-  color: #1a1a1a;
-  background-color: #f2f2f2;
-  display: none;
-  padding: 1rem 1rem 1rem calc(1rem + 0.25rem);
-  margin: 0 0 1rem 0.25rem;
-}
-.ontario-hint-expander__content *:last-child {
-  margin-bottom: 0;
-}
-.ontario-hint-expander__content img {
-  width: 100%;
-}
-@media screen and (min-width: 40em) {
-  .ontario-hint-expander__content img {
-    width: 50%;
-  }
-}
-
-.ontario-hint-expander__content.ontario-expander__content--opened {
-  display: block;
-}
-
-.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--close {
-  display: inline-block;
-}
-.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--open {
-  display: none;
-}
-
-.ontario-input + .ontario-hint-expander__container {
-  margin-top: -1.5rem !important;
-}
-
-.ontario-checkboxes__item .ontario-hint-expander__container,
-.ontario-radios__item .ontario-hint-expander__container {
-  margin-left: 0.5rem;
-}
-
-.ontario-checkboxes__label + .ontario-hint-expander__container,
-.ontario-radios__label + .ontario-hint-expander__container {
-  margin-top: 0.75rem;
-}
-@media screen and (max-width: 40em) {
-  .ontario-checkboxes__label + .ontario-hint-expander__container,
-.ontario-radios__label + .ontario-hint-expander__container {
-    margin-top: 1rem;
-  }
 }
 * .ontario-radios {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -5556,6 +5461,101 @@ h1 .ontario-label--heading {
 }
 .ontario-step-indicator p {
   max-width: 48rem;
+}
+.ontario-hint-expander__button:focus, .ontario-hint-expander__button:active {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.ontario-hint {
+  color: #4d4d4d;
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.ontario-hint-expander__container {
+  max-width: 48rem;
+}
+
+.ontario-hint-expander__button {
+  color: #0066CC;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  padding: 0 0.25rem 0 0;
+}
+.ontario-hint-expander__button-icon--close {
+  display: none;
+  margin-right: 0.25rem;
+}
+.ontario-hint-expander__button-icon--open {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+.ontario-hint-expander__button:hover {
+  color: #00478F;
+}
+.ontario-hint-expander__button:active {
+  color: #002142;
+}
+.ontario-hint-expander__content {
+  border-left: 4px solid #cccccc;
+  color: #1a1a1a;
+  background-color: #f2f2f2;
+  display: none;
+  padding: 1rem 1rem 1rem calc(1rem + 0.25rem);
+  margin: 0 0 1rem 0.25rem;
+}
+.ontario-hint-expander__content *:last-child {
+  margin-bottom: 0;
+}
+.ontario-hint-expander__content img {
+  width: 100%;
+}
+@media screen and (min-width: 40em) {
+  .ontario-hint-expander__content img {
+    width: 50%;
+  }
+}
+
+.ontario-hint-expander__content.ontario-expander__content--opened {
+  display: block;
+}
+
+.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--close {
+  display: inline-block;
+}
+.ontario-hint-expander__container.ontario-expander--active .ontario-hint-expander__button-icon--open {
+  display: none;
+}
+
+.ontario-input + .ontario-hint-expander__container {
+  margin-top: -1.5rem !important;
+}
+
+.ontario-checkboxes__item .ontario-hint-expander__container,
+.ontario-radios__item .ontario-hint-expander__container {
+  margin-left: 0.5rem;
+}
+
+.ontario-checkboxes__label + .ontario-hint-expander__container,
+.ontario-radios__label + .ontario-hint-expander__container {
+  margin-top: 0.75rem;
+}
+@media screen and (max-width: 40em) {
+  .ontario-checkboxes__label + .ontario-hint-expander__container,
+.ontario-radios__label + .ontario-hint-expander__container {
+    margin-top: 1rem;
+  }
 }
 .ontario-textarea {
   display: block;

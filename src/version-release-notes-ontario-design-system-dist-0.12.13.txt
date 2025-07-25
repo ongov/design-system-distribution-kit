@@ -8,6 +8,7 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 0.12.12](#a0.12.12)
 -   [Release 0.12.11](#a0.12.11)
 -   [Release 0.12.10](#a0.12.10)
 -   [Release 0.12.9](#a0.12.9)
@@ -42,6 +43,20 @@ label: Release notes
 
 ### Elements
 
+Updated:
+
+-   Copyright link in footer components now refers to King's Printer.
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a0.12.12"></a> 0.12.12 Release - September 29, 2022
+
+### Elements
+
 Added in this release:
 
 -   Dates - patterns for date input and display
@@ -58,7 +73,7 @@ Updated:
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 0.12.12]({{path '../../dist/ontario-design-system-dist-0.12.12.zip'}})
 
 <hr>
 
