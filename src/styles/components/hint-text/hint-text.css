@@ -1,15 +1,70 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder
+--------------------------------- */
 .ontario-hint-expander__button:focus, .ontario-hint-expander__button:active {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
   transition: box-shadow 0.1s ease-in-out;
 }
 
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
 .ontario-hint {
   color: #4d4d4d;
   display: inline-block;
   margin: 0 0 1rem 0;
   width: 100%;
   max-width: 48rem;
+}
+.ontario-hint a[x-apple-data-detectors] {
+  color: inherit;
+  cursor: none;
+  text-decoration: none;
 }
 
 .ontario-hint-expander__container {
@@ -48,7 +103,7 @@
   color: #1a1a1a;
   background-color: #f2f2f2;
   display: none;
-  padding: 1rem 1rem 1rem calc(1rem + 0.25rem);
+  padding: 1rem 1rem 1rem 1.25rem;
   margin: 0 0 1rem 0.25rem;
 }
 .ontario-hint-expander__content *:last-child {

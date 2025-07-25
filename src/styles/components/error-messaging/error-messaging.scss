@@ -1,23 +1,25 @@
-@import "../../../sass/variables-import";
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/spacing.variables' as spacing;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/colours.variables' as colours;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/global.variables' as globalVariables;
 
-.ontario-error-messaging__container {
-    display: flex;
-    align-items: top;
-    margin:-$spacing-1 0 $spacing-2 0;
-    color: $ontario-colour-dark-red;
-    max-width: $standard-width;
+.ontario-error-messaging {
+	display: flex;
+	align-items: flex-start;
+	margin: (spacing.$spacing-1 * -1) spacing.$spacing-0 spacing.$spacing-2 spacing.$spacing-0;
+	color: colours.$ontario-colour-dark-red;
+	max-width: globalVariables.$standard-width;
 }
 
 .ontario-error-messaging__content {
-    margin-left: $spacing-2;
+	margin-left: spacing.$spacing-2;
 }
 
 .ontario-input__error {
-    border-color: $ontario-colour-dark-red !important;
+	border-color: colours.$ontario-colour-dark-red !important;
 }
 
 .ontario-checkboxes__single-option .ontario-checkboxes__error {
-    .ontario-checkboxes__label:before {
-        border-color: $ontario-colour-dark-red;
-    }
+	.ontario-checkboxes__label:before {
+		border-color: colours.$ontario-colour-dark-red;
+	}
 }

@@ -1,9 +1,59 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder
+--------------------------------- */
 .ontario-header-button:focus {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
   transition: box-shadow 0.1s ease-in-out;
 }
 
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
 .ontario-header {
   position: relative;
   overflow: hidden;
@@ -225,7 +275,7 @@ input[type=reset].ontario-header__search-reset:focus {
 }
 @media screen and (max-width: 20em) {
   .ontario-header-button--with-outline {
-    padding: calc(0.75rem / 2);
+    padding: 0.375rem;
   }
 }
 
@@ -252,6 +302,8 @@ input[type=reset].ontario-header__search-reset:focus {
 }
 .ontario-header__menu-toggler svg {
   margin-right: 6px;
+  width: 2rem;
+  height: 2rem;
 }
 @media screen and (max-width: 20em) {
   .ontario-header__menu-toggler svg {
@@ -368,4 +420,8 @@ input[type=reset].ontario-header__search-reset:focus {
   .ontario-navigation--open .ontario-overlay {
     display: none;
   }
+}
+
+.ontario-navigation--open .ontario-navigation .ontario-header-button {
+  visibility: visible;
 }

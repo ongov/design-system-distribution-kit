@@ -1,3 +1,11 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
 .ontario-textarea {
   display: block;
   width: 100%;

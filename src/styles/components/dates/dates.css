@@ -1,3 +1,28 @@
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
 .ontario-date__group {
   display: flex;
 }

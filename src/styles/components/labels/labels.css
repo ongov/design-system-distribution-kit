@@ -1,4 +1,45 @@
 @charset "UTF-8";
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
 h1 .ontario-label--heading {
   font-style: normal;
   font-weight: 700;
@@ -13,6 +54,7 @@ h1 .ontario-label--heading {
   letter-spacing: 0.04rem;
   line-height: 1.29;
   margin: 2.5rem 0 1.5rem 0;
+  max-width: 70rem;
 }
 @media screen and (min-width: 40em) {
   h1 .ontario-label--heading {
@@ -22,6 +64,9 @@ h1 .ontario-label--heading {
   }
 }
 
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
 .ontario-label {
   cursor: pointer;
   color: #1a1a1a;

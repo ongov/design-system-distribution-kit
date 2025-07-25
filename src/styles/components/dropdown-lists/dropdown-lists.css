@@ -1,10 +1,32 @@
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
 .ontario-dropdown {
   background-color: #FFFFFF;
   background-image: url("../icons/ontario-material-dropdown-arrow-48px.svg");
   background-position: right 0.5rem center;
   background-repeat: no-repeat;
   background-size: 2rem;
-  padding-right: calc(1rem* 2.25);
+  padding-right: 2.25rem;
   cursor: pointer;
 }
 

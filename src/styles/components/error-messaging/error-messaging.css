@@ -1,6 +1,33 @@
-.ontario-error-messaging__container {
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+.ontario-error-messaging {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   margin: -0.25rem 0 0.5rem 0;
   color: #D81A21;
   max-width: 48rem;

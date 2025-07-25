@@ -1,3 +1,44 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
 .ontario-application-subheader__heading {
   font-style: normal;
   font-weight: 700;
@@ -12,6 +53,7 @@
   letter-spacing: 0.03rem;
   line-height: 1.5;
   margin: 0 0 0.75rem 0;
+  max-width: 48rem;
 }
 @media screen and (min-width: 40em) {
   .ontario-application-subheader__heading {
@@ -51,7 +93,7 @@
 }
 
 .ontario-application-subheader {
-  padding: calc(0.5rem + 0.75rem) 0;
+  padding: 1.25rem 0;
   background-color: #404040;
   overflow: hidden;
   position: relative;
@@ -67,7 +109,10 @@
 }
 
 .ontario-application-subheader .ontario-header-button {
-  visibility: visible;
+  display: flex;
+}
+.ontario-application-subheader .ontario-header-button:last-of-type {
+  display: none;
 }
 
 .ontario-application-subheader .ontario-header-button {
@@ -135,9 +180,11 @@
   border-bottom: 4px solid #FFFFFF;
 }
 .ontario-application-subheader__menu a:hover {
+  color: #FFFFFF;
   background-color: #666666;
 }
 .ontario-application-subheader__menu a:active {
+  color: #FFFFFF;
   background-color: #1a1a1a;
 }
 
@@ -152,11 +199,11 @@
   z-index: 2;
 }
 
-.ontario-navigation--open .ontario-navigation .ontario-header-button {
-  visibility: visible;
+.ontario-navigation--open .ontario-application-subheader .ontario-header-button:first-of-type {
+  display: none;
 }
-.ontario-navigation--open .ontario-application-subheader .ontario-header-button {
-  visibility: hidden;
+.ontario-navigation--open .ontario-application-subheader .ontario-header-button:last-of-type {
+  display: flex;
 }
 @media screen and (max-width: 73em) {
   .ontario-navigation--open .ontario-application-subheader-menu__container {

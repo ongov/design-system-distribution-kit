@@ -8,10 +8,10 @@ label: Release notes
 <div class="ontario-lists--two-column-list-md">
 
 -   [Release {{{ _config.project.version }}}](#latest)
+-   [Release 1.0.0](#a1.0.0)
 -   [Release 0.12.13](#a0.12.13)
 -   [Release 0.12.12](#a0.12.12)
 -   [Release 0.12.11](#a0.12.11)
--   [Release 0.12.10](#a0.12.10)
 -   [Release 0.12.9](#a0.12.9)
 -   [Release 0.12.8](#a0.12.8)
 -   [Release 0.12.7](#a0.12.7)
@@ -38,9 +38,32 @@ label: Release notes
 </div>
 </div>
 
-<hr class="dark">
+<hr class="ontario-hr--dark">
 
 ## <a name="latest"></a> {{{ _config.project.version }}} Release – {{{ _config.project.releaseDate }}}
+
+### Platform
+
+-   The design system website is now using the design system's global styles package.
+
+### Elements
+
+-   Application header: the language toggle label is now spelled out in full at the mobile breakpoint.
+
+### Bugs and known issues
+
+-   Fixed: application header menu button was shifting position on mobile
+-   Fixed: error messaging now includes aria attributes to improve accessibility
+-   Fixed: minor display issue with back to top component in Firefox
+-   Fixed: loading indicator display issue in older versions of Safari
+
+### Distribution package
+
+-   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+
+<hr>
+
+## <a name="a1.0.0"></a> 1.0.0 Release - December 1, 2022
 
 ### Platform
 
@@ -64,7 +87,7 @@ Updated:
 
 ### Distribution package
 
--   Download: [Design System {{{ _config.project.version }}}]({{path '../../dist/ontario-design-system-dist-{{{ _config.project.version }}}.zip'}})
+-   Download: [Design System 1.0.0]({{path '../../dist/ontario-design-system-dist-1.0.0.zip'}})
 
 <hr>
 

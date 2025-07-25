@@ -1,19 +1,25 @@
-@import '../../../sass/variables-import';
-@import '../../../sass/tools/focus.placeholder';
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/global.variables' as globalVariables;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/spacing.variables' as spacing;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/colours.variables' as colours;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/typography.variables' as typography;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/2-tools/placeholder/focus.placeholders' as placeholders;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/line-heights.variables' as lineheight;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-sizes.variables' as fontSizes;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-weights.variables' as fontWeights;
 
 .ontario-input {
-	border: 2px solid $ontario-colour-black;
-	border-radius: $global-radius;
+	border: 2px solid colours.$ontario-colour-black;
+	border-radius: globalVariables.$global-radius;
 	box-sizing: border-box;
-	color: $ontario-colour-black;
+	color: colours.$ontario-colour-black;
 	display: block;
-	font-size: 1rem;
-	font-family: $ontario-font-open-sans;
-	line-height: 1.5;
-	margin: 0 0 $spacing-7;
-	max-width: $standard-width;
-	width: $full-width;
-	padding: 0.625rem $spacing-4;
+	font-size: fontSizes.$ontario-font-size-standard-body-text;
+	font-family: typography.$ontario-font-open-sans;
+	line-height: lineheight.$ontario-line-height-7;
+	margin: spacing.$spacing-0 spacing.$spacing-0 spacing.$spacing-7;
+	max-width: globalVariables.$standard-width;
+	width: globalVariables.$full-width;
+	padding: 0.625rem spacing.$spacing-4;
 	transition: box-shadow 0.1s ease-in-out;
 
 	&:focus,
@@ -23,38 +29,38 @@
 }
 
 .ontario-input--2-char-width {
-    max-width: 8ex;
-    max-width: 8ex;
+	max-width: 8ex;
+	min-width: 8ex;
 }
 
 .ontario-input--3-char-width {
-    max-width: 10ex;
-    min-width: 10ex;
+	max-width: 10ex;
+	min-width: 10ex;
 }
 
 .ontario-input--4-char-width {
-    max-width: 12ex;
-    min-width: 12ex;
+	max-width: 12ex;
+	min-width: 12ex;
 }
 
 .ontario-input--5-char-width {
-    max-width: 14ex;
-    min-width: 14ex;
+	max-width: 14ex;
+	min-width: 14ex;
 }
 
 .ontario-input--7-char-width {
-    max-width: 17ex;
-    min-width: 17ex;
+	max-width: 17ex;
+	min-width: 17ex;
 }
 
 .ontario-input--10-char-width {
-    max-width: 23ex;
-    min-width: 23ex;
+	max-width: 23ex;
+	width: 100%;
 }
 
 .ontario-input--20-char-width {
-    max-width: 41ex;
-    min-width: 41ex;
+	max-width: 41ex;
+	width: 100%;
 }
 
 //General forms
@@ -63,32 +69,32 @@
 
 	.ontario-checkboxes,
 	.ontario-radios {
-		margin-bottom: 0;
+		margin-bottom: spacing.$spacing-0;
 	}
 }
 
 //Date inputs
 
 .ontario-date__group {
-    display: flex;
+	display: flex;
 
-    label {
-        font-weight: $ontario-font-weight-semi-bold;
-    }
+	label {
+		font-weight: fontWeights.$ontario-font-weights-semi-bold;
+	}
 
-    input {
-        margin-top: $spacing-4;
-    }
+	input {
+		margin-top: spacing.$spacing-4;
+	}
 }
 
 .ontario-date__group-input {
-    display: flex;
-    flex-direction: column;
-    margin-right: $spacing-5;
+	display: flex;
+	flex-direction: column;
+	margin-right: spacing.$spacing-5;
 }
 
 .ontario-date--error {
-    input {
-        border: 0.125rem solid $ontario-colour-alert;
-    }
+	input {
+		border: 0.125rem solid colours.$ontario-colour-alert;
+	}
 }

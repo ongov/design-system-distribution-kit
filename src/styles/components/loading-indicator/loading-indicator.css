@@ -1,3 +1,39 @@
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
 .ontario-loading-indicator__overlay {
   position: fixed;
   width: 100%;
@@ -37,36 +73,35 @@
 }
 
 .ontario-loading-indicator__spinner {
-  animation: rotator 1.4s linear infinite;
+  animation: rotator 1.5s linear infinite;
   width: 3rem;
   height: 3rem;
+  overflow: visible;
 }
 .ontario-loading-indicator__spinner circle {
-  stroke-dasharray: 187;
+  stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
-  transform-origin: center;
-  animation: dash 1.4s ease-in-out infinite;
+  stroke-linecap: round;
   stroke: #4d4d4d;
+  animation: dash 1.5s ease-in-out infinite;
 }
 
 @keyframes rotator {
-  0% {
-    transform: rotate(0deg);
-  }
   100% {
-    transform: rotate(270deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes dash {
   0% {
-    stroke-dashoffset: 187;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
   }
   50% {
-    stroke-dashoffset: 46.75;
-    transform: rotate(135deg);
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
   }
   100% {
-    stroke-dashoffset: 187;
-    transform: rotate(450deg);
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
   }
 }

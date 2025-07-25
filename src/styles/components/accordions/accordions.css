@@ -1,3 +1,56 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Focus placeholder variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder
+--------------------------------- */
+.ontario-accordion__button--expand-all:focus, .ontario-accordion__button:focus {
+  box-shadow: 0 0 0 4px #009ADB;
+  outline: 4px solid transparent;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
 .ontario-accordion__button {
   font-style: normal;
   font-weight: 700;
@@ -12,6 +65,7 @@
   letter-spacing: 0.03rem;
   line-height: 1.5;
   margin: 0 0 0.75rem 0;
+  max-width: 48rem;
 }
 @media screen and (min-width: 40em) {
   .ontario-accordion__button {
@@ -21,12 +75,9 @@
   }
 }
 
-.ontario-accordion__button:focus, .ontario-accordion__button--expand-all:focus {
-  box-shadow: 0 0 0 4px #009ADB;
-  outline: 4px solid transparent;
-  transition: box-shadow 0.1s ease-in-out;
-}
-
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
 .ontario-accordions__container {
   max-width: 48rem;
   width: 100%;

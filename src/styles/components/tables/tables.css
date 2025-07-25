@@ -1,3 +1,44 @@
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
 caption {
   background-color: #0000001a;
   padding: 1.125rem 1rem 1.125rem 1.5rem;
@@ -154,6 +195,9 @@ thead th {
   margin: 0;
   font-size: 1.125rem;
   line-height: 1.5rem;
+  -moz-text-size-adjust: none;
+       text-size-adjust: none;
+  -webkit-text-size-adjust: none;
 }
 @media screen and (max-width: 40em) {
   thead th {
@@ -297,4 +341,25 @@ tr.ontario-table-row--subtotal {
 
 tfoot tr {
   background-color: #0077a056 !important;
+}
+
+/*Table component colours*/
+.ontario-bg-ontario-table-row-divider {
+  background-color: #0000004d;
+}
+
+.ontario-bg-ontario-table-caption-background {
+  background-color: #0000001a;
+}
+
+.ontario-bg-ontario-table-highlight {
+  background-color: #e191003c;
+}
+
+.ontario-bg-ontario-table-subtotal {
+  background-color: #007b9e1d;
+}
+
+.ontario-bg-ontario-table-total {
+  background-color: #0077a056;
 }

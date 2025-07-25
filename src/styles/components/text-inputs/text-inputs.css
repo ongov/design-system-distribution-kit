@@ -1,9 +1,59 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder variables
+--------------------------------- */
+/* -------------------------------
+    Focus placeholder
+--------------------------------- */
 .ontario-input:focus, .ontario-input:active {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
   transition: box-shadow 0.1s ease-in-out;
 }
 
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
 .ontario-input {
   border: 2px solid #1a1a1a;
   border-radius: 4px;
@@ -21,7 +71,7 @@
 }
 .ontario-input--2-char-width {
   max-width: 8ex;
-  max-width: 8ex;
+  min-width: 8ex;
 }
 
 .ontario-input--3-char-width {
@@ -46,12 +96,12 @@
 
 .ontario-input--10-char-width {
   max-width: 23ex;
-  min-width: 23ex;
+  width: 100%;
 }
 
 .ontario-input--20-char-width {
   max-width: 41ex;
-  min-width: 41ex;
+  width: 100%;
 }
 
 .ontario-form-group:last-of-type {

@@ -1,3 +1,47 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*
+*  Global colour variables
+*
+*  1 - Greyscale colours
+*  2 - System colours
+*  3 - Accent colours
+*    3.1 - Main
+*    3.2 - Light
+*    3.3 - Dark
+*    3.4 - Callout backgrounds
+*/
+/*** 1 - Greyscale colours ***/
+/*** 2 - System colours ***/
+/*** 3 - Accent colours ***/
+/* Main */
+/* Light */
+/* Dark */
+/* callout backgrounds */
+/* icon colours */
+/*** 1 - Breakpoint sizes for media queries ***/
+/* -------------------------------
+    Global font-weight variables
+--------------------------------- */
+/* -------------------------------
+    Global letter-spacing variables
+--------------------------------- */
+/* Rem calc function */
+/* -------------------------------
+    Global line-height variables
+--------------------------------- */
+/* -------------------------------
+    Global typography variables
+--------------------------------- */
+/* -------------------------------
+    Global font-size variables
+--------------------------------- */
 .ontario-back-to-top--default {
   position: fixed;
   bottom: 5%;
@@ -14,7 +58,7 @@
   border: 0.125rem solid #FFFFFF;
   border-radius: 4px;
   box-sizing: border-box;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0.125rem 0.25rem rgba(26, 26, 26, 0.6);
   color: #1a1a1a;
   line-height: 1.25rem;
   font-size: 1rem;
@@ -68,6 +112,11 @@
   }
   .ontario-back-to-top--default svg.ontario-icon {
     margin: 0;
+  }
+  @-moz-document url-prefix() {
+    .ontario-back-to-top--default svg.ontario-icon {
+      padding: 0 0.25rem 0.25rem 0;
+    }
   }
 }
 

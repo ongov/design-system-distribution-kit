@@ -1,16 +1,21 @@
-@import '../../sass/variables-import';
-@import '../../sass/tools/focus.placeholder';
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/global.variables' as globalVariables;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/spacing.variables' as spacing;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/colours.variables' as colours;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/breakpoints.variables' as breakpoints;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/2-tools/placeholder/focus.placeholders' as placeholders;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/typography.variables' as typography;
+@use '@ontario-digital-service/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-sizes.variables' as fontSizes;
 
 .ontario-accordions__container {
-	max-width: $standard-width;
-	width: $full-width;
+	max-width: globalVariables.$standard-width;
+	width: globalVariables.$full-width;
 }
 
 .ontario-accordion {
-	border-top: 2px solid $ontario-greyscale-20;
+	border-top: 2px solid colours.$ontario-greyscale-20;
 
 	&:last-of-type {
-		border-bottom: 2px solid $ontario-greyscale-20;
+		border-bottom: 2px solid colours.$ontario-greyscale-20;
 	}
 }
 
@@ -27,14 +32,14 @@
 }
 
 .ontario-accordion__button--expand-all {
-	font-size: 1rem;
-	margin-bottom: $spacing-2;
-	color: $ontario-colour-link;
+	font-size: fontSizes.$ontario-font-size-standard-body-text;
+	margin-bottom: spacing.$spacing-2;
+	color: colours.$ontario-colour-link;
 	cursor: pointer;
 
 	&:focus,
 	&:hover {
-		color: $ontario-colour-link--hover;
+		color: colours.$ontario-colour-link--hover;
 		text-decoration: underline;
 	}
 
@@ -43,7 +48,7 @@
 	}
 
 	&:active {
-		color: $ontario-colour-link--active;
+		color: colours.$ontario-colour-link--active;
 		text-decoration: underline;
 	}
 }
@@ -65,18 +70,17 @@
 .ontario-accordion__button {
 	display: flex;
 	align-items: flex-start;
-
-	color: $ontario-colour-link;
+	color: colours.$ontario-colour-link;
 	cursor: pointer;
-	padding: $spacing-3 $spacing-2;
+	padding: spacing.$spacing-3 spacing.$spacing-2;
 	text-align: left;
-	width: $full-width;
+	width: globalVariables.$full-width;
 	@extend %h4-styles;
-	margin-bottom: 0;
+	margin-bottom: spacing.$spacing-0;
 
 	.ontario-accordion__button-icon--close,
 	.ontario-accordion__button-icon--open {
-		margin-right: $spacing-2;
+		margin-right: spacing.$spacing-2;
 	}
 
 	.ontario-icon {
@@ -86,42 +90,42 @@
 
 	&:focus,
 	&:hover {
-		background-color: $ontario-greyscale-5;
-		color: $ontario-colour-link--hover;
+		background-color: colours.$ontario-greyscale-5;
+		color: colours.$ontario-colour-link--hover;
 	}
 
 	&:focus {
 		@extend %ontario-focus;
-		box-shadow: 0 0 0 4px $ontario-colour-focus inset;
+		box-shadow: 0 0 0 4px colours.$ontario-colour-focus inset;
 	}
 
 	&:active {
-		color: $ontario-colour-link--active;
+		color: colours.$ontario-colour-link--active;
 	}
 }
 
 .ontario-accordion__content {
 	display: none;
-	padding: $spacing-3 $spacing-3 $spacing-6 $spacing-3;
-	margin-left: 0;
+	padding: spacing.$spacing-3 spacing.$spacing-3 spacing.$spacing-6 spacing.$spacing-3;
+	margin-left: spacing.$spacing-0;
 
-	@media screen and (min-width: $small-breakpoint) {
-		margin-left: $spacing-6;
+	@media screen and (min-width: breakpoints.$small-breakpoint) {
+		margin-left: spacing.$spacing-6;
 	}
 
 	* {
-		margin-top: 0;
-		max-width: $standard-width;
-		width: $full-width;
+		margin-top: spacing.$spacing-0;
+		max-width: globalVariables.$standard-width;
+		width: globalVariables.$full-width;
 	}
 
 	ul,
 	ol {
-		max-width: calc(100% - 3rem);
+		max-width: calc(100% - spacing.$spacing-8);
 	}
 
 	& > :last-child {
-		margin-bottom: 0;
+		margin-bottom: spacing.$spacing-0;
 	}
 }
 
@@ -148,6 +152,6 @@
 	h4,
 	h5,
 	h6 {
-		margin: 0;
+		margin: spacing.$spacing-0;
 	}
 }

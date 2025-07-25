@@ -1,9 +1,18 @@
+/*
+*  Global variables
+*
+*  Used across multiple components
+*/
+/* -------------------------------
+    Global spacing variables
+--------------------------------- */
+/*** 1 - Breakpoint sizes for media queries ***/
 .ontario-step-indicator {
   /**
-  * Tertiary button defaults are overridden to achieve the mini-button specifications
-  * width is unset in small screen size to remove unnecessary space being added to the button
-  * min-width and max-width are set for small screen size to ensure the "back" button doesn't break and protrude into the text to the right
-  */
+     * Tertiary button defaults are overridden to achieve the mini-button specifications
+     * width is unset in small screen size to remove unnecessary space being added to the button
+     * min-width and max-width are set for small screen size to ensure the "back" button doesn't break and protrude into the text to the right
+     */
 }
 .ontario-step-indicator .ontario-step-indicator--without-back-button {
   display: flex;
