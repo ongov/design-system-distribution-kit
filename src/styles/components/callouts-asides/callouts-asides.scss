@@ -1,5 +1,6 @@
 @use "sass:meta";
 @import "../../../sass/variables-import";
+@import "../../../sass/preview-colour-picker.scss";
 
 .ontario-callout,
 .ontario-aside {
@@ -8,6 +9,10 @@
 
     * {
         max-width: 48rem;
+
+        &:last-child {
+            margin-bottom: $spacing-2;
+        }
     }
 }
 
@@ -26,16 +31,10 @@
     }
 }
 
-.ontario-callout:last-child,
-.ontario-aside:last-child {
-    margin-bottom: $spacing-2;
-}
-
 .ontario-callout__title,
 .ontario-aside__title {
     margin-bottom: $spacing-4;
 }
-
 
 // -----------------------------------
 //   Callout & Aside border variants
@@ -51,7 +50,6 @@ $highlight-colours: (
     "blue": $ontario-colour-dark-blue,
     "purple": $ontario-colour-dark-purple,
 );
-
 
 @each $color-name, $hex in $highlight-colours {
     .ontario-border-highlight--#{$color-name} {

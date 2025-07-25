@@ -9,8 +9,7 @@ h6,
   font-weight: 700;
   text-rendering: optimizeLegibility;
   margin-bottom: 1rem;
-  -webkit-font-feature-settings: normal;
-          font-feature-settings: normal;
+  font-feature-settings: normal;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 

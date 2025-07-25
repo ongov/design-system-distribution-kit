@@ -30,9 +30,10 @@
     }
 }
 
-.ontario-header-navigation--is-ready[aria-hidden=false] {
+.ontario-header-navigation--is-ready[aria-hidden="false"] {
     box-shadow: -8px 0px 24px 0px rgba(0, 0, 0, 0.4);
     right: 0;
+    overflow: hidden;
 }
 
 .ontario-header-navigation__banner {
@@ -64,7 +65,7 @@
 
     &:focus {
         outline: none;
-        box-shadow: 0 0 0 4px #009ADB;
+        box-shadow: 0 0 0 4px #009adb;
         background-color: $ontario-colour-black;
     }
 }

@@ -1,7 +1,6 @@
 .ontario-hint-expander__button:focus, .ontario-hint-expander__button:active {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
-  -webkit-transition: box-shadow 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out;
 }
 
@@ -22,8 +21,6 @@
   cursor: pointer;
   background: none;
   border: none;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;

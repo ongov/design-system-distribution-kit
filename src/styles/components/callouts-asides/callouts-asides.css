@@ -1,3 +1,11 @@
+#root {
+  margin: 0 15px 15px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .ontario-callout,
 .ontario-aside {
   border-left: 0.25rem solid #367A76;
@@ -6,6 +14,10 @@
 .ontario-callout *,
 .ontario-aside * {
   max-width: 48rem;
+}
+.ontario-callout *:last-child,
+.ontario-aside *:last-child {
+  margin-bottom: 0.5rem;
 }
 
 .ontario-callout {
@@ -22,11 +34,6 @@
     margin: 2rem 0 2.5rem 1rem;
   }
 }
-.ontario-callout:last-child,
-.ontario-aside:last-child {
-  margin-bottom: 0.5rem;
-}
-
 .ontario-callout__title,
 .ontario-aside__title {
   margin-bottom: 1rem;

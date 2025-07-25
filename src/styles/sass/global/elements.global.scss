@@ -28,7 +28,7 @@ hr {
     border: 0;
     padding: 0;
     margin: 2.5rem 0;
-    border-bottom: 4px solid #cccccc;
+    border-bottom: 4px solid #1a1a1a;
 }
 
 /* -------------------------------
@@ -204,11 +204,13 @@ p + ol {
         margin: 0.5rem 0 1.5rem 2.75rem;
     }
 
-    ul ul, ol ul {
+    ul ul,
+    ol ul {
         margin: 0.5rem 0 0.5rem 3rem;
     }
 
-    ul ol, ol ol {
+    ul ol,
+    ol ol {
         margin: 0.5rem 0 0.5rem 2.75rem;
     }
 }

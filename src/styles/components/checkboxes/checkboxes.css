@@ -62,7 +62,6 @@
   left: 0;
   width: 32px;
   height: 32px;
-  -webkit-transition: border 0.1s ease-in-out;
   transition: border 0.1s ease-in-out;
   display: block;
 }
@@ -96,7 +95,6 @@
 .ontario-checkboxes__input:focus + .ontario-checkboxes__label:before {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
-  -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 

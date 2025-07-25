@@ -15,7 +15,7 @@
 }
 
 // ontario-clearfix mixin
-    // We use this to clear floats
+// We use this to clear floats
 @mixin ontario-clearfix {
     &:before,
     &:after {
@@ -29,27 +29,27 @@
 }
 
 // Grid row mixin
-    // For creating container, nested, and collapsed rows.
-        // $behavior - Any special behavior for this row?
-            //Default: false.
-            //Options: nest, collapse, nest-collapse, false.
-@mixin ontario-grid-row($behavior: false) {
+// For creating container, nested, and collapsed rows.
+// $behaviour - Any special behaviour for this row?
+//Default: false.
+//Options: nest, collapse, nest-collapse, false.
+@mixin ontario-grid-row($behaviour: false) {
     // use @include ontario-grid-row(nest); to include a nested row
-    @if $behavior == nest {
-        margin: 0 calc(-#{$column-gutter}/2);
+    @if $behaviour == nest {
+        margin: 0 calc(-#{$column-gutter}/ 2);
         max-width: none;
         width: auto;
     }
 
     // use @include ontario-grid-row(collapse); to collapsed a container row margins
-    @else if $behavior == collapse {
+    @else if $behaviour == collapse {
         margin: 0;
         max-width: $row-width;
         width: 100%;
     }
 
     // use @include ontario-grid-row(nest-collapse); to collapse outer margins on a nested row
-    @else if $behavior == nest-collapse {
+    @else if $behaviour == nest-collapse {
         margin: 0;
         max-width: none;
         width: auto;
@@ -67,26 +67,26 @@
 }
 
 // Grid column mixin
-    // Creates a column, should be used inside of a media query to control layouts
-        // $columns - The number of columns this should be
-        // $last-column - Is this the last column? Default: false.
-        // $center - Center these columns? Default: false.
-        // $offset - # of columns to offset. Default: false.
-        // $push - # of columns to push. Default: false.
-        // $pull - # of columns to pull. Default: false.
-        // $collapse - Get rid of gutter padding on column? Default: false.
-        // $float - Should this float? Default: true. Options: true, false, left, right.
+// Creates a column, should be used inside of a media query to control layouts
+// $columns - The number of columns this should be
+// $last-column - Is this the last column? Default: false.
+// $center - Center these columns? Default: false.
+// $offset - # of columns to offset. Default: false.
+// $push - # of columns to push. Default: false.
+// $pull - # of columns to pull. Default: false.
+// $collapse - Get rid of gutter padding on column? Default: false.
+// $float - Should this float? Default: true. Options: true, false, left, right.
 @mixin ontario-grid-column(
-    $columns:false,
-    $last-column:false,
-    $center:false,
-    $offset:false,
-    $push:false,
-    $pull:false,
-    $collapse:false,
-    $float:true,
-    $position:false) {
-
+    $columns: false,
+    $last-column: false,
+    $center: false,
+    $offset: false,
+    $push: false,
+    $pull: false,
+    $collapse: false,
+    $float: true,
+    $position: false
+) {
     // If positioned for default .column, include relative position
     // push and pull require position set
     @if $position or $push or $pull {
@@ -112,7 +112,9 @@
         width: ontario-grid-calc($columns, $total-columns);
 
         // If last column, float naturally instead of to the right
-        @if $last-column { float: $opposite-direction; }
+        @if $last-column {
+            float: $opposite-direction;
+        }
     }
 
     // Source Ordering, adds left/right depending on which you use.
@@ -128,13 +130,9 @@
     @if $float and $last-column == false {
         @if $float == left or $float == true {
             float: $default-float;
-        }
-
-        @else if $float == right {
+        } @else if $float == right {
             float: $opposite-direction;
-        }
-
-        @else {
+        } @else {
             float: none;
         }
     }
@@ -148,47 +146,46 @@
 
     // If offset, calculate appropriate margins
     @if $offset {
-        margin-#{$default-float}: ontario-grid-calc($offset, $total-columns) !important;
+        margin-#{$default-float}: ontario-grid-calc(
+            $offset,
+            $total-columns
+        ) !important;
     }
 }
 
 // Ontario grid html classes mixin
-    // Create presentational classes for grid
-        // $size - Name of class to use, i.e. "large" will generate .large-1, .large-2, etc.
+// Create presentational classes for grid
+// $size - Name of class to use, i.e. "large" will generate .large-1, .large-2, etc.
 @mixin ontario-grid-html-classes($size) {
     @for $i from 0 through $total-columns - 1 {
         .ontario-#{$size}-push-#{$i} {
             @include ontario-grid-column(
-                $push:$i,
-                $collapse:null,
-                $float:false
+                $push: $i,
+                $collapse: null,
+                $float: false
             );
         }
 
         .ontario-#{$size}-pull-#{$i} {
             @include ontario-grid-column(
-                $pull:$i,
-                $collapse:null,
-                $float:false
+                $pull: $i,
+                $collapse: null,
+                $float: false
             );
         }
     }
 
     .ontario-column,
     .ontario-columns {
-        @include ontario-grid-column(
-            $columns:false,
-            $position:true
-        )
+        @include ontario-grid-column($columns: false, $position: true);
     }
-
 
     @for $i from 1 through $total-columns {
         .ontario-#{$size}-#{$i} {
             @include ontario-grid-column(
-                $columns:$i,
-                $collapse:null,
-                $float:false
+                $columns: $i,
+                $collapse: null,
+                $float: false
             );
         }
     }
@@ -196,9 +193,9 @@
     @for $i from 0 through $total-columns - 1 {
         .ontario-#{$size}-offset-#{$i} {
             @include ontario-grid-column(
-                $offset:$i,
-                $collapse:null,
-                $float:false
+                $offset: $i,
+                $collapse: null,
+                $float: false
             );
         }
     }
@@ -214,9 +211,9 @@
     .ontario-column.ontario-#{$size}-centered,
     .ontario-columns.ontario-#{$size}-centered {
         @include ontario-grid-column(
-            $center:true,
-            $collapse:null,
-            $float:false
+            $center: true,
+            $collapse: null,
+            $float: false
         );
     }
 
@@ -229,7 +226,7 @@
 
     // Fighting [class*="ontario-column"] + [class*="ontario-column"]:last-child
     .ontario-column.ontario-#{$size}-centered:last-child,
-    .ontario-columns.ontario-#{$size}-centered:last-child{
+    .ontario-columns.ontario-#{$size}-centered:last-child {
         float: none;
     }
 
@@ -248,15 +245,12 @@
         &.ontario-#{$size}-collapse {
             > .ontario-column,
             > .ontario-columns {
-                @include ontario-grid-column(
-                    $collapse:true,
-                    $float:false
-                );
+                @include ontario-grid-column($collapse: true, $float: false);
             }
 
             .ontario-row {
-                margin-left:0;
-                margin-right:0;
+                margin-left: 0;
+                margin-right: 0;
             }
         }
         &.ontario-#{$size}-uncollapse {

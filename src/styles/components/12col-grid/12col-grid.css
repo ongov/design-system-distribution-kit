@@ -20,7 +20,7 @@
   margin-right: 0;
 }
 .ontario-row .ontario-row {
-  margin: 0 calc(-2rem/2);
+  margin: 0 calc(-2rem/ 2);
   max-width: none;
   width: auto;
 }
@@ -1728,4 +1728,7 @@
     box-sizing: border-box;
     float: left;
   }
+}
+.ontario-row.ontario-expanded {
+  max-width: none;
 }

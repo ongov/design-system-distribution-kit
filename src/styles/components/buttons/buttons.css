@@ -1,7 +1,6 @@
 .ontario-button:focus, .ontario-button:active {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
-  -webkit-transition: box-shadow 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out;
 }
 
@@ -44,13 +43,11 @@
 .ontario-button--primary:focus {
   background-color: #00478F;
   color: #FFFFFF;
-  -webkit-transition: background-color 0.2s ease-out, box-shadow 0.1s ease-in-out;
   transition: background-color 0.2s ease-out, box-shadow 0.1s ease-in-out;
 }
 .ontario-button--primary:active {
   background-color: #002142;
   color: #FFFFFF;
-  -webkit-transition: background-color 0s, box-shadow 0.1s ease-in-out;
   transition: background-color 0s, box-shadow 0.1s ease-in-out;
 }
 .ontario-button--primary:visited {
@@ -73,14 +70,12 @@
   background-color: #e0f0ff;
   border-color: #00478F;
   color: #00478F;
-  -webkit-transition: background-color 0.2s ease-out, box-shadow 0.1s ease-in-out;
   transition: background-color 0.2s ease-out, box-shadow 0.1s ease-in-out;
 }
 .ontario-button--secondary:active {
   background-color: #c2e0ff;
   border-color: #002142;
   color: #002142;
-  -webkit-transition: background-color 0s, box-shadow 0.1s ease-in-out;
   transition: background-color 0s, box-shadow 0.1s ease-in-out;
 }
 .ontario-button--secondary:visited {
@@ -101,14 +96,12 @@
   background-color: #e8e8e8;
   color: #00478F;
   text-decoration: underline;
-  -webkit-transition: background-color 0.2s ease-out, box-shadow 0.1s ease-in-out;
   transition: background-color 0.2s ease-out, box-shadow 0.1s ease-in-out;
 }
 .ontario-button--tertiary:active {
   background-color: #d1d1d1;
   color: #002142;
   text-decoration: underline;
-  -webkit-transition: background-color 0s, box-shadow 0.1s ease-in-out;
   transition: background-color 0s, box-shadow 0.1s ease-in-out;
 }
 .ontario-button--tertiary:visited {

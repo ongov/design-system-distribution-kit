@@ -1,12 +1,3 @@
-// Utils
-function getClosest(element, selector) {
-    while (element) {
-        if (element.matches(selector)) break;
-        element = element.parentElement;
-    }
-    return element;
-}
-
 // run asynchronously
 function deferInFn(fn) {
     if (typeof fn === "function") setTimeout(fn, 0);
@@ -16,22 +7,26 @@ function deferInFn(fn) {
   Header
 */
 (function () {
-
     "use strict";
 
     // review browser support
-    if (!("addEventListener" in window) || !document.documentElement.classList) return;
-
+    if (!("addEventListener" in window) || !document.documentElement.classList)
+        return;
 
     var navPanelSelector = "ontario-header-navigation",
         isReadyClass = "ontario-header-navigation--is-ready",
-        isActiveClass = "ontario-header-navigation--open";
+        isActiveClass = "ontario-header-navigation--open",
+        mobileMenuActiveClass = "ontario-mobile-navigation--open";
 
     var header = document.getElementById("ontario-header"),
         nav = document.getElementById(navPanelSelector),
-        openBttnToggler = document.getElementById("ontario-header-menu-toggler"),
-        closeBttnToggler = document.getElementById("ontario-header-navigation-close-toggler");
-
+        openBttnToggler = document.getElementById(
+            "ontario-header-menu-toggler"
+        ),
+        closeBttnToggler = document.getElementById(
+            "ontario-header-navigation-close-toggler"
+        ),
+        body = document.getElementsByTagName("body")[0];
 
     if (!nav) return;
 
@@ -39,10 +34,11 @@ function deferInFn(fn) {
         currentDomEl = null;
 
     function showNavPanel(navpanel) {
+        body.classList.add(mobileMenuActiveClass);
         header.parentNode.classList.add(isActiveClass);
         navpanel.scrollTop = 0;
-        addA11yVisiblity(navpanel)
-        focusUser({element: navpanel, callbackOnEscape: hideNavPanel})
+        addA11yVisiblity(navpanel);
+        focusUser({ element: navpanel, callbackOnEscape: hideNavPanel });
         deferInFn(unbindOpenBttnToggler);
 
         // bind clickables: document, closebttn - asynchronously
@@ -52,11 +48,12 @@ function deferInFn(fn) {
     }
 
     function hideNavPanel(navpanel, returnToToggler) {
-        var navpanelDomEl = navpanel ? navpanel : currentDomEl
+        var navpanelDomEl = navpanel ? navpanel : currentDomEl;
         var returnFocusToToggler = returnToToggler !== undefined;
 
+        body.classList.remove(mobileMenuActiveClass);
         header.parentNode.classList.remove(isActiveClass);
-        removeA11yVisiblity(navpanelDomEl)
+        removeA11yVisiblity(navpanelDomEl);
 
         // unbind clickables: document, closebttn
         unbindCloseBttnToggler();
@@ -89,8 +86,8 @@ function deferInFn(fn) {
 
     function onClickHandler(e) {
         var isNavPanel = e.target === currentDomEl;
-        var isNavPanelChild = getClosest(e.target, navPanelSelector);
-        if (!isNavPanel && !isNavPanelChild) hideNavPanel();
+        var isElementInsideNav = currentDomEl.contains(e.target);
+        if (!isNavPanel && !isElementInsideNav) hideNavPanel();
     }
 
     function onKeyboradHandler(e) {
@@ -137,25 +134,29 @@ function deferInFn(fn) {
     }
 
     init();
-
 })();
-
 
 /*
     Search
 */
 (function () {
-
     "use strict";
 
     // review browser support
-    if (!("addEventListener" in window) || !document.documentElement.classList) return;
+    if (!("addEventListener" in window) || !document.documentElement.classList)
+        return;
 
     var header = document.getElementById("ontario-header"),
-        searchFormContainer = document.getElementById("ontario-search-form-container"),
-        searchInputField = document.getElementById("ontario-search-input-field"),
+        searchFormContainer = document.getElementById(
+            "ontario-search-form-container"
+        ),
+        searchInputField = document.getElementById(
+            "ontario-search-input-field"
+        ),
         searchReset = document.getElementById("ontario-search-reset"),
-        searchToggler = document.getElementById("ontario-header-search-toggler"),
+        searchToggler = document.getElementById(
+            "ontario-header-search-toggler"
+        ),
         searchClose = document.getElementById("ontario-header-search-close"),
         searchOpenClass = "ontario-header--search-open";
 
@@ -175,10 +176,10 @@ function deferInFn(fn) {
     function toggleSearchForm(newState) {
         header.classList.toggle(searchOpenClass);
         if (newState === "expand") {
-            removeA11y(searchFormContainer)
-            searchInputField.focus()
+            removeA11y(searchFormContainer);
+            searchInputField.focus();
         } else {
-            addA11y(searchFormContainer)
+            addA11y(searchFormContainer);
             searchToggler.focus();
         }
     }

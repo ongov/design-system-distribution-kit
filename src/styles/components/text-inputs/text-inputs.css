@@ -1,7 +1,6 @@
 .ontario-input:focus, .ontario-input:active {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
-  -webkit-transition: box-shadow 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out;
 }
 
@@ -18,7 +17,6 @@
   max-width: 48rem;
   width: 100%;
   padding: 0.625rem 1rem;
-  -webkit-transition: box-shadow 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out;
 }
 .ontario-input--2-char-width {

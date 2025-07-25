@@ -96,8 +96,6 @@
     }
 }
 
-
-
 .ontario-header__search-submit {
     border: 0;
     border-radius: 0 3px 3px 0;
@@ -156,7 +154,7 @@ input[type="reset"].ontario-header__search-reset {
     margin: $spacing-0;
     padding: $spacing-2;
 
-    background-image: url( ../icons/ontario-icons-close.svg );
+    background-image: url(../icons/ontario-icons-close.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -168,10 +166,6 @@ input[type="reset"].ontario-header__search-reset {
         box-shadow: 0 0 0 $global-radius $ontario-colour-focus;
     }
 }
-
-
-
-
 
 /* Header menu & language toggle & close search button styles */
 .ontario-header__nav-right-container {
@@ -267,7 +261,10 @@ input[type="reset"].ontario-header__search-reset {
     }
 
     svg {
+        width: 2rem;
+        height: 2rem;
         margin-right: 6px;
+        margin-bottom: 0;
 
         @media screen and (max-width: $xsmall-breakpoint) {
             margin-right: 0;
@@ -341,7 +338,6 @@ input[type="reset"].ontario-header__search-reset {
     }
 }
 
-
 .ontario-header--search-open .ontario-header__search-close {
     @media screen and (min-width: $medium-breakpoint) {
         display: none;
@@ -373,6 +369,11 @@ input[type="reset"].ontario-header__search-reset {
     }
 }
 
+.ontario-mobile-navigation--open {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: hidden;
+}
+
 .ontario-header-navigation--open {
     overflow: hidden;
 
@@ -384,5 +385,3 @@ input[type="reset"].ontario-header__search-reset {
         height: 100vh;
     }
 }
-
-

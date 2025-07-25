@@ -7,6 +7,18 @@
   padding: 4rem 0;
 }
 
+.ontario-footer .ontario-columns *:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 73em) {
+  .ontario-footer .ontario-columns {
+    margin-bottom: 3rem;
+  }
+  .ontario-footer .ontario-columns:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .ontario-footer__links-container {
   list-style: none;
   margin: 0 0 1rem 0;
@@ -18,27 +30,19 @@
 }
 
 .ontario-footer__links-container--inline {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 40em) {
   .ontario-footer__links-container--inline {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 
 .ontario-footer__links-container--two-column-list {
   -webkit-column-count: 1;
+     -moz-column-count: 1;
           column-count: 1;
   display: block;
   margin: 0;
@@ -46,6 +50,7 @@
 @media screen and (min-width: 40em) {
   .ontario-footer__links-container--two-column-list {
     -webkit-column-count: 2;
+       -moz-column-count: 2;
             column-count: 2;
   }
   .ontario-footer__links-container--two-column-list .ontario-footer__link {
@@ -83,15 +88,9 @@
 }
 
 .ontario-footer__links-container--social {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .ontario-footer__links-container--social .ontario-footer__link {
@@ -102,15 +101,9 @@
   outline: none;
   height: calc(3rem + 0.5rem);
   width: calc(3rem + 0.5rem);
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .ontario-footer__links-container--social .ontario-footer__link:hover, .ontario-footer__links-container--social .ontario-footer__link:focus {
   background-color: black;
@@ -233,7 +226,6 @@
 }
 @media screen and (max-width: 40em) {
   .ontario-footer__partnership-logo-container {
-    margin-top: 2.5rem;
     text-align: left;
   }
 }

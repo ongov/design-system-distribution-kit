@@ -60,7 +60,6 @@
   left: 0;
   width: 32px;
   height: 32px;
-  -webkit-transition: border 0.1s ease-in-out;
   transition: border 0.1s ease-in-out;
 }
 @media screen and (max-width: 40em) {
@@ -76,8 +75,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translate(6px, 6px);
-          transform: translate(6px, 6px);
+  transform: translate(6px, 6px);
   opacity: 0;
 }
 @media screen and (max-width: 40em) {
@@ -89,7 +87,6 @@
 .ontario-radios__input:focus + .ontario-radios__label:before {
   box-shadow: 0 0 0 4px #009ADB;
   outline: 4px solid transparent;
-  -webkit-transition: box-shadow 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out;
 }
 
