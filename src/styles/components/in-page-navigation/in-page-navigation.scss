@@ -8,8 +8,8 @@
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/typography.variables';
 
 .ontario-page-navigation {
-	border-top: 3px solid colours.$ontario-colour-black;
-	border-bottom: 3px solid colours.$ontario-greyscale-20;
+	border-top: 4px solid colours.$ontario-colour-black;
+	border-bottom: 4px solid colours.$ontario-greyscale-20;
 	padding: spacing.$spacing-0;
 	max-width: 46rem;
 }
@@ -19,7 +19,7 @@
 }
 
 .ontario-page-navigation--full {
-	border-top: 3px solid colours.$ontario-colour-black;
+	border-top: 4px solid colours.$ontario-colour-black;
 	max-width: 100%;
 }
 

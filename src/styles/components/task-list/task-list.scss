@@ -18,20 +18,37 @@
 	}
 }
 
+.ontario-task-list__container {
+	padding: spacing.$spacing-0 spacing.$spacing-1;
+}
+
 .ontario-task {
 	border-bottom: globalFunctions.px-to-rem(2) solid colours.$ontario-greyscale-20;
-	padding: globalFunctions.px-to-rem(19) spacing.$spacing-0;
+	padding: globalFunctions.px-to-rem(20) spacing.$spacing-0;
 	list-style: none;
 
 	&__content {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 
-		@media screen and (max-width: breakpoints.$small-breakpoint) {
+		.ontario-task__text {
 			display: flex;
 			flex-direction: column;
+		}
+
+		.ontario-badge {
+			align-self: center;
+		}
+
+		@media screen and (max-width: breakpoints.$small-breakpoint) {
+			flex-direction: column;
 			align-items: flex-start;
+
+			.ontario-badge {
+				align-self: flex-start;
+				margin-top: spacing.$spacing-2;
+			}
 		}
 	}
 
@@ -75,11 +92,11 @@
 
 	.ontario-hint {
 		margin-bottom: spacing.$spacing-0;
-
-		@media screen and (max-width: breakpoints.$small-breakpoint) {
-			margin-top: spacing.$spacing-2;
-		}
 	}
+}
+
+.ontario-task:focus-within {
+	outline: 4px solid colours.$ontario-colour-focus;
 }
 
 .ontario-task__link {
@@ -91,11 +108,6 @@
 .ontario-task__link:focus {
 	outline: none;
 	box-shadow: none;
-
-	.ontario-task__label {
-		@extend %ontario-focus;
-		box-shadow: 0 0 0 4px colours.$ontario-colour-focus inset;
-	}
 }
 
 .ontario-task:has(.ontario-task__link) {

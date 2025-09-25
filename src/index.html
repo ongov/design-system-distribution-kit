@@ -72,7 +72,7 @@
 				<div class="ontario-column ontario-small-12">
 					<!-- inject:menu:html -->
 					<div id="main-header">
-            <span>Release 2.0.0</span>
+            <span>Release 2.1.0</span>
             <h1><a href="https://designsystem.ontario.ca/" title="Ontario Design System Examples">Ontario Design System Examples</a></h1>
             <p class="ontario-lead-statement">To preview this page you may use the <a href=https://www.npmjs.com/package/serve>Serve</a> command`serve` from within the distribution package.</p><ul>
 <li><a href='#Colours'>Colours</a></li>
@@ -209,6 +209,7 @@
 					
 <li><a href='#Icon-secondaryheader'>Icons Secondary</a></li>
 
+					
 					
 					
 					
@@ -1405,7 +1406,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
             <!-- Start: @task-list--default -->
             
 <div class='ontario-task-list__container'>
-	<ul class='ontario-task-list' role='list'>
+    <ul class='ontario-task-list' role='list'>
         <li
             class="ontario-task ontario-task-status--not-started"
             role="group"
@@ -1414,9 +1415,11 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--1' class='ontario-task__label ontario-task__hint-text--true'>
-                        Contact information
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--1' class='ontario-task__label ontario-task__hint-text--true'>
+                            Contact information
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Not yet started
                     </span>
@@ -1431,9 +1434,11 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--2' class='ontario-task__label ontario-task__hint-text--true'>
-                        About your organization
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--2' class='ontario-task__label ontario-task__hint-text--true'>
+                            About your organization
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Not yet started
                     </span>
@@ -1448,16 +1453,18 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--3' class='ontario-task__label ontario-task__hint-text--true'>
-                        Budget
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--3' class='ontario-task__label ontario-task__hint-text--true'>
+                            Budget
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Not yet started
                     </span>
                 </div>
             </a>
         </li>
-	</ul>
+    </ul>
 </div>
 
             <!-- End: @task-list--default -->
@@ -1470,7 +1477,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
             <!-- Start: @task-list--task-list-item-with-hint -->
             
 <div class='ontario-task-list__container'>
-	<ul class='ontario-task-list' role='list'>
+    <ul class='ontario-task-list' role='list'>
         <li
             class="ontario-task ontario-task-status--not-started"
             role="group"
@@ -1479,16 +1486,18 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--1' class='ontario-task__label ontario-task__hint-text--true'>
-                        Contact information
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--1' class='ontario-task__label ontario-task__hint-text--true'>
+                            Contact information
+                        </h2>
+                            <p id='task-one' class='ontario-hint'>
+                                How to contact you to discuss your application
+                            </p>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Not yet started
                     </span>
                 </div>
-                    <p id='task-one' class='ontario-hint'>
-                        How to contact you to discuss your application
-                    </p>
             </a>
         </li>
         <li
@@ -1499,16 +1508,18 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--2' class='ontario-task__label ontario-task__hint-text--true'>
-                        About your organization
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--2' class='ontario-task__label ontario-task__hint-text--true'>
+                            About your organization
+                        </h2>
+                            <p id='task-two' class='ontario-hint'>
+                                This information helps us determine your eligibility
+                            </p>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Not yet started
                     </span>
                 </div>
-                    <p id='task-two' class='ontario-hint'>
-                        This information helps us determine your eligibility
-                    </p>
             </a>
         </li>
         <li
@@ -1519,19 +1530,21 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--3' class='ontario-task__label ontario-task__hint-text--true'>
-                        Budget
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--3' class='ontario-task__label ontario-task__hint-text--true'>
+                            Budget
+                        </h2>
+                            <p id='task-three' class='ontario-hint'>
+                                Detail the funding you require for the project
+                            </p>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Not yet started
                     </span>
                 </div>
-                    <p id='task-three' class='ontario-hint'>
-                        Detail the funding you require for the project
-                    </p>
             </a>
         </li>
-	</ul>
+    </ul>
 </div>
 
             <!-- End: @task-list--task-list-item-with-hint -->
@@ -1544,7 +1557,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
             <!-- Start: @task-list--variations-of-task-statuses -->
             
 <div class='ontario-task-list__container'>
-	<ul class='ontario-task-list' role='list'>
+    <ul class='ontario-task-list' role='list'>
         <li
             class="ontario-task ontario-task-status--complete"
             role="group"
@@ -1552,9 +1565,11 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
             
         >
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--1' class='ontario-task__label ontario-task__hint-text--true'>
-                        Contact information
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--1' class='ontario-task__label ontario-task__hint-text--true'>
+                            Contact information
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Completed
                     </span>
@@ -1568,9 +1583,11 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--2' class='ontario-task__label ontario-task__hint-text--true'>
-                        Project information
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--2' class='ontario-task__label ontario-task__hint-text--true'>
+                            Project information
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         In progress
                     </span>
@@ -1585,9 +1602,11 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
         >
             <a href='#' class='ontario-task__link' aria-label='Clicking this link will lead you to the task'>
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--3' class='ontario-task__label ontario-task__hint-text--true'>
-                        Impact and outcomes
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--3' class='ontario-task__label ontario-task__hint-text--true'>
+                            Impact and outcomes
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Not yet started
                     </span>
@@ -1601,9 +1620,11 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
             
         >
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--4' class='ontario-task__label ontario-task__hint-text--true'>
-                        Work plan
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--4' class='ontario-task__label ontario-task__hint-text--true'>
+                            Work plan
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Cannot yet start
                     </span>
@@ -1616,15 +1637,17 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
             
         >
                 <div class='ontario-task__content'>
-                    <h2 id='task-label--5' class='ontario-task__label ontario-task__hint-text--true'>
-                        About your organization
-                    </h2>
+                    <div class='ontario-task__text'>
+                        <h2 id='task-label--5' class='ontario-task__label ontario-task__hint-text--true'>
+                            About your organization
+                        </h2>
+                    </div>
                     <span class='ontario-badge' role="status">
                         Optional
                     </span>
                 </div>
         </li>
-	</ul>
+    </ul>
 </div>
 
             <!-- End: @task-list--variations-of-task-statuses -->
@@ -1858,102 +1881,102 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 
 					<hr><h2 id=Application-header>Application header</h2>
 
-<div class='documentation-only--application'>
-	<div class='ontario-header__container'>
-		<header class='ontario-application-header ontario-header' id='ontario-header'>
-			<div class='ontario-row'>
-				<div class='ontario-columns ontario-small-6 ontario-application-header__logo'>
-					<a href='https://www.ontario.ca/page/government-ontario'>
-						<img src='../../logos/ontario-logo--desktop.svg' alt='Ontario.ca homepage' role='img' />
-					</a>
-				</div>
-				<div class='ontario-columns ontario-small-6 ontario-application-header__lang-toggle'>
-					<a href='#' hreflang='fr' lang='fr' class='ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline'>
-						Français
-					</a>
-				</div>
-			</div>
-		</header>
-		<div class='ontario-application-subheader-menu__container'>
-			<section class='ontario-application-subheader'>
-				<div class='ontario-row'>
-					<div class='ontario-columns ontario-small-12 ontario-application-subheader__container'>
-						<p class='ontario-application-subheader__heading'>
-							<a href='#'>Application name</a>
-						</p>
+<div class="documentation-only--application">
+    <div class="ontario-header__container">
+        <header class="ontario-application-header ontario-header" id="ontario-header">
+            <div class="ontario-row">
+                <div class="ontario-columns ontario-small-6 ontario-application-header__logo">
+                    <a href="https://www.ontario.ca/page/government-ontario">
+                        <img src="../../logos/ontario-logo--desktop.svg" alt="Ontario.ca homepage" role="img" />
+                    </a>
+                </div>
+                <div class="ontario-columns ontario-small-6 ontario-application-header__lang-toggle">
+                    <a href="#" hreflang="fr" lang="fr" class="ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline">
+                        Français
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="ontario-application-subheader-menu__container">
+            <section class="ontario-application-subheader">
+                <div class="ontario-row">
+                    <div class="ontario-columns ontario-small-12 ontario-application-subheader__container">
+                        <p class="ontario-application-subheader__heading">
+                            <a href="#">Application name</a>
+                        </p>
 
 
-						<div class='ontario-application-subheader__menu-container'>
-							<ul class='ontario-application-subheader__menu ontario-show-for-large'>
-								<li><a href='#'>Link 1</a></li>
-								<li><a href='#'>Link 2</a></li>
-								<li><a href='#'>Link 3</a></li>
-								<li><a href='#'>Link 4</a></li>
-								<li><a href='#'>Link 5</a></li>
-							</ul>
-							<ul class='ontario-application-subheader__menu ontario-hide-for-small ontario-show-for-medium ontario-hide-for-large'>
-								<li><a href='#'>Link 1</a></li>
-								<li><a href='#'>Link 2</a></li>
-							</ul>
+                        <div class="ontario-application-subheader__menu-container">
+                            <ul class="ontario-application-subheader__menu ontario-show-for-large">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">Link 4</a></li>
+                                <li><a href="#">Link 5</a></li>
+                            </ul>
+                            <ul class="ontario-application-subheader__menu ontario-hide-for-small ontario-show-for-medium ontario-hide-for-large">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                            </ul>
 
                             <button
-                                class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline'
-                                id='ontario-header-menu-toggler'
-                                aria-controls='ontario-navigation'
-                                aria-label='Show navigation menu'
-                                type='button'
+                                class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                                id="ontario-header-menu-toggler"
+                                aria-controls="ontario-navigation"
+                                aria-label="Show navigation menu"
+                                type="button"
                             >
-                                <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
-                                    <use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use>
+                                <svg class="ontario-icon" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                    <use xlink:href="#ontario-icon-menu" id="ontario-header-menu-icon"></use>
                                 </svg>
                                 <span>Menu</span>
                             </button>
-						</div>
-					</div>
-				</div>
-			</section>
-			<nav class="ontario-navigation" id="ontario-navigation">
-			    <button
-			        class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
-			        id="ontario-header-nav-toggler"
-			        aria-controls="ontario-navigation"
-			        aria-label="Hide navigation menu"
-			    >
-			        <svg
-			            class="ontario-icon"
-			            focusable="false"
-			            viewBox="0 0 24 24"
-			            preserveAspectRatio="xMidYMid meet"
-			        >
-			            <use xlink:href="#ontario-icon-close"></use>
-			        </svg>
-			        <span>Menu</span>
-			    </button>
-			    <div class="ontario-navigation__container">
-			        <ul>
-			                <li class="ontario-show-for-small-only"><a
-			                        href="#"
-			                    >Link
-			                        1</a></li>
-			                <li class="ontario-show-for-small-only"><a
-			                        href="#"
-			                    >Link
-			                        2</a></li>
-			                <li class="ontario-hide-for-large"><a href="#">Link
-			                        3</a></li>
-			                <li class="ontario-hide-for-large"><a href="#">Link
-			                        4</a></li>
-			                <li class="ontario-hide-for-large"><a href="#">Link
-			                        5</a></li>
-			                <li><a href="#">Link 6</a></li>
-			                <li><a href="#">Link 7</a></li>
-			                <li><a href="#">Link 8</a></li>
-			        </ul>
-			    </div>
-			</nav>
-		</div>
-	</div>
-	<div class='ontario-overlay'></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <nav class="ontario-navigation" id="ontario-navigation">
+                <button
+                    class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                    id="ontario-header-nav-toggler"
+                    aria-controls="ontario-navigation"
+                    aria-label="Hide navigation menu"
+                >
+                    <svg
+                        class="ontario-icon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet"
+                    >
+                        <use xlink:href="#ontario-icon-close"></use>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+                <div class="ontario-navigation__container">
+                    <ul>
+                            <li class="ontario-show-for-small-only"><a
+                                    href="#"
+                                >Link
+                                    1</a></li>
+                            <li class="ontario-show-for-small-only"><a
+                                    href="#"
+                                >Link
+                                    2</a></li>
+                            <li class="ontario-hide-for-large"><a href="#">Link
+                                    3</a></li>
+                            <li class="ontario-hide-for-large"><a href="#">Link
+                                    4</a></li>
+                            <li class="ontario-hide-for-large"><a href="#">Link
+                                    5</a></li>
+                            <li><a href="#">Link 6</a></li>
+                            <li><a href="#">Link 7</a></li>
+                            <li><a href="#">Link 8</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="ontario-overlay"></div>
 </div>
 
 
@@ -1996,12 +2019,12 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                         for="ontario-search-input-field"
                         class="ontario-show-for-sr"
                     ></label>
-                    <input 
-                        type="text" 
-                        name="search" 
-                        id="ontario-search-input-field" 
-                        autocomplete="off" 
-                        aria-autocomplete="none" 
+                    <input
+                        type="text"
+                        name="search"
+                        id="ontario-search-input-field"
+                        autocomplete="off"
+                        aria-autocomplete="none"
                         class="ontario-input ontario-header__search-input"
                     />
                     <input
@@ -2054,7 +2077,7 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                         id="ontario-header-search-toggler"
                         aria-controls="ontario-search-form-container"
                         type="button"
-                        aria-label=Search
+                        aria-label="Search"
                     >
                         <svg
                             class="ontario-icon"
@@ -2071,23 +2094,23 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
                     </button>
 
                     <button
-                        class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline'
-                        id='ontario-header-menu-toggler'
-                        aria-controls='ontario-navigation'
-                        aria-label='Show navigation menu'
-                        type='button'
+                        class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                        id="ontario-header-menu-toggler"
+                        aria-controls="ontario-navigation"
+                        aria-label="Show navigation menu"
+                        type="button"
                         aria-expanded="false"
                     >
-                        <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
-                            <use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use>
+                        <svg class="ontario-icon" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="#ontario-icon-menu" id="ontario-header-menu-icon"></use>
                         </svg>
                         <span>Menu</span>
                     </button>
                 </div>
                 <div class="ontario-header__search-close-container ontario-columns ontario-small-2 ontario-medium-3">
-                    <button 
-                        class="ontario-header__search-close ontario-header-button ontario-header-button--without-outline" id="ontario-header-search-close" 
-                        aria-label="Close search bar" 
+                    <button
+                        class="ontario-header__search-close ontario-header-button ontario-header-button--without-outline" id="ontario-header-search-close"
+                        aria-label="Close search bar"
                         type="button">
                         <span aria-hidden="true">close</span>
                         <svg class="ontario-icon" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
@@ -2171,43 +2194,43 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 
 					<hr><h2 id=Service-ontario-header>Service ontario header</h2>
 
-<div class='documentation-only--application'>
-	<div class='ontario-header__container'>
-		<header class='ontario-service-header ontario-header' id='ontario-header'>
-			<div class='ontario-row'>
-				<div class='ontario-columns ontario-small-6 ontario-service-header__logo'>
-					<a href='https://www.ontario.ca/page/government-ontario'>
-						<img src='../../logos/ontario-logo--desktop.svg' alt='Ontario.ca homepage' role='img' />
-					</a>
-				</div>
-				<div class='ontario-columns ontario-small-6 ontario-service-header__lang-toggle'>
-					<a href='#' hreflang='fr' lang='fr' class='ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline'>
-						Français
-					</a>
-				</div>
-			</div>
-		</header>
-		<div class='ontario-service-subheader-menu__container'>
-			<section class='ontario-service-subheader'>
-				<div class='ontario-row'>
-					<div class='ontario-columns ontario-small-12 ontario-service-subheader__container'>
+<div class="documentation-only--application">
+    <div class="ontario-header__container">
+        <header class="ontario-service-header ontario-header" id="ontario-header">
+            <div class="ontario-row">
+                <div class="ontario-columns ontario-small-6 ontario-service-header__logo">
+                    <a href="https://www.ontario.ca/page/government-ontario">
+                        <img src="../../logos/ontario-logo--desktop.svg" alt="Ontario.ca homepage" role="img" />
+                    </a>
+                </div>
+                <div class="ontario-columns ontario-small-6 ontario-service-header__lang-toggle">
+                    <a href="#" hreflang="fr" lang="fr" class="ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline">
+                        Français
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="ontario-service-subheader-menu__container">
+            <section class="ontario-service-subheader">
+                <div class="ontario-row">
+                    <div class="ontario-columns ontario-small-12 ontario-service-subheader__container">
 
-                        <a href='#' class='ontario-service-subheader__link'>
-                            <div class='ontario-service-subheader__heading-container'>
-                                <p class='ontario-service-subheader__heading'>
+                        <a href="#" class="ontario-service-subheader__link">
+                            <div class="ontario-service-subheader__heading-container">
+                                <p class="ontario-service-subheader__heading">
                                     ServiceOntario
                                 </p>
-                                <p class='ontario-service-subheader__description'>
+                                <p class="ontario-service-subheader__description">
                                     Ontario Photo Card Renewal
                                 </p>
                             </div>
                         </a>
 
-					</div>
-				</div>
-			</section>
-		</div>
-	</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </div>
 
 
@@ -2681,6 +2704,10 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 <span> ontario-icon-video</span></li>
 					<li>
 
+<svg class="ontario-icon" alt="" sol:category="payment" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="../../icons/ontario-icons-secondary.svg#ontario-icon-visa-alt"></use></svg>
+<span> ontario-icon-visa-alt</span></li>
+					<li>
+
 <svg class="ontario-icon" alt="" sol:category="payment" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="../../icons/ontario-icons-secondary.svg#ontario-icon-visa"></use></svg>
 <span> ontario-icon-visa</span></li>
 					<li>
@@ -2702,11 +2729,11 @@ Radio legend<span class="ontario-label__flag">(required/optional)</span>
 					<li>
 
 <svg class="ontario-icon" alt="" sol:category="multimedia" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="../../icons/ontario-icons-secondary.svg#ontario-icon-wifi"></use></svg>
-<span> ontario-icon-wifi</span></li>
+<span> ontario-icon-wifi</span></ul>
 					<li>
 
 <svg class="ontario-icon" alt="" sol:category="communication" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><use href="../../icons/ontario-icons-secondary.svg#ontario-icon-youtube"></use></svg>
-<span> ontario-icon-youtube</span></ul>
+<span> ontario-icon-youtube</span></li>
 					<hr><h2 id=Fieldsets>Fieldsets</h2>
 
 <div class="ontario-form-group">
@@ -3195,31 +3222,31 @@ What is your delivery address?
                         Skip this page navigation
                     </a>
                     <ol class="ontario-page-navigation-list" role="navigation">
-                        <li class="ontario-page-navigation-list__item">
-                            <a class="ontario-page-navigation-item__link" href=#>
-                                About the program
-                            </a>
-                        </li>
-                        <li class="ontario-page-navigation-list__item">
-                            <a class="ontario-page-navigation-item__link" href=#>
-                                Eligibility
-                            </a>
-                        </li>
-                        <li class="ontario-page-navigation-list__item">
-                            <a class="ontario-page-navigation-item__link" href=#>
-                                Available funding
-                            </a>
-                        </li>
-                        <li class="ontario-page-navigation-list__item">
-                            <a class="ontario-page-navigation-item__link" href=#>
-                                Program guide
-                            </a>
-                        </li>
-                        <li class="ontario-page-navigation-list__item">
-                            <a class="ontario-page-navigation-item__link" href=#>
-                                Contact us
-                            </a>
-                        </li>
+                            <li class="ontario-page-navigation-list__item">
+                                <a class="ontario-page-navigation-item__link" href="#">
+                                    About the program
+                                </a>
+                            </li>
+                            <li class="ontario-page-navigation-list__item">
+                                <a class="ontario-page-navigation-item__link" href="#">
+                                    Eligibility
+                                </a>
+                            </li>
+                            <li class="ontario-page-navigation-list__item">
+                                <a class="ontario-page-navigation-item__link" href="#">
+                                    Available funding
+                                </a>
+                            </li>
+                            <li class="ontario-page-navigation-list__item">
+                                <a class="ontario-page-navigation-item__link" href="#">
+                                    Program guide
+                                </a>
+                            </li>
+                            <li class="ontario-page-navigation-list__item">
+                                <a class="ontario-page-navigation-item__link" href="#">
+                                    Contact us
+                                </a>
+                            </li>
                     </ol>
                 </div>
             </div>

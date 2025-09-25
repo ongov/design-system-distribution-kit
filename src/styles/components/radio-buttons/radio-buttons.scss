@@ -79,6 +79,7 @@ $ontario-input-offset: math.div($ontario-touch-target-size - $ontario-radios-siz
 		width: $ontario-radios-size;
 		height: $ontario-radios-size;
 		transition: border 0.1s ease-in-out;
+		background: colours.$ontario-colour-white;
 
 		@media screen and (max-width: breakpoints.$small-breakpoint) {
 			width: $ontario-radios-size-mobile;

@@ -83,6 +83,7 @@ $ontario-checkbox-border-size: 2px;
 		height: $ontario-checkboxes-size-mobile;
 		transition: border 0.1s ease-in-out;
 		display: block;
+		background: colours.$ontario-colour-white;
 
 		@media screen and (min-width: breakpoints.$small-breakpoint) {
 			width: $ontario-checkboxes-size;
