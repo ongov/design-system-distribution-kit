@@ -11,15 +11,20 @@
 	border-top: 4px solid colours.$ontario-colour-black;
 	border-bottom: 4px solid colours.$ontario-greyscale-20;
 	padding: spacing.$spacing-0;
-	max-width: 46rem;
+	margin: spacing.$spacing-7 spacing.$spacing-0;
 }
 
-.ontario-page-navigation--no-top-border {
-	border-top: none;
-}
-
+// @deprecated This class is no longer recommended. Use `.ontario-page-navigation` instead, as the base class is now full width by default.
 .ontario-page-navigation--full {
+	@warn "`.ontario-page-navigation--full` is deprecated and will be removed in a future version of the distribution kit. Please use `.ontario-page-navigation` instead.";
 	border-top: 4px solid colours.$ontario-colour-black;
+	max-width: 100%;
+}
+
+// @deprecated This class is no longer recommended. Use `.ontario-page-navigation-content` instead.
+.ontario-page-navigation-content--full {
+	@warn "`.ontario-page-navigation-content--full` is deprecated and will be removed in a future version of the distribution kit. Please use `.ontario-page-navigation-content` instead.";
+	padding-top: spacing.$spacing-7;
 	max-width: 100%;
 }
 
@@ -28,9 +33,12 @@
 	max-width: 46rem;
 }
 
-.ontario-page-navigation-content--full {
-	padding-top: spacing.$spacing-7;
-	max-width: 100%;
+.ontario-page-navigation--no-top-border {
+	border-top: none;
+
+	.ontario-page-navigation-content {
+		padding-top: spacing.$spacing-0;
+	}
 }
 
 .ontario-page-navigation-header {

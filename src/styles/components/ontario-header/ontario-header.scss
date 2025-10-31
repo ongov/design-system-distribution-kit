@@ -9,6 +9,7 @@
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/line-heights.variables' as lineheight;
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-sizes.variables' as fontSizes;
 @use '@ongov/ontario-design-system-global-styles/dist/styles/scss/1-variables/font-weights.variables' as fontWeights;
+@use '@ongov/ontario-design-system-global-styles/dist/styles/scss/2-tools/functions/global.functions' as globalFunctions;
 
 $ontario-search-input-padding: 7.2rem;
 $ontario-search-input-padding--mobile: 6.4rem;
@@ -205,6 +206,11 @@ input[type='reset'].ontario-header__search-reset {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	gap: spacing.$spacing-4;
+
+	@media screen and (min-width: breakpoints.$medium-breakpoint) {
+		gap: spacing.$spacing-0;
+	}
 }
 
 /* Header buttons */
@@ -251,6 +257,7 @@ input[type='reset'].ontario-header__search-reset {
 	&:active {
 		background-color: colours.$ontario-greyscale-60;
 	}
+
 	&:focus {
 		background-color: colours.$ontario-greyscale-70;
 	}
@@ -258,7 +265,7 @@ input[type='reset'].ontario-header__search-reset {
 
 .ontario-header-button--with-outline {
 	border: 2px solid colours.$ontario-colour-white;
-	margin: spacing.$spacing-0 spacing.$spacing-0 spacing.$spacing-0 spacing.$spacing-4;
+	margin: spacing.$spacing-0;
 	padding: math.div(spacing.$spacing-3, 2) spacing.$spacing-4;
 
 	&:hover {
@@ -281,7 +288,42 @@ input[type='reset'].ontario-header__search-reset {
 	}
 }
 
-.ontario-header__menu-toggler {
+@media screen and (min-width: breakpoints.$medium-breakpoint) {
+	.ontario-header-button--desktop {
+		background-color: colours.$ontario-colour-black;
+		margin-left: spacing.$spacing-4;
+		/* padding uses !important because a more specific global or utility rule
+            (from the design-system globals) overrides this component rule in some
+            contexts (e.g. header variants). Using !important ensures the desktop
+            button gets the intended spacing without changing upstream styles. */
+		padding: spacing.$spacing-1 spacing.$spacing-1 spacing.$spacing-1 spacing.$spacing-3 !important;
+
+		svg {
+			margin-left: spacing.$spacing-1;
+			/* margin-right needs !important because the general .ontario-header__menu-toggle
+                svg rule applies later/in a more specific context and pushes a different value.
+               The important flag forces this desktop variant to take precedence. */
+			margin-right: spacing.$spacing-0 !important;
+			/* width/height use !important to override global svg sizing rules coming
+                from the shared variables or component defaults (these may be applied
+                by a higher-specificity selector or imported partial). We constrain the
+                desktop button's icon size explicitly here. */
+			width: spacing.$spacing-5 !important;
+			height: spacing.$spacing-5 !important;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: colours.$ontario-greyscale-70;
+		}
+	}
+
+	.ontario-header-button--desktop.ontario-header-button--with-outline {
+		border: none;
+	}
+}
+
+.ontario-header__menu-toggle {
 	padding: math.div(spacing.$spacing-3, 2) spacing.$spacing-4;
 
 	@media screen and (max-width: breakpoints.$xsmall-breakpoint) {
@@ -298,9 +340,9 @@ input[type='reset'].ontario-header__search-reset {
 	}
 
 	svg {
-		margin-right: 6px;
-		width: 2rem;
-		height: 2rem;
+		margin-right: globalFunctions.px-to-rem(6);
+		width: spacing.$spacing-6;
+		height: spacing.$spacing-6;
 
 		@media screen and (max-width: breakpoints.$xsmall-breakpoint) {
 			margin-right: spacing.$spacing-0;
@@ -309,16 +351,24 @@ input[type='reset'].ontario-header__search-reset {
 }
 
 .ontario-header__language-toggler {
-	padding: spacing.$spacing-3;
+	padding: spacing.$spacing-1 spacing.$spacing-3;
 
 	abbr[title] {
 		text-decoration: none;
+	}
+
+	@media screen and (min-width: breakpoints.$medium-breakpoint) {
+		background-color: colours.$ontario-colour-black;
+
+		&:hover,
+		&:focus {
+			background-color: colours.$ontario-greyscale-70;
+		}
 	}
 }
 
 .ontario-header__search-toggler {
 	padding: spacing.$spacing-2 spacing.$spacing-3;
-	margin-left: spacing.$spacing-4;
 
 	svg {
 		@media screen and (min-width: breakpoints.$small-breakpoint) {
@@ -432,4 +482,10 @@ input[type='reset'].ontario-header__search-reset {
 
 #ontario-search-reset {
 	display: none;
+}
+
+@media screen and (min-width: breakpoints.$medium-breakpoint) {
+	.ontario-icon--rotated {
+		transform: rotate(180deg);
+	}
 }

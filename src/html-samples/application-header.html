@@ -1,7 +1,7 @@
 
 
 <div class="documentation-only--application">
-    <div class="ontario-header__container">
+    <div class="ontario-header__container ontario-application-header">
         <header class="ontario-application-header ontario-header" id="ontario-header">
             <div class="ontario-row">
                 <div class="ontario-columns ontario-small-6 ontario-application-header__logo">
@@ -39,11 +39,12 @@
                             </ul>
 
                             <button
-                                class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
+                                class="ontario-header__menu-toggle ontario-header-button ontario-header-button--with-outline"
                                 id="ontario-header-menu-toggler"
                                 aria-controls="ontario-navigation"
                                 aria-label="Show navigation menu"
                                 type="button"
+                                aria-expanded="false"
                             >
                                 <svg class="ontario-icon" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
                                     <use xlink:href="#ontario-icon-menu" id="ontario-header-menu-icon"></use>
@@ -55,43 +56,36 @@
                 </div>
             </section>
             <nav class="ontario-navigation" id="ontario-navigation">
-                <button
-                    class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline"
-                    id="ontario-header-nav-toggler"
-                    aria-controls="ontario-navigation"
-                    aria-label="Hide navigation menu"
-                >
-                    <svg
-                        class="ontario-icon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        preserveAspectRatio="xMidYMid meet"
+                    <nav
+                        
+                        
                     >
-                        <use xlink:href="#ontario-icon-close"></use>
-                    </svg>
-                    <span>Menu</span>
-                </button>
-                <div class="ontario-navigation__container">
-                    <ul>
-                            <li class="ontario-show-for-small-only"><a
-                                    href="#"
-                                >Link
-                                    1</a></li>
-                            <li class="ontario-show-for-small-only"><a
-                                    href="#"
-                                >Link
-                                    2</a></li>
-                            <li class="ontario-hide-for-large"><a href="#">Link
-                                    3</a></li>
-                            <li class="ontario-hide-for-large"><a href="#">Link
-                                    4</a></li>
-                            <li class="ontario-hide-for-large"><a href="#">Link
-                                    5</a></li>
-                            <li><a href="#">Link 6</a></li>
-                            <li><a href="#">Link 7</a></li>
-                            <li><a href="#">Link 8</a></li>
-                    </ul>
-                </div>
+                        <div
+                            class="ontario-navigation__container"
+                            id=""
+                        >
+                            <button
+                                class="ontario-header__menu-toggle ontario-header-button ontario-header-button--with-outline ontario-hide-for-medium-only ontario-hide-for-small-only"
+                                id=""
+                                aria-controls=""
+                                aria-label="Hide navigation menu"
+                            >
+                                <svg class="ontario-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                    <use xlink:href="#ontario-icon-close"></use>
+                                </svg>
+                                <span>Menu</span>
+                            </button>
+                            <ul id="" role="menu">
+                                    <li class='ontario-show-for-small-only'><a href='#'>Link 1</a></li>
+                                    <li class='ontario-show-for-small-only'><a href='#'>Link 2</a></li>
+                                    <li class='ontario-hide-for-large'><a href='#'>Link 3</a></li>
+                                    <li class='ontario-hide-for-large'><a href='#'>Link 4</a></li>
+                                    <li class='ontario-hide-for-large'><a href='#'>Link 5</a></li>
+                                    <li><a href='#'>Link 6</a></li>
+                                    <li><a href='#'>Link 7</a></li>
+                                    <li><a href='#'>Link 8</a></li>            </ul>
+                        </div>
+                    </nav>
             </nav>
         </div>
     </div>
